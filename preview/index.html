@@ -1,0 +1,19 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><title>Yuuki — revisão de animações</title>
+<style>body{background:#191c27;color:#eee;font:16px system-ui;max-width:1000px;margin:32px auto;padding:20px}canvas{image-rendering:pixelated;background:repeating-conic-gradient(#333 0% 25%,#444 0% 50%) 0/24px 24px;max-width:100%;border:1px solid #888}button,select,input{margin:8px;padding:8px}p{line-height:1.5}.aviso{color:#ffd27a}</style>
+<h1>Yuuki · revisão de animações</h1><p class="aviso">EXPERIMENTAL — asas e continuidade ainda inconsistentes. Fatiamento por grade proposto; não é aprovação para produção.</p>
+<select id="version"><option value="yuuki-v2.png">Tentativa 2</option><option value="yuuki-v1.png">Tentativa 1</option></select>
+<select id="motion"></select><button id="play">Pausar</button><button id="step">Próximo frame</button><label>FPS <input id="fps" type="number" min="1" max="24" value="8"></label><p id="status"></p><canvas width="600" height="600" id="view"></canvas>
+<p>Esquerda: asa próxima preta. Direita: asa próxima branca. Observe se arma, vestido e tamanho mudam. O pulo toca uma vez; use Reproduzir para repetir.</p>
+<script>
+const names=['Andar esquerda','Andar direita','Correr esquerda','Correr direita','Pular esquerda','Pular direita'];
+const motion=document.querySelector('#motion'),version=document.querySelector('#version'),button=document.querySelector('#play'),fps=document.querySelector('#fps'),ctx=document.querySelector('canvas').getContext('2d');
+names.forEach((n,i)=>motion.add(new Option(n,i)));let frame=0,playing=true,last=0,ready=false;const img=new Image();
+function load(){ready=false;img.src='../Art/Experiments/'+version.value;}
+img.onload=()=>{ready=true;frame=0;draw();};img.onerror=()=>document.querySelector('#status').textContent='Não foi possível carregar a folha.';
+function draw(){if(!ready)return;let row=Number(motion.value),x=Math.floor(frame*img.width/6),y=Math.floor(row*img.height/6),w=Math.floor((frame+1)*img.width/6)-x,h=Math.floor((row+1)*img.height/6)-y;ctx.clearRect(0,0,600,600);ctx.imageSmoothingEnabled=false;const scale=Math.min(600/w,600/h);ctx.drawImage(img,x,y,w,h,(600-w*scale)/2,(600-h*scale)/2,w*scale,h*scale);document.querySelector('#status').textContent=names[row]+' · frame '+(frame+1)+'/6 · fonte '+img.width+'×'+img.height;}
+function next(){if(frame===5&&Number(motion.value)>=4){playing=false;button.textContent='Reproduzir';return;}frame=(frame+1)%6;draw();}
+button.onclick=()=>{playing=!playing;if(playing&&frame===5)frame=0;button.textContent=playing?'Pausar':'Reproduzir';draw();};
+document.querySelector('#step').onclick=()=>{playing=false;button.textContent='Reproduzir';frame=(frame+1)%6;draw();};
+motion.onchange=()=>{frame=0;draw();};version.onchange=load;
+function tick(t){if(playing&&ready&&t-last>=1000/Math.max(1,Math.min(24,Number(fps.value)||8))){next();last=t;}requestAnimationFrame(tick);}load();requestAnimationFrame(tick);
+</script></html>
