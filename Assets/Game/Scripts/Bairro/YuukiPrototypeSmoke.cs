@@ -171,7 +171,7 @@ public sealed class YuukiPrototypeSmoke : MonoBehaviour
             Check(!hits.Any(c=>!c.isTrigger),"grass is walkable at "+spot);
         }
         var houses=FindObjectsByType<YuukiCutawayHouse>(FindObjectsSortMode.None);
-        Check(houses.Length==2,"two cutaway houses");
+        Check(houses.Length>=7,"cutaway houses: the two families and the rest of the street");
         foreach(var house in houses)
         {
             string scene=SceneManager.GetActiveScene().name;

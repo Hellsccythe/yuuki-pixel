@@ -992,6 +992,41 @@
    "pivotY": 0.05
   },
   {
+   "id": "porta-casa-madeira-gasta",
+   "path": "Assets/Game/Bairro/Sprites/Doors/porta-casa-madeira-gasta.png",
+   "ppu": 60,
+   "pivotX": 0.5,
+   "pivotY": 0.0
+  },
+  {
+   "id": "porta-casa-pedra",
+   "path": "Assets/Game/Bairro/Sprites/Doors/porta-casa-pedra.png",
+   "ppu": 60,
+   "pivotX": 0.5,
+   "pivotY": 0.0
+  },
+  {
+   "id": "porta-casa-pedra-gasta",
+   "path": "Assets/Game/Bairro/Sprites/Doors/porta-casa-pedra-gasta.png",
+   "ppu": 60,
+   "pivotX": 0.5,
+   "pivotY": 0.0
+  },
+  {
+   "id": "porta-casa-velha",
+   "path": "Assets/Game/Bairro/Sprites/Doors/porta-casa-velha.png",
+   "ppu": 60,
+   "pivotX": 0.5,
+   "pivotY": 0.0
+  },
+  {
+   "id": "porta-oficina",
+   "path": "Assets/Game/Bairro/Sprites/Doors/porta-oficina.png",
+   "ppu": 60,
+   "pivotX": 0.5,
+   "pivotY": 0.0
+  },
+  {
    "id": "poste-luz-aceso",
    "path": "Assets/Game/Bairro/Sprites/Props/poste-luz-aceso.png",
    "ppu": 165.625,
@@ -4349,6 +4384,83 @@
    "b": 0.38,
    "flicker": 0.12,
    "night": true
+  }
+ ],
+ "houses": [
+  {
+   "sprite": "casa-pedra",
+   "x": 4.2,
+   "y": 24.8,
+   "flip": false,
+   "name": "Casa de pedra",
+   "theme": "familia",
+   "door": "porta-casa-pedra",
+   "doorX": 5.0417,
+   "doorY": 25.5502,
+   "doorWidth": 0.8833,
+   "roomW": 5.43,
+   "roomH": 6.4,
+   "seed": 1
+  },
+  {
+   "sprite": "oficina",
+   "x": 14.6,
+   "y": 24.8,
+   "flip": false,
+   "name": "Oficina do bairro",
+   "theme": "oficina",
+   "door": "porta-oficina",
+   "doorX": 14.2583,
+   "doorY": 25.4004,
+   "doorWidth": 2.35,
+   "roomW": 7.29,
+   "roomH": 6.4,
+   "seed": 2
+  },
+  {
+   "sprite": "casa-velha",
+   "x": 28.8,
+   "y": 24.8,
+   "flip": false,
+   "name": "Casa velha",
+   "theme": "familia",
+   "door": "porta-casa-velha",
+   "doorX": 29.5417,
+   "doorY": 25.5998,
+   "doorWidth": 1.05,
+   "roomW": 5.91,
+   "roomH": 5.865,
+   "seed": 3
+  },
+  {
+   "sprite": "casa-pedra-gasta",
+   "x": 44.0,
+   "y": 24.8,
+   "flip": false,
+   "name": "Casa da esquina",
+   "theme": "familia",
+   "door": "porta-casa-pedra-gasta",
+   "doorX": 44.8417,
+   "doorY": 25.5502,
+   "doorWidth": 0.8833,
+   "roomW": 5.43,
+   "roomH": 6.4,
+   "seed": 4
+  },
+  {
+   "sprite": "casa-madeira-gasta",
+   "x": 39.5,
+   "y": 11.2,
+   "flip": false,
+   "name": "Casa de madeira",
+   "theme": "familia",
+   "door": "porta-casa-madeira-gasta",
+   "doorX": 39.5833,
+   "doorY": 11.9998,
+   "doorWidth": 0.8833,
+   "roomW": 6.525,
+   "roomH": 6.4,
+   "seed": 5
   }
  ],
  "interactables": [

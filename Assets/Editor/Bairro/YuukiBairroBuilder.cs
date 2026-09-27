@@ -148,6 +148,7 @@ public static class YuukiBairroBuilder
         }).ToArray();
 
         YuukiRpgRevisionBuilder.AddHouses(map);
+        YuukiRpgRevisionBuilder.AddGenericHouses(map, data);
         if (!EditorSceneManager.SaveScene(scene, scenePath))
             throw new InvalidOperationException("Nao foi possivel salvar " + scenePath);
         RegisterScene(scenePath);

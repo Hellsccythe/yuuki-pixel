@@ -1258,6 +1258,62 @@
    "pivotY": 0.05
   },
   {
+   "id": "porta-barraco-0",
+   "path": "Assets/Game/Bairro/Sprites/Doors/porta-barraco-0.png",
+   "ppu": 60,
+   "pivotX": 0.5,
+   "pivotY": 0.0
+  },
+  {
+   "id": "porta-barraco-1",
+   "path": "Assets/Game/Bairro/Sprites/Doors/porta-barraco-1.png",
+   "ppu": 60,
+   "pivotX": 0.5,
+   "pivotY": 0.0
+  },
+  {
+   "id": "porta-barraco-2",
+   "path": "Assets/Game/Bairro/Sprites/Doors/porta-barraco-2.png",
+   "ppu": 60,
+   "pivotX": 0.5,
+   "pivotY": 0.0
+  },
+  {
+   "id": "porta-barraco-3",
+   "path": "Assets/Game/Bairro/Sprites/Doors/porta-barraco-3.png",
+   "ppu": 60,
+   "pivotX": 0.5,
+   "pivotY": 0.0
+  },
+  {
+   "id": "porta-barraco-4",
+   "path": "Assets/Game/Bairro/Sprites/Doors/porta-barraco-4.png",
+   "ppu": 60,
+   "pivotX": 0.5,
+   "pivotY": 0.0
+  },
+  {
+   "id": "porta-barraco-5",
+   "path": "Assets/Game/Bairro/Sprites/Doors/porta-barraco-5.png",
+   "ppu": 60,
+   "pivotX": 0.5,
+   "pivotY": 0.0
+  },
+  {
+   "id": "porta-casa-pedra-gasta",
+   "path": "Assets/Game/Bairro/Sprites/Doors/porta-casa-pedra-gasta.png",
+   "ppu": 60,
+   "pivotX": 0.5,
+   "pivotY": 0.0
+  },
+  {
+   "id": "porta-casa-velha",
+   "path": "Assets/Game/Bairro/Sprites/Doors/porta-casa-velha.png",
+   "ppu": 60,
+   "pivotX": 0.5,
+   "pivotY": 0.0
+  },
+  {
    "id": "poste-luz-aceso",
    "path": "Assets/Game/Bairro/Sprites/Props/poste-luz-aceso.png",
    "ppu": 165.625,
@@ -4830,6 +4886,173 @@
    "b": 0.38,
    "flicker": 0.12,
    "night": true
+  }
+ ],
+ "houses": [
+  {
+   "sprite": "barraco-0",
+   "x": 8.3,
+   "y": 24.0,
+   "flip": false,
+   "name": "Barraco da viela",
+   "theme": "barraco",
+   "door": "porta-barraco-0",
+   "doorX": 9.0333,
+   "doorY": 24.1334,
+   "doorWidth": 0.9,
+   "roomW": 4.62,
+   "roomH": 3.735,
+   "seed": 1
+  },
+  {
+   "sprite": "barraco-3",
+   "x": 15.0,
+   "y": 24.0,
+   "flip": false,
+   "name": "Barraco de cortina azul",
+   "theme": "barraco",
+   "door": "porta-barraco-3",
+   "doorX": 13.9833,
+   "doorY": 24.1333,
+   "doorWidth": 0.9,
+   "roomW": 4.26,
+   "roomH": 3.84,
+   "seed": 2
+  },
+  {
+   "sprite": "barraco-4",
+   "x": 19.4,
+   "y": 24.0,
+   "flip": false,
+   "name": "Barraco da valeta",
+   "theme": "barraco",
+   "door": "porta-barraco-4",
+   "doorX": 18.4167,
+   "doorY": 24.1333,
+   "doorWidth": 0.9,
+   "roomW": 4.08,
+   "roomH": 3.84,
+   "seed": 3
+  },
+  {
+   "sprite": "barraco-2",
+   "x": 27.0,
+   "y": 24.4,
+   "flip": false,
+   "name": "Barraco do puxadinho",
+   "theme": "barraco",
+   "door": "porta-barraco-2",
+   "doorX": 25.767,
+   "doorY": 24.5331,
+   "doorWidth": 0.9,
+   "roomW": 6.21,
+   "roomH": 4.05,
+   "seed": 4
+  },
+  {
+   "sprite": "barraco-1",
+   "x": 35.0,
+   "y": 24.6,
+   "flip": false,
+   "name": "Barraco estreito",
+   "theme": "barraco",
+   "door": "porta-barraco-1",
+   "doorX": 34.0667,
+   "doorY": 24.7333,
+   "doorWidth": 0.9,
+   "roomW": 3.9,
+   "roomH": 3.75,
+   "seed": 5
+  },
+  {
+   "sprite": "casa-pedra-gasta",
+   "x": 41.0,
+   "y": 24.6,
+   "flip": false,
+   "name": "Casa de pedra rachada",
+   "theme": "familia",
+   "door": "porta-casa-pedra-gasta",
+   "doorX": 41.8417,
+   "doorY": 25.3502,
+   "doorWidth": 0.8833,
+   "roomW": 5.43,
+   "roomH": 6.4,
+   "seed": 6
+  },
+  {
+   "sprite": "barraco-3",
+   "x": 46.1,
+   "y": 24.6,
+   "flip": true,
+   "name": "Barraco da entrada",
+   "theme": "barraco",
+   "door": "porta-barraco-3",
+   "doorX": 47.1167,
+   "doorY": 24.7333,
+   "doorWidth": 0.9,
+   "roomW": 4.26,
+   "roomH": 3.84,
+   "seed": 7
+  },
+  {
+   "sprite": "barraco-1",
+   "x": 9.8,
+   "y": 8.6,
+   "flip": true,
+   "name": "Barraco da lavadeira",
+   "theme": "barraco",
+   "door": "porta-barraco-1",
+   "doorX": 10.7333,
+   "doorY": 8.7333,
+   "doorWidth": 0.9,
+   "roomW": 3.9,
+   "roomH": 3.75,
+   "seed": 8
+  },
+  {
+   "sprite": "barraco-5",
+   "x": 16.4,
+   "y": 8.6,
+   "flip": false,
+   "name": "Barraco de porta vermelha",
+   "theme": "barraco",
+   "door": "porta-barraco-5",
+   "doorX": 15.2503,
+   "doorY": 8.7335,
+   "doorWidth": 0.9,
+   "roomW": 5.85,
+   "roomH": 3.945,
+   "seed": 9
+  },
+  {
+   "sprite": "barraco-0",
+   "x": 26.4,
+   "y": 8.6,
+   "flip": true,
+   "name": "Barraco do galinheiro",
+   "theme": "barraco",
+   "door": "porta-barraco-0",
+   "doorX": 25.6667,
+   "doorY": 8.7334,
+   "doorWidth": 0.9,
+   "roomW": 4.62,
+   "roomH": 3.735,
+   "seed": 10
+  },
+  {
+   "sprite": "casa-velha",
+   "x": 32.6,
+   "y": 8.6,
+   "flip": true,
+   "name": "Casa velha do fundo",
+   "theme": "familia",
+   "door": "porta-casa-velha",
+   "doorX": 31.8583,
+   "doorY": 9.3998,
+   "doorWidth": 1.05,
+   "roomW": 5.91,
+   "roomH": 5.865,
+   "seed": 11
   }
  ],
  "interactables": [

@@ -83,6 +83,19 @@ Lá embaixo, cinco espaços pequenos e escuros montados com as peças de dungeon
 
 Tochas nas paredes são a única luz; a escuridão não segue o relógio. Altar, asa, símbolo, grade e água se examinam com F. Ainda não há inimigos nem eventos.
 
+## Interiores de todas as casas
+
+Além das casas da Yuuki e do Tenebris, agora **16 casas** podem ser visitadas, do mesmo jeito (andar para cima na porta; a porta abre e o interior aparece no lugar da fachada):
+
+- **Rua de Casa**: Casa de pedra, Oficina do bairro, Casa velha, Casa da esquina e Casa de madeira.
+- **Moradias**: nove barracos (da viela, de cortina azul, da valeta, do puxadinho, estreito, da entrada, da lavadeira, de porta vermelha, do galinheiro), a Casa de pedra rachada e a Casa velha do fundo. A casa abandonada continua pregada.
+
+Cada interior é montado pelo construtor a partir do JSON do mapa (`houses`): o tamanho do cômodo segue a fachada e a mobília depende do tipo — casa de família (estante, fogão aceso, cama, mesa, tapete, livros), oficina (bancada, fogão, caixotes, lenha, cadernos de encomendas) ou barraco (cama, fogão ou vela sobre caixotes, barril, tapete e às vezes livros no chão). A coluna em frente à porta fica sempre livre; em barracos estreitos o móvel que não cabe fora dela é omitido. A folha da porta que abre é um recorte da própria fachada (`Assets/Game/Bairro/Sprites/Doors`).
+
+## Exportar sempre reconstrói os mapas
+
+**Yuuki > Protótipo > Exportar jogo para Windows** agora reconstrói as três cenas de mapa a partir do JSON antes de gerar o executável. Antes ele só criava as cenas que ainda não existiam, e por isso um `.exe` exportado depois de um `git pull` podia sair com as cenas antigas (sem relógio, sem luzes e sem interação com F). "Preparar menu e assets" continua sem mexer nas cenas existentes.
+
 ## Menu
 
 O menu inicial foi simplificado: título à esquerda, opções **Começar · Controles · Galeria de cenários · Sair**, navegação com W/S + Enter ou mouse, e à direita a Yuuki respirando sob um poste aceso. A pausa segue o mesmo visual. Começar reinicia o relógio no dia 1, às 07:00.
@@ -90,7 +103,7 @@ O menu inicial foi simplificado: título à esquerda, opções **Começar · Con
 ## Arquivos
 
 - Jogo: `YuukiUI` (visual comum), `YuukiClock`, `YuukiLighting` + `YuukiLight`, `YuukiInteractable` / `YuukiInteractor` / `YuukiSign` / `YuukiBookshelf` / `YuukiStairs`, `YuukiBookLibrary`, `YuukiBairro` (HUD, transições, textos, livros, pausa), `YuukiMenu`, `YuukiMapExit`.
-- Construtores: `YuukiBairroBuilder` (luzes, interações, camada de luz, dungeon), `YuukiRpgRevisionBuilder` (estantes e fogão dos interiores), `YuukiBairroReleaseBuilder` (inclui a dungeon no build).
+- Construtores: `YuukiBairroBuilder` (luzes, interações, camada de luz, dungeon), `YuukiRpgRevisionBuilder` (estantes e fogão dos interiores, interiores genéricos das demais casas), `YuukiBairroReleaseBuilder` (inclui a dungeon no build e reconstrói os mapas ao exportar).
 - Gerador: `scripts/bairro/dungeon.py` (novo), `rua_de_casa.py` e `moradias.py` reorganizados, `mapkit.py` (luzes, placas, interações, peças do catálogo, prévia noturna), `assets.py` (poste aceso/apagado e tocha em escala de jogo, sem alterar o catálogo).
 - `python3 scripts/bairro/build_bairro.py --layouts-only` regenera os três mapas sem recriar os sprites existentes; `python3 scripts/bairro/validate_map.py` confere colisões, alcance de portas, saídas, placas, estantes e escadas nos três mapas.
 - O teste de integração (`--yuuki-smoke-test`) foi atualizado: aviso de borda e viagem, placa, postes de dia e de noite, ida e volta da dungeon, estantes nas duas casas.

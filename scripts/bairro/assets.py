@@ -102,6 +102,41 @@ def lighting_sprites():
     env_copy("tocha", "tocha-parede", 1.05)
 
 
+# Plank shacks: (width in tiles, curtain door, stovepipe, lean-to). Seeds are 200 + index.
+SHACKS = [(4.4, False, True, False), (3.6, True, False, False), (5.0, False, False, True),
+          (4.0, True, True, False), (3.8, False, False, False), (4.6, True, False, True)]
+
+# Door leaf of each facade (x0, y0, x1, y1 in sprite pixels), used by the house interiors.
+DOOR_BOXES = {
+    "casa-yuuki": (210, 242, 273, 340), "casa-velha": (210, 242, 273, 340),
+    "casa-tenebris": (196, 380, 249, 468), "casa-madeira-gasta": (196, 380, 249, 468),
+    "casa-pedra": (205, 367, 258, 450), "casa-pedra-gasta": (205, 367, 258, 450),
+    "oficina": (152, 282, 293, 399),
+}
+
+
+def door_box(sid):
+    if sid not in DOOR_BOXES and sid.startswith("barraco-"):
+        i = int(sid.split("-")[1])
+        w, curtain, pipe, lean = SHACKS[i]
+        pm.shack(200 + i, w, curtain_door=curtain, stovepipe=pipe, lean_to=lean)
+        DOOR_BOXES[sid] = tuple(pm.LAST_DOOR)
+    return DOOR_BOXES[sid]
+
+
+def door_sprite(sid):
+    """Crop of the closed door leaf of a facade, animated when Yuuki walks in."""
+    out_id = "porta-" + sid
+    if out_id not in sprites:
+        box = door_box(sid)
+        arr = np.asarray(Image.open(ROOT / sprites[sid]["path"]).convert("RGBA").crop(box)).astype(float)
+        path = SPRITES / "Doors" / f"{out_id}.png"
+        save_rgba(arr, path)
+        sprites[out_id] = dict(id=out_id, path=str(path.relative_to(ROOT)).replace("\\", "/"), ppu=sprites[sid]["ppu"],
+                               pivotX=0.5, pivotY=0.0, w=arr.shape[1], h=arr.shape[0])
+    return out_id
+
+
 def size_units(sid):
     s = sprites[sid]
     return s["w"] / s["ppu"], s["h"] / s["ppu"]
@@ -139,9 +174,7 @@ def build_sprites():
     a = board_window(a, (196, 400, 246, 468), 18)  # door nailed shut
     register("casa-abandonada", a, 60, feet(a), b)
     # Plank shacks with patched tin roofs (Moradias).
-    for i, (w, curtain, pipe, lean) in enumerate([(4.4, False, True, False), (3.6, True, False, False),
-                                                   (5.0, False, False, True), (4.0, True, True, False),
-                                                   (3.8, False, False, False), (4.6, True, False, True)]):
+    for i, (w, curtain, pipe, lean) in enumerate(SHACKS):
         a, pivot_y = pm.shack(200 + i, w, curtain_door=curtain, stovepipe=pipe, lean_to=lean)
         # Pivot on the stone step line; lean-to shacks are offset by their extra 70px on the left.
         px = ((a.shape[1] - 70) / 2 + 70) / a.shape[1] if lean else 0.5

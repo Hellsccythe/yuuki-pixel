@@ -57,13 +57,13 @@ def layout(m, dungeon_entry):
               "mas ninguém lembra de uma ter caído.", radius=1.1)
 
     # --------------------------------------------- north row, fronting the main lane
-    m.building("barraco-0", 8.3, 12.0, depth=0.62)
-    m.building("barraco-3", 15.0, 12.0, depth=0.62)
-    m.building("barraco-4", 19.4, 12.0, depth=0.62)
-    m.building("barraco-2", 27.0, 11.6, depth=0.62)
-    m.building("barraco-1", 35.0, 11.4, depth=0.62)
-    m.building("casa-pedra-gasta", 41.0, 11.4)
-    m.building("barraco-3", 46.1, 11.4, depth=0.62, flip=True)
+    m.building("barraco-0", 8.3, 12.0, depth=0.62, enter=("Barraco da viela", "barraco"))
+    m.building("barraco-3", 15.0, 12.0, depth=0.62, enter=("Barraco de cortina azul", "barraco"))
+    m.building("barraco-4", 19.4, 12.0, depth=0.62, enter=("Barraco da valeta", "barraco"))
+    m.building("barraco-2", 27.0, 11.6, depth=0.62, enter=("Barraco do puxadinho", "barraco"))
+    m.building("barraco-1", 35.0, 11.4, depth=0.62, enter=("Barraco estreito", "barraco"))
+    m.building("casa-pedra-gasta", 41.0, 11.4, enter=("Casa de pedra rachada", "familia"))
+    m.building("barraco-3", 46.1, 11.4, depth=0.62, flip=True, enter=("Barraco da entrada", "barraco"))
     for (x, y) in ((8.3, 11.0), (15.0, 11.0), (35.0, 10.4)):   # candle light by the doors at night
         m.light(x, y, radius=1.6, intensity=0.55, flicker=0.35)
     m.obj("barris-agua", 5.6, 12.1, (1.1, 0.4, 0.0), shadow=1.2)
@@ -89,8 +89,8 @@ def layout(m, dungeon_entry):
     m.obj("lixo-2", 20.6, 23.6, (1.6, 0.6, 0.0), shadow=1.8)
     m.weeds([(7.9, 19.4, 2), (20.8, 19.0, 0), (12.0, 23.8, 3), (7.8, 23.4, 5)])
     # Two shacks crammed along the lower lane.
-    m.building("barraco-1", 9.8, 27.4, depth=0.62, flip=True)
-    m.building("barraco-5", 16.4, 27.4, depth=0.62)
+    m.building("barraco-1", 9.8, 27.4, depth=0.62, flip=True, enter=("Barraco da lavadeira", "barraco"))
+    m.building("barraco-5", 16.4, 27.4, depth=0.62, enter=("Barraco de porta vermelha", "barraco"))
     m.light(16.4, 26.3, radius=1.5, intensity=0.5, flicker=0.35)
     m.obj("caixotes", 19.9, 27.2, (1.2, 0.5, 0.0), shadow=1.3)
     m.obj("barris-agua", 12.6, 27.5, (1.1, 0.4, 0.0), shadow=1.2)
@@ -104,8 +104,9 @@ def layout(m, dungeon_entry):
     m.obj("carroca-quebrada", 34.4, 20.4, (2.4, 0.7, 0.0), shadow=2.6)
     m.weeds([(24.2, 20.4, 5), (35.6, 17.0, 1)])
     # Houses fronting the lower lane.
-    m.building("barraco-0", 26.4, 27.4, depth=0.62, flip=True)
-    m.building("casa-velha", 32.6, 27.4, depth=0.5, flip=True, smoke_at=(96, 18))
+    m.building("barraco-0", 26.4, 27.4, depth=0.62, flip=True, enter=("Barraco do galinheiro", "barraco"))
+    m.building("casa-velha", 32.6, 27.4, depth=0.5, flip=True, smoke_at=(96, 18),
+               enter=("Casa velha do fundo", "familia"))
 
     # ---------------------------------------- the abandoned corner and the hidden stairs
     for (x0, x1) in ((36.6, 39.6), (42.6, 48.0)):

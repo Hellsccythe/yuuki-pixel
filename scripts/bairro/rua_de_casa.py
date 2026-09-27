@@ -44,13 +44,13 @@ def layout(m):
               (0.9, 0.5, 0.0), sway=1.0 + rng.random() * .6, shadow=2.4)
 
     # ------------------------------------------- north block, fronting the main street
-    m.building("casa-pedra", 4.2, 11.2)
+    m.building("casa-pedra", 4.2, 11.2, enter=("Casa de pedra", "familia"))
     m.obj("barris-agua", 1.4, 11.0, (1.1, 0.4, 0.0), shadow=1.2)
-    m.building("oficina", 14.6, 11.2, smoke_at=(355, 20))
+    m.building("oficina", 14.6, 11.2, smoke_at=(355, 20), enter=("Oficina do bairro", "oficina"))
     m.obj("lenha", 18.4, 10.75, (1.6, 0.5, 0.0), shadow=1.7)           # firewood by the workshop
     m.obj("caixotes", 10.95, 10.9, (1.2, 0.5, 0.0), shadow=1.3, flip=True)
-    m.building("casa-velha", 28.8, 11.2, smoke_at=(96, 18))
-    m.building("casa-pedra-gasta", 44.0, 11.2)
+    m.building("casa-velha", 28.8, 11.2, smoke_at=(96, 18), enter=("Casa velha", "familia"))
+    m.building("casa-pedra-gasta", 44.0, 11.2, enter=("Casa da esquina", "familia"))
     # The alley of the story: dirt floor, cracked walls, crooked fence and crates at the end.
     m.obj("muro-gasto", 8.9, 4.7, (4.2, 0.6, 0.0), shadow=4)
     m.obj("cerca-torta", 8.9, 5.6, (3.0, 0.45, 0.0), shadow=2.6)
@@ -106,7 +106,8 @@ def layout(m):
     m.env("amarelinha", 27.4, 25.6)                  # hopscotch for the kids
     m.weeds([(25.6, 26.8, 4), (34.0, 26.6, 3)])
     # House east of the square and the dry corner by the footpath.
-    m.building("casa-madeira-gasta", 39.5, 24.8, depth=0.5, smoke_at=(313, 16))
+    m.building("casa-madeira-gasta", 39.5, 24.8, depth=0.5, smoke_at=(313, 16),
+               enter=("Casa de madeira", "familia"))
     m.obj("arvore-seca", 47.0, 21.2, (0.8, 0.45, 0.0), sway=1.8, shadow=2.2)
     m.obj("entulho-1", 43.6, 25.8)
     m.obj("caixotes", 42.9, 26.6, (1.4, 0.55, 0.0), shadow=1.5)
