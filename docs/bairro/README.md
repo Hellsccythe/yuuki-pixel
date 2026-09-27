@@ -2,11 +2,13 @@
 
 Jogo em vista de cima no estilo Stardew Valley: Yuuki anda livremente em X e Y (8 direções) e colide só pelos pés. Não há gravidade nem ground check. Buracos são bloqueios no chão; um pulo futuro vai ignorá-los por um instante em vez de lançar a personagem para cima.
 
-Revisão atual: [quatro direções, repouso e casas no próprio mapa](revisao-rpg-v4.md). Yuuki e Tenebris são vizinhos e vivem com suas respectivas famílias. O prólogo se passa aos nove anos; os personagens visuais ainda são provisórios.
+Revisão atual: [mapas reorganizados, dia e noite, interação com F e dungeon](revisao-v5.md). Anterior: [quatro direções, repouso e casas no próprio mapa](revisao-rpg-v4.md). Yuuki e Tenebris são vizinhos e vivem com suas respectivas famílias. O prólogo se passa aos nove anos; os personagens visuais ainda são provisórios.
 
 ![Prévia da Rua de Casa](rua-de-casa-preview.png)
 
 ![Prévia das Moradias](moradias-preview.png)
+
+![Prévia da dungeon](dungeon-noite.png)
 
 ## Os quatro mapas
 
@@ -16,8 +18,9 @@ Revisão atual: [quatro direções, repouso e casas no próprio mapa](revisao-rp
 | **Moradias** — vielas de barracos de tábua, valeta, pracinha comunitária, galinheiro | **pronto** | oeste da Rua de Casa |
 | Escola do bairro — antiga e pobre, com a biblioteca | arte disponível; falta montar o mapa | norte da Rua de Casa |
 | Distrito comercial — lojinhas de roupa, comida, padaria | arte disponível; falta montar o mapa | leste da Rua de Casa |
+| **Ossário Esquecido** (dungeon pequena) | **pronto** | escada escondida no canto abandonado das Moradias |
 
-Andar até a borda abre a confirmação de viagem. Enter ou o botão confirma; Esc cancela. A viagem usa fade e cenas separadas. As saídas para mapas que ainda não existem mostram "em breve" e bloqueiam a passagem. O [novo conjunto de 61 assets e o protótipo com menu](assets-v2.md) cobrem comércio, escola, trecho abandonado e dungeon. Os prompts anteriores e as referências de personagens continuam em `Art/World/prompts-bairro.md`.
+Na borda do mapa aparece o destino; continuar andando por meio segundo leva ao próximo mapa, com fade (cenas separadas). As saídas para mapas que ainda não existem mostram "ainda em construção" e bloqueiam a passagem. O [novo conjunto de 61 assets e o protótipo com menu](assets-v2.md) cobrem comércio, escola, trecho abandonado e dungeon. Os prompts anteriores e as referências de personagens continuam em `Art/World/prompts-bairro.md`.
 
 ## O que a Rua de Casa tem
 
@@ -43,10 +46,10 @@ Andar até a borda abre a confirmação de viagem. Enter ou o botão confirma; E
 ## Como abrir no Unity
 
 1. Abra o projeto e espere a compilação (o `Packages/manifest.json` agora inclui `jsonserialize`, `particlesystem` e `audio`; isso também corrige o erro `JsonUtility does not exist` do protótipo antigo).
-2. Menu **Yuuki > Bairro > Construir todo o bairro**. O construtor configura a importação dos sprites (PPU, pivô, Point, sem compressão), cria `Assets/Game/Scenes/Bairro_RuaDeCasa.unity` e `Bairro_Moradias.unity` e coloca as duas nas Build Settings (é isso que permite andar de um mapa para o outro). Também há itens para construir um mapa só.
+2. Menu **Yuuki > Bairro > Construir todo o bairro**. O construtor configura a importação dos sprites (PPU, pivô, Point, sem compressão), cria `Assets/Game/Scenes/Bairro_RuaDeCasa.unity`, `Bairro_Moradias.unity` e `Bairro_Dungeon.unity` e coloca as três nas Build Settings (é isso que permite andar de um mapa para o outro). Também há itens para construir um mapa só.
 3. Com a cena da Rua de Casa aberta, aperte **Play**. WASD ou setas para andar, Shift para correr; siga pela rua principal para o oeste para chegar às Moradias.
 
-Reconstruir recria as cenas do zero. Para mudar um mapa, edite o layout em `scripts/bairro/rua_de_casa.py` ou `scripts/bairro/moradias.py` e rode o gerador de novo; se preferir ajustar à mão na cena, pare de reconstruir aquele mapa.
+Reconstruir recria as cenas do zero. Para mudar um mapa, edite o layout em `scripts/bairro/rua_de_casa.py`, `moradias.py` ou `dungeon.py` e rode `python3 scripts/bairro/build_bairro.py --layouts-only`; se preferir ajustar à mão na cena, pare de reconstruir aquele mapa.
 
 ## Regerar a arte e o layout
 

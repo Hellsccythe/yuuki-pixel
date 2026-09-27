@@ -4,13 +4,17 @@ Prototipo 2D independente do RPG de mesa. Este diretorio ja e um projeto Unity 6
 
 ## Jogar e revisar os cenários
 
-Abra **Builds/Bairro/Yuuki.exe** para o protótipo Windows com menu inicial, galeria de 61 peças novas e os mapas Rua de Casa/Moradias. WASD/setas para andar, Shift para correr, Esc para pausar. As saídas entre mapas agora pedem confirmação. No Unity, abra **Assets/Game/Scenes/Bairro_Menu.unity**; o menu **Yuuki > Protótipo > Exportar jogo para Windows** gera o executável.
+Abra **Builds/Bairro/Yuuki.exe** para o protótipo Windows com menu inicial, galeria de 61 peças novas e os mapas Rua de Casa/Moradias. WASD/setas para andar, Shift para correr, F para interagir, Esc para pausar. Nas bordas, continue andando para mudar de área. No Unity, abra **Assets/Game/Scenes/Bairro_Menu.unity**; o menu **Yuuki > Protótipo > Exportar jogo para Windows** gera o executável.
 
 A abertura agora situa Yuuki e Tenebris aos **nove anos**, cada um morando com sua família em uma casa separada, vizinha da outra. As duas casas podem ser visitadas: caminhe para cima na porta para entrar, e para baixo pela soleira para sair. A porta abre e o interior aparece no mesmo espaço, sem carregar outra cena. Os sprites infantis e os eventos da história ainda serão feitos; o visual atual continua provisório.
 
 A [revisão de movimento e interiores](docs/bairro/revisao-rpg-v4.md) adiciona caminhada em quatro direções, guardar/sacar o cajado, respiração com três quadros e materiais de interior. `preview/rpg-revision.html` permite inspecionar os quadros. Para reconstruir as cenas com os novos interiores e exportar, use **Yuuki > Protótipo > Reconstruir interiores e exportar**.
 
 Os novos conjuntos de comércio, escola, bairro abandonado e dungeon estão em **Assets/Game/Resources/Environment**, com prefabs em **Assets/Game/Environment/Prefabs**. [Inventário, reprodução e limites desta etapa](docs/bairro/assets-v2.md). A galeria web está em **preview/assets.html**. A organização das próximas áreas e os personagens definitivos ficam para a etapa seguinte.
+
+## Revisão v5: dia e noite, interação e dungeon
+
+Mapas reorganizados, relógio com dia/tarde/noite (postes acendem, tochas cintilam), **F** para ler placas, examinar e ver estantes ("Sem registro" até os livros serem cadastrados em `Assets/Game/Resources/Livros/biblioteca.json`), transição de área sem janela de confirmação, menu mais limpo e a dungeon **Ossário Esquecido**, com a entrada escondida nas Moradias. Rode **Yuuki > Bairro > Construir todo o bairro** antes de testar. Detalhes em [docs/bairro/revisao-v5.md](docs/bairro/revisao-v5.md).
 
 ## Bairro da Yuuki (vista de cima, estilo Stardew Valley)
 
