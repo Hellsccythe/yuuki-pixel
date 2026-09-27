@@ -12,7 +12,7 @@ from PIL import Image, ImageDraw
 from scipy import ndimage as ndi
 
 from common import ROOT, fbm, value_noise, smoothstep, tile, desaturate, terrain_textures
-from assets import G, MAPS, sprites, size_units, register_ground, FX, env, env_info
+from assets import G, MAPS, sprites, size_units, register_ground, FX, env, env_info, door_box, door_sprite
 
 
 # Light spots (sprite pixels from the top-left, radius in tiles, intensity) of the buildings.
@@ -50,6 +50,7 @@ class MapLayout:
         self.spawn = (w / 2, h / 2)
         self.G = G                 # ground pixels per tile
         self.lights = []           # standalone lights (windows, lanterns, candles)
+        self.houses = []           # enterable buildings (interior built in Unity inside the footprint)
         self.interactables = []    # signs, bookshelves, stairs (used with F)
         self.region = "Os Subúrbios"
         self.follow_clock = True   # outdoors: light follows the time of day
@@ -129,8 +130,19 @@ class MapLayout:
         self.interactables.append(dict(kind="books", x=x, y=y, radius=radius, prompt=prompt, title=name,
                                        bookIds=list(book_ids)))
 
-    def building(self, sid, cx, feet_y, depth=0.52, door=None, smoke_at=None, flip=False, width_frac=0.9, lit=True):
+    def building(self, sid, cx, feet_y, depth=0.52, door=None, smoke_at=None, flip=False, width_frac=0.9, lit=True,
+                 enter=None):
+        """enter=(name, theme): Yuuki can walk in; theme picks the furniture (familia, oficina, barraco)."""
         w, h = size_units(sid)
+        if enter:
+            x0, y0, x1, y1 = door_box(sid)
+            dx, dy = self._pixel_offset(sid, (x0 + x1) / 2, y1, flip)
+            s = sprites[sid]
+            self.houses.append(dict(sprite=sid, x=cx, y=feet_y, flip=flip, name=enter[0], theme=enter[1],
+                                    door=door_sprite(sid), doorX=round(cx + dx, 4), doorY=dy,
+                                    doorWidth=round((x1 - x0) / s["ppu"], 4),
+                                    roomW=round(w * 0.9, 3), roomH=round(min(h * 0.9, 6.4), 3),
+                                    seed=len(self.houses) + 1))
         self.obj(sid, cx, feet_y, (w * width_frac, h * depth - 0.35, 0.35), shadow=w * 0.95, flip=flip)
         # Lanterns and lit windows of the original art glow at night.
         for (px, py, radius, strength) in (BUILDING_LIGHTS.get(sid, ()) if lit else ()):
@@ -411,6 +423,7 @@ class MapLayout:
                               ground=agid, outdoor=False))
         used = {o["sprite"] for o in self.objects} | {a["ground"] for a in areas}
         used |= {o["light"]["offSprite"] for o in self.objects if o["light"]["offSprite"]}
+        used |= {hh["door"] for hh in self.houses}
         used |= set(FX["leaves"]) | set(FX["pigeon"]) | {FX["dust"], FX["paper"], FX["cloud"], FX["smoke"]}
         variants = [v for v in npc_variants if any(n["variant"] == v["id"] for n in self.npcs)]
         for v in variants:
@@ -429,6 +442,7 @@ class MapLayout:
                         outwardY=1.0 if e["y"] < 1.5 else -1.0 if e["y"] > self.h - 1.5 else 0.0)
                    for e in self.exits],
             lights=[dict(l, y=self.uy(l["y"])) for l in self.lights],
+            houses=[dict(hh, y=self.uy(hh["y"]), doorY=round(self.uy(hh["y"]) + hh["doorY"], 4)) for hh in self.houses],
             interactables=[self._export_interactable(i) for i in self.interactables],
             region=self.region, followClock=self.follow_clock, clockRuns=self.clock_runs, wind=self.wind,
             ambient=dict(r=self.fixed_ambient[0], g=self.fixed_ambient[1], b=self.fixed_ambient[2], a=self.fixed_ambient[3]),

@@ -22,6 +22,7 @@ using UnityEngine;
     public YuukiFxInfo fx;
     public YuukiPointLightInfo[] lights;
     public YuukiInteractableInfo[] interactables;
+    public YuukiHouseInfo[] houses;
     public string region;
     public bool followClock = true, clockRuns = true, wind = true;
     public YuukiColorInfo ambient, background;
@@ -53,6 +54,15 @@ using UnityEngine;
     public string kind, prompt, title, text, targetMap;
     public float x, y, radius, targetX, targetY;
     public string[] bookIds;
+}
+
+// A building Yuuki can walk into: the room is built inside its footprint (theme picks the furniture).
+[Serializable] public sealed class YuukiHouseInfo
+{
+    public string sprite, name, theme, door;
+    public float x, y, doorX, doorY, doorWidth, roomW, roomH;
+    public bool flip;
+    public int seed;
 }
 
 [Serializable] public sealed class YuukiSpriteInfo { public string id, path; public float ppu, pivotX, pivotY; }

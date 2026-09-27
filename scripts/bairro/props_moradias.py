@@ -14,6 +14,7 @@ from scipy import ndimage as ndi
 from common import value_noise, fbm, desaturate, smoothstep
 
 OUTLINE = (40, 28, 20, 255)
+LAST_DOOR = [0, 0, 0, 0]   # door box (x0, y0, x1, y1) of the last shack drawn, before the lean-to offset
 
 
 def _shade(c, k):
@@ -94,6 +95,7 @@ def shack(seed, width_tiles=4.4, door_side=None, curtain_door=False, stovepipe=F
         door_side = rng.choice([0.28, 0.5, 0.7])
     dx = int(x0 + W * door_side - dw / 2)
     dy = wall_bot - dh
+    LAST_DOOR[:] = [dx, dy, dx + dw, wall_bot]
     d.rectangle([dx - 4, dy - 5, dx + dw + 4, wall_bot], fill=(72, 50, 32, 255))
     if curtain_door:
         cc = rng.choice([(150, 70, 60), (90, 110, 130), (170, 150, 110)])
@@ -207,6 +209,8 @@ def shack(seed, width_tiles=4.4, door_side=None, curtain_door=False, stovepipe=F
         e.rectangle([24, wall_bot - 24, 50, wall_bot], fill=(120, 90, 60, 255), outline=OUTLINE)
         e.ellipse([52, wall_bot - 22, 68, wall_bot], fill=(90, 96, 100, 255), outline=OUTLINE)
         img = extra
+        LAST_DOOR[0] += 70
+        LAST_DOOR[2] += 70
     arr = np.asarray(img).astype(float)
     return arr, (wall_bot + base_h) / arr.shape[0]
 
