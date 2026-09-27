@@ -2,7 +2,11 @@
 
 Prototipo 2D independente do RPG de mesa. Este diretorio ja e um projeto Unity 6000.0.82f1; nao e necessario criar outro projeto ou copiar a pasta Assets.
 
-## Testar
+## Bairro da Yuuki (vista de cima, estilo Stardew Valley)
+
+O jogo agora segue em vista de cima, com movimento livre em X e Y. Dois dos quatro mapas modulares do bairro estao prontos e ligados entre si: a **Rua de Casa** (casa da Yuuki com interior, casa do Tenebris, o beco da historia, pracinha do poco) e as **Moradias** (vielas de barracos, valeta com pontes, pracinha comunitaria, galinheiro), com moradores andando, animais e vento. No Unity use o menu **Yuuki > Bairro > Construir todo o bairro** e aperte Play na cena Assets/Game/Scenes/Bairro_RuaDeCasa.unity. Detalhes, os quatro mapas planejados e como regerar a arte em docs/bairro/README.md.
+
+## Testar o prototipo de plataforma (antigo)
 
 Abra D:\yuuki-pixel no Unity Hub e execute a cena Assets/Game/Scenes/YuukiPrototype.unity. Mova com A/D ou setas, segure Shift para correr e use Espaco para pular. O importador de sprites, os clipes, o Animator Controller, a camera e os colisores foram criados e validados pelo Editor em modo batch.
 
