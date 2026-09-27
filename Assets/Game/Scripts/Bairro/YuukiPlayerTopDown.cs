@@ -30,6 +30,7 @@ public sealed class YuukiPlayerTopDown : MonoBehaviour
     private Rigidbody2D body;
     private Vector2 direction;
     private bool running;
+    private YuukiRpgAnimation rpgAnimation;
 
     private void Awake()
     {
@@ -37,6 +38,7 @@ public sealed class YuukiPlayerTopDown : MonoBehaviour
         body.gravityScale = 0f;
         body.freezeRotation = true;
         if (animator == null) animator = GetComponentInChildren<Animator>();
+        rpgAnimation = GetComponent<YuukiRpgAnimation>();
     }
 
     private void Update()
@@ -48,9 +50,15 @@ public sealed class YuukiPlayerTopDown : MonoBehaviour
         direction = input.sqrMagnitude > 1f ? input.normalized : input;
         running = !InputBlocked && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift));
 
-        // Only left/right drawings exist for now: moving up or down keeps the last side.
+        // Retained for legacy side-view consumers; the RPG animation also faces up/down.
         if (direction.x < -0.01f) FacingLeft = true;
         else if (direction.x > 0.01f) FacingLeft = false;
+
+        if (rpgAnimation != null)
+        {
+            rpgAnimation.Tick(direction, running, Time.deltaTime);
+            return;
+        }
 
         if (animator == null) return;
         bool moving = direction.sqrMagnitude > 0.0001f;

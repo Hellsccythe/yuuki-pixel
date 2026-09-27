@@ -59,14 +59,6 @@ def layout(m):
     m.building("casa-abandonada", 28.2, 11.2, depth=0.55)
     m.building("barraco-2", 39.0, 11.2, depth=0.62)
     m.building("barraco-4", 44.9, 11.2, depth=0.62)
-    m.block(6.2, 3.4, 1.2, 7.6)
-    m.block(15.4, 3.4, 0.5, 7.4)
-    m.block(13.1, 3.4, 0.5, 7.4)
-    m.block(32.9, 3.4, 0.4, 7.4)
-    m.block(35.0, 3.4, 0.4, 7.4)
-    m.block(19.9, 3.4, 1.7, 7.4)
-    m.block(23.0, 3.4, 1.6, 7.4)
-    m.block(41.7, 3.4, 1.0, 7.4)
     # alley ends: junk
     m.obj("lixo", 14.4, 5.4, (1.6, 0.6, 0.0), shadow=1.8)
     m.obj("lenha", 34.1, 5.2, (1.6, 0.5, 0.0), shadow=1.7)
@@ -97,7 +89,6 @@ def layout(m):
     m.building("barraco-0", 16.4, 27.4, depth=0.62)
     m.obj("caixotes", 19.6, 27.2, (1.2, 0.5, 0.0), shadow=1.3)
     m.obj("barris-agua", 12.9, 27.5, (1.1, 0.4, 0.0), shadow=1.2)
-    m.block(7.2, 23.4, 13.9, 1.4)      # behind their roofs
 
     # ----------------------------------------- east block: chicken yard and houses
     m.obj("cerca-esq", 26.1, 16.1, (2.0, 0.4, 0.0), shadow=2)
@@ -114,7 +105,6 @@ def layout(m):
     m.building("barraco-5", 33.4, 27.4, depth=0.62)
     m.building("casa-velha", 40.2, 27.4, depth=0.5, flip=True, smoke_at=(96, 18))
     m.building("barraco-4", 45.6, 27.4, depth=0.62, flip=True)
-    m.block(24.4, 23.4, 23.5, 2.4)     # behind the roofs
     m.block(23.0, 15.3, 1.4, 12.4)     # east bank of the ditch
 
     # ------------------------------------------------ lower lane and back lots

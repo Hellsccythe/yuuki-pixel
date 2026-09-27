@@ -113,15 +113,15 @@ public sealed class YuukiMenu : MonoBehaviour
         }
         GUI.color = muted; GUI.Label(new Rect(62, 56, 540, 28), "CIDADE DOS ANJOS  /  OS SUBÚRBIOS", small); GUI.color = Color.white;
         GUI.Label(new Rect(56, 96, 560, 105), "YUUKI", title);
-        GUI.Label(new Rect(62, 195, 550, 52), "As ruas de onde viemos", heading);
-        GUI.Label(new Rect(62, 258, 500, 74), "Casas gastas, histórias esquecidas.\nUm bairro à sombra da cidade dos anjos.", text);
+        GUI.Label(new Rect(62, 195, 550, 52), "As ruas da nossa infância", heading);
+        GUI.Label(new Rect(62, 258, 500, 84), "Yuuki e Tenebris, aos nove anos.\nDois amigos, duas casas vizinhas nos subúrbios da cidade dos anjos.", text);
         if (Button(new Rect(62, 368, 455, 56), "Entrar no bairro", true)) StartGame();
         if (Button(new Rect(62, 440, 455, 48), "Galeria de cenários")) ShowGallery();
         if (Button(new Rect(62, 504, 218, 48), "Controles")) screen = 2;
         if (Button(new Rect(298, 504, 219, 48), "Sair")) Quit();
         GUI.color = muted;
-        GUI.Label(new Rect(62, 649, 550, 36), "Protótipo de exploração · Rua de Casa + Moradias", small);
-        GUI.Label(new Rect(740, 631, 470, 50), "O começo de um mundo em construção.", small);
+        GUI.Label(new Rect(62, 649, 550, 36), "Prólogo · Exploração de Rua de Casa e Moradias", small);
+        GUI.Label(new Rect(740, 631, 470, 58), "Infância dos dois · Visuais dos personagens provisórios", small);
         GUI.color = Color.white;
     }
 
@@ -157,7 +157,7 @@ public sealed class YuukiMenu : MonoBehaviour
     private void DrawControls()
     {
         GUI.Label(new Rect(170, 90, 940, 60), "Explorar o bairro", heading);
-        GUI.Label(new Rect(170, 195, 950, 270), "WASD ou setas — andar em qualquer direção\n\nShift — correr\n\nPortas — aproxime-se para entrar ou sair\n\nBordas do mapa — confirme a viagem com Enter ou clique\n\nEsc — cancelar uma viagem, pausar ou voltar", text);
+        GUI.Label(new Rect(170, 195, 950, 270), "WASD ou setas — andar em qualquer direção\n\nShift — correr\n\nPortas — caminhe para cima para entrar; para baixo para sair\n\nBordas do mapa — confirme a viagem com Enter ou clique\n\nEsc — cancelar uma viagem, pausar ou voltar", text);
         if (Button(new Rect(170, 550, 300, 54), "Voltar")) screen = 0;
     }
 

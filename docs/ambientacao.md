@@ -11,14 +11,16 @@ Yuuki vem de uma familia de baixa posicao social na sociedade angelical. Ela e c
 ## Personagens e relacoes
 
 - Yuuki conduz as decisoes e aprende a agir usando observacao, leitura, preparacao e aliancas. Sua fragilidade fisica muda como ela enfrenta obstaculos, mas nao reduz sua agencia.
-- Tenebris e um amigo forte e protetor. A amizade deve ser reciproca: ele tambem pode depender das ideias e escolhas da Yuuki.
+- Tenebris e um amigo forte e protetor, filho dos vizinhos. Yuuki mora com os proprios pais; Tenebris mora com a propria familia na casa ao lado. Nao moram juntos. A amizade deve ser reciproca: ele tambem pode depender das ideias e escolhas da Yuuki.
 - Alice vem de uma familia nobre e quer conhecer a periferia. A diferenca de classe cria atritos e perguntas; a relacao cresce por escolhas, curiosidade e respeito mutuo.
 
 ## Prologo jogavel proposto
 
-A primeira parte acompanha Yuuki na comunidade periferica: atravessar ruas e patios, conversar com moradores, recolher paginas levadas pelo vento e descobrir uma pequena biblioteca local. O jogador pode ler trechos opcionais que apresentam a cidade por vozes diferentes. Uma visita de Alice e o convite ou oportunidade de aproximacao com a academia fecham o prologo.
+A abertura acompanha a infancia de Yuuki e Tenebris, ambos com nove anos, conforme as paginas 1 a 8 de `yuuki, revisado.pdf`. Eles estudam na mesma escola e compartilham tardes na biblioteca. A primeira sequencia narrativa a implementar e a volta da escola: os pais trabalham ate tarde, os dois seguem o caminho de casa e ouvem o tumulto no beco onde conhecem Alice. A academia e os acontecimentos posteriores pertencem a etapas futuras, sem antecipar essa cronologia.
 
-O primeiro percurso serve para ensinar andar, correr e pular, sem exigir combate. Um treino opcional apresenta esquiva e um ataque simples depois que a movimentacao estiver validada. O capitulo termina com uma escolha de Yuuki sobre como se preparar para a academia, sem decidir por ela quem deve ser sua amiga.
+O prototipo atual permite explorar o bairro e entrar nas duas casas separadamente. O sprite atual da Yuuki e os moradores continuam provisórios; nao representam ainda as aparencias infantis definitivas. Dialogos, a volta da escola com Tenebris e o encontro com Alice ainda nao estao implementados. O primeiro percurso ensina andar e correr em quatro direcoes, sem exigir combate.
+
+Para a arte do jogo prevalece a orientacao confirmada pelo autor: asa anatomica esquerda preta e direita branca. A mencao inversa no PDF nao altera esse padrao visual.
 
 ## Tom e limites de adaptacao
 

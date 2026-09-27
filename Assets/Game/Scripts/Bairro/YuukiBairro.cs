@@ -34,6 +34,30 @@ public sealed class YuukiBairro : MonoBehaviour
     private Vector2 pendingArrival;
     public bool AwaitingTravel => !string.IsNullOrEmpty(pendingScene);
     public bool Paused { get; private set; }
+    public bool TransitionBusy => busy;
+
+    public bool BeginHouseTransition()
+    {
+        if (busy || Paused || AwaitingTravel) return false;
+        busy = true;
+        player.InputBlocked = true;
+        return true;
+    }
+
+    public void ShowHouseArea(Area area)
+    {
+        Current = area;
+        cameraFollow.SetBounds(area.bounds, area.background);
+        cameraFollow.SetZoom(area.outdoor ? 5.4f : 3.75f);
+        foreach (var item in outdoorOnly) if (item != null) item.SetActive(area.outdoor);
+        titleUntil = Time.time + 2.5f;
+    }
+
+    public void FinishHouseTransition()
+    {
+        player.InputBlocked = false;
+        busy = false;
+    }
 
     private void Update()
     {

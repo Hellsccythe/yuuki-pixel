@@ -3,8 +3,6 @@
 Every map of the bairro references these sprites by id; build_bairro.py regenerates them
 once and then lays out each map.
 """
-import shutil
-
 import numpy as np
 from PIL import Image
 
@@ -39,8 +37,8 @@ def size_units(sid):
 
 
 def build_sprites():
-    if SPRITES.exists():
-        shutil.rmtree(SPRITES)
+    # Preserve Unity .meta GUIDs and hand-added assets on regeneration.
+    SPRITES.mkdir(parents=True, exist_ok=True)
     art = {n: load_rgba(WORLD_ART / f"{n}.png") for n in
            ["home", "timber-house", "stone-house", "workshop", "wall", "fence", "tree", "crates",
             "well", "bench", "sign", "bed", "bookshelf", "table"]}

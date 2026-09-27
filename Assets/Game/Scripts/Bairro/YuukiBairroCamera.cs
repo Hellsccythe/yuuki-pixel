@@ -11,6 +11,7 @@ public sealed class YuukiBairroCamera : MonoBehaviour
     private Camera cam;
     private Rect bounds = new Rect(0, 0, 48, 36);
     private Vector3 velocity;
+    private float targetSize = 5.4f;
 
     private void Awake()
     {
@@ -24,6 +25,8 @@ public sealed class YuukiBairroCamera : MonoBehaviour
         cam.backgroundColor = background;
     }
 
+    public void SetZoom(float size) { targetSize = size; }
+
     public void Snap()
     {
         if (target == null) return;
@@ -34,6 +37,7 @@ public sealed class YuukiBairroCamera : MonoBehaviour
     private void LateUpdate()
     {
         if (target == null) return;
+        cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, targetSize, 1-Mathf.Exp(-Time.deltaTime*6));
         transform.position = Vector3.SmoothDamp(transform.position, Desired(), ref velocity, smoothTime);
     }
 
