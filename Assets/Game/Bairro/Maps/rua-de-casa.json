@@ -2,27 +2,49 @@
  "version": 1,
  "map": "rua-de-casa",
  "name": "Rua de Casa",
+ "scene": "Bairro_RuaDeCasa",
  "sprites": [
   {
-   "id": "casa-yuuki",
-   "path": "Assets/Game/Bairro/Sprites/Buildings/casa-yuuki.png",
-   "ppu": 60,
+   "id": "arvore",
+   "path": "Assets/Game/Bairro/Sprites/Props/arvore.png",
+   "ppu": 88,
    "pivotX": 0.5,
-   "pivotY": 0.0077
+   "pivotY": 0.0327
   },
   {
-   "id": "casa-tenebris",
-   "path": "Assets/Game/Bairro/Sprites/Buildings/casa-tenebris.png",
+   "id": "arvore-seca",
+   "path": "Assets/Game/Bairro/Sprites/Props/arvore-seca.png",
+   "ppu": 88,
+   "pivotX": 0.5,
+   "pivotY": 0.0327
+  },
+  {
+   "id": "banco",
+   "path": "Assets/Game/Bairro/Sprites/Props/banco.png",
+   "ppu": 140,
+   "pivotX": 0.5,
+   "pivotY": 0.0169
+  },
+  {
+   "id": "caixotes",
+   "path": "Assets/Game/Bairro/Sprites/Props/caixotes.png",
+   "ppu": 140,
+   "pivotX": 0.5,
+   "pivotY": 0.0124
+  },
+  {
+   "id": "cama",
+   "path": "Assets/Game/Bairro/Sprites/Interior/cama.png",
+   "ppu": 150,
+   "pivotX": 0.5,
+   "pivotY": 0.01
+  },
+  {
+   "id": "casa-madeira-gasta",
+   "path": "Assets/Game/Bairro/Sprites/Buildings/casa-madeira-gasta.png",
    "ppu": 60,
    "pivotX": 0.5,
    "pivotY": 0.0058
-  },
-  {
-   "id": "casa-velha",
-   "path": "Assets/Game/Bairro/Sprites/Buildings/casa-velha.png",
-   "ppu": 60,
-   "pivotX": 0.5,
-   "pivotY": 0.0077
   },
   {
    "id": "casa-pedra",
@@ -39,39 +61,32 @@
    "pivotY": 0.006
   },
   {
-   "id": "oficina",
-   "path": "Assets/Game/Bairro/Sprites/Buildings/oficina.png",
-   "ppu": 60,
-   "pivotX": 0.5,
-   "pivotY": 0.0068
-  },
-  {
-   "id": "casa-madeira-gasta",
-   "path": "Assets/Game/Bairro/Sprites/Buildings/casa-madeira-gasta.png",
+   "id": "casa-tenebris",
+   "path": "Assets/Game/Bairro/Sprites/Buildings/casa-tenebris.png",
    "ppu": 60,
    "pivotX": 0.5,
    "pivotY": 0.0058
   },
   {
-   "id": "muro",
-   "path": "Assets/Game/Bairro/Sprites/Props/muro.png",
-   "ppu": 105,
+   "id": "casa-velha",
+   "path": "Assets/Game/Bairro/Sprites/Buildings/casa-velha.png",
+   "ppu": 60,
    "pivotX": 0.5,
-   "pivotY": 0.0116
+   "pivotY": 0.0077
   },
   {
-   "id": "muro-gasto",
-   "path": "Assets/Game/Bairro/Sprites/Props/muro-gasto.png",
-   "ppu": 105,
+   "id": "casa-yuuki",
+   "path": "Assets/Game/Bairro/Sprites/Buildings/casa-yuuki.png",
+   "ppu": 60,
    "pivotX": 0.5,
-   "pivotY": 0.0116
+   "pivotY": 0.0077
   },
   {
-   "id": "cerca-esq",
-   "path": "Assets/Game/Bairro/Sprites/Props/cerca-esq.png",
-   "ppu": 110,
-   "pivotX": 0.5,
-   "pivotY": 0.0205
+   "id": "casa-yuuki_chao",
+   "path": "Assets/Game/Bairro/Maps/casa-yuuki_chao.png",
+   "ppu": 64,
+   "pivotX": 0,
+   "pivotY": 1
   },
   {
    "id": "cerca-dir",
@@ -81,11 +96,11 @@
    "pivotY": 0.0205
   },
   {
-   "id": "portao",
-   "path": "Assets/Game/Bairro/Sprites/Props/portao.png",
+   "id": "cerca-esq",
+   "path": "Assets/Game/Bairro/Sprites/Props/cerca-esq.png",
    "ppu": 110,
    "pivotX": 0.5,
-   "pivotY": 0.0211
+   "pivotY": 0.0205
   },
   {
    "id": "cerca-torta",
@@ -95,46 +110,102 @@
    "pivotY": 0.0189
   },
   {
-   "id": "arvore",
-   "path": "Assets/Game/Bairro/Sprites/Props/arvore.png",
-   "ppu": 88,
+   "id": "entulho-0",
+   "path": "Assets/Game/Bairro/Sprites/Props/entulho-0.png",
+   "ppu": 40,
    "pivotX": 0.5,
-   "pivotY": 0.0327
+   "pivotY": 0.1
   },
   {
-   "id": "arvore-seca",
-   "path": "Assets/Game/Bairro/Sprites/Props/arvore-seca.png",
-   "ppu": 88,
+   "id": "entulho-1",
+   "path": "Assets/Game/Bairro/Sprites/Props/entulho-1.png",
+   "ppu": 40,
    "pivotX": 0.5,
-   "pivotY": 0.0327
+   "pivotY": 0.1
   },
   {
-   "id": "caixotes",
-   "path": "Assets/Game/Bairro/Sprites/Props/caixotes.png",
+   "id": "entulho-2",
+   "path": "Assets/Game/Bairro/Sprites/Props/entulho-2.png",
+   "ppu": 40,
+   "pivotX": 0.5,
+   "pivotY": 0.1
+  },
+  {
+   "id": "estante",
+   "path": "Assets/Game/Bairro/Sprites/Interior/estante.png",
    "ppu": 140,
    "pivotX": 0.5,
-   "pivotY": 0.0124
+   "pivotY": 0.0102
   },
   {
-   "id": "poco",
-   "path": "Assets/Game/Bairro/Sprites/Props/poco.png",
-   "ppu": 115,
+   "id": "fogao",
+   "path": "Assets/Game/Bairro/Sprites/Interior/fogao.png",
+   "ppu": 64,
    "pivotX": 0.5,
-   "pivotY": 0.0116
+   "pivotY": 0.0182
   },
   {
-   "id": "banco",
-   "path": "Assets/Game/Bairro/Sprites/Props/banco.png",
-   "ppu": 140,
+   "id": "folha-0",
+   "path": "Assets/Game/Bairro/Sprites/FX/folha-0.png",
+   "ppu": 64,
    "pivotX": 0.5,
-   "pivotY": 0.0169
+   "pivotY": 0.5
   },
   {
-   "id": "placa",
-   "path": "Assets/Game/Bairro/Sprites/Props/placa.png",
-   "ppu": 140,
+   "id": "folha-1",
+   "path": "Assets/Game/Bairro/Sprites/FX/folha-1.png",
+   "ppu": 64,
    "pivotX": 0.5,
-   "pivotY": 0.012
+   "pivotY": 0.5
+  },
+  {
+   "id": "folha-2",
+   "path": "Assets/Game/Bairro/Sprites/FX/folha-2.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.5
+  },
+  {
+   "id": "folha-3",
+   "path": "Assets/Game/Bairro/Sprites/FX/folha-3.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.5
+  },
+  {
+   "id": "fumaca",
+   "path": "Assets/Game/Bairro/Sprites/FX/fumaca.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.5
+  },
+  {
+   "id": "horta",
+   "path": "Assets/Game/Bairro/Sprites/Props/horta.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.0357
+  },
+  {
+   "id": "livros-0",
+   "path": "Assets/Game/Bairro/Sprites/Interior/livros-0.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.0588
+  },
+  {
+   "id": "livros-1",
+   "path": "Assets/Game/Bairro/Sprites/Interior/livros-1.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.0588
+  },
+  {
+   "id": "livros-2",
+   "path": "Assets/Game/Bairro/Sprites/Interior/livros-2.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.0588
   },
   {
    "id": "mato-0",
@@ -179,90 +250,6 @@
    "pivotY": 0.0652
   },
   {
-   "id": "entulho-0",
-   "path": "Assets/Game/Bairro/Sprites/Props/entulho-0.png",
-   "ppu": 40,
-   "pivotX": 0.5,
-   "pivotY": 0.1
-  },
-  {
-   "id": "entulho-1",
-   "path": "Assets/Game/Bairro/Sprites/Props/entulho-1.png",
-   "ppu": 40,
-   "pivotX": 0.5,
-   "pivotY": 0.1
-  },
-  {
-   "id": "entulho-2",
-   "path": "Assets/Game/Bairro/Sprites/Props/entulho-2.png",
-   "ppu": 40,
-   "pivotX": 0.5,
-   "pivotY": 0.1
-  },
-  {
-   "id": "horta",
-   "path": "Assets/Game/Bairro/Sprites/Props/horta.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 0.0357
-  },
-  {
-   "id": "varal",
-   "path": "Assets/Game/Bairro/Sprites/Props/varal.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 0.0179
-  },
-  {
-   "id": "roupa-0",
-   "path": "Assets/Game/Bairro/Sprites/Props/roupa-0.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 1.0
-  },
-  {
-   "id": "roupa-1",
-   "path": "Assets/Game/Bairro/Sprites/Props/roupa-1.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 1.0
-  },
-  {
-   "id": "roupa-2",
-   "path": "Assets/Game/Bairro/Sprites/Props/roupa-2.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 1.0
-  },
-  {
-   "id": "roupa-3",
-   "path": "Assets/Game/Bairro/Sprites/Props/roupa-3.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 1.0
-  },
-  {
-   "id": "roupa-4",
-   "path": "Assets/Game/Bairro/Sprites/Props/roupa-4.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 1.0
-  },
-  {
-   "id": "cama",
-   "path": "Assets/Game/Bairro/Sprites/Interior/cama.png",
-   "ppu": 150,
-   "pivotX": 0.5,
-   "pivotY": 0.01
-  },
-  {
-   "id": "estante",
-   "path": "Assets/Game/Bairro/Sprites/Interior/estante.png",
-   "ppu": 140,
-   "pivotX": 0.5,
-   "pivotY": 0.0102
-  },
-  {
    "id": "mesa",
    "path": "Assets/Game/Bairro/Sprites/Interior/mesa.png",
    "ppu": 140,
@@ -270,701 +257,29 @@
    "pivotY": 0.0131
   },
   {
-   "id": "livros-0",
-   "path": "Assets/Game/Bairro/Sprites/Interior/livros-0.png",
-   "ppu": 64,
+   "id": "muro",
+   "path": "Assets/Game/Bairro/Sprites/Props/muro.png",
+   "ppu": 105,
    "pivotX": 0.5,
-   "pivotY": 0.0588
+   "pivotY": 0.0116
   },
   {
-   "id": "livros-1",
-   "path": "Assets/Game/Bairro/Sprites/Interior/livros-1.png",
-   "ppu": 64,
+   "id": "muro-gasto",
+   "path": "Assets/Game/Bairro/Sprites/Props/muro-gasto.png",
+   "ppu": 105,
    "pivotX": 0.5,
-   "pivotY": 0.0588
+   "pivotY": 0.0116
   },
   {
-   "id": "livros-2",
-   "path": "Assets/Game/Bairro/Sprites/Interior/livros-2.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 0.0588
-  },
-  {
-   "id": "fogao",
-   "path": "Assets/Game/Bairro/Sprites/Interior/fogao.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 0.0182
-  },
-  {
-   "id": "pombo-0",
-   "path": "Assets/Game/Bairro/Sprites/FX/pombo-0.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 0.05
-  },
-  {
-   "id": "pombo-1",
-   "path": "Assets/Game/Bairro/Sprites/FX/pombo-1.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 0.05
-  },
-  {
-   "id": "pombo-2",
-   "path": "Assets/Game/Bairro/Sprites/FX/pombo-2.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 0.05
-  },
-  {
-   "id": "pombo-3",
-   "path": "Assets/Game/Bairro/Sprites/FX/pombo-3.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 0.05
-  },
-  {
-   "id": "folha-0",
-   "path": "Assets/Game/Bairro/Sprites/FX/folha-0.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 0.5
-  },
-  {
-   "id": "folha-1",
-   "path": "Assets/Game/Bairro/Sprites/FX/folha-1.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 0.5
-  },
-  {
-   "id": "folha-2",
-   "path": "Assets/Game/Bairro/Sprites/FX/folha-2.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 0.5
-  },
-  {
-   "id": "folha-3",
-   "path": "Assets/Game/Bairro/Sprites/FX/folha-3.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 0.5
-  },
-  {
-   "id": "poeira",
-   "path": "Assets/Game/Bairro/Sprites/FX/poeira.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 0.5
-  },
-  {
-   "id": "papel",
-   "path": "Assets/Game/Bairro/Sprites/FX/papel.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 0.5
-  },
-  {
-   "id": "nuvem-sombra",
-   "path": "Assets/Game/Bairro/Sprites/FX/nuvem-sombra.png",
-   "ppu": 26,
-   "pivotX": 0.5,
-   "pivotY": 0.5
-  },
-  {
-   "id": "fumaca",
-   "path": "Assets/Game/Bairro/Sprites/FX/fumaca.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 0.5
-  },
-  {
-   "id": "npc-morador-walk_left-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_left_00.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-morador-walk_left-1",
-   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_left_01.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-morador-walk_left-2",
-   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_left_02.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-morador-walk_left-3",
-   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_left_03.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-morador-walk_left-4",
-   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_left_04.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-morador-walk_left-5",
-   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_left_05.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-morador-walk_right-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_right_00.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-morador-walk_right-1",
-   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_right_01.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-morador-walk_right-2",
-   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_right_02.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-morador-walk_right-3",
-   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_right_03.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-morador-walk_right-4",
-   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_right_04.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-morador-walk_right-5",
-   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_right_05.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-morador-idle_left-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/morador/idle_left_00.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-morador-idle_right-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/morador/idle_right_00.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-idosa-walk_left-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_left_00.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-idosa-walk_left-1",
-   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_left_01.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-idosa-walk_left-2",
-   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_left_02.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-idosa-walk_left-3",
-   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_left_03.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-idosa-walk_left-4",
-   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_left_04.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-idosa-walk_left-5",
-   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_left_05.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-idosa-walk_right-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_right_00.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-idosa-walk_right-1",
-   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_right_01.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-idosa-walk_right-2",
-   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_right_02.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-idosa-walk_right-3",
-   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_right_03.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-idosa-walk_right-4",
-   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_right_04.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-idosa-walk_right-5",
-   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_right_05.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-idosa-idle_left-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/idle_left_00.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-idosa-idle_right-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/idle_right_00.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-a-walk_left-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_left_00.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-a-walk_left-1",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_left_01.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-a-walk_left-2",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_left_02.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-a-walk_left-3",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_left_03.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-a-walk_left-4",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_left_04.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-a-walk_left-5",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_left_05.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-a-walk_right-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_right_00.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-a-walk_right-1",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_right_01.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-a-walk_right-2",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_right_02.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-a-walk_right-3",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_right_03.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-a-walk_right-4",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_right_04.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-a-walk_right-5",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_right_05.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-a-idle_left-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/idle_left_00.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-a-idle_right-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/idle_right_00.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-b-walk_left-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_left_00.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-b-walk_left-1",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_left_01.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-b-walk_left-2",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_left_02.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-b-walk_left-3",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_left_03.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-b-walk_left-4",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_left_04.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-b-walk_left-5",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_left_05.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-b-walk_right-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_right_00.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-b-walk_right-1",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_right_01.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-b-walk_right-2",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_right_02.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-b-walk_right-3",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_right_03.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-b-walk_right-4",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_right_04.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-b-walk_right-5",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_right_05.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-b-idle_left-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/idle_left_00.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-crianca-b-idle_right-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/idle_right_00.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-lavadeira-walk_left-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_left_00.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-lavadeira-walk_left-1",
-   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_left_01.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-lavadeira-walk_left-2",
-   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_left_02.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-lavadeira-walk_left-3",
-   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_left_03.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-lavadeira-walk_left-4",
-   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_left_04.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-lavadeira-walk_left-5",
-   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_left_05.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-lavadeira-walk_right-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_right_00.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-lavadeira-walk_right-1",
-   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_right_01.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-lavadeira-walk_right-2",
-   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_right_02.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-lavadeira-walk_right-3",
-   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_right_03.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-lavadeira-walk_right-4",
-   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_right_04.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-lavadeira-walk_right-5",
-   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_right_05.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-lavadeira-idle_left-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/idle_left_00.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-lavadeira-idle_right-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/idle_right_00.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-artesao-walk_left-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_left_00.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-artesao-walk_left-1",
-   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_left_01.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-artesao-walk_left-2",
-   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_left_02.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-artesao-walk_left-3",
-   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_left_03.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-artesao-walk_left-4",
-   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_left_04.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-artesao-walk_left-5",
-   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_left_05.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-artesao-walk_right-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_right_00.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-artesao-walk_right-1",
-   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_right_01.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-artesao-walk_right-2",
-   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_right_02.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-artesao-walk_right-3",
-   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_right_03.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-artesao-walk_right-4",
-   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_right_04.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-artesao-walk_right-5",
-   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_right_05.png",
-   "ppu": 200,
-   "pivotX": 0.5,
-   "pivotY": 0.1053
-  },
-  {
-   "id": "npc-artesao-idle_left-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/idle_left_00.png",
+   "id": "npc-andarilho-idle_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/andarilho/idle_left_00.png",
    "ppu": 200,
    "pivotX": 0.5,
    "pivotY": 0.1053
   },
   {
-   "id": "npc-artesao-idle_right-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/idle_right_00.png",
+   "id": "npc-andarilho-idle_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/andarilho/idle_right_00.png",
    "ppu": 200,
    "pivotX": 0.5,
    "pivotY": 0.1053
@@ -1054,18 +369,697 @@
    "pivotY": 0.1053
   },
   {
-   "id": "npc-andarilho-idle_left-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/andarilho/idle_left_00.png",
+   "id": "npc-artesao-idle_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/idle_left_00.png",
    "ppu": 200,
    "pivotX": 0.5,
    "pivotY": 0.1053
   },
   {
-   "id": "npc-andarilho-idle_right-0",
-   "path": "Assets/Game/Bairro/Sprites/NPC/andarilho/idle_right_00.png",
+   "id": "npc-artesao-idle_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/idle_right_00.png",
    "ppu": 200,
    "pivotX": 0.5,
    "pivotY": 0.1053
+  },
+  {
+   "id": "npc-artesao-walk_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-artesao-walk_left-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_left_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-artesao-walk_left-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_left_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-artesao-walk_left-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_left_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-artesao-walk_left-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_left_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-artesao-walk_left-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_left_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-artesao-walk_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-artesao-walk_right-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_right_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-artesao-walk_right-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_right_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-artesao-walk_right-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_right_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-artesao-walk_right-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_right_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-artesao-walk_right-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/artesao/walk_right_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-idle_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/idle_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-idle_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/idle_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_left-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_left_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_left-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_left_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_left-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_left_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_left-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_left_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_left-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_left_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_right-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_right_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_right-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_right_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_right-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_right_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_right-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_right_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_right-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_right_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-idle_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/idle_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-idle_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/idle_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_left-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_left_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_left-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_left_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_left-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_left_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_left-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_left_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_left-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_left_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_right-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_right_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_right-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_right_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_right-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_right_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_right-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_right_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_right-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_right_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idosa-idle_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/idle_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idosa-idle_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/idle_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idosa-walk_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idosa-walk_left-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_left_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idosa-walk_left-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_left_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idosa-walk_left-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_left_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idosa-walk_left-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_left_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idosa-walk_left-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_left_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idosa-walk_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idosa-walk_right-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_right_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idosa-walk_right-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_right_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idosa-walk_right-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_right_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idosa-walk_right-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_right_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idosa-walk_right-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idosa/walk_right_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-idle_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/idle_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-idle_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/idle_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_left-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_left_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_left-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_left_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_left-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_left_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_left-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_left_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_left-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_left_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_right-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_right_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_right-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_right_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_right-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_right_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_right-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_right_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_right-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_right_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-idle_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/idle_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-idle_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/idle_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_left-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_left_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_left-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_left_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_left-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_left_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_left-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_left_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_left-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_left_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_right-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_right_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_right-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_right_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_right-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_right_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_right-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_right_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_right-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_right_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "nuvem-sombra",
+   "path": "Assets/Game/Bairro/Sprites/FX/nuvem-sombra.png",
+   "ppu": 26,
+   "pivotX": 0.5,
+   "pivotY": 0.5
+  },
+  {
+   "id": "oficina",
+   "path": "Assets/Game/Bairro/Sprites/Buildings/oficina.png",
+   "ppu": 60,
+   "pivotX": 0.5,
+   "pivotY": 0.0068
+  },
+  {
+   "id": "papel",
+   "path": "Assets/Game/Bairro/Sprites/FX/papel.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.5
+  },
+  {
+   "id": "placa",
+   "path": "Assets/Game/Bairro/Sprites/Props/placa.png",
+   "ppu": 140,
+   "pivotX": 0.5,
+   "pivotY": 0.012
+  },
+  {
+   "id": "poco",
+   "path": "Assets/Game/Bairro/Sprites/Props/poco.png",
+   "ppu": 115,
+   "pivotX": 0.5,
+   "pivotY": 0.0116
+  },
+  {
+   "id": "poeira",
+   "path": "Assets/Game/Bairro/Sprites/FX/poeira.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.5
+  },
+  {
+   "id": "pombo-0",
+   "path": "Assets/Game/Bairro/Sprites/FX/pombo-0.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.05
+  },
+  {
+   "id": "pombo-1",
+   "path": "Assets/Game/Bairro/Sprites/FX/pombo-1.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.05
+  },
+  {
+   "id": "pombo-2",
+   "path": "Assets/Game/Bairro/Sprites/FX/pombo-2.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.05
+  },
+  {
+   "id": "pombo-3",
+   "path": "Assets/Game/Bairro/Sprites/FX/pombo-3.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.05
+  },
+  {
+   "id": "roupa-0",
+   "path": "Assets/Game/Bairro/Sprites/Props/roupa-0.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 1.0
+  },
+  {
+   "id": "roupa-1",
+   "path": "Assets/Game/Bairro/Sprites/Props/roupa-1.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 1.0
+  },
+  {
+   "id": "roupa-2",
+   "path": "Assets/Game/Bairro/Sprites/Props/roupa-2.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 1.0
+  },
+  {
+   "id": "roupa-3",
+   "path": "Assets/Game/Bairro/Sprites/Props/roupa-3.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 1.0
+  },
+  {
+   "id": "roupa-4",
+   "path": "Assets/Game/Bairro/Sprites/Props/roupa-4.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 1.0
   },
   {
    "id": "rua-de-casa_chao",
@@ -1075,11 +1069,11 @@
    "pivotY": 1
   },
   {
-   "id": "casa-yuuki_chao",
-   "path": "Assets/Game/Bairro/Maps/casa-yuuki_chao.png",
+   "id": "varal",
+   "path": "Assets/Game/Bairro/Sprites/Props/varal.png",
    "ppu": 64,
-   "pivotX": 0,
-   "pivotY": 1
+   "pivotX": 0.5,
+   "pivotY": 0.0179
   }
  ],
  "areas": [
@@ -1770,7 +1764,7 @@
    "sway": 0.0,
    "swing": false,
    "flipX": false,
-   "sortBias": -0.01,
+   "sortBias": 0.0,
    "group": "",
    "colW": 1.0,
    "colH": 0.4,
@@ -2886,7 +2880,7 @@
    "kind": "wall"
   },
   {
-   "x": 32.625,
+   "x": 32.475,
    "y": 3.5,
    "w": 0.25,
    "h": 0.3,
@@ -3013,7 +3007,10 @@
    "y": 35.1,
    "w": 4.0,
    "h": 0.8,
-   "label": "Escola do bairro — em breve"
+   "label": "Escola do bairro — em breve",
+   "targetMap": "",
+   "targetX": 0,
+   "targetY": 0
   },
   {
    "id": "saida-moradias",
@@ -3021,7 +3018,10 @@
    "y": 22.65,
    "w": 0.8,
    "h": 3.9,
-   "label": "Moradias — em breve"
+   "label": "Moradias",
+   "targetMap": "Bairro_Moradias",
+   "targetX": 46.0,
+   "targetY": 22.65
   },
   {
    "id": "saida-comercio",
@@ -3029,7 +3029,10 @@
    "y": 22.65,
    "w": 0.8,
    "h": 3.9,
-   "label": "Distrito comercial — em breve"
+   "label": "Distrito comercial — em breve",
+   "targetMap": "",
+   "targetX": 0,
+   "targetY": 0
   }
  ],
  "npcs": [
@@ -3365,6 +3368,7 @@
    "count": 2
   }
  ],
+ "chickens": [],
  "smoke": [
   {
    "x": 16.466666666666665,

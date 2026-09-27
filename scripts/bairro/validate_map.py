@@ -6,7 +6,9 @@ Rasterises every collider (objects + blockers) on a fine grid, then checks that:
   * Yuuki can walk from the spawn to every door, exit and NPC route (flood fill with her
     feet capsule, 0.5 x 0.26 tiles);
   * patrol/wander routes of the villagers never cross a collider.
-Run: python3 scripts/bairro/validate_map.py [Assets/Game/Bairro/Maps/rua-de-casa.json]
+  * every exit to another map lands on a free spot there, outside that map's own exits.
+Run: python3 scripts/bairro/validate_map.py            (all maps)
+     python3 scripts/bairro/validate_map.py <map.json>
 """
 import json
 import sys
@@ -21,8 +23,20 @@ RES = 10  # cells per tile
 FEET = (0.5, 0.26)
 
 
-def main(path):
+MAPS = ROOT / "Assets/Game/Bairro/Maps"
+
+
+def load_all():
+    maps = {}
+    for p in sorted(MAPS.glob("*.json")):
+        d = json.loads(p.read_text(encoding="utf-8"))
+        maps[d["scene"]] = d
+    return maps
+
+
+def main(path, all_maps):
     data = json.loads(Path(path).read_text(encoding="utf-8"))
+    print(f"== {data['name']}")
     problems = []
     ids = {s["id"] for s in data["sprites"]}
     for s in data["sprites"]:
@@ -97,13 +111,27 @@ def main(path):
             problems.append(f"portal {p['id']} target blocked")
         region = reach(p["targetX"], p["targetY"])
         back = [q for q in data["portals"] if q is not p and touches(region, q["x"], q["y"], q["w"], q["h"])]
-        if p["area"] != "rua-de-casa" and not back:
+        target_area = next((a for a in data["areas"] if a["id"] == p["area"]), None)
+        if target_area is not None and not target_area["outdoor"] and not back:
             problems.append(f"no way back from {p['id']}")
         if p["id"] == "porta-casa-yuuki" and not touches(outside, p["x"], p["y"], p["w"], p["h"]):
             problems.append("front door unreachable")
     for e in data["exits"]:
         if not touches(outside, e["x"], e["y"], e["w"], e["h"]):
             problems.append(f"exit {e['id']} unreachable")
+        if e.get("targetMap"):
+            other = all_maps.get(e["targetMap"])
+            if other is None:
+                problems.append(f"exit {e['id']} targets missing map {e['targetMap']}")
+                continue
+            tx, ty = e["targetX"], e["targetY"]
+            for oe in other["exits"]:
+                if abs(tx - oe["x"]) < oe["w"] / 2 + 0.4 and abs(ty + 0.13 - oe["y"]) < oe["h"] / 2 + 0.2:
+                    problems.append(f"exit {e['id']} lands inside {other['name']} exit {oe['id']}")
+            blocked = [b for b in other["blockers"] if abs(tx - b["x"]) < b["w"] / 2 + 0.25 and
+                       abs(ty + 0.13 - b["y"]) < b["h"] / 2 + 0.13]
+            if blocked:
+                problems.append(f"exit {e['id']} lands on a blocker in {other['name']}")
     for n in data["npcs"]:
         pts = [(p["x"], p["y"]) for p in n["points"]]
         if n["mode"] == "wander":
@@ -128,7 +156,7 @@ def main(path):
     img[~grown] = (70, 60, 50)
     img[outside] = (120, 170, 110)
     img[solid & inside] = (40, 30, 30)
-    out = ROOT / "docs/bairro/rua-de-casa-colisao.png"
+    out = ROOT / f"docs/bairro/{data['map']}-colisao.png"
     Image.fromarray(img[::-1][::-1]).resize((W // 2, H // 2), Image.NEAREST).transpose(Image.FLIP_TOP_BOTTOM).save(out)
     print("collision map ->", out)
     if problems:
@@ -141,4 +169,6 @@ def main(path):
 
 
 if __name__ == "__main__":
-    sys.exit(main(sys.argv[1] if len(sys.argv) > 1 else ROOT / "Assets/Game/Bairro/Maps/rua-de-casa.json"))
+    everything = load_all()
+    paths = sys.argv[1:] or [MAPS / f"{d['map']}.json" for d in everything.values()]
+    sys.exit(max(main(p, everything) for p in paths))

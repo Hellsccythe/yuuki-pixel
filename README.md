@@ -4,7 +4,7 @@ Prototipo 2D independente do RPG de mesa. Este diretorio ja e um projeto Unity 6
 
 ## Bairro da Yuuki (vista de cima, estilo Stardew Valley)
 
-O jogo agora segue em vista de cima, com movimento livre em X e Y. O primeiro dos quatro mapas modulares do bairro, a **Rua de Casa**, esta pronto: casa da Yuuki com interior, casa do Tenebris, o beco da historia, pracinha do poco, moradores andando, pombos e vento. No Unity use o menu **Yuuki > Bairro > Construir Rua de Casa** e aperte Play na cena Assets/Game/Scenes/Bairro_RuaDeCasa.unity. Detalhes, os quatro mapas planejados e como regerar a arte em docs/bairro/README.md.
+O jogo agora segue em vista de cima, com movimento livre em X e Y. Dois dos quatro mapas modulares do bairro estao prontos e ligados entre si: a **Rua de Casa** (casa da Yuuki com interior, casa do Tenebris, o beco da historia, pracinha do poco) e as **Moradias** (vielas de barracos, valeta com pontes, pracinha comunitaria, galinheiro), com moradores andando, animais e vento. No Unity use o menu **Yuuki > Bairro > Construir todo o bairro** e aperte Play na cena Assets/Game/Scenes/Bairro_RuaDeCasa.unity. Detalhes, os quatro mapas planejados e como regerar a arte em docs/bairro/README.md.
 
 ## Testar o prototipo de plataforma (antigo)
 

@@ -1,0 +1,3453 @@
+{
+ "version": 1,
+ "map": "moradias",
+ "name": "Moradias",
+ "scene": "Bairro_Moradias",
+ "sprites": [
+  {
+   "id": "arvore",
+   "path": "Assets/Game/Bairro/Sprites/Props/arvore.png",
+   "ppu": 88,
+   "pivotX": 0.5,
+   "pivotY": 0.0327
+  },
+  {
+   "id": "arvore-seca",
+   "path": "Assets/Game/Bairro/Sprites/Props/arvore-seca.png",
+   "ppu": 88,
+   "pivotX": 0.5,
+   "pivotY": 0.0327
+  },
+  {
+   "id": "banco",
+   "path": "Assets/Game/Bairro/Sprites/Props/banco.png",
+   "ppu": 140,
+   "pivotX": 0.5,
+   "pivotY": 0.0169
+  },
+  {
+   "id": "barraco-0",
+   "path": "Assets/Game/Bairro/Sprites/Buildings/barraco-0.png",
+   "ppu": 60,
+   "pivotX": 0.5,
+   "pivotY": 0.0562
+  },
+  {
+   "id": "barraco-1",
+   "path": "Assets/Game/Bairro/Sprites/Buildings/barraco-1.png",
+   "ppu": 60,
+   "pivotX": 0.5,
+   "pivotY": 0.056
+  },
+  {
+   "id": "barraco-2",
+   "path": "Assets/Game/Bairro/Sprites/Buildings/barraco-2.png",
+   "ppu": 60,
+   "pivotX": 0.5845,
+   "pivotY": 0.0519
+  },
+  {
+   "id": "barraco-3",
+   "path": "Assets/Game/Bairro/Sprites/Buildings/barraco-3.png",
+   "ppu": 60,
+   "pivotX": 0.5,
+   "pivotY": 0.0547
+  },
+  {
+   "id": "barraco-4",
+   "path": "Assets/Game/Bairro/Sprites/Buildings/barraco-4.png",
+   "ppu": 60,
+   "pivotX": 0.5,
+   "pivotY": 0.0547
+  },
+  {
+   "id": "barraco-5",
+   "path": "Assets/Game/Bairro/Sprites/Buildings/barraco-5.png",
+   "ppu": 60,
+   "pivotX": 0.5897,
+   "pivotY": 0.0532
+  },
+  {
+   "id": "barris-agua",
+   "path": "Assets/Game/Bairro/Sprites/Props/barris-agua.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.0469
+  },
+  {
+   "id": "caixotes",
+   "path": "Assets/Game/Bairro/Sprites/Props/caixotes.png",
+   "ppu": 140,
+   "pivotX": 0.5,
+   "pivotY": 0.0124
+  },
+  {
+   "id": "carroca-quebrada",
+   "path": "Assets/Game/Bairro/Sprites/Props/carroca-quebrada.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.03
+  },
+  {
+   "id": "casa-abandonada",
+   "path": "Assets/Game/Bairro/Sprites/Buildings/casa-abandonada.png",
+   "ppu": 60,
+   "pivotX": 0.5,
+   "pivotY": 0.0058
+  },
+  {
+   "id": "casa-velha",
+   "path": "Assets/Game/Bairro/Sprites/Buildings/casa-velha.png",
+   "ppu": 60,
+   "pivotX": 0.5,
+   "pivotY": 0.0077
+  },
+  {
+   "id": "cerca-esq",
+   "path": "Assets/Game/Bairro/Sprites/Props/cerca-esq.png",
+   "ppu": 110,
+   "pivotX": 0.5,
+   "pivotY": 0.0205
+  },
+  {
+   "id": "cerca-torta",
+   "path": "Assets/Game/Bairro/Sprites/Props/cerca-torta.png",
+   "ppu": 110,
+   "pivotX": 0.5,
+   "pivotY": 0.0189
+  },
+  {
+   "id": "entulho-0",
+   "path": "Assets/Game/Bairro/Sprites/Props/entulho-0.png",
+   "ppu": 40,
+   "pivotX": 0.5,
+   "pivotY": 0.1
+  },
+  {
+   "id": "entulho-1",
+   "path": "Assets/Game/Bairro/Sprites/Props/entulho-1.png",
+   "ppu": 40,
+   "pivotX": 0.5,
+   "pivotY": 0.1
+  },
+  {
+   "id": "entulho-2",
+   "path": "Assets/Game/Bairro/Sprites/Props/entulho-2.png",
+   "ppu": 40,
+   "pivotX": 0.5,
+   "pivotY": 0.1
+  },
+  {
+   "id": "folha-0",
+   "path": "Assets/Game/Bairro/Sprites/FX/folha-0.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.5
+  },
+  {
+   "id": "folha-1",
+   "path": "Assets/Game/Bairro/Sprites/FX/folha-1.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.5
+  },
+  {
+   "id": "folha-2",
+   "path": "Assets/Game/Bairro/Sprites/FX/folha-2.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.5
+  },
+  {
+   "id": "folha-3",
+   "path": "Assets/Game/Bairro/Sprites/FX/folha-3.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.5
+  },
+  {
+   "id": "fumaca",
+   "path": "Assets/Game/Bairro/Sprites/FX/fumaca.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.5
+  },
+  {
+   "id": "galinha-branca-0",
+   "path": "Assets/Game/Bairro/Sprites/FX/galinha-branca-0.png",
+   "ppu": 54,
+   "pivotX": 0.5,
+   "pivotY": 0.0833
+  },
+  {
+   "id": "galinha-branca-1",
+   "path": "Assets/Game/Bairro/Sprites/FX/galinha-branca-1.png",
+   "ppu": 54,
+   "pivotX": 0.5,
+   "pivotY": 0.0833
+  },
+  {
+   "id": "galinha-branca-2",
+   "path": "Assets/Game/Bairro/Sprites/FX/galinha-branca-2.png",
+   "ppu": 54,
+   "pivotX": 0.5,
+   "pivotY": 0.0833
+  },
+  {
+   "id": "galinha-branca-3",
+   "path": "Assets/Game/Bairro/Sprites/FX/galinha-branca-3.png",
+   "ppu": 54,
+   "pivotX": 0.5,
+   "pivotY": 0.0833
+  },
+  {
+   "id": "galinha-carijo-0",
+   "path": "Assets/Game/Bairro/Sprites/FX/galinha-carijo-0.png",
+   "ppu": 54,
+   "pivotX": 0.5,
+   "pivotY": 0.0833
+  },
+  {
+   "id": "galinha-carijo-1",
+   "path": "Assets/Game/Bairro/Sprites/FX/galinha-carijo-1.png",
+   "ppu": 54,
+   "pivotX": 0.5,
+   "pivotY": 0.0833
+  },
+  {
+   "id": "galinha-carijo-2",
+   "path": "Assets/Game/Bairro/Sprites/FX/galinha-carijo-2.png",
+   "ppu": 54,
+   "pivotX": 0.5,
+   "pivotY": 0.0833
+  },
+  {
+   "id": "galinha-carijo-3",
+   "path": "Assets/Game/Bairro/Sprites/FX/galinha-carijo-3.png",
+   "ppu": 54,
+   "pivotX": 0.5,
+   "pivotY": 0.0833
+  },
+  {
+   "id": "galinha-ruiva-0",
+   "path": "Assets/Game/Bairro/Sprites/FX/galinha-ruiva-0.png",
+   "ppu": 54,
+   "pivotX": 0.5,
+   "pivotY": 0.0833
+  },
+  {
+   "id": "galinha-ruiva-1",
+   "path": "Assets/Game/Bairro/Sprites/FX/galinha-ruiva-1.png",
+   "ppu": 54,
+   "pivotX": 0.5,
+   "pivotY": 0.0833
+  },
+  {
+   "id": "galinha-ruiva-2",
+   "path": "Assets/Game/Bairro/Sprites/FX/galinha-ruiva-2.png",
+   "ppu": 54,
+   "pivotX": 0.5,
+   "pivotY": 0.0833
+  },
+  {
+   "id": "galinha-ruiva-3",
+   "path": "Assets/Game/Bairro/Sprites/FX/galinha-ruiva-3.png",
+   "ppu": 54,
+   "pivotX": 0.5,
+   "pivotY": 0.0833
+  },
+  {
+   "id": "galinheiro",
+   "path": "Assets/Game/Bairro/Sprites/Props/galinheiro.png",
+   "ppu": 46,
+   "pivotX": 0.5,
+   "pivotY": 0.025
+  },
+  {
+   "id": "horta",
+   "path": "Assets/Game/Bairro/Sprites/Props/horta.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.0357
+  },
+  {
+   "id": "lenha",
+   "path": "Assets/Game/Bairro/Sprites/Props/lenha.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.0429
+  },
+  {
+   "id": "lixo",
+   "path": "Assets/Game/Bairro/Sprites/Props/lixo.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.0357
+  },
+  {
+   "id": "lixo-2",
+   "path": "Assets/Game/Bairro/Sprites/Props/lixo-2.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.0357
+  },
+  {
+   "id": "mato-0",
+   "path": "Assets/Game/Bairro/Sprites/Props/mato-0.png",
+   "ppu": 46,
+   "pivotX": 0.5,
+   "pivotY": 0.0652
+  },
+  {
+   "id": "mato-1",
+   "path": "Assets/Game/Bairro/Sprites/Props/mato-1.png",
+   "ppu": 46,
+   "pivotX": 0.5,
+   "pivotY": 0.0652
+  },
+  {
+   "id": "mato-2",
+   "path": "Assets/Game/Bairro/Sprites/Props/mato-2.png",
+   "ppu": 46,
+   "pivotX": 0.5,
+   "pivotY": 0.0652
+  },
+  {
+   "id": "mato-3",
+   "path": "Assets/Game/Bairro/Sprites/Props/mato-3.png",
+   "ppu": 46,
+   "pivotX": 0.5,
+   "pivotY": 0.0652
+  },
+  {
+   "id": "mato-4",
+   "path": "Assets/Game/Bairro/Sprites/Props/mato-4.png",
+   "ppu": 46,
+   "pivotX": 0.5,
+   "pivotY": 0.0652
+  },
+  {
+   "id": "mato-5",
+   "path": "Assets/Game/Bairro/Sprites/Props/mato-5.png",
+   "ppu": 46,
+   "pivotX": 0.5,
+   "pivotY": 0.0652
+  },
+  {
+   "id": "moradias_chao",
+   "path": "Assets/Game/Bairro/Maps/moradias_chao.png",
+   "ppu": 64,
+   "pivotX": 0,
+   "pivotY": 1
+  },
+  {
+   "id": "muro",
+   "path": "Assets/Game/Bairro/Sprites/Props/muro.png",
+   "ppu": 105,
+   "pivotX": 0.5,
+   "pivotY": 0.0116
+  },
+  {
+   "id": "muro-gasto",
+   "path": "Assets/Game/Bairro/Sprites/Props/muro-gasto.png",
+   "ppu": 105,
+   "pivotX": 0.5,
+   "pivotY": 0.0116
+  },
+  {
+   "id": "npc-andarilho-idle_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/andarilho/idle_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-andarilho-idle_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/andarilho/idle_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-andarilho-walk_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/andarilho/walk_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-andarilho-walk_left-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/andarilho/walk_left_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-andarilho-walk_left-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/andarilho/walk_left_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-andarilho-walk_left-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/andarilho/walk_left_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-andarilho-walk_left-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/andarilho/walk_left_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-andarilho-walk_left-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/andarilho/walk_left_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-andarilho-walk_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/andarilho/walk_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-andarilho-walk_right-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/andarilho/walk_right_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-andarilho-walk_right-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/andarilho/walk_right_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-andarilho-walk_right-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/andarilho/walk_right_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-andarilho-walk_right-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/andarilho/walk_right_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-andarilho-walk_right-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/andarilho/walk_right_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-idle_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/idle_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-idle_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/idle_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_left-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_left_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_left-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_left_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_left-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_left_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_left-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_left_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_left-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_left_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_right-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_right_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_right-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_right_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_right-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_right_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_right-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_right_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-a-walk_right-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-a/walk_right_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-idle_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/idle_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-idle_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/idle_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_left-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_left_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_left-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_left_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_left-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_left_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_left-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_left_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_left-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_left_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_right-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_right_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_right-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_right_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_right-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_right_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_right-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_right_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-b-walk_right-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-b/walk_right_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-c-idle_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-c/idle_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-c-idle_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-c/idle_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-c-walk_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-c/walk_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-c-walk_left-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-c/walk_left_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-c-walk_left-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-c/walk_left_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-c-walk_left-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-c/walk_left_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-c-walk_left-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-c/walk_left_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-c-walk_left-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-c/walk_left_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-c-walk_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-c/walk_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-c-walk_right-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-c/walk_right_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-c-walk_right-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-c/walk_right_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-c-walk_right-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-c/walk_right_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-c-walk_right-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-c/walk_right_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-crianca-c-walk_right-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/crianca-c/walk_right_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idoso-idle_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idoso/idle_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idoso-idle_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idoso/idle_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idoso-walk_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idoso/walk_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idoso-walk_left-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idoso/walk_left_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idoso-walk_left-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idoso/walk_left_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idoso-walk_left-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idoso/walk_left_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idoso-walk_left-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idoso/walk_left_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idoso-walk_left-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idoso/walk_left_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idoso-walk_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idoso/walk_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idoso-walk_right-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idoso/walk_right_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idoso-walk_right-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idoso/walk_right_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idoso-walk_right-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idoso/walk_right_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idoso-walk_right-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idoso/walk_right_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-idoso-walk_right-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/idoso/walk_right_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-idle_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/idle_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-idle_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/idle_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_left-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_left_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_left-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_left_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_left-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_left_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_left-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_left_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_left-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_left_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_right-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_right_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_right-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_right_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_right-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_right_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_right-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_right_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-lavadeira-walk_right-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/lavadeira/walk_right_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-idle_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/idle_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-idle_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/idle_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_left-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_left_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_left-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_left_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_left-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_left_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_left-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_left_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_left-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_left_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_right-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_right_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_right-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_right_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_right-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_right_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_right-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_right_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-morador-walk_right-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/morador/walk_right_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-vizinha-idle_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/vizinha/idle_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-vizinha-idle_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/vizinha/idle_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-vizinha-walk_left-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/vizinha/walk_left_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-vizinha-walk_left-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/vizinha/walk_left_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-vizinha-walk_left-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/vizinha/walk_left_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-vizinha-walk_left-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/vizinha/walk_left_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-vizinha-walk_left-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/vizinha/walk_left_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-vizinha-walk_left-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/vizinha/walk_left_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-vizinha-walk_right-0",
+   "path": "Assets/Game/Bairro/Sprites/NPC/vizinha/walk_right_00.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-vizinha-walk_right-1",
+   "path": "Assets/Game/Bairro/Sprites/NPC/vizinha/walk_right_01.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-vizinha-walk_right-2",
+   "path": "Assets/Game/Bairro/Sprites/NPC/vizinha/walk_right_02.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-vizinha-walk_right-3",
+   "path": "Assets/Game/Bairro/Sprites/NPC/vizinha/walk_right_03.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-vizinha-walk_right-4",
+   "path": "Assets/Game/Bairro/Sprites/NPC/vizinha/walk_right_04.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "npc-vizinha-walk_right-5",
+   "path": "Assets/Game/Bairro/Sprites/NPC/vizinha/walk_right_05.png",
+   "ppu": 200,
+   "pivotX": 0.5,
+   "pivotY": 0.1053
+  },
+  {
+   "id": "nuvem-sombra",
+   "path": "Assets/Game/Bairro/Sprites/FX/nuvem-sombra.png",
+   "ppu": 26,
+   "pivotX": 0.5,
+   "pivotY": 0.5
+  },
+  {
+   "id": "papel",
+   "path": "Assets/Game/Bairro/Sprites/FX/papel.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.5
+  },
+  {
+   "id": "placa",
+   "path": "Assets/Game/Bairro/Sprites/Props/placa.png",
+   "ppu": 140,
+   "pivotX": 0.5,
+   "pivotY": 0.012
+  },
+  {
+   "id": "poco",
+   "path": "Assets/Game/Bairro/Sprites/Props/poco.png",
+   "ppu": 115,
+   "pivotX": 0.5,
+   "pivotY": 0.0116
+  },
+  {
+   "id": "poeira",
+   "path": "Assets/Game/Bairro/Sprites/FX/poeira.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.5
+  },
+  {
+   "id": "pombo-0",
+   "path": "Assets/Game/Bairro/Sprites/FX/pombo-0.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.05
+  },
+  {
+   "id": "pombo-1",
+   "path": "Assets/Game/Bairro/Sprites/FX/pombo-1.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.05
+  },
+  {
+   "id": "pombo-2",
+   "path": "Assets/Game/Bairro/Sprites/FX/pombo-2.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.05
+  },
+  {
+   "id": "pombo-3",
+   "path": "Assets/Game/Bairro/Sprites/FX/pombo-3.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.05
+  },
+  {
+   "id": "roupa-0",
+   "path": "Assets/Game/Bairro/Sprites/Props/roupa-0.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 1.0
+  },
+  {
+   "id": "roupa-1",
+   "path": "Assets/Game/Bairro/Sprites/Props/roupa-1.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 1.0
+  },
+  {
+   "id": "roupa-2",
+   "path": "Assets/Game/Bairro/Sprites/Props/roupa-2.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 1.0
+  },
+  {
+   "id": "roupa-3",
+   "path": "Assets/Game/Bairro/Sprites/Props/roupa-3.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 1.0
+  },
+  {
+   "id": "roupa-4",
+   "path": "Assets/Game/Bairro/Sprites/Props/roupa-4.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 1.0
+  },
+  {
+   "id": "roupa-5",
+   "path": "Assets/Game/Bairro/Sprites/Props/roupa-5.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 1.0
+  },
+  {
+   "id": "roupa-6",
+   "path": "Assets/Game/Bairro/Sprites/Props/roupa-6.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 1.0
+  },
+  {
+   "id": "roupa-7",
+   "path": "Assets/Game/Bairro/Sprites/Props/roupa-7.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 1.0
+  },
+  {
+   "id": "varal",
+   "path": "Assets/Game/Bairro/Sprites/Props/varal.png",
+   "ppu": 64,
+   "pivotX": 0.5,
+   "pivotY": 0.0179
+  }
+ ],
+ "areas": [
+  {
+   "id": "moradias",
+   "name": "Moradias",
+   "x": 0,
+   "y": 0,
+   "w": 48,
+   "h": 36,
+   "ground": "moradias_chao",
+   "outdoor": true
+  }
+ ],
+ "objects": [
+  {
+   "sprite": "muro",
+   "x": 2.2142857142857144,
+   "y": 0.1,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 4.251428571428572,
+   "colH": 0.6,
+   "colX": 0.0,
+   "colY": 0.3
+  },
+  {
+   "sprite": "muro",
+   "x": 6.510000000000001,
+   "y": 0.1,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": true,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 4.251428571428572,
+   "colH": 0.6,
+   "colX": 0.0,
+   "colY": 0.3
+  },
+  {
+   "sprite": "muro-gasto",
+   "x": 10.805714285714288,
+   "y": 0.1,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 4.251428571428572,
+   "colH": 0.6,
+   "colX": 0.0,
+   "colY": 0.3
+  },
+  {
+   "sprite": "muro",
+   "x": 15.101428571428574,
+   "y": 0.1,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": true,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 4.251428571428572,
+   "colH": 0.6,
+   "colX": 0.0,
+   "colY": 0.3
+  },
+  {
+   "sprite": "muro",
+   "x": 19.39714285714286,
+   "y": 0.1,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 4.251428571428572,
+   "colH": 0.6,
+   "colX": 0.0,
+   "colY": 0.3
+  },
+  {
+   "sprite": "muro-gasto",
+   "x": 23.692857142857147,
+   "y": 0.1,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": true,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 4.251428571428572,
+   "colH": 0.6,
+   "colX": 0.0,
+   "colY": 0.3
+  },
+  {
+   "sprite": "muro",
+   "x": 27.988571428571433,
+   "y": 0.1,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 4.251428571428572,
+   "colH": 0.6,
+   "colX": 0.0,
+   "colY": 0.3
+  },
+  {
+   "sprite": "muro",
+   "x": 32.284285714285716,
+   "y": 0.1,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": true,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 4.251428571428572,
+   "colH": 0.6,
+   "colX": 0.0,
+   "colY": 0.3
+  },
+  {
+   "sprite": "muro-gasto",
+   "x": 36.58,
+   "y": 0.1,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 4.251428571428572,
+   "colH": 0.6,
+   "colX": 0.0,
+   "colY": 0.3
+  },
+  {
+   "sprite": "muro",
+   "x": 40.87571428571428,
+   "y": 0.1,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": true,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 4.251428571428572,
+   "colH": 0.6,
+   "colX": 0.0,
+   "colY": 0.3
+  },
+  {
+   "sprite": "muro",
+   "x": 45.171428571428564,
+   "y": 0.1,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 4.251428571428572,
+   "colH": 0.6,
+   "colX": 0.0,
+   "colY": 0.3
+  },
+  {
+   "sprite": "muro-gasto",
+   "x": 45.785714285714285,
+   "y": 0.1,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": true,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 4.251428571428572,
+   "colH": 0.6,
+   "colX": 0.0,
+   "colY": 0.3
+  },
+  {
+   "sprite": "arvore-seca",
+   "x": 1.1138601545305404,
+   "y": 32.846,
+   "sway": 1.383280377645961,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.9,
+   "colH": 0.5,
+   "colX": 0.0,
+   "colY": 0.25
+  },
+  {
+   "sprite": "arvore-seca",
+   "x": 4.575580014920148,
+   "y": 32.7769,
+   "sway": 1.4099649917100745,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.9,
+   "colH": 0.5,
+   "colX": 0.0,
+   "colY": 0.25
+  },
+  {
+   "sprite": "arvore",
+   "x": 8.041633818097726,
+   "y": 33.0987,
+   "sway": 1.2968373533056863,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.9,
+   "colH": 0.5,
+   "colX": 0.0,
+   "colY": 0.25
+  },
+  {
+   "sprite": "arvore",
+   "x": 11.941558857909985,
+   "y": 32.7825,
+   "sway": 1.1858021731465758,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.9,
+   "colH": 0.5,
+   "colX": 0.0,
+   "colY": 0.25
+  },
+  {
+   "sprite": "arvore-seca",
+   "x": 19.725401249990714,
+   "y": 32.701,
+   "sway": 1.5909502015751689,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.9,
+   "colH": 0.5,
+   "colX": 0.0,
+   "colY": 0.25
+  },
+  {
+   "sprite": "arvore",
+   "x": 25.469534053393485,
+   "y": 33.0864,
+   "sway": 1.2631434770831427,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.9,
+   "colH": 0.5,
+   "colX": 0.0,
+   "colY": 0.25
+  },
+  {
+   "sprite": "arvore-seca",
+   "x": 30.76948588631518,
+   "y": 32.7192,
+   "sway": 1.2947573126746663,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.9,
+   "colH": 0.5,
+   "colX": 0.0,
+   "colY": 0.25
+  },
+  {
+   "sprite": "arvore-seca",
+   "x": 36.39050566593616,
+   "y": 33.05,
+   "sway": 1.7423550904962393,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.9,
+   "colH": 0.5,
+   "colX": 0.0,
+   "colY": 0.25
+  },
+  {
+   "sprite": "arvore-seca",
+   "x": 42.03120172498431,
+   "y": 32.9628,
+   "sway": 1.3877629110282514,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.9,
+   "colH": 0.5,
+   "colX": 0.0,
+   "colY": 0.25
+  },
+  {
+   "sprite": "arvore-seca",
+   "x": 46.322283732011655,
+   "y": 32.7536,
+   "sway": 1.1878928963817557,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.9,
+   "colH": 0.5,
+   "colX": 0.0,
+   "colY": 0.25
+  },
+  {
+   "sprite": "cerca-torta",
+   "x": 1.4,
+   "y": 28.0,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "mato-1",
+   "x": 2.3,
+   "y": 27.2,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "cerca-torta",
+   "x": 1.4,
+   "y": 21.8,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "mato-1",
+   "x": 2.3,
+   "y": 21.0,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "cerca-torta",
+   "x": 1.4,
+   "y": 15.5,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "mato-5",
+   "x": 2.3,
+   "y": 14.7,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "cerca-torta",
+   "x": 1.4,
+   "y": 9.2,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "mato-5",
+   "x": 2.3,
+   "y": 8.4,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "cerca-torta",
+   "x": 1.4,
+   "y": 3.0,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "mato-4",
+   "x": 2.3,
+   "y": 2.2,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "barraco-0",
+   "x": 9.6,
+   "y": 24.8,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 4.62,
+   "colH": 2.2230000000000003,
+   "colX": 0.0,
+   "colY": 1.4615
+  },
+  {
+   "sprite": "barraco-3",
+   "x": 17.8,
+   "y": 24.8,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 4.26,
+   "colH": 2.2953333333333332,
+   "colX": 0.0,
+   "colY": 1.4976666666666665
+  },
+  {
+   "sprite": "casa-abandonada",
+   "x": 28.2,
+   "y": 24.8,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 6.525,
+   "colH": 4.407500000000001,
+   "colX": 0.0,
+   "colY": 2.5537500000000004
+  },
+  {
+   "sprite": "barraco-2",
+   "x": 39.0,
+   "y": 24.8,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 6.210000000000001,
+   "colH": 2.44,
+   "colX": 0.0,
+   "colY": 1.5699999999999998
+  },
+  {
+   "sprite": "barraco-4",
+   "x": 44.9,
+   "y": 24.8,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 4.08,
+   "colH": 2.2953333333333332,
+   "colX": 0.0,
+   "colY": 1.4976666666666665
+  },
+  {
+   "sprite": "lixo",
+   "x": 14.4,
+   "y": 30.6,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 1.6,
+   "colH": 0.6,
+   "colX": 0.0,
+   "colY": 0.3
+  },
+  {
+   "sprite": "lenha",
+   "x": 34.1,
+   "y": 30.8,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 1.6,
+   "colH": 0.5,
+   "colX": 0.0,
+   "colY": 0.25
+  },
+  {
+   "sprite": "mato-3",
+   "x": 13.9,
+   "y": 28.4,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "mato-0",
+   "x": 34.6,
+   "y": 27.6,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "barris-agua",
+   "x": 7.0,
+   "y": 24.6,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 1.1,
+   "colH": 0.4,
+   "colX": 0.0,
+   "colY": 0.2
+  },
+  {
+   "sprite": "caixotes",
+   "x": 20.6,
+   "y": 25.0,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 1.2,
+   "colH": 0.5,
+   "colX": 0.0,
+   "colY": 0.25
+  },
+  {
+   "sprite": "entulho-1",
+   "x": 31.6,
+   "y": 24.4,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "entulho-0",
+   "x": 25.0,
+   "y": 24.5,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "placa",
+   "x": 46.6,
+   "y": 24.4,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": true,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.4,
+   "colH": 0.3,
+   "colX": 0.0,
+   "colY": 0.15
+  },
+  {
+   "sprite": "mato-1",
+   "x": 24.5,
+   "y": 20.4,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "mato-4",
+   "x": 6.8,
+   "y": 20.4,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "poco",
+   "x": 13.4,
+   "y": 18.0,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 1.9,
+   "colH": 0.9,
+   "colX": 0.0,
+   "colY": 0.45
+  },
+  {
+   "sprite": "varal",
+   "x": 10.0,
+   "y": 14.6,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "varal-a",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "roupa-0",
+   "x": 8.6875,
+   "y": 16.0983,
+   "sway": 10,
+   "swing": true,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "varal-a",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "roupa-1",
+   "x": 9.34375,
+   "y": 16.031,
+   "sway": 11,
+   "swing": true,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "varal-a",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "roupa-2",
+   "x": 10.0,
+   "y": 16.0063,
+   "sway": 12,
+   "swing": true,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "varal-a",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "roupa-3",
+   "x": 10.65625,
+   "y": 16.0334,
+   "sway": 13,
+   "swing": true,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "varal-a",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "roupa-4",
+   "x": 11.28125,
+   "y": 16.0983,
+   "sway": 14,
+   "swing": true,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "varal-a",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "varal",
+   "x": 17.6,
+   "y": 14.8,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "varal-b",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "roupa-3",
+   "x": 16.2875,
+   "y": 16.2983,
+   "sway": 10,
+   "swing": true,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "varal-b",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "roupa-4",
+   "x": 16.94375,
+   "y": 16.231,
+   "sway": 11,
+   "swing": true,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "varal-b",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "roupa-5",
+   "x": 17.6,
+   "y": 16.2063,
+   "sway": 12,
+   "swing": true,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "varal-b",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "roupa-6",
+   "x": 18.25625,
+   "y": 16.2334,
+   "sway": 13,
+   "swing": true,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "varal-b",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "roupa-7",
+   "x": 18.88125,
+   "y": 16.2983,
+   "sway": 14,
+   "swing": true,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "varal-b",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "barris-agua",
+   "x": 8.3,
+   "y": 19.4,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 1.1,
+   "colH": 0.4,
+   "colX": 0.0,
+   "colY": 0.2
+  },
+  {
+   "sprite": "banco",
+   "x": 19.6,
+   "y": 19.6,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 1.8,
+   "colH": 0.45,
+   "colX": 0.0,
+   "colY": 0.225
+  },
+  {
+   "sprite": "lixo-2",
+   "x": 20.2,
+   "y": 13.3,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 1.6,
+   "colH": 0.6,
+   "colX": 0.0,
+   "colY": 0.3
+  },
+  {
+   "sprite": "mato-2",
+   "x": 7.9,
+   "y": 16.0,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "mato-0",
+   "x": 20.4,
+   "y": 16.6,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "mato-5",
+   "x": 11.2,
+   "y": 20.2,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "mato-3",
+   "x": 15.4,
+   "y": 13.4,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "barraco-1",
+   "x": 9.8,
+   "y": 8.6,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": true,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 3.9,
+   "colH": 2.2333333333333334,
+   "colX": 0.0,
+   "colY": 1.4666666666666668
+  },
+  {
+   "sprite": "barraco-0",
+   "x": 16.4,
+   "y": 8.6,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 4.62,
+   "colH": 2.2230000000000003,
+   "colX": 0.0,
+   "colY": 1.4615
+  },
+  {
+   "sprite": "caixotes",
+   "x": 19.6,
+   "y": 8.8,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 1.2,
+   "colH": 0.5,
+   "colX": 0.0,
+   "colY": 0.25
+  },
+  {
+   "sprite": "barris-agua",
+   "x": 12.9,
+   "y": 8.5,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 1.1,
+   "colH": 0.4,
+   "colX": 0.0,
+   "colY": 0.2
+  },
+  {
+   "sprite": "cerca-esq",
+   "x": 26.1,
+   "y": 19.9,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 2.0,
+   "colH": 0.4,
+   "colX": 0.0,
+   "colY": 0.2
+  },
+  {
+   "sprite": "cerca-torta",
+   "x": 42.2,
+   "y": 19.8,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 3.0,
+   "colH": 0.45,
+   "colX": 0.0,
+   "colY": 0.225
+  },
+  {
+   "sprite": "galinheiro",
+   "x": 29.6,
+   "y": 16.6,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 3.0,
+   "colH": 1.0,
+   "colX": 0.0,
+   "colY": 0.5
+  },
+  {
+   "sprite": "carroca-quebrada",
+   "x": 38.6,
+   "y": 17.2,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 2.4,
+   "colH": 0.7,
+   "colX": 0.0,
+   "colY": 0.35
+  },
+  {
+   "sprite": "horta",
+   "x": 44.2,
+   "y": 16.8,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 2.2,
+   "colH": 1.0,
+   "colX": 0.0,
+   "colY": 0.6
+  },
+  {
+   "sprite": "lenha",
+   "x": 46.4,
+   "y": 14.6,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 1.6,
+   "colH": 0.5,
+   "colX": 0.0,
+   "colY": 0.25
+  },
+  {
+   "sprite": "mato-1",
+   "x": 35.2,
+   "y": 18.8,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "mato-3",
+   "x": 41.2,
+   "y": 14.2,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "mato-5",
+   "x": 25.4,
+   "y": 14.4,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "mato-0",
+   "x": 47.0,
+   "y": 19.0,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "barraco-1",
+   "x": 26.8,
+   "y": 8.6,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 3.9,
+   "colH": 2.2333333333333334,
+   "colX": 0.0,
+   "colY": 1.4666666666666668
+  },
+  {
+   "sprite": "barraco-5",
+   "x": 33.4,
+   "y": 8.6,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 5.8500000000000005,
+   "colH": 2.367666666666667,
+   "colX": 0.0,
+   "colY": 1.5338333333333334
+  },
+  {
+   "sprite": "casa-velha",
+   "x": 40.2,
+   "y": 8.6,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": true,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 5.91,
+   "colH": 2.908333333333333,
+   "colX": 0.0,
+   "colY": 1.8041666666666667
+  },
+  {
+   "sprite": "barraco-4",
+   "x": 45.6,
+   "y": 8.6,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": true,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 4.08,
+   "colH": 2.2953333333333332,
+   "colX": 0.0,
+   "colY": 1.4976666666666665
+  },
+  {
+   "sprite": "lixo",
+   "x": 9.2,
+   "y": 3.6,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 1.6,
+   "colH": 0.6,
+   "colX": 0.0,
+   "colY": 0.3
+  },
+  {
+   "sprite": "lixo-2",
+   "x": 31.4,
+   "y": 2.6,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 1.6,
+   "colH": 0.6,
+   "colX": 0.0,
+   "colY": 0.3
+  },
+  {
+   "sprite": "varal",
+   "x": 40.4,
+   "y": 3.2,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "varal-c",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "roupa-5",
+   "x": 39.0875,
+   "y": 4.6983,
+   "sway": 10,
+   "swing": true,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "varal-c",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "roupa-6",
+   "x": 39.74375,
+   "y": 4.631,
+   "sway": 11,
+   "swing": true,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "varal-c",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "roupa-7",
+   "x": 40.4,
+   "y": 4.6063,
+   "sway": 12,
+   "swing": true,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "varal-c",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "roupa-0",
+   "x": 41.05625,
+   "y": 4.6334,
+   "sway": 13,
+   "swing": true,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "varal-c",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "roupa-1",
+   "x": 41.68125,
+   "y": 4.6983,
+   "sway": 14,
+   "swing": true,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "varal-c",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "arvore-seca",
+   "x": 4.2,
+   "y": 2.6,
+   "sway": 1.8,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.8,
+   "colH": 0.45,
+   "colX": 0.0,
+   "colY": 0.225
+  },
+  {
+   "sprite": "arvore",
+   "x": 18.0,
+   "y": 1.8,
+   "sway": 1.2,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.9,
+   "colH": 0.5,
+   "colX": 0.0,
+   "colY": 0.25
+  },
+  {
+   "sprite": "caixotes",
+   "x": 35.4,
+   "y": 2.4,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 1.4,
+   "colH": 0.55,
+   "colX": 0.0,
+   "colY": 0.275
+  },
+  {
+   "sprite": "entulho-2",
+   "x": 16.2,
+   "y": 4.8,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "entulho-0",
+   "x": 46.4,
+   "y": 5.0,
+   "sway": 0.0,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "mato-0",
+   "x": 6.2,
+   "y": 5.0,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "mato-3",
+   "x": 11.0,
+   "y": 2.0,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "mato-1",
+   "x": 20.2,
+   "y": 4.4,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "mato-5",
+   "x": 28.8,
+   "y": 1.8,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "mato-2",
+   "x": 37.8,
+   "y": 4.8,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "mato-0",
+   "x": 47.0,
+   "y": 2.0,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "mato-4",
+   "x": 24.8,
+   "y": 1.6,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  },
+  {
+   "sprite": "mato-3",
+   "x": 33.2,
+   "y": 5.0,
+   "sway": 6,
+   "swing": false,
+   "flipX": false,
+   "sortBias": 0.0,
+   "group": "",
+   "colW": 0.0,
+   "colH": 0.0,
+   "colX": 0.0,
+   "colY": 0.0
+  }
+ ],
+ "blockers": [
+  {
+   "x": 24.0,
+   "y": 34.3,
+   "w": 48,
+   "h": 3.4,
+   "kind": "wall"
+  },
+  {
+   "x": 1.2000000000000002,
+   "y": 18.0,
+   "w": 3.6,
+   "h": 36,
+   "kind": "wall"
+  },
+  {
+   "x": 48.25,
+   "y": 30.3,
+   "w": 0.7,
+   "h": 11.4,
+   "kind": "wall"
+  },
+  {
+   "x": 48.25,
+   "y": 10.2,
+   "w": 0.7,
+   "h": 21,
+   "kind": "wall"
+  },
+  {
+   "x": 24.0,
+   "y": 0.55,
+   "w": 48,
+   "h": 1.1,
+   "kind": "wall"
+  },
+  {
+   "x": 22.3,
+   "y": 28.55,
+   "w": 1.4,
+   "h": 8.1,
+   "kind": "water"
+  },
+  {
+   "x": 22.3,
+   "y": 14.5,
+   "w": 1.4,
+   "h": 12.600000000000001,
+   "kind": "water"
+  },
+  {
+   "x": 22.3,
+   "y": 3.4,
+   "w": 1.4,
+   "h": 4.599999999999998,
+   "kind": "water"
+  },
+  {
+   "x": 6.8,
+   "y": 28.8,
+   "w": 1.2,
+   "h": 7.6,
+   "kind": "wall"
+  },
+  {
+   "x": 15.65,
+   "y": 28.9,
+   "w": 0.5,
+   "h": 7.4,
+   "kind": "wall"
+  },
+  {
+   "x": 13.35,
+   "y": 28.9,
+   "w": 0.5,
+   "h": 7.4,
+   "kind": "wall"
+  },
+  {
+   "x": 33.1,
+   "y": 28.9,
+   "w": 0.4,
+   "h": 7.4,
+   "kind": "wall"
+  },
+  {
+   "x": 35.2,
+   "y": 28.9,
+   "w": 0.4,
+   "h": 7.4,
+   "kind": "wall"
+  },
+  {
+   "x": 20.75,
+   "y": 28.9,
+   "w": 1.7,
+   "h": 7.4,
+   "kind": "wall"
+  },
+  {
+   "x": 23.8,
+   "y": 28.9,
+   "w": 1.6,
+   "h": 7.4,
+   "kind": "wall"
+  },
+  {
+   "x": 42.2,
+   "y": 28.9,
+   "w": 1.0,
+   "h": 7.4,
+   "kind": "wall"
+  },
+  {
+   "x": 36.5,
+   "y": 21.7,
+   "w": 1.02,
+   "h": 0.5249999999999999,
+   "kind": "hole"
+  },
+  {
+   "x": 10.6,
+   "y": 23.5,
+   "w": 0.765,
+   "h": 0.44999999999999996,
+   "kind": "hole"
+  },
+  {
+   "x": 8.225,
+   "y": 14.7,
+   "w": 0.25,
+   "h": 0.3,
+   "kind": "wall"
+  },
+  {
+   "x": 11.775,
+   "y": 14.7,
+   "w": 0.25,
+   "h": 0.3,
+   "kind": "wall"
+  },
+  {
+   "x": 15.825000000000001,
+   "y": 14.9,
+   "w": 0.25,
+   "h": 0.3,
+   "kind": "wall"
+  },
+  {
+   "x": 19.375,
+   "y": 14.9,
+   "w": 0.25,
+   "h": 0.3,
+   "kind": "wall"
+  },
+  {
+   "x": 14.15,
+   "y": 11.9,
+   "w": 13.9,
+   "h": 1.4,
+   "kind": "wall"
+  },
+  {
+   "x": 36.15,
+   "y": 11.4,
+   "w": 23.5,
+   "h": 2.4,
+   "kind": "wall"
+  },
+  {
+   "x": 23.7,
+   "y": 14.5,
+   "w": 1.4,
+   "h": 12.4,
+   "kind": "wall"
+  },
+  {
+   "x": 26.6,
+   "y": 3.5,
+   "w": 1.87,
+   "h": 0.8999999999999999,
+   "kind": "hole"
+  },
+  {
+   "x": 13.0,
+   "y": 4.4,
+   "w": 1.19,
+   "h": 0.675,
+   "kind": "hole"
+  },
+  {
+   "x": 38.625,
+   "y": 3.3,
+   "w": 0.25,
+   "h": 0.3,
+   "kind": "wall"
+  },
+  {
+   "x": 42.175,
+   "y": 3.3,
+   "w": 0.25,
+   "h": 0.3,
+   "kind": "wall"
+  },
+  {
+   "x": 48.25,
+   "y": 22.65,
+   "w": 0.7,
+   "h": 3.9,
+   "kind": "wall"
+  }
+ ],
+ "portals": [],
+ "exits": [
+  {
+   "id": "saida-rua-de-casa",
+   "x": 47.6,
+   "y": 22.65,
+   "w": 0.8,
+   "h": 3.9,
+   "label": "Rua de Casa",
+   "targetMap": "Bairro_RuaDeCasa",
+   "targetX": 2.0,
+   "targetY": 22.65
+  }
+ ],
+ "npcs": [
+  {
+   "id": "lavadeira",
+   "variant": "lavadeira",
+   "scale": 1.14,
+   "speed": 0.8,
+   "mode": "patrol",
+   "waitMin": 3,
+   "waitMax": 7,
+   "points": [
+    {
+     "x": 8.6,
+     "y": 13.7
+    },
+    {
+     "x": 11.6,
+     "y": 13.7
+    }
+   ],
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+   }
+  },
+  {
+   "id": "vizinha",
+   "variant": "vizinha",
+   "scale": 1.12,
+   "speed": 0.9,
+   "mode": "wander",
+   "waitMin": 2,
+   "waitMax": 5,
+   "points": [],
+   "rect": {
+    "x": 8.4,
+    "y": 16.2,
+    "w": 3.4,
+    "h": 2.7
+   }
+  },
+  {
+   "id": "crianca-a",
+   "variant": "crianca-a",
+   "scale": 0.82,
+   "speed": 2.4,
+   "mode": "wander",
+   "waitMin": 0.3,
+   "waitMax": 1.4,
+   "points": [],
+   "rect": {
+    "x": 15.0,
+    "y": 15.8,
+    "w": 4.4,
+    "h": 3.3
+   }
+  },
+  {
+   "id": "crianca-b",
+   "variant": "crianca-b",
+   "scale": 0.8,
+   "speed": 2.2,
+   "mode": "wander",
+   "waitMin": 0.3,
+   "waitMax": 1.6,
+   "points": [],
+   "rect": {
+    "x": 15.0,
+    "y": 15.8,
+    "w": 4.4,
+    "h": 3.3
+   }
+  },
+  {
+   "id": "crianca-c",
+   "variant": "crianca-c",
+   "scale": 0.78,
+   "speed": 2.0,
+   "mode": "wander",
+   "waitMin": 0.5,
+   "waitMax": 2.0,
+   "points": [],
+   "rect": {
+    "x": 26.0,
+    "y": 6.2,
+    "w": 16.0,
+    "h": 0.8
+   }
+  },
+  {
+   "id": "idoso",
+   "variant": "idoso",
+   "scale": 1.1,
+   "speed": 0.55,
+   "mode": "patrol",
+   "waitMin": 3,
+   "waitMax": 8,
+   "points": [
+    {
+     "x": 7.0,
+     "y": 22.3
+    },
+    {
+     "x": 19.6,
+     "y": 22.3
+    }
+   ],
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+   }
+  },
+  {
+   "id": "morador",
+   "variant": "morador",
+   "scale": 1.22,
+   "speed": 1.3,
+   "mode": "patrol",
+   "waitMin": 1.5,
+   "waitMax": 4,
+   "points": [
+    {
+     "x": 25.2,
+     "y": 22.9
+    },
+    {
+     "x": 46.2,
+     "y": 22.9
+    }
+   ],
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+   }
+  },
+  {
+   "id": "andarilho",
+   "variant": "andarilho",
+   "scale": 1.15,
+   "speed": 1.1,
+   "mode": "patrol",
+   "waitMin": 2,
+   "waitMax": 5,
+   "points": [
+    {
+     "x": 4.6,
+     "y": 6.9
+    },
+    {
+     "x": 22.3,
+     "y": 7.0
+    },
+    {
+     "x": 46.4,
+     "y": 6.9
+    }
+   ],
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+   }
+  },
+  {
+   "id": "lavadeira-2",
+   "variant": "lavadeira",
+   "scale": 1.1,
+   "speed": 0.7,
+   "mode": "patrol",
+   "waitMin": 4,
+   "waitMax": 8,
+   "points": [
+    {
+     "x": 38.8,
+     "y": 2.3
+    },
+    {
+     "x": 42.0,
+     "y": 2.3
+    }
+   ],
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+   }
+  }
+ ],
+ "npcVariants": [
+  {
+   "id": "morador",
+   "walkLeft": [
+    "npc-morador-walk_left-0",
+    "npc-morador-walk_left-1",
+    "npc-morador-walk_left-2",
+    "npc-morador-walk_left-3",
+    "npc-morador-walk_left-4",
+    "npc-morador-walk_left-5"
+   ],
+   "walkRight": [
+    "npc-morador-walk_right-0",
+    "npc-morador-walk_right-1",
+    "npc-morador-walk_right-2",
+    "npc-morador-walk_right-3",
+    "npc-morador-walk_right-4",
+    "npc-morador-walk_right-5"
+   ],
+   "idleLeft": "npc-morador-idle_left-0",
+   "idleRight": "npc-morador-idle_right-0"
+  },
+  {
+   "id": "crianca-a",
+   "walkLeft": [
+    "npc-crianca-a-walk_left-0",
+    "npc-crianca-a-walk_left-1",
+    "npc-crianca-a-walk_left-2",
+    "npc-crianca-a-walk_left-3",
+    "npc-crianca-a-walk_left-4",
+    "npc-crianca-a-walk_left-5"
+   ],
+   "walkRight": [
+    "npc-crianca-a-walk_right-0",
+    "npc-crianca-a-walk_right-1",
+    "npc-crianca-a-walk_right-2",
+    "npc-crianca-a-walk_right-3",
+    "npc-crianca-a-walk_right-4",
+    "npc-crianca-a-walk_right-5"
+   ],
+   "idleLeft": "npc-crianca-a-idle_left-0",
+   "idleRight": "npc-crianca-a-idle_right-0"
+  },
+  {
+   "id": "crianca-b",
+   "walkLeft": [
+    "npc-crianca-b-walk_left-0",
+    "npc-crianca-b-walk_left-1",
+    "npc-crianca-b-walk_left-2",
+    "npc-crianca-b-walk_left-3",
+    "npc-crianca-b-walk_left-4",
+    "npc-crianca-b-walk_left-5"
+   ],
+   "walkRight": [
+    "npc-crianca-b-walk_right-0",
+    "npc-crianca-b-walk_right-1",
+    "npc-crianca-b-walk_right-2",
+    "npc-crianca-b-walk_right-3",
+    "npc-crianca-b-walk_right-4",
+    "npc-crianca-b-walk_right-5"
+   ],
+   "idleLeft": "npc-crianca-b-idle_left-0",
+   "idleRight": "npc-crianca-b-idle_right-0"
+  },
+  {
+   "id": "lavadeira",
+   "walkLeft": [
+    "npc-lavadeira-walk_left-0",
+    "npc-lavadeira-walk_left-1",
+    "npc-lavadeira-walk_left-2",
+    "npc-lavadeira-walk_left-3",
+    "npc-lavadeira-walk_left-4",
+    "npc-lavadeira-walk_left-5"
+   ],
+   "walkRight": [
+    "npc-lavadeira-walk_right-0",
+    "npc-lavadeira-walk_right-1",
+    "npc-lavadeira-walk_right-2",
+    "npc-lavadeira-walk_right-3",
+    "npc-lavadeira-walk_right-4",
+    "npc-lavadeira-walk_right-5"
+   ],
+   "idleLeft": "npc-lavadeira-idle_left-0",
+   "idleRight": "npc-lavadeira-idle_right-0"
+  },
+  {
+   "id": "andarilho",
+   "walkLeft": [
+    "npc-andarilho-walk_left-0",
+    "npc-andarilho-walk_left-1",
+    "npc-andarilho-walk_left-2",
+    "npc-andarilho-walk_left-3",
+    "npc-andarilho-walk_left-4",
+    "npc-andarilho-walk_left-5"
+   ],
+   "walkRight": [
+    "npc-andarilho-walk_right-0",
+    "npc-andarilho-walk_right-1",
+    "npc-andarilho-walk_right-2",
+    "npc-andarilho-walk_right-3",
+    "npc-andarilho-walk_right-4",
+    "npc-andarilho-walk_right-5"
+   ],
+   "idleLeft": "npc-andarilho-idle_left-0",
+   "idleRight": "npc-andarilho-idle_right-0"
+  },
+  {
+   "id": "idoso",
+   "walkLeft": [
+    "npc-idoso-walk_left-0",
+    "npc-idoso-walk_left-1",
+    "npc-idoso-walk_left-2",
+    "npc-idoso-walk_left-3",
+    "npc-idoso-walk_left-4",
+    "npc-idoso-walk_left-5"
+   ],
+   "walkRight": [
+    "npc-idoso-walk_right-0",
+    "npc-idoso-walk_right-1",
+    "npc-idoso-walk_right-2",
+    "npc-idoso-walk_right-3",
+    "npc-idoso-walk_right-4",
+    "npc-idoso-walk_right-5"
+   ],
+   "idleLeft": "npc-idoso-idle_left-0",
+   "idleRight": "npc-idoso-idle_right-0"
+  },
+  {
+   "id": "vizinha",
+   "walkLeft": [
+    "npc-vizinha-walk_left-0",
+    "npc-vizinha-walk_left-1",
+    "npc-vizinha-walk_left-2",
+    "npc-vizinha-walk_left-3",
+    "npc-vizinha-walk_left-4",
+    "npc-vizinha-walk_left-5"
+   ],
+   "walkRight": [
+    "npc-vizinha-walk_right-0",
+    "npc-vizinha-walk_right-1",
+    "npc-vizinha-walk_right-2",
+    "npc-vizinha-walk_right-3",
+    "npc-vizinha-walk_right-4",
+    "npc-vizinha-walk_right-5"
+   ],
+   "idleLeft": "npc-vizinha-idle_left-0",
+   "idleRight": "npc-vizinha-idle_right-0"
+  },
+  {
+   "id": "crianca-c",
+   "walkLeft": [
+    "npc-crianca-c-walk_left-0",
+    "npc-crianca-c-walk_left-1",
+    "npc-crianca-c-walk_left-2",
+    "npc-crianca-c-walk_left-3",
+    "npc-crianca-c-walk_left-4",
+    "npc-crianca-c-walk_left-5"
+   ],
+   "walkRight": [
+    "npc-crianca-c-walk_right-0",
+    "npc-crianca-c-walk_right-1",
+    "npc-crianca-c-walk_right-2",
+    "npc-crianca-c-walk_right-3",
+    "npc-crianca-c-walk_right-4",
+    "npc-crianca-c-walk_right-5"
+   ],
+   "idleLeft": "npc-crianca-c-idle_left-0",
+   "idleRight": "npc-crianca-c-idle_right-0"
+  }
+ ],
+ "birds": [
+  {
+   "x": 11.0,
+   "y": 20.1,
+   "count": 3
+  },
+  {
+   "x": 33.0,
+   "y": 23.0,
+   "count": 4
+  },
+  {
+   "x": 29.4,
+   "y": 4.6,
+   "count": 3
+  }
+ ],
+ "chickens": [
+  {
+   "x": 29.4,
+   "y": 14.2,
+   "radius": 1.8,
+   "frames": [
+    "galinha-branca-0",
+    "galinha-branca-1",
+    "galinha-branca-2",
+    "galinha-branca-3"
+   ]
+  },
+  {
+   "x": 31.8,
+   "y": 15.6,
+   "radius": 1.6,
+   "frames": [
+    "galinha-ruiva-0",
+    "galinha-ruiva-1",
+    "galinha-ruiva-2",
+    "galinha-ruiva-3"
+   ]
+  },
+  {
+   "x": 44.6,
+   "y": 3.6,
+   "radius": 1.3,
+   "frames": [
+    "galinha-carijo-0",
+    "galinha-carijo-1",
+    "galinha-carijo-2",
+    "galinha-carijo-3"
+   ]
+  }
+ ],
+ "smoke": [
+  {
+   "x": 41.88333333333333,
+   "y": 14.8167,
+   "interior": false
+  }
+ ],
+ "player": {
+  "x": 46.0,
+  "y": 22.65,
+  "area": "moradias"
+ },
+ "fx": {
+  "leaves": [
+   "folha-0",
+   "folha-1",
+   "folha-2",
+   "folha-3"
+  ],
+  "dust": "poeira",
+  "paper": "papel",
+  "cloud": "nuvem-sombra",
+  "smoke": "fumaca",
+  "pigeon": [
+   "pombo-0",
+   "pombo-1",
+   "pombo-2",
+   "pombo-3"
+  ]
+ }
+}

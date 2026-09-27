@@ -1,12 +1,12 @@
 using System;
 using UnityEngine;
 
-// Layout exported by scripts/bairro/build_rua_de_casa.py (Assets/Game/Bairro/Maps/*.json).
+// Layout exported by scripts/bairro/build_bairro.py (Assets/Game/Bairro/Maps/*.json).
 // Coordinates are Unity units: x to the right, y up, 1 unit = 1 tile.
 [Serializable] public sealed class YuukiBairroData
 {
     public int version;
-    public string map, name;
+    public string map, name, scene;
     public YuukiSpriteInfo[] sprites;
     public YuukiAreaInfo[] areas;
     public YuukiObjectInfo[] objects;
@@ -16,6 +16,7 @@ using UnityEngine;
     public YuukiNpcInfo[] npcs;
     public YuukiNpcVariantInfo[] npcVariants;
     public YuukiBirdInfo[] birds;
+    public YuukiChickenInfo[] chickens;
     public YuukiSmokeInfo[] smoke;
     public YuukiSpawnInfo player;
     public YuukiFxInfo fx;
@@ -46,7 +47,11 @@ using UnityEngine;
     public float x, y, w, h, targetX, targetY;
 }
 
-[Serializable] public sealed class YuukiExitInfo { public string id, label; public float x, y, w, h; }
+[Serializable] public sealed class YuukiExitInfo
+{
+    public string id, label, targetMap;
+    public float x, y, w, h, targetX, targetY;
+}
 
 [Serializable] public sealed class YuukiRectInfo { public float x, y, w, h; }
 
@@ -65,6 +70,8 @@ using UnityEngine;
 }
 
 [Serializable] public sealed class YuukiBirdInfo { public float x, y; public int count; }
+
+[Serializable] public sealed class YuukiChickenInfo { public float x, y, radius; public string[] frames; }
 
 [Serializable] public sealed class YuukiSmokeInfo { public float x, y; public bool interior; }
 

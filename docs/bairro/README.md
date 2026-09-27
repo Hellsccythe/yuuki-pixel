@@ -4,16 +4,18 @@ Jogo em vista de cima no estilo Stardew Valley: Yuuki anda livremente em X e Y (
 
 ![Prévia da Rua de Casa](rua-de-casa-preview.png)
 
+![Prévia das Moradias](moradias-preview.png)
+
 ## Os quatro mapas
 
 | Mapa | Estado | Ligação |
 | --- | --- | --- |
 | **Rua de Casa** — casa da Yuuki, casa do Tenebris (vizinho), o beco da história, pracinha do poço | **pronto** (este) | centro |
-| Escola do bairro — antiga e pobre, com a biblioteca | a fazer | saída norte |
-| Moradias — casas simples de madeira | a fazer | saída oeste |
-| Distrito comercial — lojinhas de roupa, comida, padaria | a fazer | saída leste |
+| **Moradias** — vielas de barracos de tábua, valeta, pracinha comunitária, galinheiro | **pronto** | oeste da Rua de Casa |
+| Escola do bairro — antiga e pobre, com a biblioteca | a fazer (falta arte) | norte da Rua de Casa |
+| Distrito comercial — lojinhas de roupa, comida, padaria | a fazer (falta arte) | leste da Rua de Casa |
 
-As saídas já existem nas bordas da Rua de Casa: mostram "em breve" e bloqueiam a passagem até o mapa vizinho existir.
+Andar até a borda leva ao mapa vizinho com um fade (cenas separadas, carregadas pela saída). As saídas para mapas que ainda não existem mostram "em breve" e bloqueiam a passagem. Os prompts para gerar a arte que falta (NPCs, lojas, escola) estão em `Art/World/prompts-bairro.md`.
 
 ## O que a Rua de Casa tem
 
@@ -26,23 +28,33 @@ As saídas já existem nas bordas da Rua de Casa: mostram "em breve" e bloqueiam
 - Vida: 7 moradores andando (patrulha ou passeio aleatório, param quando a Yuuki está no caminho e se viram para olhar para ela) e bandos de pombos que levantam voo quando ela se aproxima.
 - Interior da casa da Yuuki: entra-se andando até a porta, com fade. Cama, duas estantes e pilhas de livros, fogão aceso, mesa com livro e caneca, tapete remendado, luz da janela.
 
+## O que as Moradias têm
+
+- Vielas estreitas de terra com marcas de roda, lama e poças; barracos de tábua com frestas, remendos, cortina no lugar de porta e telhado de zinco enferrujado segurado por pedras (gerados por código, na mesma perspectiva das casas).
+- Uma valeta de esgoto a céu aberto cortando o mapa de norte a sul: só dá para atravessar pelas duas pontes de tábua.
+- Pracinha comunitária com poço, barris de água, banco e dois varais; mais um varal nos fundos.
+- Casa abandonada com o telhado desabando (caibros aparecendo) e a porta pregada.
+- Quintal com galinheiro e galinhas que ciscam e fogem da Yuuki; carroça quebrada, horta, lenha, montes de lixo, entulho e buracos.
+- 9 moradores (lavadeiras, vizinha, idoso, crianças brincando, morador, andarilho) e pombos.
+- A saída leste volta para a Rua de Casa, chegando pela ponta oeste da rua principal.
+
 ## Como abrir no Unity
 
 1. Abra o projeto e espere a compilação (o `Packages/manifest.json` agora inclui `jsonserialize`, `particlesystem` e `audio`; isso também corrige o erro `JsonUtility does not exist` do protótipo antigo).
-2. Menu **Yuuki > Bairro > Construir Rua de Casa**. O construtor configura a importação dos sprites (PPU, pivô, Point, sem compressão) e cria `Assets/Game/Scenes/Bairro_RuaDeCasa.unity`.
-3. Aperte **Play**. WASD ou setas para andar, Shift para correr.
+2. Menu **Yuuki > Bairro > Construir todo o bairro**. O construtor configura a importação dos sprites (PPU, pivô, Point, sem compressão), cria `Assets/Game/Scenes/Bairro_RuaDeCasa.unity` e `Bairro_Moradias.unity` e coloca as duas nas Build Settings (é isso que permite andar de um mapa para o outro). Também há itens para construir um mapa só.
+3. Com a cena da Rua de Casa aberta, aperte **Play**. WASD ou setas para andar, Shift para correr; siga pela rua principal para o oeste para chegar às Moradias.
 
-Reconstruir recria a cena do zero. Para mudar o mapa, edite o layout em `scripts/bairro/build_rua_de_casa.py` e rode de novo; se preferir ajustar à mão na cena, pare de reconstruir.
+Reconstruir recria as cenas do zero. Para mudar um mapa, edite o layout em `scripts/bairro/rua_de_casa.py` ou `scripts/bairro/moradias.py` e rode o gerador de novo; se preferir ajustar à mão na cena, pare de reconstruir aquele mapa.
 
 ## Regerar a arte e o layout
 
 ```bash
 pip install pillow numpy scipy
-python3 scripts/bairro/build_rua_de_casa.py   # sprites, chão pintado, JSON e esta prévia
-python3 scripts/bairro/validate_map.py        # colisões, porta, saídas e rotas dos NPCs
+python3 scripts/bairro/build_bairro.py    # sprites compartilhados + chão, JSON e prévia de cada mapa
+python3 scripts/bairro/validate_map.py    # colisões, portas, saídas entre mapas e rotas dos NPCs
 ```
 
-O gerador é determinístico. Coordenadas de desenho em tiles (1 tile = 1 unidade Unity, x para a direita e y para baixo); o JSON sai em coordenadas Unity (y para cima). A escala segue o Stardew: Yuuki com ~1,6 tile de altura e portas com ~1,8 tile. `rua-de-casa-colisao.png` mostra em verde onde a Yuuki consegue andar a partir do spawn.
+Arquivos: `assets.py` (sprites compartilhados), `props.py` e `props_moradias.py` (desenhos procedurais), `mapkit.py` (montagem, pintura do chão, exportação, prévia), um arquivo por mapa e `build_bairro.py` para rodar tudo. O gerador é determinístico. Coordenadas de desenho em tiles (1 tile = 1 unidade Unity, x para a direita e y para baixo); o JSON sai em coordenadas Unity (y para cima). A escala segue o Stardew: Yuuki com ~1,6 tile de altura e portas com ~1,8 tile. Os arquivos `*-colisao.png` mostram em verde onde a Yuuki consegue andar a partir do ponto inicial de cada mapa.
 
 ## NPCs provisórios
 
@@ -57,9 +69,9 @@ Para trocar por sprites de verdade, substitua os PNGs em `Assets/Game/Bairro/Spr
 | `Assets/Game/Scripts/Bairro/YuukiPlayerTopDown.cs` | Movimento livre em X/Y, correr, animator (mantém o último lado ao andar para cima e para baixo) |
 | `YuukiBairro.cs` | Áreas do mapa, viagem com fade, nome do lugar, avisos |
 | `YuukiBairroCamera.cs` | Câmera suave presa aos limites da área; interiores pequenos ficam centralizados |
-| `YuukiPortal.cs` / `YuukiMapExit.cs` | Porta de entrar andando / borda para o próximo mapa |
+| `YuukiPortal.cs` / `YuukiMapExit.cs` / `YuukiMapTravel.cs` | Porta de entrar andando / borda que carrega o próximo mapa / ponto de chegada entre cenas |
 | `YuukiWind.cs`, `YuukiWindSway.cs`, `YuukiWindFx.cs`, `YuukiChimneySmoke.cs` | Vento compartilhado, balanço, partículas, nuvens, fumaça |
-| `YuukiNpcWalker.cs`, `YuukiPigeonFlock.cs` | Moradores e pombos |
-| `Assets/Editor/Bairro/YuukiBairroBuilder.cs` | Menu que monta a cena a partir do JSON |
+| `YuukiNpcWalker.cs`, `YuukiPigeonFlock.cs`, `YuukiChickens.cs` | Moradores, pombos e galinhas |
+| `Assets/Editor/Bairro/YuukiBairroBuilder.cs` | Menu que monta as cenas a partir dos JSON |
 
 A profundidade usa o eixo Y da câmera (Custom Axis 0,1,0) com o pivô de cada sprite nos pés: quem está mais abaixo na tela é desenhado na frente, e a Yuuki passa por trás dos telhados.

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // Runtime owner of one modular map: knows its areas (street, interiors), moves the player
 // between them with a short fade and shows small location / exit messages.
@@ -40,7 +41,38 @@ public sealed class YuukiBairro : MonoBehaviour
 
     private void Start()
     {
-        EnterArea(FindArea(player.transform.position), false);
+        bool arriving = YuukiMapTravel.Consume(out Vector2 arrival);
+        if (arriving) player.Teleport(arrival);
+        EnterArea(FindArea(player.transform.position), true);
+        if (arriving) StartCoroutine(FadeIn());
+    }
+
+    private IEnumerator FadeIn()
+    {
+        busy = true;
+        fade = 1;
+        player.InputBlocked = true;
+        yield return null;
+        for (float t = 1; t > 0; t -= Time.deltaTime / 0.35f) { fade = t; yield return null; }
+        fade = 0;
+        player.InputBlocked = false;
+        busy = false;
+    }
+
+    // Walks out to another modular map (another scene) and arrives at `arrival` there.
+    public void LoadMap(string sceneName, Vector2 arrival)
+    {
+        if (!busy) StartCoroutine(LoadMapRoutine(sceneName, arrival));
+    }
+
+    private IEnumerator LoadMapRoutine(string sceneName, Vector2 arrival)
+    {
+        busy = true;
+        player.InputBlocked = true;
+        for (float t = 0; t < 1; t += Time.deltaTime / 0.3f) { fade = t; yield return null; }
+        fade = 1;
+        YuukiMapTravel.Set(arrival);
+        SceneManager.LoadScene(sceneName);
     }
 
     public Area FindArea(Vector2 position)

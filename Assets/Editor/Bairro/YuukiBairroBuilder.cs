@@ -8,24 +8,47 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-// Builds the playable scene of a modular neighbourhood map from the JSON layout written by
-// scripts/bairro/build_rua_de_casa.py. Rebuilding replaces the scene, so tweak the layout
+// Builds the playable scene of each modular neighbourhood map from the JSON layout written by
+// scripts/bairro/build_bairro.py. Rebuilding replaces the scene, so tweak the layout
 // in the Python script (or edit the scene afterwards and stop rebuilding it).
 public static class YuukiBairroBuilder
 {
-    private const string JsonPath = "Assets/Game/Bairro/Maps/rua-de-casa.json";
-    private const string ScenePath = "Assets/Game/Scenes/Bairro_RuaDeCasa.unity";
+    private const string MapsFolder = "Assets/Game/Bairro/Maps/";
+    private const string ScenesFolder = "Assets/Game/Scenes/";
+    // Order of the modular maps in the Build Settings (the first one opens a build).
+    private static readonly string[] MapOrder = { "rua-de-casa", "moradias" };
     private const string PhysicsPath = "Assets/Game/Bairro/Physics/SemAtrito.physicsMaterial2D";
     private const string YuukiIdle = "Assets/Game/Art/Yuuki/Yuuki_Idle_2x1.png";
     private const string YuukiController = "Assets/Game/Animation/Yuuki.controller";
     private const float YuukiScale = 1.15f;
 
+    [MenuItem("Yuuki/Bairro/Construir todo o bairro")]
+    public static void BuildAll()
+    {
+        if (!Application.isBatchMode && !EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo()) return;
+        // Build in reverse so the first map (Rua de Casa) is the scene left open.
+        foreach (var id in MapOrder.Reverse()) Build(id);
+    }
+
     [MenuItem("Yuuki/Bairro/Construir Rua de Casa")]
     public static void BuildRuaDeCasa()
     {
         if (!Application.isBatchMode && !EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo()) return;
+        Build("rua-de-casa");
+    }
+
+    [MenuItem("Yuuki/Bairro/Construir Moradias")]
+    public static void BuildMoradias()
+    {
+        if (!Application.isBatchMode && !EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo()) return;
+        Build("moradias");
+    }
+
+    public static void Build(string mapId)
+    {
         AssetDatabase.Refresh();
-        var data = JsonUtility.FromJson<YuukiBairroData>(File.ReadAllText(JsonPath));
+        var data = JsonUtility.FromJson<YuukiBairroData>(File.ReadAllText(MapsFolder + mapId + ".json"));
+        string scenePath = ScenesFolder + data.scene + ".unity";
         var sprites = ImportSprites(data);
 
         // Stardew-style depth: whatever stands lower on screen is drawn in front.
@@ -88,15 +111,32 @@ public static class YuukiBairroBuilder
             background = a.outdoor ? new Color(0.17f, 0.15f, 0.11f) : new Color(0.03f, 0.02f, 0.02f)
         }).ToArray();
 
-        if (!EditorSceneManager.SaveScene(scene, ScenePath))
-            throw new InvalidOperationException("Nao foi possivel salvar " + ScenePath);
-        var scenes = EditorBuildSettings.scenes.Where(s => s.path != ScenePath).ToList();
-        scenes.Insert(0, new EditorBuildSettingsScene(ScenePath, true));
-        EditorBuildSettings.scenes = scenes.ToArray();
+        if (!EditorSceneManager.SaveScene(scene, scenePath))
+            throw new InvalidOperationException("Nao foi possivel salvar " + scenePath);
+        RegisterScene(scenePath);
         AssetDatabase.SaveAssets();
         Selection.activeGameObject = player.gameObject;
         Debug.Log($"YUUKI_BAIRRO_OK: {data.name} com {data.objects.Length} objetos, {data.npcs.Length} NPCs, " +
-                  $"{data.blockers.Length} bloqueios. Cena salva em {ScenePath}. Aperte Play.");
+                  $"{data.blockers.Length} bloqueios. Cena salva em {scenePath}. Aperte Play.");
+    }
+
+    // Keeps every bairro map in the Build Settings (needed to walk between them), in map order.
+    private static void RegisterScene(string scenePath)
+    {
+        var scenes = EditorBuildSettings.scenes.Where(s => s.path != scenePath).ToList();
+        scenes.Add(new EditorBuildSettingsScene(scenePath, true));
+        int Rank(EditorBuildSettingsScene s)
+        {
+            for (int i = 0; i < MapOrder.Length; i++)
+            {
+                string mapJson = MapsFolder + MapOrder[i] + ".json";
+                if (!File.Exists(mapJson)) continue;
+                var info = JsonUtility.FromJson<YuukiBairroData>(File.ReadAllText(mapJson));
+                if (s.path == ScenesFolder + info.scene + ".unity") return i;
+            }
+            return MapOrder.Length;
+        }
+        EditorBuildSettings.scenes = scenes.OrderBy(Rank).ToArray();
     }
 
     // ------------------------------------------------------------------ sprites
@@ -244,7 +284,10 @@ public static class YuukiBairroBuilder
             var box = go.AddComponent<BoxCollider2D>();
             box.size = new Vector2(e.w, e.h);
             box.isTrigger = true;
-            go.AddComponent<YuukiMapExit>().label = e.label;
+            var exit = go.AddComponent<YuukiMapExit>();
+            exit.label = e.label;
+            exit.targetMap = e.targetMap;
+            exit.target = new Vector2(e.targetX, e.targetY);
         }
     }
 
@@ -350,6 +393,19 @@ public static class YuukiBairroBuilder
             flock.frames = data.fx.pigeon.Select(id => Get(sprites, id)).ToArray();
             flock.count = b.count;
             flock.player = player;
+        }
+        if (data.chickens == null) return;
+        var yard = new GameObject("Galinhas").transform;
+        foreach (var c in data.chickens)
+        {
+            var go = new GameObject("Bando de galinhas");
+            go.transform.SetParent(yard, false);
+            go.transform.position = new Vector3(c.x, c.y, 0f);
+            var hens = go.AddComponent<YuukiChickens>();
+            hens.frames = c.frames.Select(id => Get(sprites, id)).ToArray();
+            hens.radius = c.radius;
+            hens.count = Mathf.Clamp(Mathf.RoundToInt(c.radius * 2f), 2, 5);
+            hens.player = player;
         }
     }
 }
