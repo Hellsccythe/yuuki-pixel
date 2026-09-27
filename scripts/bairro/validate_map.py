@@ -132,6 +132,26 @@ def main(path, all_maps):
                        abs(ty + 0.13 - b["y"]) < b["h"] / 2 + 0.13]
             if blocked:
                 problems.append(f"exit {e['id']} lands on a blocker in {other['name']}")
+    for it in data.get("interactables", []):
+        r = it.get("radius", 1.2)
+        if not touches(outside, it["x"], it["y"], r * 1.4, r * 1.4):
+            problems.append(f"{it['kind']} '{it['title']}' cannot be reached")
+        if it["kind"] == "stairs":
+            other = all_maps.get(it["targetMap"])
+            if other is None:
+                problems.append(f"stairs '{it['title']}' target missing map {it['targetMap']}")
+                continue
+            tx, ty = it["targetX"], it["targetY"]
+            blocked = [b for b in other["blockers"] if abs(tx - b["x"]) < b["w"] / 2 + 0.25 and
+                       abs(ty + 0.13 - b["y"]) < b["h"] / 2 + 0.13]
+            objects = [o for o in other["objects"] if o["colW"] > 0 and abs(tx - o["x"] - o["colX"]) < o["colW"] / 2 + 0.25
+                       and abs(ty + 0.13 - o["y"] - o["colY"]) < o["colH"] / 2 + 0.13]
+            if blocked or objects:
+                problems.append(f"stairs '{it['title']}' land on a collider in {other['name']}")
+            back = [o for o in other.get("interactables", []) if o["kind"] == "stairs" and
+                    abs(o["x"] - tx) < o["radius"] + 1.0 and abs(o["y"] - ty) < o["radius"] + 1.0]
+            if not back:
+                problems.append(f"stairs '{it['title']}' have no way back next to the arrival")
     for n in data["npcs"]:
         pts = [(p["x"], p["y"]) for p in n["points"]]
         if n["mode"] == "wander":

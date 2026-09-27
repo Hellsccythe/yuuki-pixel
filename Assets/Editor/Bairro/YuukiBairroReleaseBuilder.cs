@@ -25,7 +25,7 @@ public static class YuukiBairroReleaseBuilder
         var catalog = JsonUtility.FromJson<YuukiEnvironmentCatalog>(
             File.ReadAllText("Assets/Game/Resources/Environment/catalog.json"));
         ImportEnvironment(catalog);
-        foreach (string id in new[] { "rua-de-casa", "moradias" })
+        foreach (string id in new[] { "rua-de-casa", "moradias", "dungeon" })
         {
             var map = JsonUtility.FromJson<YuukiBairroData>(File.ReadAllText("Assets/Game/Bairro/Maps/" + id + ".json"));
             // Don't overwrite hand-edited map scenes when merely refreshing the menu.
@@ -41,11 +41,12 @@ public static class YuukiBairroReleaseBuilder
         menu.hero = AssetDatabase.LoadAllAssetsAtPath("Assets/Game/Art/Yuuki/Yuuki_Idle_2x1.png")
             .OfType<Sprite>().First(s => s.name == "idle_right_00");
         EditorSceneManager.SaveScene(scene, MenuPath);
-        var paths = new[] { MenuPath, "Assets/Game/Scenes/Bairro_RuaDeCasa.unity", "Assets/Game/Scenes/Bairro_Moradias.unity" };
+        var paths = new[] { MenuPath, "Assets/Game/Scenes/Bairro_RuaDeCasa.unity", "Assets/Game/Scenes/Bairro_Moradias.unity",
+            "Assets/Game/Scenes/Bairro_Dungeon.unity" };
         EditorBuildSettings.scenes = paths.Select(p => new EditorBuildSettingsScene(p, true)).ToArray();
         AssetDatabase.SaveAssets();
         Validate(catalog);
-        Debug.Log("YUUKI_RELEASE_READY: menu, 2 mapas, " + catalog.assets.Length + " assets e prefabs.");
+        Debug.Log("YUUKI_RELEASE_READY: menu, 3 mapas, " + catalog.assets.Length + " assets e prefabs.");
         return true;
     }
 

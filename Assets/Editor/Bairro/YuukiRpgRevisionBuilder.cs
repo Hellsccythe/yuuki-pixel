@@ -107,21 +107,34 @@ public static class YuukiRpgRevisionBuilder
             lowWall.transform.localScale=new Vector3(length/lowWall.sprite.bounds.size.x,.85f/lowWall.sprite.bounds.size.y,1);
             Wall(room,new Vector2((section.x+section.y)/2,baseY+.12f),new Vector2(length,.24f));
         }
-        void Prop(string path,float x,float y,float width,float cw=0,float ch=0,int order=0)
+        SpriteRenderer Prop(string path,float x,float y,float width,float cw=0,float ch=0,int order=0)
         {
             var r=Art(room,path,new Vector2(left+x,baseY+y),width,order);
             if(cw>0) Wall(room,new Vector2(left+x,baseY+y+ch/2),new Vector2(cw,ch));
+            return r;
+        }
+        // F on a bookshelf or a pile of books opens the book list ("Sem registro" until books exist).
+        void Shelf(SpriteRenderer r,string shelfName,float reach)
+        {
+            var shelf=r.gameObject.AddComponent<YuukiBookshelf>();
+            shelf.shelfName=shelfName; shelf.prompt="Ver livros"; shelf.point=new Vector2(0,-.45f); shelf.radius=reach;
         }
         const string old="Assets/Game/Bairro/Sprites/Interior/";
         Prop(Root+"Home/tapete.png",w*.51f,.9f,2.5f,order:-40);
         bool yuuki=id=="casa-yuuki";
         Prop(old+"cama.png",yuuki?1.05f:w-1.15f,yuuki?2.05f:1.7f,1.1f,.9f,1.45f);
-        Prop(old+"estante.png",2.65f,4.05f,1.25f,1.1f,.32f);
-        if(id=="casa-yuuki") Prop(old+"estante.png",4.0f,4.05f,1.1f,.95f,.32f);
+        string family=yuuki?"da Yuuki":"do Tenebris";
+        Shelf(Prop(old+"estante.png",2.65f,4.05f,1.25f,1.1f,.32f),"Estante "+family,1.1f);
+        if(id=="casa-yuuki") Shelf(Prop(old+"estante.png",4.0f,4.05f,1.1f,.95f,.32f),"Estante dos pais da Yuuki",1.1f);
         Prop(old+"mesa.png",yuuki?w-1.3f:1.35f,1.8f,1.55f,1.3f,.65f);
-        Prop(Root+"Home/fogao.png",yuuki?w-.85f:w-2.15f,3.35f,1.0f,.8f,.5f);
-        Prop(Root+"Home/livros.png",2.3f,3.9f,.5f);
-        Prop(Root+"Home/livro-aberto.png",1.0f,.65f,.6f);
+        var stove=Prop(Root+"Home/fogao.png",yuuki?w-.85f:w-2.15f,3.35f,1.0f,.8f,.5f);
+        var fire=stove.gameObject.AddComponent<YuukiLight>();
+        fire.mode=YuukiLight.Mode.Always; fire.radius=2.6f; fire.intensity=.9f; fire.flicker=.35f;
+        fire.color=new Color(1f,.62f,.3f); fire.offset=new Vector2(0,.35f);
+        var pile=Prop(Root+"Home/livros.png",2.3f,3.9f,.5f);
+        Shelf(pile,"Pilha de livros",.9f);
+        var open=Prop(Root+"Home/livro-aberto.png",1.0f,.65f,.6f);
+        Shelf(open,"Livro aberto no chão",.9f);
         // Dark aperture hides the painted closed door, then the original leaf swings.
         float dw=id=="casa-yuuki"?1.05f:.883f;
         var sr=Art(root,Root+"Home/porta-"+id+".png",new Vector2(doorX,doorY),dw,8);

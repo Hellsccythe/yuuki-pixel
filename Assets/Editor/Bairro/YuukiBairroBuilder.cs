@@ -16,7 +16,8 @@ public static class YuukiBairroBuilder
     private const string MapsFolder = "Assets/Game/Bairro/Maps/";
     private const string ScenesFolder = "Assets/Game/Scenes/";
     // Order of the modular maps in the Build Settings (the first one opens a build).
-    private static readonly string[] MapOrder = { "rua-de-casa", "moradias" };
+    private static readonly string[] MapOrder = { "rua-de-casa", "moradias", "dungeon" };
+    private const string LightingFolder = "Assets/Game/Bairro/Lighting/";
     private const string PhysicsPath = "Assets/Game/Bairro/Physics/SemAtrito.physicsMaterial2D";
     private const string YuukiIdle = "Assets/Game/Art/Yuuki/Yuuki_Idle_2x1.png";
     private const string YuukiController = "Assets/Game/Animation/Yuuki.controller";
@@ -42,6 +43,13 @@ public static class YuukiBairroBuilder
     {
         if (!Application.isBatchMode && !EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo()) return;
         Build("moradias");
+    }
+
+    [MenuItem("Yuuki/Bairro/Construir Dungeon")]
+    public static void BuildDungeon()
+    {
+        if (!Application.isBatchMode && !EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo()) return;
+        Build("dungeon");
     }
 
     public static void Build(string mapId)
@@ -94,17 +102,23 @@ public static class YuukiBairroBuilder
         var player = BuildPlayer(data);
         var cameraFollow = BuildCamera(player.transform);
         var outdoorOnly = new List<GameObject>();
+        BuildLights(data, map);
+        BuildInteractables(data, map);
+        BuildLighting(data, cameraFollow.GetComponent<Camera>());
 
-        var wind = new GameObject("Vento");
-        var fx = wind.AddComponent<YuukiWindFx>();
-        fx.followCamera = cameraFollow.GetComponent<Camera>();
-        var outside = data.areas.First(a => a.outdoor);
-        fx.mapBounds = new Rect(outside.x, outside.y, outside.w, outside.h);
-        fx.leaves = data.fx.leaves.Select(id => Get(sprites, id)).ToArray();
-        fx.dust = Get(sprites, data.fx.dust);
-        fx.paper = Get(sprites, data.fx.paper);
-        fx.cloud = Get(sprites, data.fx.cloud);
-        outdoorOnly.Add(wind);
+        if (data.wind)
+        {
+            var wind = new GameObject("Vento");
+            var fx = wind.AddComponent<YuukiWindFx>();
+            fx.followCamera = cameraFollow.GetComponent<Camera>();
+            var outside = data.areas.First(a => a.outdoor);
+            fx.mapBounds = new Rect(outside.x, outside.y, outside.w, outside.h);
+            fx.leaves = data.fx.leaves.Select(id => Get(sprites, id)).ToArray();
+            fx.dust = Get(sprites, data.fx.dust);
+            fx.paper = Get(sprites, data.fx.paper);
+            fx.cloud = Get(sprites, data.fx.cloud);
+            outdoorOnly.Add(wind);
+        }
 
         var smokeRoot = new GameObject("Fumaca das chamines").transform;
         foreach (var s in data.smoke.Where(s => !s.interior))
@@ -121,13 +135,16 @@ public static class YuukiBairroBuilder
         manager.player = player;
         manager.cameraFollow = cameraFollow;
         manager.outdoorOnly = outdoorOnly.ToArray();
+        manager.regionName = string.IsNullOrEmpty(data.region) ? "Os Subúrbios" : data.region;
+        manager.clockRuns = data.clockRuns;
+        var background = data.background != null && data.background.a > 0 ? data.background.ToColor() : new Color(0.17f, 0.15f, 0.11f);
         manager.areas = data.areas.Select(a => new YuukiBairro.Area
         {
             id = a.id,
             name = a.name,
             bounds = new Rect(a.x, a.y, a.w, a.h),
             outdoor = a.outdoor,
-            background = a.outdoor ? new Color(0.17f, 0.15f, 0.11f) : new Color(0.03f, 0.02f, 0.02f)
+            background = a.outdoor ? background : new Color(0.03f, 0.02f, 0.02f)
         }).ToArray();
 
         YuukiRpgRevisionBuilder.AddHouses(map);
@@ -252,7 +269,21 @@ public static class YuukiBairroBuilder
             go.transform.SetParent(parent, false);
             go.transform.position = new Vector3(o.x, o.y, 0f);
             var sr = AddArt(go.transform, Get(sprites, o.sprite), o.flipX);
-            if (o.swing) sr.sortingOrder = 1; // laundry in front of its rope
+            // Inside a sorting group: laundry in front of its rope, torches in front of their wall.
+            sr.sortingOrder = o.order != 0 ? o.order : o.swing ? 1 : 0;
+            if (o.light != null && o.light.radius > 0f)
+            {
+                var light = go.AddComponent<YuukiLight>();
+                ConfigureLight(light, o.light.radius, o.light.intensity, o.light.r, o.light.g, o.light.b, o.light.flicker,
+                    o.light.night);
+                light.offset = new Vector2(o.light.ox, o.light.oy);
+                if (!string.IsNullOrEmpty(o.light.offSprite))
+                {
+                    light.lampRenderer = sr;
+                    light.onSprite = sr.sprite;
+                    light.offSprite = Get(sprites, o.light.offSprite);
+                }
+            }
             if (o.sway > 0f)
             {
                 var sway = sr.gameObject.AddComponent<YuukiWindSway>();
@@ -309,7 +340,114 @@ public static class YuukiBairroBuilder
             exit.label = e.label;
             exit.targetMap = e.targetMap;
             exit.target = new Vector2(e.targetX, e.targetY);
+            exit.outward = new Vector2(e.outwardX, e.outwardY);
         }
+    }
+
+    // ------------------------------------------------------------------ light and interaction
+    private static void ConfigureLight(YuukiLight light, float radius, float intensity, float r, float g, float b,
+        float flicker, bool night)
+    {
+        light.radius = radius;
+        light.intensity = intensity;
+        light.color = new Color(r, g, b);
+        light.flicker = flicker;
+        light.mode = night ? YuukiLight.Mode.NightOnly : YuukiLight.Mode.Always;
+    }
+
+    private static void BuildLights(YuukiBairroData data, Transform map)
+    {
+        if (data.lights == null) return;
+        var root = new GameObject("Luzes").transform;
+        root.SetParent(map, false);
+        foreach (var l in data.lights)
+        {
+            var go = new GameObject(l.night ? "Luz noturna" : "Luz");
+            go.transform.SetParent(root, false);
+            go.transform.position = new Vector3(l.x, l.y, 0f);
+            ConfigureLight(go.AddComponent<YuukiLight>(), l.radius, l.intensity, l.r, l.g, l.b, l.flicker, l.night);
+        }
+    }
+
+    private static void BuildInteractables(YuukiBairroData data, Transform map)
+    {
+        if (data.interactables == null) return;
+        var root = new GameObject("Interações (F)").transform;
+        root.SetParent(map, false);
+        foreach (var i in data.interactables)
+        {
+            var go = new GameObject((i.kind == "stairs" ? "Escada - " : i.kind == "books" ? "Estante - " : "Placa - ") + i.title);
+            go.transform.SetParent(root, false);
+            go.transform.position = new Vector3(i.x, i.y, 0f);
+            YuukiInteractable item;
+            switch (i.kind)
+            {
+                case "stairs":
+                    var stairs = go.AddComponent<YuukiStairs>();
+                    stairs.destinationName = i.title;
+                    stairs.targetMap = i.targetMap;
+                    stairs.target = new Vector2(i.targetX, i.targetY);
+                    item = stairs;
+                    break;
+                case "books":
+                    var shelf = go.AddComponent<YuukiBookshelf>();
+                    shelf.shelfName = i.title;
+                    shelf.bookIds = i.bookIds ?? new string[0];
+                    item = shelf;
+                    break;
+                default:
+                    var sign = go.AddComponent<YuukiSign>();
+                    sign.title = i.title;
+                    sign.text = i.text;
+                    item = sign;
+                    break;
+            }
+            if (!string.IsNullOrEmpty(i.prompt)) item.prompt = i.prompt;
+            item.radius = i.radius > 0 ? i.radius : 1.2f;
+        }
+    }
+
+    // Darkness overlay in front of the camera (day/night outdoors, always dark underground).
+    private static void BuildLighting(YuukiBairroData data, Camera camera)
+    {
+        Directory.CreateDirectory(LightingFolder);
+        string spritePath = LightingFolder + "branco.png";
+        if (!File.Exists(spritePath))
+        {
+            var tex = new Texture2D(4, 4);
+            tex.SetPixels(Enumerable.Repeat(Color.white, 16).ToArray());
+            File.WriteAllBytes(spritePath, tex.EncodeToPNG());
+            UnityEngine.Object.DestroyImmediate(tex);
+            AssetDatabase.ImportAsset(spritePath);
+        }
+        var importer = (TextureImporter)AssetImporter.GetAtPath(spritePath);
+        if (importer.textureType != TextureImporterType.Sprite || importer.spritePixelsPerUnit != 4)
+        {
+            importer.textureType = TextureImporterType.Sprite;
+            importer.spriteImportMode = SpriteImportMode.Single;
+            importer.spritePixelsPerUnit = 4;
+            importer.filterMode = FilterMode.Point;
+            importer.SaveAndReimport();
+        }
+        string materialPath = LightingFolder + "Escuridao.mat";
+        var material = AssetDatabase.LoadAssetAtPath<Material>(materialPath);
+        if (material == null)
+        {
+            var shader = Shader.Find("Yuuki/Darkness");
+            if (shader == null) throw new InvalidOperationException("Shader Yuuki/Darkness não encontrado.");
+            material = new Material(shader);
+            AssetDatabase.CreateAsset(material, materialPath);
+        }
+        var go = new GameObject("Iluminação");
+        go.transform.SetParent(camera.transform, false);
+        var sr = go.AddComponent<SpriteRenderer>();
+        sr.sprite = AssetDatabase.LoadAssetAtPath<Sprite>(spritePath);
+        sr.sharedMaterial = material;
+        sr.sortingOrder = 1000;
+        var lighting = go.AddComponent<YuukiLighting>();
+        lighting.target = camera;
+        lighting.followClock = data.followClock;
+        if (data.ambient != null) lighting.fixedAmbient = data.ambient.ToColor();
     }
 
     // ------------------------------------------------------------------ player & camera
@@ -351,7 +489,9 @@ public static class YuukiBairroBuilder
         var movement = AssetDatabase.LoadAllAssetsAtPath("Assets/Game/Art/Yuuki/Yuuki_Movement_6x6.png").OfType<Sprite>();
         rpg.runLeft = movement.Where(s => s.name.StartsWith("run_left_")).OrderBy(s => s.name).ToArray();
         rpg.runRight = movement.Where(s => s.name.StartsWith("run_right_")).OrderBy(s => s.name).ToArray();
-        return go.AddComponent<YuukiPlayerTopDown>();
+        var controller = go.AddComponent<YuukiPlayerTopDown>();
+        go.AddComponent<YuukiInteractor>();
+        return controller;
     }
 
     private static YuukiBairroCamera BuildCamera(Transform target)

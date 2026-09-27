@@ -3,8 +3,11 @@
 Every map of the bairro references these sprites by id; build_bairro.py regenerates them
 once and then lays out each map.
 """
+import json
+
 import numpy as np
 from PIL import Image
+from scipy import ndimage as ndi
 
 from common import ROOT, OUT, WORLD_ART, load_rgba, save_rgba, crop_alpha, weather, board_window
 import props
@@ -26,9 +29,77 @@ def register(sid, arr, ppu, pivot=(0.5, 0.0), group="Props"):
     return sid
 
 
-def register_ground(sid, path, w_tiles, h_tiles):
-    sprites[sid] = dict(id=sid, path=str(path.relative_to(ROOT)).replace("\\", "/"), ppu=G, pivotX=0, pivotY=1,
-                        w=w_tiles * G, h=h_tiles * G)
+def register_ground(sid, path, w_tiles, h_tiles, ppu=G):
+    sprites[sid] = dict(id=sid, path=str(path.relative_to(ROOT)).replace("\\", "/"), ppu=ppu, pivotX=0, pivotY=1,
+                        w=int(w_tiles * ppu), h=int(h_tiles * ppu))
+
+
+# ------------------------------------------------------------ Codex environment set
+ENV_CATALOG = ROOT / "Assets/Game/Resources/Environment/catalog.json"
+_env = None
+
+
+def env(asset_id):
+    """Register a piece of the environment catalog (Assets/Game/Resources/Environment) by id."""
+    global _env
+    if _env is None:
+        _env = {a["id"]: a for a in json.loads(ENV_CATALOG.read_text(encoding="utf-8"))["assets"]}
+    sid = "env-" + asset_id
+    if sid not in sprites:
+        a = _env[asset_id]
+        sprites[sid] = dict(id=sid, path=a["path"], ppu=a["ppu"], pivotX=round(a["pivotX"], 4),
+                            pivotY=round(a["pivotY"], 4), w=a["width"], h=a["height"])
+    return sid
+
+
+def env_info(asset_id):
+    env(asset_id)
+    return _env[asset_id]
+
+
+def warm_spots(path, min_area=12):
+    """Lit windows and lanterns of a sprite: clusters of warm bright pixels.
+
+    Returns [(x_px, y_px, area)] measured from the sprite's top-left corner.
+    """
+    arr = np.asarray(Image.open(path).convert("RGBA")).astype(float)
+    r, g, b, a = arr[..., 0], arr[..., 1], arr[..., 2], arr[..., 3]
+    warm = (a > 200) & (r > 170) & (g > 110) & (b < 120) & (r - b > 80) & (g - b > 30)
+    lab, n = ndi.label(ndi.binary_dilation(warm, iterations=2))
+    spots = []
+    for i in range(1, n + 1):
+        ys, xs = np.nonzero((lab == i) & warm)
+        if len(xs) >= min_area:
+            spots.append((float(xs.mean()), float(ys.mean()), len(xs)))
+    return spots
+
+
+def env_copy(asset_id, out_id, height_tiles, unlit=False):
+    """Own-scaled copy of a catalog piece (the catalog keeps its original size for the prefabs).
+
+    unlit=True also darkens the warm glass/flame pixels (a lamp by day).
+    """
+    info = env_info(asset_id)
+    arr = np.asarray(Image.open(ROOT / info["path"]).convert("RGBA")).astype(float)
+    if unlit:
+        r, g, b, a = arr[..., 0], arr[..., 1], arr[..., 2], arr[..., 3]
+        warm = (a > 0) & (r > 150) & (g > 90) & (r - b > 60)
+        grey = arr[..., :3].mean(-1, keepdims=True) * np.array([0.62, 0.64, 0.7])
+        arr[..., :3] = np.where(warm[..., None], grey, arr[..., :3])
+    path = SPRITES / "Props" / f"{out_id}.png"
+    save_rgba(arr, path)
+    ppu = round(arr.shape[0] / height_tiles, 3)
+    sprites[out_id] = dict(id=out_id, path=str(path.relative_to(ROOT)).replace("\\", "/"), ppu=ppu,
+                           pivotX=round(info["pivotX"], 4), pivotY=round(info["pivotY"], 4),
+                           w=arr.shape[1], h=arr.shape[0])
+    return out_id
+
+
+def lighting_sprites():
+    """Street lamp (lit/unlit) and wall torch at gameplay scale."""
+    env_copy("poste-luz", "poste-luz-aceso", 3.2)
+    env_copy("poste-luz", "poste-luz-apagado", 3.2, unlit=True)
+    env_copy("tocha", "tocha-parede", 1.05)
 
 
 def size_units(sid):
@@ -144,6 +215,7 @@ def build_sprites():
     register("papel", props.paper(), 64, (0.5, 0.5), "FX")
     register("nuvem-sombra", props.soft_blob(420, 260, (18, 20, 34), 255, 26), 26, (0.5, 0.5), "FX")
     register("fumaca", props.smoke_puff(), 64, (0.5, 0.5), "FX")
+    lighting_sprites()
 
 
 NPC_TINTS = {

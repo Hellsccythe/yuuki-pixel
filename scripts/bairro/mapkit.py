@@ -12,7 +12,26 @@ from PIL import Image, ImageDraw
 from scipy import ndimage as ndi
 
 from common import ROOT, fbm, value_noise, smoothstep, tile, desaturate, terrain_textures
-from assets import G, MAPS, sprites, size_units, register_ground, FX
+from assets import G, MAPS, sprites, size_units, register_ground, FX, env, env_info
+
+
+# Light spots (sprite pixels from the top-left, radius in tiles, intensity) of the buildings.
+_HOME = ((307, 268, 2.6, 0.95),)
+_TIMBER = ((291, 406, 2.6, 0.95),)
+_STONE = ((196, 156, 1.4, 0.7), (186, 252, 1.5, 0.75), (17, 263, 2.4, 0.9))
+BUILDING_LIGHTS = {
+    "casa-yuuki": _HOME, "casa-velha": _HOME, "casa-tenebris": _TIMBER, "casa-madeira-gasta": _TIMBER,
+    "casa-pedra": _STONE, "casa-pedra-gasta": _STONE[:2], "oficina": ((380, 289, 2.4, 0.9), (100, 256, 1.3, 0.6)),
+}
+
+
+# Height of every map (tiles) by scene, to convert arrival points into the target map's
+# Unity coordinates.
+SCENE_HEIGHTS = {"Bairro_RuaDeCasa": 36, "Bairro_Moradias": 36, "Bairro_Dungeon": 28}
+
+
+def target_uy(scene, y):
+    return round(SCENE_HEIGHTS[scene] - y, 4)
 
 
 class MapLayout:
@@ -29,12 +48,27 @@ class MapLayout:
         self.mud = []     # (x, y, rx, ry) wet dark earth, walkable
         self.extra_areas = []  # interiors: dict(id, name, x, y, w, h, ground, painter)
         self.spawn = (w / 2, h / 2)
+        self.G = G                 # ground pixels per tile
+        self.lights = []           # standalone lights (windows, lanterns, candles)
+        self.interactables = []    # signs, bookshelves, stairs (used with F)
+        self.region = "Os Subúrbios"
+        self.follow_clock = True   # outdoors: light follows the time of day
+        self.fixed_ambient = (0.01, 0.01, 0.02, 0.92)
+        self.clock_runs = True
+        self.wind = True
+        self.birds_enabled = True
+        self.painter = None        # custom ground painter (the dungeon)
+        self.background = (0.17, 0.15, 0.11)
 
     # ------------------------------------------------------------- placement
-    def obj(self, sid, x, y, col=None, sway=0.0, swing=False, shadow=None, flip=False, group=""):
-        """Sprite with its pivot (feet) at design (x, y). col = (w, h, lift) in tiles."""
+    def obj(self, sid, x, y, col=None, sway=0.0, swing=False, shadow=None, flip=False, group="", light=None, order=0):
+        """Sprite with its pivot (feet) at design (x, y). col = (w, h, lift) in tiles.
+
+        light: dict(px, py, radius, intensity, color, flicker, night, off) with (px, py) the light
+        origin in sprite pixels from the top-left corner; `off` is the sprite shown by day.
+        """
         o = dict(sprite=sid, x=x, y=y, sway=sway, swing=swing, flipX=flip, sortBias=0.0, group=group,
-                 colW=0.0, colH=0.0, colX=0.0, colY=0.0)
+                 colW=0.0, colH=0.0, colX=0.0, colY=0.0, light=self._object_light(sid, flip, light), order=order)
         if col:
             w, h, lift = col
             o.update(colW=w, colH=h, colX=0.0, colY=lift + h / 2)
@@ -43,9 +77,65 @@ class MapLayout:
             self.shadows.append((x, y, shadow))
         return o
 
-    def building(self, sid, cx, feet_y, depth=0.52, door=None, smoke_at=None, flip=False, width_frac=0.9):
+    @staticmethod
+    def _pixel_offset(sid, px, py, flip=False):
+        """Offset (dx right, dy up) in tiles from a sprite's pivot to one of its pixels."""
+        s = sprites[sid]
+        if flip:
+            px = s["w"] - px
+        return (px - s["w"] * s["pivotX"]) / s["ppu"], ((s["h"] - py) - s["h"] * s["pivotY"]) / s["ppu"]
+
+    def _object_light(self, sid, flip, light):
+        if not light:
+            return dict(radius=0.0, intensity=0.0, r=1.0, g=0.72, b=0.38, flicker=0.0, night=False, ox=0.0, oy=0.0,
+                        offSprite="")
+        dx, dy = self._pixel_offset(sid, light["px"], light["py"], flip)
+        c = light.get("color", (1.0, 0.72, 0.38))
+        return dict(radius=light.get("radius", 3.0), intensity=light.get("intensity", 1.0), r=c[0], g=c[1], b=c[2],
+                    flicker=light.get("flicker", 0.0), night=light.get("night", False), ox=round(dx, 4), oy=round(dy, 4),
+                    offSprite=light.get("off", ""))
+
+    def light(self, x, y, radius=2.0, intensity=1.0, color=(1.0, 0.72, 0.38), flicker=0.0, night=True):
+        self.lights.append(dict(x=x, y=y, radius=radius, intensity=intensity, r=color[0], g=color[1], b=color[2],
+                                flicker=flicker, night=night))
+
+    def env(self, asset_id, x, y, solid=None, flip=False, shadow=None, sway=0.0, light=None, lift=0.0):
+        """Place a piece of the Codex environment catalog with its catalogue collider."""
+        a = env_info(asset_id)
+        col = None
+        if (solid is None and a["colliderWidth"] > 0) or solid:
+            cw = a["colliderWidth"] or a["tileWidth"] * 0.8
+            ch = a["colliderHeight"] or 0.4
+            col = (cw, ch, lift)
+        return self.obj(env(asset_id), x, y, col, sway=sway, flip=flip, shadow=shadow, light=light)
+
+    def lamp_post(self, x, y, flip=False):
+        """Street lamp: unlit by day, warm pool of light at night."""
+        return self.obj("poste-luz-aceso", x, y, (0.35, 0.22, 0.0), flip=flip, shadow=0.8,
+                        light=dict(px=262, py=178, radius=4.6, intensity=1.05, night=True, off="poste-luz-apagado"))
+
+    def sign(self, sid, x, y, title, text, flip=False, prompt="Ler", col=(0.4, 0.3, 0.0)):
+        self.obj(sid, x, y, col, flip=flip, shadow=0.8)
+        self.interactables.append(dict(kind="sign", x=x, y=y + 0.25, radius=1.3, prompt=prompt, title=title, text=text))
+
+    def inspect(self, x, y, title, text, prompt="Examinar", radius=1.3):
+        self.interactables.append(dict(kind="sign", x=x, y=y, radius=radius, prompt=prompt, title=title, text=text))
+
+    def stairs(self, x, y, prompt, destination, target_map, target, radius=1.3):
+        self.interactables.append(dict(kind="stairs", x=x, y=y, radius=radius, prompt=prompt, title=destination,
+                                       targetMap=target_map, targetX=target[0], targetY=target[1]))
+
+    def shelf(self, x, y, name, book_ids=(), prompt="Ver livros", radius=1.2):
+        self.interactables.append(dict(kind="books", x=x, y=y, radius=radius, prompt=prompt, title=name,
+                                       bookIds=list(book_ids)))
+
+    def building(self, sid, cx, feet_y, depth=0.52, door=None, smoke_at=None, flip=False, width_frac=0.9, lit=True):
         w, h = size_units(sid)
         self.obj(sid, cx, feet_y, (w * width_frac, h * depth - 0.35, 0.35), shadow=w * 0.95, flip=flip)
+        # Lanterns and lit windows of the original art glow at night.
+        for (px, py, radius, strength) in (BUILDING_LIGHTS.get(sid, ()) if lit else ()):
+            dx, dy = self._pixel_offset(sid, px, py, flip)
+            self.light(cx + dx, feet_y - dy, radius, strength, flicker=0.12)
         if smoke_at:
             sx, sy = smoke_at  # chimney top in sprite pixels (from the top-left)
             s = sprites[sid]
@@ -89,6 +179,31 @@ class MapLayout:
             pos = b1
         span(pos, end, "water")
 
+    def block_outside(self, walkable, step=0.25):
+        """Blockers covering everything that is not inside the walkable rectangles."""
+        import numpy as np
+        nx, ny = int(round(self.w / step)), int(round(self.h / step))
+        free = np.zeros((ny, nx), bool)
+        for (x, y, w, h) in walkable:
+            free[max(0, int(round(y / step))):int(round((y + h) / step)), max(0, int(round(x / step))):int(round((x + w) / step))] = True
+        solid = ~free
+        used = np.zeros_like(solid)
+        for j in range(ny):
+            i = 0
+            while i < nx:
+                if not solid[j, i] or used[j, i]:
+                    i += 1
+                    continue
+                i1 = i
+                while i1 < nx and solid[j, i1] and not used[j, i1]:
+                    i1 += 1
+                j1 = j + 1
+                while j1 < ny and solid[j1, i:i1].all() and not used[j1, i:i1].any():
+                    j1 += 1
+                used[j:j1, i:i1] = True
+                self.block(i * step, j * step, (i1 - i) * step, (j1 - j) * step)
+                i = i1
+
     def wall_row(self, sid, x0, x1, feet_y, alt="muro-gasto"):
         w, _ = size_units(sid)
         x, i = x0 + w / 2, 0
@@ -115,25 +230,25 @@ class MapLayout:
 
     # ---------------------------------------------------------------- ground
     def _rect_mask(self, rects, blur, noise_amt, rng, cell=40):
-        h, w = self.h * G, self.w * G
+        h, w = self.h * self.G, self.w * self.G
         m = np.zeros((h, w))
         for (x, y, rw, rh) in rects:
-            m[max(0, int(y * G)):int((y + rh) * G), max(0, int(x * G)):int((x + rw) * G)] = 1
+            m[max(0, int(y * self.G)):int((y + rh) * self.G), max(0, int(x * self.G)):int((x + rw) * self.G)] = 1
         m = ndi.gaussian_filter(m, blur)
         n = fbm(h, w, cell, rng) - 0.5
         return smoothstep(0.42, 0.58, m + n * noise_amt)
 
     def _ellipse(self, cx, cy, rx, ry, rng, wobble=0.18):
-        h, w = self.h * G, self.w * G
+        h, w = self.h * self.G, self.w * self.G
         yy, xx = np.mgrid[0:h, 0:w]
-        d = ((xx - cx * G) / (rx * G)) ** 2 + ((yy - cy * G) / (ry * G)) ** 2
+        d = ((xx - cx * self.G) / (rx * self.G)) ** 2 + ((yy - cy * self.G) / (ry * self.G)) ** 2
         return d + (value_noise(h, w, 10, rng) - 0.5) * wobble * 4
 
     def paint_ground(self, grass_dry=0.5, bald_level=0.55):
         rng = np.random.default_rng(self.seed)
         prng = random.Random(self.seed)
         tex = terrain_textures()
-        h, w = self.h * G, self.w * G
+        h, w = self.h * self.G, self.w * self.G
         grass = tile(tex["grass"], h, w)
         dirt = tile(tex["dirt"], h, w, 37, 91)
         cobble = tile(tex["cobble"], h, w, 120, 12)
@@ -151,10 +266,10 @@ class MapLayout:
         ruts = np.zeros((h, w))
         lanes = np.zeros((h, w), bool)
         for base, (l0, l1) in self.ruts:
-            wob = np.sin(xx / G * 0.45 + base) * 0.18 * G + (value_noise(h, w, 80, rng) - 0.5) * 0.4 * G
-            dy = np.abs(yy - base * G - wob)
+            wob = np.sin(xx / self.G * 0.45 + base) * 0.18 * self.G + (value_noise(h, w, 80, rng) - 0.5) * 0.4 * self.G
+            dy = np.abs(yy - base * self.G - wob)
             ruts += np.exp(-(dy / 6) ** 2) * 0.9 - np.exp(-((dy - 9) / 4) ** 2) * 0.25
-            lanes |= (yy > l0 * G) & (yy < l1 * G)
+            lanes |= (yy > l0 * self.G) & (yy < l1 * self.G)
         ruts *= lanes * (0.6 + 0.4 * value_noise(h, w, 50, rng))
         street *= (1 - ruts[..., None] * 0.2)
         ground = ground * (1 - road[..., None]) + street * road[..., None]
@@ -209,7 +324,7 @@ class MapLayout:
 
         sh = np.zeros((h, w))
         for (x, y, sw) in self.shadows:
-            e = ((xx - x * G) / (sw * G / 2)) ** 2 + ((yy - (y - 0.15) * G) / (0.42 * G)) ** 2
+            e = ((xx - x * self.G) / (sw * self.G / 2)) ** 2 + ((yy - (y - 0.15) * self.G) / (0.42 * self.G)) ** 2
             sh = np.maximum(sh, np.clip(1 - e, 0, 1))
         ground *= (1 - ndi.gaussian_filter(sh, 5)[..., None] * 0.45)
 
@@ -230,7 +345,7 @@ class MapLayout:
         img = Image.fromarray(np.clip(ground, 0, 255).astype(np.uint8)).convert("RGBA")
         d = ImageDraw.Draw(img)
         for (bx, by, bw, bh) in self.bridges:
-            x0, y0, x1, y1 = bx * G, by * G, (bx + bw) * G, (by + bh) * G
+            x0, y0, x1, y1 = bx * self.G, by * self.G, (bx + bw) * self.G, (by + bh) * self.G
             d.rectangle([x0 - 2, y0 - 2, x1 + 2, y1 + 6], fill=(30, 22, 16, 150))
             vertical_boards = bw > bh  # boards span the ditch: across a N-S ditch they lie E-W
             step = 14
@@ -250,19 +365,19 @@ class MapLayout:
             f = self._ellipse(cx, cy, rx, ry, rng, 0.12)
             wet, water = smoothstep(1.9, 1.0, f), smoothstep(1.05, 0.9, f)
             ground *= (1 - wet[..., None] * 0.28)
-            refl = np.array([118, 132, 146]) * (0.75 + 0.35 * smoothstep(cy * G + ry * G, cy * G - ry * G, yy))[..., None]
+            refl = np.array([118, 132, 146]) * (0.75 + 0.35 * smoothstep(cy * self.G + ry * self.G, cy * self.G - ry * self.G, yy))[..., None]
             ground = ground * (1 - water[..., None] * 0.85) + refl * water[..., None] * 0.85
             ground += (water * (np.abs(((xx - yy * 0.6) % 23) - 3) < 1) * 0.5)[..., None] * 60
         for (cx, cy, rx, ry) in self.holes:
             f = self._ellipse(cx, cy, rx, ry, rng, 0.14)
             inside = smoothstep(1.02, 0.9, f)
             rim = smoothstep(1.7, 1.05, f) * (1 - inside)
-            v = np.clip((yy - (cy - ry) * G) / (2 * ry * G), 0, 1)
+            v = np.clip((yy - (cy - ry) * self.G) / (2 * ry * self.G), 0, 1)
             wall = np.array([104, 78, 56]) * (1 - v[..., None] * 0.9)
             deep = smoothstep(0.35, 0.7, v)[..., None]
             pit = wall * (1 - deep) + np.array([22, 16, 12]) * deep
             ground = ground * (1 - inside[..., None]) + pit * inside[..., None]
-            top, bottom = rim * (yy < cy * G), rim * (yy >= cy * G)
+            top, bottom = rim * (yy < cy * self.G), rim * (yy >= cy * self.G)
             ground *= (1 - top[..., None] * 0.35)
             ground = ground * (1 - bottom[..., None] * 0.35) + np.array([176, 150, 116]) * bottom[..., None] * 0.35
 
@@ -270,14 +385,23 @@ class MapLayout:
         return np.clip(ground, 0, 255)
 
     # ---------------------------------------------------------------- export
+    def _export_interactable(self, item):
+        out = dict(kind="sign", prompt="", title="", text="", targetMap="", targetX=0.0, targetY=0.0, bookIds=[],
+                   radius=1.2)
+        out.update(item)
+        out["y"] = self.uy(item["y"])
+        out["targetY"] = target_uy(item["targetMap"], item["targetY"]) if item.get("targetMap") else 0.0
+        return out
+
     def uy(self, y):
         return round(self.h - y, 4)
 
     def export(self, npc_variants):
         MAPS.mkdir(parents=True, exist_ok=True)
         gid = f"{self.id}_chao"
-        Image.fromarray(self.paint_ground().astype(np.uint8)).save(MAPS / f"{gid}.png", optimize=True)
-        register_ground(gid, MAPS / f"{gid}.png", self.w, self.h)
+        ground = self.painter(self) if self.painter else self.paint_ground()
+        Image.fromarray(ground.astype(np.uint8)).save(MAPS / f"{gid}.png", optimize=True)
+        register_ground(gid, MAPS / f"{gid}.png", self.w, self.h, self.G)
         areas = [dict(id=self.id, name=self.name, x=0, y=0, w=self.w, h=self.h, ground=gid, outdoor=True)]
         for a in self.extra_areas:
             agid = f"{a['id']}_chao"
@@ -286,6 +410,7 @@ class MapLayout:
             areas.append(dict(id=a["id"], name=a["name"], x=a["x"], y=self.h - a["y"] - a["h"], w=a["w"], h=a["h"],
                               ground=agid, outdoor=False))
         used = {o["sprite"] for o in self.objects} | {a["ground"] for a in areas}
+        used |= {o["light"]["offSprite"] for o in self.objects if o["light"]["offSprite"]}
         used |= set(FX["leaves"]) | set(FX["pigeon"]) | {FX["dust"], FX["paper"], FX["cloud"], FX["smoke"]}
         variants = [v for v in npc_variants if any(n["variant"] == v["id"] for n in self.npcs)]
         for v in variants:
@@ -299,8 +424,15 @@ class MapLayout:
             objects=[dict(o, y=self.uy(o["y"])) for o in self.objects],
             blockers=[dict(b, y=self.uy(b["y"])) for b in self.blockers],
             portals=[dict(p, y=self.uy(p["y"]), targetY=self.uy(p["targetY"])) for p in self.portals],
-            exits=[dict(e, y=self.uy(e["y"]), targetY=self.uy(e["targetY"]) if e.get("targetMap") else 0)
+            exits=[dict(e, y=self.uy(e["y"]), targetY=target_uy(e["targetMap"], e["targetY"]) if e.get("targetMap") else 0,
+                        outwardX=-1.0 if e["x"] < 1.5 else 1.0 if e["x"] > self.w - 1.5 else 0.0,
+                        outwardY=1.0 if e["y"] < 1.5 else -1.0 if e["y"] > self.h - 1.5 else 0.0)
                    for e in self.exits],
+            lights=[dict(l, y=self.uy(l["y"])) for l in self.lights],
+            interactables=[self._export_interactable(i) for i in self.interactables],
+            region=self.region, followClock=self.follow_clock, clockRuns=self.clock_runs, wind=self.wind,
+            ambient=dict(r=self.fixed_ambient[0], g=self.fixed_ambient[1], b=self.fixed_ambient[2], a=self.fixed_ambient[3]),
+            background=dict(r=self.background[0], g=self.background[1], b=self.background[2], a=1.0),
             npcs=[dict(id=n["id"], variant=n["variant"], scale=n["scale"], speed=n["speed"], mode=n["mode"],
                        waitMin=n["waitMin"], waitMax=n["waitMax"],
                        points=[dict(x=p[0], y=self.uy(p[1])) for p in n.get("points", [])],
@@ -318,9 +450,9 @@ class MapLayout:
         path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
         return data
 
-    def preview(self, data, scale=24):
+    def preview(self, data, scale=24, night=True):
         """Compose ground + sprites with Y sorting to check the map without Unity."""
-        k = scale / G
+        k = scale / self.G
         base = Image.open(ROOT / sprites[data["areas"][0]["ground"]]["path"]).convert("RGBA")
         canvas = base.resize((int(base.width * k), int(base.height * k)), Image.LANCZOS)
         rooms = []
@@ -341,8 +473,13 @@ class MapLayout:
                     return ox + (ux - a["x"]) * scale, (self.h - uy) * scale
             return ux * scale, (self.h - uy) * scale
 
-        group_y = {o["group"]: o["y"] for o in data["objects"] if o["group"] and not o["swing"]}
-        items = [((group_y[o["group"]] - 0.001) if o["swing"] else o["y"], o) for o in data["objects"]]
+        group_y = {}
+        for o in data["objects"]:
+            if o["group"] and o["group"] not in group_y:
+                group_y[o["group"]] = o["y"]
+        # Inside a group everything sorts at the group's anchor; higher order draws on top.
+        items = [((group_y[o["group"]] - 0.001 * (o.get("order", 0) or (1 if o["swing"] else 0)))
+                  if o["group"] else o["y"], o) for o in data["objects"]]
         for n in data["npcs"]:
             p = n["points"][0] if n["points"] else dict(x=n["rect"]["x"] + n["rect"]["w"] / 2,
                                                        y=n["rect"]["y"] + n["rect"]["h"] / 2)
@@ -372,4 +509,39 @@ class MapLayout:
         out = ROOT / f"docs/bairro/{self.id}-preview.png"
         out.parent.mkdir(parents=True, exist_ok=True)
         full.convert("RGB").save(out, optimize=True)
+        if night or not data["followClock"]:
+            self._night_preview(data, full, scale, to_px)
         return out
+
+    def _night_preview(self, data, full, scale, to_px):
+        """Same maths as the Yuuki/Darkness shader, to check the lights without Unity."""
+        amb = data["ambient"] if not data["followClock"] else dict(r=0.03, g=0.05, b=0.14, a=0.66)
+        lights = []
+        for o in data["objects"]:
+            l = o["light"]
+            if l["radius"] > 0:
+                lights.append((o["x"] + l["ox"], o["y"] + l["oy"], l["radius"], l["intensity"], (l["r"], l["g"], l["b"])))
+        for l in data["lights"]:
+            lights.append((l["x"], l["y"], l["radius"], l["intensity"], (l["r"], l["g"], l["b"])))
+        wpx, hpx = full.size
+        yy, xx = np.mgrid[0:hpx, 0:wpx].astype(float)
+        light = np.zeros((hpx, wpx))
+        glow = np.zeros((hpx, wpx, 3))
+        for (x, y, r, k, c) in lights:
+            px, py = to_px(x, y)
+            d = np.sqrt((xx - px) ** 2 + ((yy - py) * 1.3) ** 2) / (r * scale)
+            f = np.clip(1 - d, 0, 1)
+            f = f * f * (3 - 2 * f) * k
+            light += f
+            glow += f[..., None] * np.array(c)
+        lit = np.floor(np.clip(light, 0, 1) * 8 + 0.35) / 8
+        glow = np.where(light[..., None] > 1e-4, glow / np.maximum(light[..., None], 1e-4), 0)
+        dark = amb["a"] * (1 - lit)
+        glow_a = lit * 0.2 * min(1.0, amb["a"] * 1.6)
+        alpha = np.clip(dark + glow_a, 0, 1)[..., None]
+        rgb = (dark[..., None] * np.array([amb["r"], amb["g"], amb["b"]]) * 255 + glow_a[..., None] * glow * 255) / \
+            np.maximum(dark + glow_a, 1e-4)[..., None]
+        base = np.asarray(full.convert("RGB")).astype(float)
+        out = base * (1 - alpha) + rgb * alpha
+        path = ROOT / f"docs/bairro/{self.id}-noite.png"
+        Image.fromarray(np.clip(out, 0, 255).astype(np.uint8)).save(path, optimize=True)
