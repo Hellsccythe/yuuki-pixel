@@ -30,6 +30,73 @@ public sealed class YuukiBairro : MonoBehaviour
     private float toastUntil;
     private float titleUntil;
     private Texture2D pixel;
+    private string pendingScene, pendingLabel;
+    private Vector2 pendingArrival;
+    public bool AwaitingTravel => !string.IsNullOrEmpty(pendingScene);
+    public bool Paused { get; private set; }
+
+    private void Update()
+    {
+        if (busy) return;
+        if (AwaitingTravel)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape)) CancelMapChange();
+            else if (Input.GetKeyDown(KeyCode.Return)) ConfirmMapChange();
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape)) SetPaused(!Paused);
+    }
+
+    public bool RequestMapChange(string destination, string scene, Vector2 arrival)
+    {
+        if (busy || Paused || AwaitingTravel) return false;
+        if (string.IsNullOrEmpty(scene) || !Application.CanStreamedLevelBeLoaded(scene)) return false;
+        pendingScene = scene;
+        pendingLabel = destination;
+        pendingArrival = arrival;
+        player.InputBlocked = true;
+        Time.timeScale = 0;
+        return true;
+    }
+
+    public void CancelMapChange()
+    {
+        if (!AwaitingTravel) return;
+        pendingScene = null;
+        Time.timeScale = 1;
+        player.InputBlocked = false;
+        Toast("Você continua em " + Current.name + ".");
+    }
+
+    public void ConfirmMapChange()
+    {
+        if (!AwaitingTravel) return;
+        string scene = pendingScene;
+        pendingScene = null;
+        Time.timeScale = 1;
+        LoadMap(scene, pendingArrival);
+    }
+
+    public void SetPaused(bool value)
+    {
+        if (busy || AwaitingTravel) return;
+        Paused = value;
+        player.InputBlocked = value;
+        Time.timeScale = value ? 0 : 1;
+    }
+
+    public void ReturnToMenu()
+    {
+        Time.timeScale = 1;
+        YuukiMapTravel.Clear();
+        SceneManager.LoadScene(YuukiMenu.SceneName);
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance == this) Instance = null;
+        if (pixel != null) Destroy(pixel);
+        Time.timeScale = 1;
+    }
 
     private void Awake()
     {
@@ -62,7 +129,7 @@ public sealed class YuukiBairro : MonoBehaviour
     // Walks out to another modular map (another scene) and arrives at `arrival` there.
     public void LoadMap(string sceneName, Vector2 arrival)
     {
-        if (!busy) StartCoroutine(LoadMapRoutine(sceneName, arrival));
+        if (!busy && !Paused && !AwaitingTravel) StartCoroutine(LoadMapRoutine(sceneName, arrival));
     }
 
     private IEnumerator LoadMapRoutine(string sceneName, Vector2 arrival)
@@ -91,7 +158,7 @@ public sealed class YuukiBairro : MonoBehaviour
 
     public void Travel(Vector2 target, string areaId)
     {
-        if (!busy) StartCoroutine(TravelRoutine(target, GetArea(areaId) ?? FindArea(target)));
+        if (!busy && !Paused && !AwaitingTravel) StartCoroutine(TravelRoutine(target, GetArea(areaId) ?? FindArea(target)));
     }
 
     private IEnumerator TravelRoutine(Vector2 target, Area area)
@@ -152,7 +219,31 @@ public sealed class YuukiBairro : MonoBehaviour
         }
         var hint = new GUIStyle(label) { fontSize = 12, alignment = TextAnchor.MiddleLeft };
         hint.normal.textColor = new Color(1, 1, 1, 0.55f);
-        GUI.Label(new Rect(14, 612, 420, 22), "WASD / setas · andar      Shift · correr", hint);
+        GUI.Label(new Rect(14, 612, 580, 22), "WASD / setas · andar      Shift · correr      Esc · pausa", hint);
+
+        if (AwaitingTravel || Paused)
+        {
+            GUI.color = new Color(0.02f, 0.03f, 0.025f, .8f);
+            GUI.DrawTexture(new Rect(0, 0, width, 640), pixel);
+            GUI.color = Color.white;
+            float left = width / 2 - 220;
+            DrawPanel(new Rect(left, 194, 440, 236), 1);
+            var wrap = new GUIStyle(label) { wordWrap = true, fontSize = 19 };
+            var btn = new GUIStyle(GUI.skin.button) { fontSize = 16 };
+            if (AwaitingTravel)
+            {
+                GUI.Label(new Rect(left+24, 218, 392, 75), "Ir para " + pendingLabel + "?", wrap);
+                GUI.Label(new Rect(left+24, 285, 392, 32), "Enter confirma · Esc cancela", label);
+                if (GUI.Button(new Rect(left+24, 340, 188, 46), "Continuar aqui", btn)) CancelMapChange();
+                if (GUI.Button(new Rect(left+228, 340, 188, 46), "Mudar de área", btn)) ConfirmMapChange();
+            }
+            else
+            {
+                GUI.Label(new Rect(left+24, 214, 392, 50), "Pausa", wrap);
+                if (GUI.Button(new Rect(left+24, 279, 392, 48), "Retomar", btn)) SetPaused(false);
+                if (GUI.Button(new Rect(left+24, 345, 392, 48), "Menu inicial", btn)) ReturnToMenu();
+            }
+        }
 
         if (fade > 0)
         {

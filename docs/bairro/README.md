@@ -12,10 +12,10 @@ Jogo em vista de cima no estilo Stardew Valley: Yuuki anda livremente em X e Y (
 | --- | --- | --- |
 | **Rua de Casa** — casa da Yuuki, casa do Tenebris (vizinho), o beco da história, pracinha do poço | **pronto** (este) | centro |
 | **Moradias** — vielas de barracos de tábua, valeta, pracinha comunitária, galinheiro | **pronto** | oeste da Rua de Casa |
-| Escola do bairro — antiga e pobre, com a biblioteca | a fazer (falta arte) | norte da Rua de Casa |
-| Distrito comercial — lojinhas de roupa, comida, padaria | a fazer (falta arte) | leste da Rua de Casa |
+| Escola do bairro — antiga e pobre, com a biblioteca | arte disponível; falta montar o mapa | norte da Rua de Casa |
+| Distrito comercial — lojinhas de roupa, comida, padaria | arte disponível; falta montar o mapa | leste da Rua de Casa |
 
-Andar até a borda leva ao mapa vizinho com um fade (cenas separadas, carregadas pela saída). As saídas para mapas que ainda não existem mostram "em breve" e bloqueiam a passagem. Os prompts para gerar a arte que falta (NPCs, lojas, escola) estão em `Art/World/prompts-bairro.md`.
+Andar até a borda abre a confirmação de viagem. Enter ou o botão confirma; Esc cancela. A viagem usa fade e cenas separadas. As saídas para mapas que ainda não existem mostram "em breve" e bloqueiam a passagem. O [novo conjunto de 61 assets e o protótipo com menu](assets-v2.md) cobrem comércio, escola, trecho abandonado e dungeon. Os prompts anteriores e as referências de personagens continuam em `Art/World/prompts-bairro.md`.
 
 ## O que a Rua de Casa tem
 

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Yuuki · Galeria de cenários</title>
+<style>
+  :root{color-scheme:dark;font:16px/1.5 system-ui,sans-serif;background:#121914;color:#e4dfcd}
+  *{box-sizing:border-box}body{margin:0}button,input,select{font:inherit}
+  header{padding:40px 5vw 30px;border-bottom:1px solid #414536;background:linear-gradient(115deg,#232c21,#111813)}
+  .eyebrow{color:#b8b286;letter-spacing:.2em;font-size:.72rem}h1{font:normal clamp(28px,4vw,48px)/1.1 Georgia,serif;margin:14px 0}header p{color:#aeb49e;max-width:810px}
+  main{padding:25px 5vw}.toolbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+  input,select,button{background:#252e23;color:inherit;border:1px solid #505841;border-radius:4px;padding:10px 14px}
+  button{cursor:pointer}button:hover,button:focus-visible{border-color:#c9bd83;outline:2px solid #c9bd8340}
+  input{flex:1;min-width:190px}#count{color:#aeb49e;margin-left:auto;font-size:.9rem}
+  #grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(235px,1fr));gap:18px}
+  .card{text-align:left;padding:0;overflow:hidden;border-color:#353f31;background:#1e261f}
+  .art{height:224px;background:repeating-conic-gradient(#272d27 0% 25%,#2b302a 0% 50%) 0/24px 24px;display:block;position:relative;overflow:hidden}
+  .art img{position:absolute;inset:3%;width:94%;height:94%;object-fit:contain;image-rendering:pixelated}.name{display:block;padding:13px 15px 2px;font-weight:600}.category{display:block;color:#a7ad96;font-size:.8rem;padding:0 15px 14px}
+  dialog{width:min(1100px,94vw);border:1px solid #788265;background:#171e18;color:inherit;padding:24px}dialog::backdrop{background:#080c09df}
+  .dialogtop{display:flex;justify-content:space-between;gap:15px;align-items:center}h2{font:normal 28px Georgia,serif;margin:0}
+  #large{display:block;margin:auto;max-width:100%;max-height:62vh;image-rendering:pixelated}#stage{padding:22px;margin:18px 0;background:repeating-conic-gradient(#272d27 0% 25%,#2b302a 0% 50%) 0/24px 24px}
+  #details{color:#bac0ab}a{color:#d7c89b}footer{padding:30px 5vw;color:#909c83;font-size:.85rem}
+  @media(max-width:550px){header{padding-top:25px}main{padding:20px}#grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.art{height:160px}.name{font-size:.85rem;padding:10px}.category{padding:0 10px 12px}.dialogtop{align-items:start}h2{font-size:22px}}
+</style>
+<header><div class="eyebrow">YUUKI / CIDADE DOS ANJOS</div><h1>O bairro, peça por peça.</h1><p>Lojas que sobrevivem, uma escola gasta e vestígios sob a terra. Explore o conjunto de cenários para as próximas áreas do jogo.</p></header>
+<main><div class="toolbar"><input id="search" type="search" placeholder="Buscar uma peça…" aria-label="Buscar peça"><select id="category" aria-label="Filtrar categoria"><option>Todos</option></select><span id="count" role="status"></span></div><div id="grid"></div></main>
+<footer>61 assets de cenário · Personagens provisórios nesta etapa. As novas áreas serão montadas com estas peças após a revisão. Pisos são texturas de preenchimento; as transições de terreno ainda precisam ser compostas nos mapas.</footer>
+<dialog id="detail"><div class="dialogtop"><h2 id="name"></h2><button id="close" aria-label="Fechar ampliação">Fechar · Esc</button></div><div id="stage"><img id="large" alt=""></div><p id="details"></p><a id="download" download>Baixar PNG</a></dialog>
+<script>
+const $=id=>document.getElementById(id);
+let assets=[];
+const normalize=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+function openAsset(asset){
+  $('name').textContent=asset.name;$('large').src='../'+asset.path;$('large').alt=asset.name;
+  $('download').href='../'+asset.path;
+  $('details').textContent=`${asset.category} · ${asset.width} × ${asset.height} px · ${asset.floor?'Textura de chão': 'PNG transparente'} · ${asset.note}`;
+  $('detail').showModal();
+}
+function render(){
+  const term=normalize($('search').value),category=$('category').value;
+  const filtered=assets.filter(a=>(category==='Todos'||a.category===category)&&normalize(a.name+' '+a.category).includes(term));
+  $('grid').replaceChildren();
+  filtered.forEach(a=>{
+    const card=document.createElement('button');card.className='card';
+    const art=document.createElement('span');art.className='art';
+    const img=document.createElement('img');img.src='../'+a.path;img.alt=a.name;img.loading='lazy';art.append(img);
+    const name=document.createElement('span');name.className='name';name.textContent=a.name;
+    const cat=document.createElement('span');cat.className='category';cat.textContent=a.category;
+    card.append(art,name,cat);card.onclick=()=>openAsset(a);$('grid').append(card);
+  });
+  $('count').textContent=`${filtered.length} de ${assets.length} peças`;
+}
+$('close').onclick=()=>$('detail').close();
+$('detail').onclick=e=>{if(e.target===$('detail') && (e.offsetX<0||e.offsetY<0||e.offsetX>$('detail').clientWidth||e.offsetY>$('detail').clientHeight))$('detail').close();};
+$('search').oninput=render;$('category').onchange=render;
+fetch('../Assets/Game/Resources/Environment/catalog.json').then(r=>{if(!r.ok)throw Error(r.status);return r.json();}).then(data=>{
+  assets=data.assets;new Set(assets.map(a=>a.category)).forEach(cat=>{const o=document.createElement('option');o.textContent=cat;$('category').append(o);});render();
+}).catch(()=>{$('count').textContent='Abra esta galeria pelo servidor local do projeto (porta 8765).';});
+</script></html>
