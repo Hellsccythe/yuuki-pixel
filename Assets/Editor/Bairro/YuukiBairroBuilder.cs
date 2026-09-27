@@ -72,6 +72,24 @@ public static class YuukiBairroBuilder
 
         BuildObjects(data, sprites, map);
         BuildColliders(data, map);
+        // Guard the outer edge even after declining an exit. Triggers remain inside
+        // these walls, so travel still works but walking off a cancelled edge cannot.
+        foreach (var a in data.areas)
+        {
+            var boundary = new GameObject("Limites - " + a.id).transform;
+            boundary.SetParent(map, false);
+            void Edge(string name, Vector2 center, Vector2 size)
+            {
+                var go = new GameObject(name);
+                go.transform.SetParent(boundary, false);
+                go.transform.position = center;
+                go.AddComponent<BoxCollider2D>().size = size;
+            }
+            Edge("Oeste", new Vector2(a.x-.3f, a.y+a.h/2), new Vector2(.6f, a.h));
+            Edge("Leste", new Vector2(a.x+a.w+.3f, a.y+a.h/2), new Vector2(.6f, a.h));
+            Edge("Sul", new Vector2(a.x+a.w/2, a.y-.3f), new Vector2(a.w, .6f));
+            Edge("Norte", new Vector2(a.x+a.w/2, a.y+a.h+.3f), new Vector2(a.w, .6f));
+        }
         var player = BuildPlayer(data);
         var cameraFollow = BuildCamera(player.transform);
         var outdoorOnly = new List<GameObject>();
@@ -127,6 +145,7 @@ public static class YuukiBairroBuilder
         scenes.Add(new EditorBuildSettingsScene(scenePath, true));
         int Rank(EditorBuildSettingsScene s)
         {
+            if (s.path == ScenesFolder + YuukiMenu.SceneName + ".unity") return -1;
             for (int i = 0; i < MapOrder.Length; i++)
             {
                 string mapJson = MapsFolder + MapOrder[i] + ".json";

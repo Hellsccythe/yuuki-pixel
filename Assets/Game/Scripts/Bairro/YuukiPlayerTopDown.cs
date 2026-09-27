@@ -10,7 +10,20 @@ public sealed class YuukiPlayerTopDown : MonoBehaviour
     [SerializeField, Min(0f)] private float runSpeed = 4.6f;
     [SerializeField] private Animator animator;
 
-    public bool InputBlocked { get; set; }
+    private bool inputBlocked;
+    public bool InputBlocked
+    {
+        get => inputBlocked;
+        set
+        {
+            inputBlocked = value;
+            if (!value) return;
+            direction = Vector2.zero;
+            Velocity = Vector2.zero;
+            if (body != null) body.linearVelocity = Vector2.zero;
+            if (animator != null) { animator.SetBool("Moving", false); animator.SetBool("Running", false); }
+        }
+    }
     public bool FacingLeft { get; private set; }
     public Vector2 Velocity { get; private set; }
 
@@ -50,7 +63,7 @@ public sealed class YuukiPlayerTopDown : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Velocity = direction * (running ? runSpeed : walkSpeed);
+        Velocity = InputBlocked ? Vector2.zero : direction * (running ? runSpeed : walkSpeed);
 #if UNITY_6000_0_OR_NEWER
         body.linearVelocity = Velocity;
 #else

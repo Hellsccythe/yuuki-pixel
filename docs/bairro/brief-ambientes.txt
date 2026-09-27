@@ -1,0 +1,50 @@
+1. Dungeon Pequena (Entrada escondida nos subúrbios)Descrição geral do ambiente:
+
+Uma pequena dungeon subterrânea e claustrofóbica, completamente escura, iluminada apenas pela luz fraca e tremulante de tochas enferrujadas presas às paredes de pedra úmida e rachada. O ar é pesado, úmido e carregado de cheiro de mofo, terra antiga e algo doce-podre, como carne em decomposição misturada com incenso queimado. As paredes são de pedra irregular, cobertas de musgo escuro e veios de sujeira preta que parecem escorrer como sangue seco. O chão é de terra batida misturada com ossos quebrados e fragmentos de asas de anjo (penas enegrecidas e ossos finos). Há um silêncio opressivo, interrompido apenas pelo chiado ocasional das tochas e pelo eco distante de algo que se arrasta.Tom: Pesado, macabro, misterioso e de abandono sagrado. Como se fosse um local onde anjos de classe baixa foram esquecidos ou punidos, e a própria fé se transformou em algo podre.Assets individuais detalhados:
+Parede de pedra da dungeon:
+Parede de pedra irregular e úmida, com rachaduras profundas, musgo escuro quase preto e manchas de fuligem. Tochas de ferro enferrujado fixadas em suportes tortos, com chamas amareladas e trêmulas que projetam sombras longas e distorcidas. Algumas pedras têm marcas de garras ou arranhões profundos.
+Chão da dungeon:
+Terra batida irregular, coberta de ossos de animais pequenos (ratos, corvos) e ossos humanoides mais longos e finos (possivelmente de anjos caídos ou reprimidos). Fragmentos de penas enegrecidas e ossos de asas quebrados espalhados. Em alguns pontos há poças escuras de água parada que refletem a luz das tochas de forma distorcida.
+Ossos e restos:
+Pilhas de ossos de animais e humanoides misturados. Crânios com órbitas vazias e marcas de queimadura. Costelas quebradas, fêmures longos e finos, e o que parece ser uma asa de anjo completa, mas carbonizada e coberta de teias de aranha. Alguns ossos estão presos em correntes enferrujadas nas paredes.
+Tocha de parede:
+Tocha de ferro enferrujado e torto, com suporte de metal corroído. Chama pequena, amarela e instável, que solta fumaça preta. A luz é fraca e cria um círculo de iluminação limitado, deixando o resto em escuridão quase total.
+Entrada da dungeon (visível do lado de fora):
+Uma abertura irregular no chão ou em um muro antigo dos subúrbios, parcialmente coberta por tábuas podres e vegetação morta. Há uma escada de pedra quebrada que desce para a escuridão. Ao redor da entrada há ossos pequenos e penas enegrecidas, como se algo tivesse tentado sair… ou entrado.
+Detalhes extras de atmosfera:
+Correntes enferrujadas penduradas no teto baixo. Símbolos religiosos desgastados e riscado (halos quebrados, asas cortadas). Uma pequena alcova com um altar destruído, onde ainda há restos de velas derretidas e ossos dispostos em forma de círculo.
+2. Vila / Subúrbios (Mapa modular com 4 regiões)Descrição geral do bairro:
+
+Um subúrbio grande e decadente do Reino dos Anjos, onde vivem os anjos de classes baixas. Tudo é pobre, sujo e oprimido. As construções são antigas, desgastadas pelo tempo e pelo abandono. Muros cobertos de musgo escuro, portões enferrujados, casas humildes de madeira e pedra rachada. O chão é de terra batida com poças de lama e lixo espalhado. O céu parece sempre um pouco mais cinzento aqui. A decadência é visível em cada detalhe: paredes descascadas, telhados com buracos, roupas penduradas em varais improvisados e um silêncio pesado de quem já se acostumou a ser esquecido. A entrada da dungeon fica escondida em algum canto mais abandonado deste bairro.Estilo visual: Pixel art 2D estilo Stardew Valley, mas com paleta mais sombria e desaturada (tons de cinza, marrom sujo, verde-musgo escuro e amarelo desbotado).Região 1 – Residencial
+Muros e cercas:
+Muros altos de pedra antiga, cobertos de musgo escuro e líquen. Alguns trechos estão rachados ou parcialmente desmoronados. Portões de ferro enferrujado, tortos e com grades quebradas. Cercas de madeira podre com tábuas faltando.
+Casas humildes:
+Casas pequenas de madeira escura e pedra rachada. Telhados de telha quebrada ou de madeira com buracos. Janelas pequenas com vidros sujos ou cobertos por panos. Portas de madeira desgastada, algumas com marcas de fechadura reforçada. Varais com roupas velhas e surradas. Chaminés fumegantes com fumaça cinza. Algumas casas têm jardins minúsculos e mortos, com plantas secas.
+Detalhes de decadência:
+Lixo acumulado nos cantos, poças de lama, ossos de animais pequenos espalhados, e paredes com pichações apagadas ou símbolos religiosos desbotados.
+Região 2 – Área Comercial
+Lojas:
+
+Pequenas lojas de aparência humilde e pobre. Fachadas de madeira desgastada e pedra. Letreiros pintados à mão, desbotados e rachados.
+Loja de roupas:
+Vitrine com manequins velhos e roupas simples, surradas e de cores desbotadas. Alguns tecidos pendurados do lado de fora, sujos e rasgados. Placa de madeira “Roupas e Remendos”.
+Padaria:
+Fachada com janela de madeira e cheiro imaginário de pão. Prateleiras com pães duros e bolos simples. Placa “Pão do Dia” quase ilegível. Chão de madeira com farinha espalhada.
+Mercearia:
+Prateleiras de madeira com poucos produtos (sacos de grãos, latas enferrujadas, frutas murchas). Balcão de madeira rachada. Placa “Mercearia do Bairro”.
+Outras lojas possíveis:
+Ferreiro improvisado, pequeno mercado de segunda mão, e uma loja de “objetos sagrados” com itens religiosos baratos e quebrados.
+
+Detalhes:
+
+Todas as lojas têm aparência de sobrevivência, não de prosperidade. Portas rangendo, janelas sujas, e poucos clientes imaginários.
+Região 3 – Escola
+Prédio da escola:
+Um prédio maior que as casas, mas ainda humilde e desgastado. Paredes de pedra e madeira, com rachaduras e musgo. Telhado parcialmente danificado. Janelas grandes, mas com vidros quebrados ou cobertos por tábuas. Um pequeno pátio de terra batida com alguns brinquedos quebrados e bancos de madeira podre.
+Detalhes:
+Placa de madeira “Escola dos Subúrbios” quase apagada. Dentro (se visível) carteiras velhas, quadros negros riscados e livros surrados. O lugar transmite a ideia de que as crianças aprendem o mínimo necessário em um ambiente de pobreza e opressão.
+Região 4 – Bairro onde Yuuki e Tenebris moravam
+Casas específicas:
+Duas casas um pouco mais isoladas, ainda mais decadentes que o resto. Uma delas com uma janela quebrada e uma porta que parece ter sido forçada no passado. Jardim completamente morto. Um varal vazio. Pequenos detalhes pessoais (um brinquedo quebrado, uma pena caída, um símbolo riscado na parede) que sugerem a presença anterior dos personagens.
+Ambiente ao redor:
+Rua mais estreita e abandonada. Muros mais altos e quebrados. A entrada da dungeon fica escondida por trás de uma das casas ou sob um portão enferrujado coberto de vegetação morta. O clima aqui é ainda mais pesado e silencioso, como se o bairro inteiro evitasse olhar para aquele canto.

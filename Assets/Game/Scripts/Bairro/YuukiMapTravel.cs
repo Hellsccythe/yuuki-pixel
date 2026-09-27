@@ -6,6 +6,8 @@ public static class YuukiMapTravel
     private static bool pending;
     private static Vector2 spawn;
 
+    public static void Clear() { pending = false; }
+
     public static void Set(Vector2 arrival)
     {
         spawn = arrival;

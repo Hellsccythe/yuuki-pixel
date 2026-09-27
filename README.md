@@ -2,6 +2,12 @@
 
 Prototipo 2D independente do RPG de mesa. Este diretorio ja e um projeto Unity 6000.0.82f1; nao e necessario criar outro projeto ou copiar a pasta Assets.
 
+## Jogar e revisar os cenários
+
+Abra **Builds/Bairro/Yuuki.exe** para o protótipo Windows com menu inicial, galeria de 61 peças novas e os mapas Rua de Casa/Moradias. WASD/setas para andar, Shift para correr, Esc para pausar. As saídas entre mapas agora pedem confirmação. No Unity, abra **Assets/Game/Scenes/Bairro_Menu.unity**; o menu **Yuuki > Protótipo > Exportar jogo para Windows** gera o executável.
+
+Os novos conjuntos de comércio, escola, bairro abandonado e dungeon estão em **Assets/Game/Resources/Environment**, com prefabs em **Assets/Game/Environment/Prefabs**. [Inventário, reprodução e limites desta etapa](docs/bairro/assets-v2.md). A galeria web está em **preview/assets.html**. A organização das próximas áreas e os personagens definitivos ficam para a etapa seguinte.
+
 ## Bairro da Yuuki (vista de cima, estilo Stardew Valley)
 
 O jogo agora segue em vista de cima, com movimento livre em X e Y. Dois dos quatro mapas modulares do bairro estao prontos e ligados entre si: a **Rua de Casa** (casa da Yuuki com interior, casa do Tenebris, o beco da historia, pracinha do poco) e as **Moradias** (vielas de barracos, valeta com pontes, pracinha comunitaria, galinheiro), com moradores andando, animais e vento. No Unity use o menu **Yuuki > Bairro > Construir todo o bairro** e aperte Play na cena Assets/Game/Scenes/Bairro_RuaDeCasa.unity. Detalhes, os quatro mapas planejados e como regerar a arte em docs/bairro/README.md.

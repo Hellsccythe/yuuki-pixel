@@ -6,7 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Game/Scenes/YuukiPrototype.unity
-    guid: 42d75411456481849af54f4bfc3bf8c3
+    path: Assets/Game/Scenes/Bairro_Menu.unity
+    guid: 2d6f22a477a96a242b9b284a2818883c
+  - enabled: 1
+    path: Assets/Game/Scenes/Bairro_RuaDeCasa.unity
+    guid: aedb2c4e54de16e49a897907cc0c0eab
+  - enabled: 1
+    path: Assets/Game/Scenes/Bairro_Moradias.unity
+    guid: c199483ffd6acfc449b3bc6edef9f4e3
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
