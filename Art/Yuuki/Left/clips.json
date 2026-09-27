@@ -1,0 +1,14 @@
+{
+  "direction": "left",
+  "nearWing": "black",
+  "farWing": "white",
+  "status": "generated edit for visual review; not an exact pixel mirror",
+  "doubleJumpIncluded": false,
+  "clips": [
+    {"name":"walk_left","file":"walk-left-source-v1.png","columns":6,"rows":3,"row":0,"frames":6,"fps":8,"loop":true,"source":"../Right/walk-approved-source.png","sourceRow":2},
+    {"name":"run_left","file":"run-jump-left-v2.png","columns":6,"rows":2,"row":0,"frames":6,"fps":12,"loop":true,"source":"../Right/run-jump-study-v2.png","sourceRow":0},
+    {"name":"jump_left","file":"run-jump-left-v2.png","columns":6,"rows":2,"row":1,"frames":6,"fps":8,"loop":false,"source":"../Right/run-jump-study-v2.png","sourceRow":1}
+  ],
+  "limitations": ["Uneven drawing placement and tight outer margins need review before slicing", "Generated edit changed some source pixels and poses", "Colored edge residue remains"],
+  "unity": "Do not use the previous 6x6 importer on these sheets; grid validation and pivots pending."
+}

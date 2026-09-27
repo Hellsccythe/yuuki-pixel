@@ -1,0 +1,34 @@
+{
+  "atlas": "Yuuki_Idle_2x1.png",
+  "dimensions_px": [
+    1024,
+    512
+  ],
+  "frame_size_px": [
+    512,
+    512
+  ],
+  "clips": [
+    {
+      "name": "idle_left",
+      "column": 0,
+      "frames": 1,
+      "pivot_x_px": 256,
+      "pivot_y_from_top_px": 400,
+      "source": "Art/Yuuki/Left/idle-left-v1.png",
+      "removed_detached_pixels": 20521,
+      "status": "neutral_pose_candidate"
+    },
+    {
+      "name": "idle_right",
+      "column": 1,
+      "frames": 1,
+      "pivot_x_px": 256,
+      "pivot_y_from_top_px": 400,
+      "source": "Art/Yuuki/Right/idle-right-v1.png",
+      "removed_detached_pixels": 11750,
+      "status": "neutral_pose_candidate"
+    }
+  ],
+  "note": "Grounded neutral poses; no breathing or blink cycle yet."
+}

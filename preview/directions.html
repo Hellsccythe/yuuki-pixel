@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yuuki — atlas de movimento 6x6</title>
+<style>
+:root{color-scheme:dark}body{background:#20232e;color:#eee;font:16px system-ui;max-width:960px;margin:24px auto;padding:20px}
+.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap}button,select,input{padding:8px}
+#stage{width:min(90vw,512px);aspect-ratio:1;margin:20px auto;background-color:#444;background-image:linear-gradient(45deg,#666 25%,transparent 25%),linear-gradient(-45deg,#666 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#666 75%),linear-gradient(-45deg,transparent 75%,#666 75%);background-size:24px 24px;background-position:0 0,0 12px,12px -12px,-12px 0;border:1px solid #aaa}
+#frame{width:100%;height:100%;background-repeat:no-repeat;image-rendering:pixelated}
+#note{color:#ffd589;line-height:1.5}code{color:#c9d6ff}
+</style>
+</head>
+<body>
+<h1>Yuuki — inspeção dos sprites</h1>
+<div class="controls">
+<label>Animação <select id="clip"></select></label>
+<button id="play">Pausar</button>
+<button id="step">Próximo quadro</button>
+<label>FPS <input id="fps" type="number" value="8" min="1" max="24"></label>
+</div>
+<div id="stage"><div id="frame"></div></div>
+<p id="status"></p>
+<p id="note">Repouso com os pés apoiados; cabelo da caminhada/corrida à esquerda retocado; fragmentos removidos. A passada ainda tem poses semelhantes e precisa de avaliação. Corrida à direita preservada. Pulo à esquerda com contorno revisado. Pulo duplo não incluído.</p>
+<script>
+const atlas = new Image();
+atlas.src = "../Assets/Game/Art/Yuuki/Yuuki_Movement_6x6.png?v=3";
+const idleAtlas = new Image();
+idleAtlas.src = "../Assets/Game/Art/Yuuki/Yuuki_Idle_2x1.png?v=3";
+const clips = [
+  {name:"Andar para a esquerda",row:0,fps:8,loop:true},
+  {name:"Andar para a direita",row:1,fps:8,loop:true},
+  {name:"Correr para a esquerda",row:2,fps:12,loop:true},
+  {name:"Correr para a direita",row:3,fps:12,loop:true},
+  {name:"Pular para a esquerda",row:4,fps:10,loop:false},
+  {name:"Pular para a direita",row:5,fps:10,loop:false},
+  {name:"Repouso à esquerda",column:0,fps:1,loop:false,idle:true},
+  {name:"Repouso à direita",column:1,fps:1,loop:false,idle:true}
+];
+const select = document.querySelector("#clip");
+const stage = document.querySelector("#frame");
+const status = document.querySelector("#status");
+const fps = document.querySelector("#fps");
+const play = document.querySelector("#play");
+clips.forEach((clip,index)=>select.add(new Option(clip.name,index)));
+let frame = 0;
+let playing = true;
+let last = 0;
+function draw(){
+  const clip = clips[Number(select.value)];
+  const col = frame;
+  stage.style.backgroundImage = "url('" + (clip.idle ? idleAtlas.src : atlas.src) + "')";
+  stage.style.backgroundSize = clip.idle ? "200% 100%" : "600% 600%";
+  stage.style.backgroundPosition = clip.idle ? (clip.column * 100) + "% 0%" : (col*20) + "% " + (clip.row*20) + "%";
+  status.textContent = clip.name + (clip.idle ? " · pose neutra estática" : " · quadro " + (frame+1) + "/6");
+}
+function selectClip(){
+  frame=0;
+  const clip=clips[Number(select.value)];
+  fps.value=clip.fps;
+  playing=true;
+  play.textContent="Pausar";
+  draw();
+}
+select.addEventListener("change",selectClip);
+play.addEventListener("click",()=>{
+  playing=!playing;
+  play.textContent=playing?"Pausar":"Reproduzir";
+  if(playing&&frame===5&&!clips[Number(select.value)].loop)frame=0;
+  draw();
+});
+document.querySelector("#step").addEventListener("click",()=>{
+  playing=false;
+  play.textContent="Reproduzir";
+  frame=(frame+1)%6;
+  draw();
+});
+function tick(time){
+  if(atlas.complete&&atlas.naturalWidth>0&&playing&&time-last>=1000/Math.max(1,Math.min(24,Number(fps.value)||8))){
+    last=time;
+    const clip=clips[Number(select.value)];
+    if(frame===5&&!clip.loop){
+      playing=false;
+      play.textContent="Reproduzir";
+    }else frame=(frame+1)%6;
+    draw();
+  }
+  requestAnimationFrame(tick);
+}
+atlas.onload=draw;
+idleAtlas.onload=draw;
+selectClip();
+requestAnimationFrame(tick);
+</script>
+</body>
+</html>

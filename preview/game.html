@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yuuki — prévia jogável</title>
+<style>
+:root { color-scheme: dark; font-family: system-ui, sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #0b1020; color: #f2eaf5; }
+main { max-width: 1120px; margin: 0 auto; padding: 22px; }
+header { display: flex; align-items: end; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+h1 { margin: 0; font-size: clamp(1.5rem, 3vw, 2.3rem); }
+.subtitle { color: #c4abc5; margin: 4px 0 16px; }
+.tag { border: 1px solid #715a80; color: #e8c9e4; border-radius: 999px; padding: 6px 12px; font-size: .85rem; }
+.frame { border: 3px solid #755f87; border-radius: 10px; overflow: hidden; background: #15172b; box-shadow: 0 16px 48px #0008; }
+canvas { width: 100%; height: auto; display: block; image-rendering: auto; outline: none; }
+.hud { display: flex; gap: 12px; flex-wrap: wrap; justify-content: space-between; padding: 10px 2px; color: #e7d2ea; font-size: .92rem; }
+.hud strong { color: #fff; }
+.message { min-height: 62px; border: 1px solid #55445f; background: #1c1930; border-radius: 8px; padding: 12px 14px; line-height: 1.45; }
+.controls { display: flex; justify-content: space-between; gap: 14px; margin: 16px 0; flex-wrap: wrap; }
+.controls > div { display: flex; gap: 8px; }
+button, a.button { border: 1px solid #9d82ab; border-radius: 8px; background: #2a223e; color: white; padding: 9px 14px; font: inherit; text-decoration: none; cursor: pointer; }
+button:hover, a.button:hover { background: #453358; }
+button:active { transform: translateY(1px); }
+.touch button { min-width: 66px; min-height: 50px; touch-action: none; user-select: none; }
+.note { color: #c7bacd; line-height: 1.5; font-size: .9rem; }
+kbd { background: #342b44; border: 1px solid #6d5a79; border-radius: 4px; padding: 1px 5px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+<div><h1>Yuuki · a biblioteca da periferia</h1><p class="subtitle">Prévia jogável de movimento e enquadramento dos sprites</p></div>
+<span class="tag">Protótipo local</span>
+</header>
+<div class="frame"><canvas id="game" width="960" height="540" tabindex="0" aria-label="Prévia jogável da Yuuki"></canvas></div>
+<div class="hud"><span id="pages">Páginas: <strong>0/3</strong></span><span id="state">Carregando atlas...</span><span id="position"></span></div>
+<div class="message" id="message">Atravesse a periferia, recolha três páginas perdidas e leve-as até a biblioteca.</div>
+<div class="controls">
+<div class="touch">
+<button type="button" data-key="left" aria-label="Mover para a esquerda">◀</button>
+<button type="button" data-key="right" aria-label="Mover para a direita">▶</button>
+<button type="button" data-key="run">Correr</button>
+<button type="button" data-key="jump">Pular</button>
+<button type="button" data-key="action">Interagir</button>
+</div>
+<div><button id="restart" type="button">Reiniciar</button><a class="button" href="directions.html">Inspecionar quadros</a></div>
+</div>
+<p class="note">Teclado: <kbd>A</kbd>/<kbd>D</kbd> ou setas para andar, <kbd>Shift</kbd> para correr, <kbd>Espaço</kbd> para pular, <kbd>E</kbd> para interagir. Repouso com os pés apoiados, caminhada e corrida à esquerda revisadas e fragmentos removidos. A passada ainda está em avaliação; o pulo à esquerda também recebeu limpeza do contorno. Pulo duplo ainda não incluído.</p>
+</main>
+<script>
+(function () {
+  "use strict";
+  const canvas = document.querySelector("#game");
+  const ctx = canvas.getContext("2d");
+  const atlas = new Image();
+  atlas.src = "../Assets/Game/Art/Yuuki/Yuuki_Movement_6x6.png?v=3";
+  const idleAtlas = new Image();
+  idleAtlas.src = "../Assets/Game/Art/Yuuki/Yuuki_Idle_2x1.png?v=3";
+  ctx.imageSmoothingEnabled = false;
+
+  const cell = 512;
+  const scale = 0.5;
+  const width = 960;
+  const height = 540;
+  const worldWidth = 3000;
+  const groundY = 460;
+  const gravity = 1150;
+  const walkSpeed = 165;
+  const runSpeed = 280;
+  const jumpSpeed = 460;
+  const clips = {
+    idle_left:  {row: 0, column: 0, fps: 1, pivot: 400, loop: false, idle: true},
+    idle_right: {row: 0, column: 1, fps: 1, pivot: 400, loop: false, idle: true},
+    walk_left:  {row: 0, fps: 8, pivot: 400, loop: true},
+    walk_right: {row: 1, fps: 8, pivot: 400, loop: true},
+    run_left:   {row: 2, fps: 12, pivot: 400, loop: true},
+    run_right:  {row: 3, fps: 12, pivot: 396, loop: true},
+    jump_left:  {row: 4, fps: 10, pivot: 408, loop: false},
+    jump_right: {row: 5, fps: 10, pivot: 403, loop: false}
+  };
+
+  const platforms = [
+    {x: 650, y: 400, w: 180, h: 20},
+    {x: 1140, y: 388, w: 210, h: 20},
+    {x: 1660, y: 405, w: 200, h: 20},
+    {x: 2140, y: 390, w: 175, h: 20}
+  ];
+  const pageTemplate = [
+    {x: 490, y: 427},
+    {x: 1230, y: 355},
+    {x: 1840, y: 374}
+  ];
+  const interactions = [
+    {x: 890, name: "Tenebris", text: "Você encontrou a primeira trilha. Eu vigio o caminho; confira as páginas antes de seguir."},
+    {x: 1945, name: "Alice", text: "Os livros da periferia contam histórias que a academia quase nunca escuta."},
+    {x: 2735, name: "Biblioteca", text: "As portas se abrem. Yuuki devolve as páginas e encontra uma pista sobre a academia."}
+  ];
+
+  const pressed = new Set();
+  const virtual = new Set();
+  let jumpRequested = false;
+  let actionRequested = false;
+  let pages = [];
+  let player;
+  let cameraX = 0;
+  let activeClip = "idle_right";
+  let animationTime = 0;
+  let lastTime = 0;
+  let finished = false;
+  let messageUntil = 0;
+
+  const pagesLabel = document.querySelector("#pages");
+  const stateLabel = document.querySelector("#state");
+  const positionLabel = document.querySelector("#position");
+  const messageLabel = document.querySelector("#message");
+
+  function resizeCanvas() {
+    const bounds = canvas.getBoundingClientRect();
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    const pixelWidth = Math.max(1, Math.round(bounds.width * dpr));
+    const pixelHeight = Math.max(1, Math.round(bounds.height * dpr));
+    if (canvas.width !== pixelWidth || canvas.height !== pixelHeight) {
+      canvas.width = pixelWidth;
+      canvas.height = pixelHeight;
+    }
+    ctx.setTransform(pixelWidth / width, 0, 0, pixelHeight / height, 0, 0);
+    ctx.imageSmoothingEnabled = false;
+  }
+  new ResizeObserver(resizeCanvas).observe(document.querySelector(".frame"));
+  resizeCanvas();
+
+  function reset() {
+    player = {x: 140, y: groundY, vx: 0, vy: 0, grounded: true, facing: "right"};
+    pages = pageTemplate.map(function (p) { return {x: p.x, y: p.y, taken: false}; });
+    cameraX = 0;
+    activeClip = "idle_right";
+    animationTime = 0;
+    finished = false;
+    messageUntil = 0;
+    say("Atravesse a periferia, recolha três páginas perdidas e leve-as até a biblioteca.", 5000);
+  }
+  function say(text, duration) {
+    messageLabel.textContent = text;
+    messageUntil = performance.now() + duration;
+  }
+  function isDown(name) {
+    if (virtual.has(name)) return true;
+    if (name === "left") return pressed.has("a") || pressed.has("arrowleft");
+    if (name === "right") return pressed.has("d") || pressed.has("arrowright");
+    if (name === "run") return pressed.has("shift");
+    return false;
+  }
+  window.addEventListener("keydown", function (event) {
+    const key = event.key.toLowerCase();
+    if (["arrowleft", "arrowright", "arrowup", " ", "shift"].includes(key)) event.preventDefault();
+    pressed.add(key);
+    if (!event.repeat && (key === " " || key === "w" || key === "arrowup")) jumpRequested = true;
+    if (!event.repeat && key === "e") actionRequested = true;
+  });
+  window.addEventListener("keyup", function (event) { pressed.delete(event.key.toLowerCase()); });
+  window.addEventListener("blur", function () { pressed.clear(); virtual.clear(); });
+
+  document.querySelectorAll("[data-key]").forEach(function (button) {
+    const key = button.getAttribute("data-key");
+    button.addEventListener("pointerdown", function (event) {
+      event.preventDefault();
+      button.setPointerCapture(event.pointerId);
+      virtual.add(key);
+      if (key === "jump") jumpRequested = true;
+      if (key === "action") actionRequested = true;
+    });
+    function release(event) { event.preventDefault(); virtual.delete(key); }
+    button.addEventListener("pointerup", release);
+    button.addEventListener("pointercancel", release);
+    button.addEventListener("lostpointercapture", function () { virtual.delete(key); });
+  });
+  document.querySelector("#restart").addEventListener("click", reset);
+  canvas.addEventListener("click", function () { canvas.focus(); });
+
+  function update(dt, time) {
+    const horizontal = (isDown("right") ? 1 : 0) - (isDown("left") ? 1 : 0);
+    if (horizontal) player.facing = horizontal < 0 ? "left" : "right";
+    player.vx = horizontal * (isDown("run") ? runSpeed : walkSpeed);
+    player.x = Math.max(35, Math.min(worldWidth - 35, player.x + player.vx * dt));
+
+    if (jumpRequested && player.grounded) {
+      player.vy = -jumpSpeed;
+      player.grounded = false;
+    }
+    jumpRequested = false;
+
+    const oldY = player.y;
+    player.vy += gravity * dt;
+    player.y += player.vy * dt;
+    player.grounded = false;
+
+    if (player.vy >= 0) {
+      for (const platform of platforms) {
+        if (oldY <= platform.y + 2 && player.y >= platform.y &&
+            player.x > platform.x - 24 && player.x < platform.x + platform.w + 24) {
+          player.y = platform.y;
+          player.vy = 0;
+          player.grounded = true;
+          break;
+        }
+      }
+      if (!player.grounded && player.y >= groundY) {
+        player.y = groundY;
+        player.vy = 0;
+        player.grounded = true;
+      }
+    }
+
+    for (const page of pages) {
+      if (!page.taken && Math.abs(player.x - page.x) < 36 && Math.abs(player.y - page.y) < 76) {
+        page.taken = true;
+        say("Yuuki guardou uma página. Falta " + (3 - pages.filter(function (p) { return p.taken; }).length) + ".", 2600);
+      }
+    }
+
+    if (actionRequested) {
+      let found = false;
+      for (const target of interactions) {
+        if (Math.abs(player.x - target.x) < 90 && Math.abs(player.y - groundY) < 110) {
+          found = true;
+          if (target.name === "Biblioteca" && pages.some(function (p) { return !p.taken; })) {
+            say("A biblioteca espera as três páginas. Explore os caminhos antes de entrar.", 3500);
+          } else {
+            say(target.name + ": " + target.text, 6000);
+            if (target.name === "Biblioteca") finished = true;
+          }
+          break;
+        }
+      }
+      if (!found) say("Não há nada para interagir aqui. Procure as placas e a porta da biblioteca.", 3000);
+    }
+    actionRequested = false;
+
+    const next = player.grounded
+      ? (horizontal === 0 ? "idle_" : (isDown("run") ? "run_" : "walk_")) + player.facing
+      : "jump_" + player.facing;
+    if (next !== activeClip) {
+      activeClip = next;
+      animationTime = 0;
+    } else if (horizontal !== 0 || !player.grounded) {
+      animationTime += dt;
+    } else {
+      animationTime = 0;
+    }
+
+    cameraX = Math.max(0, Math.min(worldWidth - width, player.x - 290));
+    const count = pages.filter(function (p) { return p.taken; }).length;
+    pagesLabel.innerHTML = "Páginas: <strong>" + count + "/3</strong>";
+    stateLabel.textContent = activeClip.replace("_", " · ") + (player.grounded ? "" : " · no ar");
+    positionLabel.textContent = "x: " + Math.round(player.x);
+    if (time > messageUntil && !finished) messageLabel.textContent = "Siga até a biblioteca. A, D, Shift, Espaço e E controlam a Yuuki.";
+  }
+
+  function rect(x, y, w, h, color) {
+    ctx.fillStyle = color;
+    ctx.fillRect(Math.round(x), Math.round(y), Math.round(w), Math.round(h));
+  }
+
+  function drawBackground() {
+    const sky = ctx.createLinearGradient(0, 0, 0, height);
+    sky.addColorStop(0, "#101129");
+    sky.addColorStop(.56, "#352344");
+    sky.addColorStop(1, "#75506b");
+    ctx.fillStyle = sky;
+    ctx.fillRect(0, 0, width, height);
+
+    for (let i = 0; i < 58; i++) {
+      const sx = (i * 179 + 71 - cameraX * .12) % (width + 150);
+      const sy = 26 + (i * 83) % 235;
+      rect(sx < 0 ? sx + width + 150 : sx, sy, i % 7 === 0 ? 3 : 2, 2, "#d9bed8");
+    }
+    rect(758 - cameraX * .08, 58, 62, 62, "#d6b6d4");
+    rect(765 - cameraX * .08, 64, 48, 48, "#f4dddf");
+
+    for (let i = 0; i < 25; i++) {
+      const sx = i * 145 - cameraX * .27 - 40;
+      const towerH = 100 + (i * 41) % 100;
+      rect(sx, groundY - towerH, 85, towerH, "#29233c");
+      rect(sx + 24, groundY - towerH - 28, 36, 28, "#29233c");
+      rect(sx + 37, groundY - towerH - 43, 10, 15, "#29233c");
+      rect(sx + 14, groundY - towerH + 28, 5, 8, "#a77b9a");
+      rect(sx + 60, groundY - towerH + 55, 5, 8, "#a77b9a");
+    }
+    for (let i = 0; i < 18; i++) {
+      const sx = i * 190 - cameraX * .6;
+      const h = 48 + (i * 23) % 75;
+      rect(sx, groundY - h, 135, h, "#30283e");
+      rect(sx + 12, groundY - h - 12, 112, 12, "#3e304b");
+      rect(sx + 30, groundY - h + 30, 9, 13, "#8d617a");
+    }
+  }
+
+  function drawWorld() {
+    const x = -cameraX;
+    rect(0, groundY, width, height - groundY, "#342c41");
+    rect(0, groundY, width, 8, "#a17b9b");
+    for (let i = 0; i < worldWidth / 48; i++) {
+      const px = i * 48 + x;
+      if (px > -50 && px < width + 50) {
+        rect(px, groundY + 16 + (i % 3) * 14, 29, 2, "#594a5f");
+        rect(px + 8, groundY + 6, 17, 2, "#725b75");
+      }
+    }
+    for (const p of platforms) {
+      rect(p.x + x, p.y, p.w, p.h, "#5c4963");
+      rect(p.x + x, p.y, p.w, 7, "#c39abd");
+      for (let b = 20; b < p.w; b += 42) rect(p.x + x + b, p.y + 8, 2, 12, "#7d6380");
+    }
+    for (const page of pages) {
+      if (page.taken) continue;
+      const px = page.x + x;
+      rect(px - 12, page.y - 20, 24, 26, "#f3dfbf");
+      rect(px - 9, page.y - 17, 17, 3, "#af7b9a");
+      rect(px - 8, page.y - 9, 14, 2, "#b8a1a6");
+      rect(px - 8, page.y - 3, 10, 2, "#b8a1a6");
+      rect(px - 17, page.y - 24, 3, 3, "#f9d9a4");
+      rect(px + 16, page.y - 12, 3, 3, "#f9d9a4");
+    }
+
+    for (const target of interactions) {
+      const px = target.x + x;
+      if (target.name === "Biblioteca") {
+        rect(px - 70, groundY - 158, 140, 158, "#221d31");
+        rect(px - 80, groundY - 168, 160, 15, "#9c748b");
+        rect(px - 44, groundY - 118, 88, 118, "#49364e");
+        rect(px + 27, groundY - 62, 6, 8, "#d7b989");
+        ctx.fillStyle = "#f1d8dc";
+        ctx.font = "14px system-ui";
+        ctx.textAlign = "center";
+        ctx.fillText("BIBLIOTECA", px, groundY - 177);
+      } else {
+        rect(px - 28, groundY - 73, 56, 73, target.name === "Tenebris" ? "#242138" : "#7d5b79");
+        rect(px - 33, groundY - 80, 66, 10, "#b58d9c");
+        ctx.fillStyle = "#f1d8dc";
+        ctx.font = "14px system-ui";
+        ctx.textAlign = "center";
+        ctx.fillText(target.name, px, groundY - 89);
+      }
+      if (Math.abs(player.x - target.x) < 90) {
+        ctx.fillStyle = "#ffe3af";
+        ctx.font = "bold 17px system-ui";
+        ctx.fillText("E", px, groundY - 198);
+      }
+    }
+  }
+
+  function drawPlayer() {
+    const clip = clips[activeClip];
+    const texture = clip.idle ? idleAtlas : atlas;
+    if (!texture.complete || !texture.naturalWidth) return;
+    const progress = Math.floor(animationTime * clip.fps);
+    const flight = Math.max(0, Math.min(.999, (player.vy + jumpSpeed) / (2 * jumpSpeed)));
+    const frame = clip.idle ? clip.column : activeClip.startsWith("jump_")
+      ? Math.floor(flight * 6)
+      : clip.loop ? progress % 6 : Math.min(progress, 5);
+    const px = player.x - cameraX - 256 * scale;
+    const py = player.y - clip.pivot * scale;
+    ctx.imageSmoothingEnabled = false;
+    ctx.drawImage(texture, frame * cell, clip.row * cell, cell, cell,
+      Math.round(px), Math.round(py), cell * scale, cell * scale);
+  }
+
+  function render() {
+    drawBackground();
+    drawWorld();
+    drawPlayer();
+    if (!atlas.complete || !atlas.naturalWidth || !idleAtlas.complete || !idleAtlas.naturalWidth) {
+      rect(250, 210, 460, 80, "#1b192b");
+      ctx.fillStyle = "#fff";
+      ctx.font = "20px system-ui";
+      ctx.textAlign = "center";
+      ctx.fillText("Carregando atlas de movimento...", width / 2, 255);
+    }
+  }
+
+  function tick(time) {
+    const dt = Math.min((time - (lastTime || time)) / 1000, .033);
+    lastTime = time;
+    update(dt, time);
+    render();
+    requestAnimationFrame(tick);
+  }
+  atlas.onerror = function () {
+    messageLabel.textContent = "Não foi possível abrir o atlas. Abra esta prévia na pasta do projeto ou pelo servidor local.";
+  };
+  idleAtlas.onerror = atlas.onerror;
+  reset();
+  requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>

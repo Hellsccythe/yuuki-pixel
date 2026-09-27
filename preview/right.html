@@ -1,0 +1,19 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><title>Yuuki direita</title>
+<style>body{font:16px system-ui;background:#20232e;color:#eee;max-width:950px;margin:30px auto;padding:20px}canvas{max-width:100%;background:repeating-conic-gradient(#666 0% 25%,#888 0% 50%) 0/24px 24px;image-rendering:pixelated}select,button,input{padding:8px;margin:6px}#note{color:#ffd589}</style>
+<h1>Yuuki — direita</h1><select id="clip"></select><button id="play">Pausar</button><button id="step">Próximo quadro</button><label>FPS <input id="fps" type="number" value="8" min="1" max="24"></label><p id="note"></p><p id="status"></p><canvas id="view" width="600" height="600"></canvas>
+<script>
+const clips=[
+{name:'Caminhada aprovada',file:'walk-approved-source.png',cols:6,rows:3,start:12,loop:true,fps:8,note:'Terceira linha original, preservada. Aprovação visual; fatiamento ainda em revisão.'},
+{name:'Corrida — nova tentativa',file:'run-jump-study-v2.png',cols:6,rows:3,start:0,loop:true,fps:12,note:'Primeira linha nova. Conferir asas, pernas e ciclo.'},
+{name:'Pulo — nova tentativa',file:'run-jump-study-v2.png',cols:6,rows:3,start:6,loop:false,fps:8,note:'Segunda linha nova. Um pulo; reproduzir novamente para repetir.'},
+{name:'Pulo duplo — estudo da batida',file:'double-jump-study-v1.png',cols:3,rows:2,start:0,loop:false,fps:8,note:'Fundo pintado ainda presente: estudo de movimento, não asset final.'}
+];
+const sel=document.querySelector('#clip'),btn=document.querySelector('#play'),fps=document.querySelector('#fps'),ctx=document.querySelector('#view').getContext('2d');
+clips.forEach((c,i)=>sel.add(new Option(c.name,i)));
+let img=null,frame=0,playing=true,last=0,token=0;
+function draw(){if(!img)return;const c=clips[sel.value],index=c.start+frame,col=index%c.cols,row=Math.floor(index/c.cols),x=Math.floor(col*img.width/c.cols),y=Math.floor(row*img.height/c.rows),w=Math.floor((col+1)*img.width/c.cols)-x,h=Math.floor((row+1)*img.height/c.rows)-y,s=Math.min(600/w,600/h);ctx.clearRect(0,0,600,600);ctx.imageSmoothingEnabled=false;ctx.drawImage(img,x,y,w,h,(600-w*s)/2,(600-h*s)/2,w*s,h*s);document.querySelector('#status').textContent='Quadro '+(frame+1)+'/6';}
+function load(){const id=++token,c=clips[sel.value],next=new Image();img=null;frame=0;playing=true;btn.textContent='Pausar';fps.value=c.fps;document.querySelector('#note').textContent=c.note;next.onload=()=>{if(id!==token)return;img=next;draw();};next.onerror=()=>{document.querySelector('#status').textContent='Falha ao carregar imagem';};next.src='../Art/Yuuki/Right/'+c.file;}
+sel.onchange=load;btn.onclick=()=>{playing=!playing;if(playing&&frame===5)frame=0;btn.textContent=playing?'Pausar':'Reproduzir';draw();};
+document.querySelector('#step').onclick=()=>{playing=false;btn.textContent='Reproduzir';frame=(frame+1)%6;draw();};
+function tick(t){if(img&&playing&&t-last>=1000/Math.max(1,Math.min(24,Number(fps.value)||8))){last=t;if(frame===5&&!clips[sel.value].loop){playing=false;btn.textContent='Reproduzir';}else{frame=(frame+1)%6;draw();}}requestAnimationFrame(tick);}load();requestAnimationFrame(tick);
+</script></html>

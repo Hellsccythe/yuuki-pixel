@@ -1,0 +1,1145 @@
+{
+  "version": 1,
+  "tileSize": 32,
+  "startMap": "suburbs",
+  "modules": [
+    {
+      "id": "home-yard",
+      "objects": [
+        {
+          "asset": "home",
+          "x": 400,
+          "y": 450,
+          "width": 450,
+          "height": 410,
+          "solid": true,
+          "footprint": [
+            -184.5,
+            -176.3,
+            369.0,
+            176.3
+          ]
+        },
+        {
+          "asset": "fence",
+          "x": 155,
+          "y": 550,
+          "width": 240,
+          "height": 75,
+          "solid": true,
+          "footprint": [
+            -98.39999999999999,
+            -22.5,
+            196.79999999999998,
+            22.5
+          ]
+        },
+        {
+          "asset": "fence",
+          "x": 650,
+          "y": 550,
+          "width": 240,
+          "height": 75,
+          "solid": true,
+          "footprint": [
+            -98.39999999999999,
+            -22.5,
+            196.79999999999998,
+            22.5
+          ]
+        },
+        {
+          "asset": "tree",
+          "x": 30,
+          "y": 380,
+          "width": 270,
+          "height": 275,
+          "solid": true,
+          "footprint": [
+            -32.4,
+            -33.0,
+            64.8,
+            33.0
+          ]
+        },
+        {
+          "asset": "crates",
+          "x": 730,
+          "y": 440,
+          "width": 105,
+          "height": 95,
+          "solid": true,
+          "footprint": [
+            -43.05,
+            -28.5,
+            86.1,
+            28.5
+          ]
+        }
+      ],
+      "points": [
+        {
+          "id": "home-door",
+          "x": 461,
+          "y": 476,
+          "title": "Entrar em casa",
+          "text": "",
+          "target": "home",
+          "targetX": 560,
+          "targetY": 590,
+          "journal": false
+        },
+        {
+          "id": "family-gate",
+          "x": 392,
+          "y": 558,
+          "title": "O portão antigo",
+          "text": "A madeira tem marcas do tempo, mas o portão continua firme. Sara e Kled cuidam de tudo o que podem.",
+          "target": "",
+          "targetX": 0,
+          "targetY": 0,
+          "journal": true
+        }
+      ]
+    },
+    {
+      "id": "neighbor-lot",
+      "objects": [
+        {
+          "asset": "timber-house",
+          "x": 250,
+          "y": 450,
+          "width": 385,
+          "height": 440,
+          "solid": true,
+          "footprint": [
+            -157.85,
+            -189.2,
+            315.7,
+            189.2
+          ]
+        },
+        {
+          "asset": "bench",
+          "x": 420,
+          "y": 496,
+          "width": 110,
+          "height": 66,
+          "solid": true,
+          "footprint": [
+            -45.099999999999994,
+            -19.8,
+            90.19999999999999,
+            19.8
+          ]
+        },
+        {
+          "asset": "crates",
+          "x": 70,
+          "y": 492,
+          "width": 85,
+          "height": 80,
+          "solid": true,
+          "footprint": [
+            -34.85,
+            -24.0,
+            69.7,
+            24.0
+          ]
+        }
+      ],
+      "points": [
+        {
+          "id": "neighbor",
+          "x": 260,
+          "y": 476,
+          "title": "A casa dos vizinhos",
+          "text": "Tenebris mora perto. O caminho até a escola é curto quando os dois vão juntos.",
+          "target": "",
+          "targetX": 0,
+          "targetY": 0,
+          "journal": false
+        }
+      ]
+    },
+    {
+      "id": "old-alley",
+      "objects": [
+        {
+          "asset": "workshop",
+          "x": 0,
+          "y": 355,
+          "width": 375,
+          "height": 315,
+          "solid": true,
+          "footprint": [
+            -153.75,
+            -135.45,
+            307.5,
+            135.45
+          ]
+        },
+        {
+          "asset": "stone-house",
+          "x": 570,
+          "y": 350,
+          "width": 335,
+          "height": 420,
+          "solid": true,
+          "footprint": [
+            -137.35,
+            -180.6,
+            274.7,
+            180.6
+          ]
+        },
+        {
+          "asset": "wall",
+          "x": 280,
+          "y": 110,
+          "width": 250,
+          "height": 130,
+          "solid": true,
+          "footprint": [
+            -102.5,
+            -39.0,
+            205.0,
+            39.0
+          ]
+        },
+        {
+          "asset": "fence",
+          "x": 300,
+          "y": 275,
+          "width": 235,
+          "height": 80,
+          "solid": true,
+          "footprint": [
+            -96.35,
+            -24.0,
+            192.7,
+            24.0
+          ]
+        },
+        {
+          "asset": "crates",
+          "x": 233,
+          "y": 260,
+          "width": 93,
+          "height": 93,
+          "solid": true,
+          "footprint": [
+            -38.129999999999995,
+            -27.9,
+            76.25999999999999,
+            27.9
+          ]
+        },
+        {
+          "asset": "crates",
+          "x": 385,
+          "y": 320,
+          "width": 85,
+          "height": 87,
+          "solid": true,
+          "footprint": [
+            -34.85,
+            -26.099999999999998,
+            69.7,
+            26.099999999999998
+          ]
+        }
+      ],
+      "points": [
+        {
+          "id": "alley-memory",
+          "x": 300,
+          "y": 408,
+          "title": "O beco da cerca",
+          "text": "Terra batida, tinta descascada e uma cerca torta. Este beco guarda o começo de uma amizade que mudaria tudo.",
+          "target": "",
+          "targetX": 0,
+          "targetY": 0,
+          "journal": true
+        }
+      ]
+    },
+    {
+      "id": "school-court",
+      "objects": [
+        {
+          "asset": "school",
+          "x": 320,
+          "y": 450,
+          "width": 515,
+          "height": 455,
+          "solid": true,
+          "footprint": [
+            -211.14999999999998,
+            -195.65,
+            422.29999999999995,
+            195.65
+          ]
+        },
+        {
+          "asset": "well",
+          "x": -80,
+          "y": 565,
+          "width": 155,
+          "height": 160,
+          "solid": true,
+          "footprint": [
+            -63.55,
+            -48.0,
+            127.1,
+            48.0
+          ]
+        },
+        {
+          "asset": "bench",
+          "x": 590,
+          "y": 540,
+          "width": 140,
+          "height": 78,
+          "solid": true,
+          "footprint": [
+            -57.4,
+            -23.4,
+            114.8,
+            23.4
+          ]
+        },
+        {
+          "asset": "tree",
+          "x": 680,
+          "y": 360,
+          "width": 255,
+          "height": 285,
+          "solid": true,
+          "footprint": [
+            -30.599999999999998,
+            -34.199999999999996,
+            61.199999999999996,
+            34.199999999999996
+          ]
+        },
+        {
+          "asset": "sign",
+          "x": 17,
+          "y": 605,
+          "width": 74,
+          "height": 112,
+          "solid": true,
+          "footprint": [
+            -30.34,
+            -33.6,
+            60.68,
+            33.6
+          ]
+        }
+      ],
+      "points": [
+        {
+          "id": "school-door",
+          "x": 320,
+          "y": 478,
+          "title": "Biblioteca da escola",
+          "text": "",
+          "target": "library",
+          "targetX": 576,
+          "targetY": 630,
+          "journal": false
+        },
+        {
+          "id": "school-sign",
+          "x": 17,
+          "y": 630,
+          "title": "Pátio da escola",
+          "text": "Entre o treino e a volta para casa, há sempre tempo para um livro.",
+          "target": "",
+          "targetX": 0,
+          "targetY": 0,
+          "journal": false
+        }
+      ]
+    },
+    {
+      "id": "city-threshold",
+      "objects": [
+        {
+          "asset": "city-gate",
+          "x": 300,
+          "y": 470,
+          "width": 630,
+          "height": 403,
+          "solid": true,
+          "footprint": [
+            -258.3,
+            -173.29,
+            516.6,
+            173.29
+          ]
+        },
+        {
+          "asset": "wall",
+          "x": -145,
+          "y": 440,
+          "width": 240,
+          "height": 122,
+          "solid": true,
+          "footprint": [
+            -98.39999999999999,
+            -36.6,
+            196.79999999999998,
+            36.6
+          ]
+        },
+        {
+          "asset": "sign",
+          "x": 630,
+          "y": 547,
+          "width": 75,
+          "height": 110,
+          "solid": true,
+          "footprint": [
+            -30.749999999999996,
+            -33.0,
+            61.49999999999999,
+            33.0
+          ]
+        }
+      ],
+      "points": [
+        {
+          "id": "city-gate",
+          "x": 300,
+          "y": 510,
+          "title": "O caminho para o centro",
+          "text": "Depois da terra, a pedra bem assentada. Além do portão estão os jardins e as grandes casas da Cidade dos Anjos. Este caminho será aberto na próxima área.",
+          "target": "",
+          "targetX": 0,
+          "targetY": 0,
+          "journal": true
+        }
+      ]
+    }
+  ],
+  "maps": [
+    {
+      "id": "suburbs",
+      "name": "Subúrbios da Cidade dos Anjos",
+      "width": 3072,
+      "height": 2048,
+      "floor": "grass",
+      "spawnX": 615,
+      "spawnY": 662,
+      "paths": [
+        {
+          "x": 0,
+          "y": 640,
+          "w": 3072,
+          "h": 192,
+          "tile": "dirt"
+        },
+        {
+          "x": 512,
+          "y": 400,
+          "w": 160,
+          "h": 1140,
+          "tile": "dirt"
+        },
+        {
+          "x": 1100,
+          "y": 735,
+          "w": 180,
+          "h": 770,
+          "tile": "dirt"
+        },
+        {
+          "x": 400,
+          "y": 1320,
+          "w": 2100,
+          "h": 192,
+          "tile": "dirt"
+        },
+        {
+          "x": 2050,
+          "y": 740,
+          "w": 192,
+          "h": 690,
+          "tile": "dirt"
+        },
+        {
+          "x": 2400,
+          "y": 535,
+          "w": 672,
+          "h": 375,
+          "tile": "stone"
+        },
+        {
+          "x": 1780,
+          "y": 1190,
+          "w": 820,
+          "h": 345,
+          "tile": "stone"
+        },
+        {
+          "x": 720,
+          "y": 1090,
+          "w": 795,
+          "h": 380,
+          "tile": "dirt"
+        }
+      ],
+      "instances": [
+        {
+          "module": "home-yard",
+          "x": 128,
+          "y": 96
+        },
+        {
+          "module": "neighbor-lot",
+          "x": 935,
+          "y": 85
+        },
+        {
+          "module": "neighbor-lot",
+          "x": 1570,
+          "y": 45
+        },
+        {
+          "module": "old-alley",
+          "x": 900,
+          "y": 920
+        },
+        {
+          "module": "school-court",
+          "x": 1800,
+          "y": 850
+        },
+        {
+          "module": "city-threshold",
+          "x": 2420,
+          "y": 170
+        }
+      ],
+      "objects": [
+        {
+          "asset": "sign",
+          "x": 1430,
+          "y": 712,
+          "width": 67,
+          "height": 104,
+          "solid": true,
+          "footprint": [
+            -27.47,
+            -31.2,
+            54.94,
+            31.2
+          ]
+        },
+        {
+          "asset": "well",
+          "x": 820,
+          "y": 905,
+          "width": 145,
+          "height": 143,
+          "solid": true,
+          "footprint": [
+            -59.449999999999996,
+            -42.9,
+            118.89999999999999,
+            42.9
+          ]
+        },
+        {
+          "asset": "bench",
+          "x": 690,
+          "y": 945,
+          "width": 120,
+          "height": 65,
+          "solid": true,
+          "footprint": [
+            -49.199999999999996,
+            -19.5,
+            98.39999999999999,
+            19.5
+          ]
+        },
+        {
+          "asset": "wall",
+          "x": 290,
+          "y": 1180,
+          "width": 340,
+          "height": 151,
+          "solid": true,
+          "footprint": [
+            -139.4,
+            -45.3,
+            278.8,
+            45.3
+          ]
+        },
+        {
+          "asset": "workshop",
+          "x": 385,
+          "y": 1780,
+          "width": 390,
+          "height": 321,
+          "solid": true,
+          "footprint": [
+            -159.89999999999998,
+            -138.03,
+            319.79999999999995,
+            138.03
+          ]
+        },
+        {
+          "asset": "timber-house",
+          "x": 1660,
+          "y": 1850,
+          "width": 365,
+          "height": 419,
+          "solid": true,
+          "footprint": [
+            -149.64999999999998,
+            -180.17,
+            299.29999999999995,
+            180.17
+          ]
+        },
+        {
+          "asset": "stone-house",
+          "x": 2540,
+          "y": 1840,
+          "width": 340,
+          "height": 437,
+          "solid": true,
+          "footprint": [
+            -139.4,
+            -187.91,
+            278.8,
+            187.91
+          ]
+        },
+        {
+          "asset": "tree",
+          "x": 70,
+          "y": 180,
+          "width": 259,
+          "height": 284.90000000000003,
+          "solid": true,
+          "footprint": [
+            -31.08,
+            -34.188,
+            62.16,
+            34.188
+          ]
+        },
+        {
+          "asset": "tree",
+          "x": 825,
+          "y": 240,
+          "width": 233,
+          "height": 256.3,
+          "solid": true,
+          "footprint": [
+            -27.959999999999997,
+            -30.756,
+            55.919999999999995,
+            30.756
+          ]
+        },
+        {
+          "asset": "tree",
+          "x": 1410,
+          "y": 240,
+          "width": 237,
+          "height": 260.70000000000005,
+          "solid": true,
+          "footprint": [
+            -28.439999999999998,
+            -31.284000000000006,
+            56.879999999999995,
+            31.284000000000006
+          ]
+        },
+        {
+          "asset": "tree",
+          "x": 2130,
+          "y": 210,
+          "width": 231,
+          "height": 254.10000000000002,
+          "solid": true,
+          "footprint": [
+            -27.72,
+            -30.492,
+            55.44,
+            30.492
+          ]
+        },
+        {
+          "asset": "tree",
+          "x": 120,
+          "y": 890,
+          "width": 234,
+          "height": 257.40000000000003,
+          "solid": true,
+          "footprint": [
+            -28.08,
+            -30.888,
+            56.16,
+            30.888
+          ]
+        },
+        {
+          "asset": "tree",
+          "x": 190,
+          "y": 1460,
+          "width": 231,
+          "height": 254.10000000000002,
+          "solid": true,
+          "footprint": [
+            -27.72,
+            -30.492,
+            55.44,
+            30.492
+          ]
+        },
+        {
+          "asset": "tree",
+          "x": 90,
+          "y": 1800,
+          "width": 221,
+          "height": 243.10000000000002,
+          "solid": true,
+          "footprint": [
+            -26.52,
+            -29.172,
+            53.04,
+            29.172
+          ]
+        },
+        {
+          "asset": "tree",
+          "x": 2750,
+          "y": 1160,
+          "width": 229,
+          "height": 251.90000000000003,
+          "solid": true,
+          "footprint": [
+            -27.48,
+            -30.228,
+            54.96,
+            30.228
+          ]
+        },
+        {
+          "asset": "tree",
+          "x": 2920,
+          "y": 1480,
+          "width": 246,
+          "height": 270.6,
+          "solid": true,
+          "footprint": [
+            -29.52,
+            -32.472,
+            59.04,
+            32.472
+          ]
+        },
+        {
+          "asset": "tree",
+          "x": 2800,
+          "y": 1790,
+          "width": 211,
+          "height": 232.10000000000002,
+          "solid": true,
+          "footprint": [
+            -25.32,
+            -27.852,
+            50.64,
+            27.852
+          ]
+        },
+        {
+          "asset": "tree",
+          "x": 770,
+          "y": 1730,
+          "width": 266,
+          "height": 292.6,
+          "solid": true,
+          "footprint": [
+            -31.919999999999998,
+            -35.112,
+            63.839999999999996,
+            35.112
+          ]
+        },
+        {
+          "asset": "tree",
+          "x": 1090,
+          "y": 1870,
+          "width": 269,
+          "height": 295.90000000000003,
+          "solid": true,
+          "footprint": [
+            -32.28,
+            -35.508,
+            64.56,
+            35.508
+          ]
+        },
+        {
+          "asset": "tree",
+          "x": 2250,
+          "y": 1810,
+          "width": 224,
+          "height": 246.40000000000003,
+          "solid": true,
+          "footprint": [
+            -26.88,
+            -29.568,
+            53.76,
+            29.568
+          ]
+        },
+        {
+          "asset": "tree",
+          "x": 2050,
+          "y": 1950,
+          "width": 213,
+          "height": 234.3,
+          "solid": true,
+          "footprint": [
+            -25.56,
+            -28.116,
+            51.12,
+            28.116
+          ]
+        }
+      ],
+      "points": [
+        {
+          "id": "road-sign",
+          "x": 1430,
+          "y": 735,
+          "title": "As ruas do bairro",
+          "text": "O caminho de terra liga as casas ao pátio da escola. Ao sul, o beco; a leste, o portão do centro.",
+          "target": "",
+          "targetX": 0,
+          "targetY": 0,
+          "journal": false
+        }
+      ],
+      "regions": [
+        {
+          "name": "Rua de casa",
+          "x": 0,
+          "y": 0,
+          "w": 950,
+          "h": 950
+        },
+        {
+          "name": "Rua dos vizinhos",
+          "x": 950,
+          "y": 0,
+          "w": 1400,
+          "h": 900
+        },
+        {
+          "name": "Beco da cerca",
+          "x": 620,
+          "y": 900,
+          "w": 1130,
+          "h": 750
+        },
+        {
+          "name": "Pátio da escola",
+          "x": 1750,
+          "y": 950,
+          "w": 1000,
+          "h": 700
+        },
+        {
+          "name": "Limiar do centro",
+          "x": 2380,
+          "y": 0,
+          "w": 692,
+          "h": 950
+        }
+      ]
+    },
+    {
+      "id": "home",
+      "name": "Casa de Yuuki",
+      "width": 1024,
+      "height": 768,
+      "floor": "wood",
+      "spawnX": 560,
+      "spawnY": 590,
+      "paths": [
+        {
+          "x": 352,
+          "y": 360,
+          "w": 340,
+          "h": 280,
+          "tile": "stone"
+        }
+      ],
+      "instances": [],
+      "regions": [],
+      "objects": [
+        {
+          "asset": "bed",
+          "x": 225,
+          "y": 390,
+          "width": 155,
+          "height": 220,
+          "solid": true,
+          "footprint": [
+            -63.55,
+            -66.0,
+            127.1,
+            66.0
+          ]
+        },
+        {
+          "asset": "bookshelf",
+          "x": 795,
+          "y": 300,
+          "width": 162,
+          "height": 213,
+          "solid": true,
+          "footprint": [
+            -66.42,
+            -63.9,
+            132.84,
+            63.9
+          ]
+        },
+        {
+          "asset": "table",
+          "x": 535,
+          "y": 460,
+          "width": 234,
+          "height": 184,
+          "solid": true,
+          "footprint": [
+            -95.94,
+            -55.199999999999996,
+            191.88,
+            55.199999999999996
+          ]
+        },
+        {
+          "asset": "crates",
+          "x": 831,
+          "y": 560,
+          "width": 92,
+          "height": 84,
+          "solid": true,
+          "footprint": [
+            -37.72,
+            -25.2,
+            75.44,
+            25.2
+          ]
+        },
+        {
+          "asset": "bench",
+          "x": 219,
+          "y": 620,
+          "width": 165,
+          "height": 90,
+          "solid": true,
+          "footprint": [
+            -67.64999999999999,
+            -27.0,
+            135.29999999999998,
+            27.0
+          ]
+        }
+      ],
+      "points": [
+        {
+          "id": "home-exit",
+          "x": 560,
+          "y": 699,
+          "title": "Sair de casa",
+          "text": "",
+          "target": "suburbs",
+          "targetX": 590,
+          "targetY": 610,
+          "journal": false
+        },
+        {
+          "id": "home-book",
+          "x": 536,
+          "y": 507,
+          "title": "O livro sobre a mesa",
+          "text": "As páginas estão gastas de tanto serem relidas. Para Yuuki, perguntas nunca faltam.",
+          "target": "",
+          "targetX": 0,
+          "targetY": 0,
+          "journal": true
+        },
+        {
+          "id": "home-family",
+          "x": 224,
+          "y": 437,
+          "title": "Um lar cuidado",
+          "text": "A casa é pequena, de madeira e bem cuidada. Os pais trabalham até tarde; o carinho está nas pequenas coisas.",
+          "target": "",
+          "targetX": 0,
+          "targetY": 0,
+          "journal": false
+        }
+      ]
+    },
+    {
+      "id": "library",
+      "name": "Biblioteca da escola",
+      "width": 1152,
+      "height": 832,
+      "floor": "wood",
+      "spawnX": 576,
+      "spawnY": 630,
+      "paths": [
+        {
+          "x": 385,
+          "y": 240,
+          "w": 385,
+          "h": 490,
+          "tile": "stone"
+        }
+      ],
+      "instances": [],
+      "regions": [],
+      "objects": [
+        {
+          "asset": "bookshelf",
+          "x": 185,
+          "y": 305,
+          "width": 200,
+          "height": 250,
+          "solid": true,
+          "footprint": [
+            -82.0,
+            -75.0,
+            164.0,
+            75.0
+          ]
+        },
+        {
+          "asset": "bookshelf",
+          "x": 480,
+          "y": 305,
+          "width": 200,
+          "height": 250,
+          "solid": true,
+          "footprint": [
+            -82.0,
+            -75.0,
+            164.0,
+            75.0
+          ]
+        },
+        {
+          "asset": "bookshelf",
+          "x": 775,
+          "y": 305,
+          "width": 200,
+          "height": 250,
+          "solid": true,
+          "footprint": [
+            -82.0,
+            -75.0,
+            164.0,
+            75.0
+          ]
+        },
+        {
+          "asset": "bookshelf",
+          "x": 1000,
+          "y": 310,
+          "width": 170,
+          "height": 220,
+          "solid": true,
+          "footprint": [
+            -69.7,
+            -66.0,
+            139.4,
+            66.0
+          ]
+        },
+        {
+          "asset": "table",
+          "x": 230,
+          "y": 562,
+          "width": 215,
+          "height": 167,
+          "solid": true,
+          "footprint": [
+            -88.14999999999999,
+            -50.1,
+            176.29999999999998,
+            50.1
+          ]
+        },
+        {
+          "asset": "table",
+          "x": 840,
+          "y": 562,
+          "width": 215,
+          "height": 167,
+          "solid": true,
+          "footprint": [
+            -88.14999999999999,
+            -50.1,
+            176.29999999999998,
+            50.1
+          ]
+        },
+        {
+          "asset": "bench",
+          "x": 1030,
+          "y": 680,
+          "width": 135,
+          "height": 85,
+          "solid": true,
+          "footprint": [
+            -55.349999999999994,
+            -25.5,
+            110.69999999999999,
+            25.5
+          ]
+        }
+      ],
+      "points": [
+        {
+          "id": "library-exit",
+          "x": 576,
+          "y": 764,
+          "title": "Voltar ao pátio",
+          "text": "",
+          "target": "suburbs",
+          "targetX": 2120,
+          "targetY": 1375,
+          "journal": false
+        },
+        {
+          "id": "library-shelf",
+          "x": 480,
+          "y": 344,
+          "title": "O refúgio de Yuuki",
+          "text": "Entre estas estantes, Yuuki e Tenebris dividem tardes de leitura e perguntas. Aqui, a curiosidade tem espaço.",
+          "target": "",
+          "targetX": 0,
+          "targetY": 0,
+          "journal": true
+        }
+      ]
+    }
+  ]
+}

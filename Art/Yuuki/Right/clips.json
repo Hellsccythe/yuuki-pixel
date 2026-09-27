@@ -1,0 +1,12 @@
+{
+  "direction": "right",
+  "nearWing": "white",
+  "farWing": "black",
+  "clips": [
+    {"name":"walk_right","file":"walk-approved-source.png","columns":6,"rows":3,"row":2,"frames":6,"fps":8,"loop":true,"status":"visual approved by user; source pixels preserved; technical slicing pending"},
+    {"name":"run_right","file":"run-jump-study-v2.png","columns":6,"rows":3,"row":0,"frames":6,"fps":12,"loop":true,"status":"awaiting visual approval"},
+    {"name":"jump_right","file":"run-jump-study-v2.png","columns":6,"rows":3,"row":1,"frames":6,"fps":8,"loop":false,"status":"awaiting visual approval"},
+    {"name":"double_jump_right","file":"double-jump-study-v1.png","columns":3,"rows":2,"row":0,"frames":6,"fps":8,"loop":false,"status":"wingbeat concept only; painted background remains; not game ready"}
+  ],
+  "note": "Rows are zero-based. Keep walking from row 3 of the original source. Do not use row 3 of run-jump-study-v2: far wing color incorrect. Existing 6x6 Unity importer does not support these sheets."
+}

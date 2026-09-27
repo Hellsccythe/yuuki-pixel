@@ -1,0 +1,107 @@
+{
+  "format": "6 columns x 6 rows, top to bottom: walk left/right, run left/right, jump left/right",
+  "atlas": "Yuuki_Movement_6x6.png",
+  "dimensions_px": [
+    3072,
+    3072
+  ],
+  "frame_size_px": [
+    512,
+    512
+  ],
+  "frame_order": "left to right, original source order",
+  "image_operations": "source cell crop and transparent paste only, no drawing, scaling, mirroring or recoloring",
+  "double_jump_included": false,
+  "clips": [
+    {
+      "name": "walk_left",
+      "row": 0,
+      "frames": 6,
+      "fps": 8,
+      "loop": true,
+      "source": "Art/Yuuki/Left/walk-left-source-v1.png",
+      "source_row_top_based": 0,
+      "source_row_count": 3,
+      "source_frame_height_px": 296,
+      "pivot_x_px": 256,
+      "pivot_y_from_top_px": 402,
+      "status": "study_not_approved",
+      "possible_source_edge_cut": false
+    },
+    {
+      "name": "walk_right",
+      "row": 1,
+      "frames": 6,
+      "fps": 8,
+      "loop": true,
+      "source": "Art/Yuuki/Right/walk-approved-source.png",
+      "source_row_top_based": 2,
+      "source_row_count": 3,
+      "source_frame_height_px": 296,
+      "pivot_x_px": 256,
+      "pivot_y_from_top_px": 373,
+      "status": "user_approved_frames",
+      "possible_source_edge_cut": false
+    },
+    {
+      "name": "run_left",
+      "row": 2,
+      "frames": 6,
+      "fps": 12,
+      "loop": true,
+      "source": "Art/Yuuki/Left/run-jump-left-v2.png",
+      "source_row_top_based": 0,
+      "source_row_count": 2,
+      "source_frame_height_px": 444,
+      "pivot_x_px": 256,
+      "pivot_y_from_top_px": 439,
+      "status": "study_not_approved",
+      "possible_source_edge_cut": true
+    },
+    {
+      "name": "run_right",
+      "row": 3,
+      "frames": 6,
+      "fps": 12,
+      "loop": true,
+      "source": "Art/Yuuki/Right/run-jump-study-v2.png",
+      "source_row_top_based": 0,
+      "source_row_count": 3,
+      "source_frame_height_px": 296,
+      "pivot_x_px": 256,
+      "pivot_y_from_top_px": 396,
+      "status": "study_not_approved",
+      "possible_source_edge_cut": false
+    },
+    {
+      "name": "jump_left",
+      "row": 4,
+      "frames": 6,
+      "fps": 10,
+      "loop": false,
+      "source": "Art/Yuuki/Left/run-jump-left-v2.png",
+      "source_row_top_based": 1,
+      "source_row_count": 2,
+      "source_frame_height_px": 443,
+      "pivot_x_px": 256,
+      "pivot_y_from_top_px": 408,
+      "status": "study_not_approved",
+      "possible_source_edge_cut": true
+    },
+    {
+      "name": "jump_right",
+      "row": 5,
+      "frames": 6,
+      "fps": 10,
+      "loop": false,
+      "source": "Art/Yuuki/Right/run-jump-study-v2.png",
+      "source_row_top_based": 1,
+      "source_row_count": 3,
+      "source_frame_height_px": 295,
+      "pivot_x_px": 256,
+      "pivot_y_from_top_px": 403,
+      "status": "study_not_approved",
+      "possible_source_edge_cut": false
+    }
+  ]
+}
