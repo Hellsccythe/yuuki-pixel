@@ -47,6 +47,7 @@ public static class YuukiBairroBuilder
     public static void Build(string mapId)
     {
         AssetDatabase.Refresh();
+        YuukiRpgRevisionBuilder.Import();
         var data = JsonUtility.FromJson<YuukiBairroData>(File.ReadAllText(MapsFolder + mapId + ".json"));
         string scenePath = ScenesFolder + data.scene + ".unity";
         var sprites = ImportSprites(data);
@@ -129,6 +130,7 @@ public static class YuukiBairroBuilder
             background = a.outdoor ? new Color(0.17f, 0.15f, 0.11f) : new Color(0.03f, 0.02f, 0.02f)
         }).ToArray();
 
+        YuukiRpgRevisionBuilder.AddHouses(map);
         if (!EditorSceneManager.SaveScene(scene, scenePath))
             throw new InvalidOperationException("Nao foi possivel salvar " + scenePath);
         RegisterScene(scenePath);
@@ -344,6 +346,11 @@ public static class YuukiBairroBuilder
         var animator = art.gameObject.AddComponent<Animator>();
         animator.runtimeAnimatorController = AssetDatabase.LoadAssetAtPath<RuntimeAnimatorController>(YuukiController);
         if (animator.runtimeAnimatorController == null) Debug.LogError("Animator nao encontrado: " + YuukiController);
+        var rpg = go.AddComponent<YuukiRpgAnimation>();
+        rpg.art = art;
+        var movement = AssetDatabase.LoadAllAssetsAtPath("Assets/Game/Art/Yuuki/Yuuki_Movement_6x6.png").OfType<Sprite>();
+        rpg.runLeft = movement.Where(s => s.name.StartsWith("run_left_")).OrderBy(s => s.name).ToArray();
+        rpg.runRight = movement.Where(s => s.name.StartsWith("run_right_")).OrderBy(s => s.name).ToArray();
         return go.AddComponent<YuukiPlayerTopDown>();
     }
 

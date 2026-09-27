@@ -49,10 +49,7 @@ def layout(m):
     m.building("casa-velha", 28.8, 11.2, smoke_at=(96, 18))
     m.building("casa-pedra-gasta", 44.0, 11.2)
     # the alley: dirt floor, cracked walls, crooked fence and stacked crates at the end
-    m.block(6.9, 3.4, 0.5, 8.0)
-    m.block(10.4, 3.4, 0.5, 8.0)
     m.obj("muro-gasto", 8.9, 4.7, (4.2, 0.6, 0.0), shadow=4)
-    m.block(7.4, 3.4, 3.0, 1.9)
     m.obj("cerca-torta", 8.9, 5.6, (3.0, 0.45, 0.0), shadow=2.6)
     m.obj("caixotes", 7.95, 6.4, (1.4, 0.55, 0.0), shadow=1.5)
     m.obj("caixotes", 9.95, 6.1, (1.4, 0.55, 0.0), shadow=1.5, flip=True)
@@ -82,8 +79,7 @@ def layout(m):
     # ------------------------------------------ south block: low cracked walls on the street
     m.wall_row("muro", 7.4, 24.8, 16.3)
     m.wall_row("muro", 35.6, 43.4, 16.3)
-    m.block(7.4, 15.7, 17.4, 8.8)   # behind Yuuki's and Tenebris' houses (roofs, back yards)
-    m.block(35.6, 15.7, 7.8, 8.8)
+    # Buildings and visible walls own their colliders; the grass behind them is walkable.
     # Yuuki's home: old but carefully kept
     door_x = m.building("casa-yuuki", 11.5, 24.8, depth=0.5, door=0.62, smoke_at=(95, 14))
     m.obj("cerca-esq", 8.75, 27.45, (2.0, 0.4, 0.0), shadow=2)
@@ -92,8 +88,6 @@ def layout(m):
     m.obj("cerca-dir", 15.2, 27.4, (1.0, 0.4, 0.0), shadow=1)
     m.obj("horta", 8.9, 26.9, (2.2, 1.0, 0.1))
     m.obj("caixotes", 15.0, 26.5, (1.3, 0.5, 0.0), shadow=1.4)
-    m.block(7.3, 24.3, 0.3, 3.2)
-    m.block(15.8, 24.3, 0.3, 3.2)
     m.portals.append(dict(id="porta-casa-yuuki", x=door_x, y=24.95, w=1.0, h=0.4,
                         targetX=ROOM_X0 + 6.5, targetY=8.6, area="casa-yuuki"))
     # Tenebris' family, next door
@@ -112,12 +106,9 @@ def layout(m):
     m.obj("arvore-seca", 45.6, 21.6, (0.8, 0.45, 0.0), sway=1.8, shadow=2.2)
     m.obj("entulho-1", 44.4, 25.4)
     m.obj("caixotes", 46.6, 26.2, (1.4, 0.55, 0.0), shadow=1.5)
-    m.block(43.4, 15.7, 4.6, 3.2)
     m.obj("mato-5", 44.2, 18.6, sway=6)
     # west path
     m.obj("arvore-seca", 1.4, 20.6, (0.8, 0.45, 0.0), sway=1.8, shadow=2.2)
-    m.block(0, 15.7, 2.8, 12.0)
-    m.block(6.0, 15.7, 1.3, 8.6)
     m.obj("mato-1", 6.6, 26.6, sway=6)
     m.obj("entulho-2", 2.2, 26.8)
 
@@ -267,9 +258,8 @@ def build():
     m = MapLayout("rua-de-casa", "Rua de Casa", "Bairro_RuaDeCasa", MAP_W, MAP_H, seed=3)
     m.ruts = [(12.9, (11.4, 15.3)), (14.1, (11.4, 15.3)), (28.5, (27.7, 30.3)), (29.4, (27.7, 30.3))]
     layout(m)
-    interior_layout(m)
-    m.extra_areas.append(dict(id="casa-yuuki", name="Casa da Yuuki", x=ROOM_X0, y=0, w=ROOM_W, h=ROOM_H,
-                              painter=paint_interior))
     door = next(p for p in m.portals if p["id"] == "porta-casa-yuuki")
     m.spawn = (door["x"], door["y"] + 1.0)
+    # Replaced by YuukiCutawayHouse: interiors live inside the exterior footprint.
+    m.portals.clear()
     return m

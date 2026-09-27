@@ -1,0 +1,58 @@
+{
+  "assets": [
+    {
+      "id": "tapete",
+      "width": 3,
+      "ppu": 154.0,
+      "pivotY": 0.025157232704402517
+    },
+    {
+      "id": "fogao",
+      "width": 1.35,
+      "ppu": 205.92592592592592,
+      "pivotY": 0.014652014652014652
+    },
+    {
+      "id": "livros",
+      "width": 0.65,
+      "ppu": 518.4615384615385,
+      "pivotY": 0.020887728459530026
+    },
+    {
+      "id": "livro-aberto",
+      "width": 0.75,
+      "ppu": 572.0,
+      "pivotY": 0.023121387283236993
+    },
+    {
+      "id": "meia-parede",
+      "width": 3,
+      "ppu": 164.0,
+      "pivotY": 0.05
+    },
+    {
+      "id": "horta",
+      "width": 2.2,
+      "ppu": 189.09090909090907,
+      "pivotY": 0.023054755043227664
+    },
+    {
+      "id": "room",
+      "width": 6.4,
+      "ppu": 175.46875,
+      "pivotY": 0
+    },
+    {
+      "id": "porta-casa-yuuki",
+      "width": 1.05,
+      "ppu": 60,
+      "pivotY": 0
+    },
+    {
+      "id": "porta-casa-tenebris",
+      "width": 0.8833333333333333,
+      "ppu": 60,
+      "pivotY": 0
+    }
+  ]
+}

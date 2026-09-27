@@ -2,6 +2,8 @@
 
 Jogo em vista de cima no estilo Stardew Valley: Yuuki anda livremente em X e Y (8 direções) e colide só pelos pés. Não há gravidade nem ground check. Buracos são bloqueios no chão; um pulo futuro vai ignorá-los por um instante em vez de lançar a personagem para cima.
 
+Revisão atual: [quatro direções, repouso e casas no próprio mapa](revisao-rpg-v4.md). Yuuki e Tenebris são vizinhos e vivem com suas respectivas famílias. O prólogo se passa aos nove anos; os personagens visuais ainda são provisórios.
+
 ![Prévia da Rua de Casa](rua-de-casa-preview.png)
 
 ![Prévia das Moradias](moradias-preview.png)

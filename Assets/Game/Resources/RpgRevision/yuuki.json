@@ -1,0 +1,132 @@
+{
+  "clips": [
+    {
+      "name": "walk_left",
+      "frames": [
+        "RpgRevision/Yuuki/walk_left_00",
+        "RpgRevision/Yuuki/walk_left_01",
+        "RpgRevision/Yuuki/walk_left_02",
+        "RpgRevision/Yuuki/walk_left_03",
+        "RpgRevision/Yuuki/walk_left_04",
+        "RpgRevision/Yuuki/walk_left_05"
+      ],
+      "fps": 8,
+      "loop": true
+    },
+    {
+      "name": "stow_left",
+      "frames": [
+        "RpgRevision/Yuuki/stow_left_00",
+        "RpgRevision/Yuuki/stow_left_01",
+        "RpgRevision/Yuuki/stow_left_02"
+      ],
+      "fps": 6,
+      "loop": false
+    },
+    {
+      "name": "idle_left",
+      "frames": [
+        "RpgRevision/Yuuki/idle_left_00",
+        "RpgRevision/Yuuki/idle_left_01",
+        "RpgRevision/Yuuki/idle_left_02"
+      ],
+      "fps": 2,
+      "loop": true
+    },
+    {
+      "name": "walk_right",
+      "frames": [
+        "RpgRevision/Yuuki/walk_right_00",
+        "RpgRevision/Yuuki/walk_right_01",
+        "RpgRevision/Yuuki/walk_right_02",
+        "RpgRevision/Yuuki/walk_right_03",
+        "RpgRevision/Yuuki/walk_right_04",
+        "RpgRevision/Yuuki/walk_right_05"
+      ],
+      "fps": 8,
+      "loop": true
+    },
+    {
+      "name": "stow_right",
+      "frames": [
+        "RpgRevision/Yuuki/stow_right_00",
+        "RpgRevision/Yuuki/stow_right_01",
+        "RpgRevision/Yuuki/stow_right_02"
+      ],
+      "fps": 6,
+      "loop": false
+    },
+    {
+      "name": "idle_right",
+      "frames": [
+        "RpgRevision/Yuuki/idle_right_00",
+        "RpgRevision/Yuuki/idle_right_01",
+        "RpgRevision/Yuuki/idle_right_02"
+      ],
+      "fps": 2,
+      "loop": true
+    },
+    {
+      "name": "walk_up",
+      "frames": [
+        "RpgRevision/Yuuki/walk_up_00",
+        "RpgRevision/Yuuki/walk_up_01",
+        "RpgRevision/Yuuki/walk_up_02",
+        "RpgRevision/Yuuki/walk_up_03"
+      ],
+      "fps": 8,
+      "loop": true
+    },
+    {
+      "name": "stow_up",
+      "frames": [
+        "RpgRevision/Yuuki/stow_up_00",
+        "RpgRevision/Yuuki/stow_up_01",
+        "RpgRevision/Yuuki/stow_up_02"
+      ],
+      "fps": 6,
+      "loop": false
+    },
+    {
+      "name": "idle_up",
+      "frames": [
+        "RpgRevision/Yuuki/idle_up_00",
+        "RpgRevision/Yuuki/idle_up_01",
+        "RpgRevision/Yuuki/idle_up_02"
+      ],
+      "fps": 2,
+      "loop": true
+    },
+    {
+      "name": "walk_down",
+      "frames": [
+        "RpgRevision/Yuuki/walk_down_00",
+        "RpgRevision/Yuuki/walk_down_01",
+        "RpgRevision/Yuuki/walk_down_02",
+        "RpgRevision/Yuuki/walk_down_03"
+      ],
+      "fps": 8,
+      "loop": true
+    },
+    {
+      "name": "stow_down",
+      "frames": [
+        "RpgRevision/Yuuki/stow_down_00",
+        "RpgRevision/Yuuki/stow_down_01",
+        "RpgRevision/Yuuki/stow_down_02"
+      ],
+      "fps": 6,
+      "loop": false
+    },
+    {
+      "name": "idle_down",
+      "frames": [
+        "RpgRevision/Yuuki/idle_down_00",
+        "RpgRevision/Yuuki/idle_down_01",
+        "RpgRevision/Yuuki/idle_down_02"
+      ],
+      "fps": 2,
+      "loop": true
+    }
+  ]
+}
