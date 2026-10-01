@@ -1,0 +1,31 @@
+{
+  "frames": 44,
+  "clips": 12,
+  "uniqueDrawingsByClip": {
+    "walk_down": 4,
+    "run_down": 4,
+    "idle_down": 3,
+    "walk_up": 4,
+    "run_up": 4,
+    "idle_up": 3,
+    "walk_left": 4,
+    "run_left": 4,
+    "idle_left": 3,
+    "walk_right": 4,
+    "run_right": 4,
+    "idle_right": 3
+  },
+  "transparentFramesContained": true,
+  "unityPointNoMipsNoCompression": true,
+  "newSpriteGuidsUnique": true,
+  "idleFeetStable": true,
+  "haloExactReuse": true,
+  "protectedFilesVerified": {
+    "yuuki-child-approved-preservation": 175,
+    "alice-child-approved-preservation": 115,
+    "tenebris-child-approved-preservation": 120,
+    "adult-preservation": 155
+  },
+  "minimumOuterMarginPixels": 97,
+  "limitation": "Movement appearance is a visual review; numeric checks validate files, margins and registration."
+}

@@ -15,21 +15,22 @@ public static class YuukiBairroReleaseBuilder
     [MenuItem("Yuuki/Protótipo/Preparar menu e assets")]
     public static void Prepare()
     {
-        PrepareInternal();
+        PrepareInternal(false);
     }
 
-    private static bool PrepareInternal()
+    private static bool PrepareInternal(bool rebuildMaps)
     {
         if (!Application.isBatchMode && !EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo()) return false;
         AssetDatabase.Refresh();
         var catalog = JsonUtility.FromJson<YuukiEnvironmentCatalog>(
             File.ReadAllText("Assets/Game/Resources/Environment/catalog.json"));
         ImportEnvironment(catalog);
-        foreach (string id in new[] { "rua-de-casa", "moradias" })
+        foreach (string id in new[] { "rua-de-casa", "moradias", "dungeon" })
         {
             var map = JsonUtility.FromJson<YuukiBairroData>(File.ReadAllText("Assets/Game/Bairro/Maps/" + id + ".json"));
-            // Don't overwrite hand-edited map scenes when merely refreshing the menu.
-            if (!File.Exists("Assets/Game/Scenes/" + map.scene + ".unity")) YuukiBairroBuilder.Build(id);
+            // Refreshing the menu keeps hand-edited map scenes; exporting always rebuilds them from the
+            // JSON so the game never ships a stale scene (missing clock, lights or interactions).
+            if (rebuildMaps || !File.Exists("Assets/Game/Scenes/" + map.scene + ".unity")) YuukiBairroBuilder.Build(id);
         }
         var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
         var camera = new GameObject("Main Camera").AddComponent<Camera>();
@@ -41,11 +42,12 @@ public static class YuukiBairroReleaseBuilder
         menu.hero = AssetDatabase.LoadAllAssetsAtPath("Assets/Game/Art/Yuuki/Yuuki_Idle_2x1.png")
             .OfType<Sprite>().First(s => s.name == "idle_right_00");
         EditorSceneManager.SaveScene(scene, MenuPath);
-        var paths = new[] { MenuPath, "Assets/Game/Scenes/Bairro_RuaDeCasa.unity", "Assets/Game/Scenes/Bairro_Moradias.unity" };
+        var paths = new[] { MenuPath, "Assets/Game/Scenes/Bairro_RuaDeCasa.unity", "Assets/Game/Scenes/Bairro_Moradias.unity",
+            "Assets/Game/Scenes/Bairro_Dungeon.unity" };
         EditorBuildSettings.scenes = paths.Select(p => new EditorBuildSettingsScene(p, true)).ToArray();
         AssetDatabase.SaveAssets();
         Validate(catalog);
-        Debug.Log("YUUKI_RELEASE_READY: menu, 2 mapas, " + catalog.assets.Length + " assets e prefabs.");
+        Debug.Log("YUUKI_RELEASE_READY: menu, 3 mapas, " + catalog.assets.Length + " assets e prefabs.");
         return true;
     }
 
@@ -110,17 +112,19 @@ public static class YuukiBairroReleaseBuilder
     [MenuItem("Yuuki/Protótipo/Exportar jogo para Windows")]
     public static void BuildAndExport()
     {
-        if (!PrepareInternal()) return;
+        if (!PrepareInternal(true)) return;
         PlayerSettings.companyName = "Yuuki Pixel";
         PlayerSettings.productName = "Yuuki - Os Subúrbios";
         PlayerSettings.defaultScreenWidth = 1280;
         PlayerSettings.defaultScreenHeight = 720;
         PlayerSettings.fullScreenMode = FullScreenMode.Windowed;
         PlayerSettings.resizableWindow = true;
-        Directory.CreateDirectory("Builds/Bairro");
+        string buildDirectory = Environment.GetEnvironmentVariable("YUUKI_BUILD_OUTPUT");
+        if (string.IsNullOrWhiteSpace(buildDirectory)) buildDirectory = "Builds/Bairro";
+        Directory.CreateDirectory(buildDirectory);
         var report = BuildPipeline.BuildPlayer(new BuildPlayerOptions {
             scenes = EditorBuildSettings.scenes.Where(s => s.enabled).Select(s => s.path).ToArray(),
-            locationPathName = "Builds/Bairro/Yuuki.exe",
+            locationPathName = Path.Combine(buildDirectory, "Yuuki.exe"),
             target = BuildTarget.StandaloneWindows64,
             options = BuildOptions.Development
         });

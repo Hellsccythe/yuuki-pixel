@@ -10,10 +10,11 @@ from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import assets
+import dungeon
 import moradias
 import rua_de_casa
 
-MAPS = [rua_de_casa, moradias]
+MAPS = [rua_de_casa, moradias, dungeon]
 
 
 def main():
@@ -27,9 +28,11 @@ def main():
                 assets.sprites[s['id']] = dict(s,w=w,h=h)
             variants_by_id.update({v['id']:v for v in data['npcVariants']})
         variants = list(variants_by_id.values())
+        assets.lighting_sprites()  # new in the lighting pass
     else:
         assets.build_sprites()
         variants = assets.build_npcs()
+    assets.neighborhood_v6()
     for module in MAPS:
         m = module.build()
         data = m.export(variants)

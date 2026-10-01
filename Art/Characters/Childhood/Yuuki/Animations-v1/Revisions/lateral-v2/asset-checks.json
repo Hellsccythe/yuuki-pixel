@@ -1,0 +1,23 @@
+{
+  "frames": 54,
+  "clips": 12,
+  "protectedFilesVerified": 50,
+  "acceptedDirectionsUnchanged": true,
+  "adultFilesVerified": 155,
+  "rightSequence": [
+    2,
+    0,
+    1,
+    3,
+    4,
+    5
+  ],
+  "leftFrameCounts": {
+    "walk": 4,
+    "run": 4
+  },
+  "leftFps": {
+    "walk": 5,
+    "run": 7
+  }
+}

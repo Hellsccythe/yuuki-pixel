@@ -1,0 +1,56 @@
+{
+  "character": "Yuuki",
+  "age": 9,
+  "status": "approved",
+  "weapons": false,
+  "frame": {
+    "width": 512,
+    "height": 512,
+    "feet": [
+      256,
+      400
+    ],
+    "pixelsPerUnit": 220
+  },
+  "body": "body.png",
+  "halo": "../../../Halos/Yuuki-v2/halo-neutral.png",
+  "haloAnchor": {
+    "x": 256,
+    "y": 156,
+    "coordinateSystem": "frame pixels, top-left origin"
+  },
+  "wingAnatomy": {
+    "left": "black",
+    "right": "white"
+  },
+  "animationPlan": {
+    "order": [
+      "Yuuki",
+      "Alice",
+      "Tenebris"
+    ],
+    "directions": [
+      "down",
+      "up",
+      "left",
+      "right"
+    ],
+    "clips": {
+      "walk": 6,
+      "run": 6,
+      "idle": 3
+    },
+    "startOnlyAfterDesignApproval": true
+  },
+  "invariants": [
+    "Do not mirror asymmetrical wings",
+    "Keep halo in a separate renderer",
+    "Halo geometry is shared by childhood and adult versions",
+    "Tint does not require a new body texture"
+  ],
+  "haloAppearance": "Closed elliptical double ring, no lateral wings, central lozenge, ethereal translucent light",
+  "haloAlphaBaked": true,
+  "haloOpacityCeiling": 0.612,
+  "approvedBy": "user",
+  "approvedOn": "2026-09-29"
+}

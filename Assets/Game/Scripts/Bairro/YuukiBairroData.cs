@@ -20,6 +20,49 @@ using UnityEngine;
     public YuukiSmokeInfo[] smoke;
     public YuukiSpawnInfo player;
     public YuukiFxInfo fx;
+    public YuukiPointLightInfo[] lights;
+    public YuukiInteractableInfo[] interactables;
+    public YuukiHouseInfo[] houses;
+    public string region;
+    public bool followClock = true, clockRuns = true, wind = true;
+    public YuukiColorInfo ambient, background;
+}
+
+[Serializable] public sealed class YuukiColorInfo
+{
+    public float r, g, b, a = 1f;
+    public Color ToColor() => new Color(r, g, b, a);
+}
+
+// Light carried by an object (street lamp): offset from its feet, optional daytime sprite.
+[Serializable] public sealed class YuukiLightInfo
+{
+    public float radius, intensity, r, g, b, flicker, ox, oy;
+    public bool night;
+    public string offSprite;
+}
+
+[Serializable] public sealed class YuukiPointLightInfo
+{
+    public float x, y, radius, intensity, r, g, b, flicker;
+    public bool night;
+}
+
+// kind: "sign" (text), "books" (bookshelf), "stairs" (to another map)
+[Serializable] public sealed class YuukiInteractableInfo
+{
+    public string kind, prompt, title, text, targetMap;
+    public float x, y, radius, targetX, targetY;
+    public string[] bookIds;
+}
+
+// A building Yuuki can walk into: the room is built inside its footprint (theme picks the furniture).
+[Serializable] public sealed class YuukiHouseInfo
+{
+    public string sprite, name, theme, door;
+    public float x, y, doorX, doorY, doorWidth, roomW, roomH;
+    public bool flip;
+    public int seed, floors = 1;
 }
 
 [Serializable] public sealed class YuukiSpriteInfo { public string id, path; public float ppu, pivotX, pivotY; }
@@ -37,6 +80,8 @@ using UnityEngine;
     public float x, y, sway, sortBias;
     public bool swing, flipX;
     public float colW, colH, colX, colY;
+    public int order;
+    public YuukiLightInfo light;
 }
 
 [Serializable] public sealed class YuukiBlockerInfo { public float x, y, w, h; public string kind; }
@@ -50,7 +95,7 @@ using UnityEngine;
 [Serializable] public sealed class YuukiExitInfo
 {
     public string id, label, targetMap;
-    public float x, y, w, h, targetX, targetY;
+    public float x, y, w, h, targetX, targetY, outwardX, outwardY;
 }
 
 [Serializable] public sealed class YuukiRectInfo { public float x, y, w, h; }

@@ -57,9 +57,75 @@ public sealed class YuukiPrototypeSmoke : MonoBehaviour
         yield return new WaitForSecondsRealtime(.4f);
     }
 
+    private IEnumerator CheckHouses()
+    {
+        var map=YuukiBairro.Instance;
+        var houses=FindObjectsByType<YuukiCutawayHouse>(FindObjectsSortMode.None);
+        Check(houses.Length>=7,"cutaway houses: the two families and the rest of the street");
+        foreach(var house in houses)
+        {
+            string scene=SceneManager.GetActiveScene().name;
+            map.player.Teleport(house.threshold-Vector2.up*.4f);
+            Physics2D.SyncTransforms();
+            var from=(Vector2)map.player.transform.position;
+            Check(house.TryEnter(),"enter "+house.houseName);
+            Check(!house.TryEnter(),"no duplicate door transition");
+            yield return new WaitForSecondsRealtime(.14f);
+            Check(house.door.enabled && house.doorHinge.localScale.x<1,"door visibly opens before interior");
+            Check(map.player.InputBlocked,"door transition owns input");
+            yield return new WaitForSecondsRealtime(1.2f);
+            Check(house.Inside && house.interior.activeSelf && !house.exterior.enabled,"room replaces its roof");
+            Check(!map.Current.outdoor && !map.player.InputBlocked && !map.TransitionBusy,"interior remains playable");
+            var shelf=house.interior.GetComponentsInChildren<YuukiBookshelf>().FirstOrDefault();
+            Check(shelf!=null,"bookshelf in "+house.houseName);
+            shelf.Interact();
+            yield return null;
+            Check(map.OverlayOpen && Time.timeScale==0,"bookshelf opens the book list");
+            yield return Capture("07b-"+house.name.Replace(' ','-')+"-livros");
+            map.CloseMessage();
+            yield return null;
+            Check(SceneManager.GetActiveScene().name==scene && Vector2.Distance(from,map.player.transform.position)<1.6f,
+                "same scene and footprint during entry");
+            Physics2D.SyncTransforms();
+            var overlap=Physics2D.OverlapCapsuleAll((Vector2)map.player.transform.position+Vector2.up*.13f,
+                new Vector2(.5f,.26f),CapsuleDirection2D.Horizontal,0);
+            Check(!overlap.Any(c=>!c.isTrigger && c.gameObject!=map.player.gameObject && !Physics2D.GetIgnoreCollision(map.player.GetComponent<Collider2D>(),c)),"door arrives on free floor");
+            yield return Capture("07-"+house.name.Replace(' ','-'));
+            var furnishings=house.interior.GetComponentsInChildren<SpriteRenderer>(true).Where(r=>r.name.StartsWith("Mobília")).ToArray();
+            Check(furnishings.Length>=4,"furniture bounds check includes actual furniture");
+            foreach(var furniture in furnishings)
+            {
+                Check(furniture.bounds.max.y<=house.roomBounds.yMin+house.roomBounds.height*.65f+.02f,
+                    "complete furniture drawing below back wall: "+furniture.name);
+            }
+            Check(YuukiCutawayHouse.ActiveHouse==house,"interactions scoped to the current house");
+            if(house.floors.Length>1)
+            {
+                var stair=house.interior.GetComponentInChildren<YuukiHouseStair>();
+                Check(stair!=null && stair.Available,"usable stairs in a two-storey house");
+                stair.Interact(); yield return new WaitForSecondsRealtime(.7f);
+                Check(house.CurrentFloor==1 && !house.floors[0].activeSelf && house.floors[1].activeSelf,
+                    "first floor replaces ground floor");
+                Check(SceneManager.GetActiveScene().name==scene && !map.player.InputBlocked,
+                    "stairs remain in same scene with movement restored");
+                Check(!house.TryExit(),"upstairs has no outdoor exit through the facade");
+                yield return Capture("08-upper-"+house.name.Replace(' ','-'));
+                house.interior.GetComponentInChildren<YuukiHouseStair>().Interact();
+                yield return new WaitForSecondsRealtime(.7f);
+                Check(house.CurrentFloor==0 && house.floors[0].activeSelf && !house.floors[1].activeSelf,"return downstairs");
+                Check(Vector2.Distance(map.player.transform.position,stair.landing)<.03f,"stairs have a stable landing");
+            }
+            Check(house.TryExit(),"exit "+house.houseName);
+            yield return new WaitForSecondsRealtime(1.2f);
+            Check(map.Current.outdoor && !house.Inside && !house.interior.activeSelf && house.exterior.enabled && house.exteriorCollider.enabled,
+                "outside art and collisions restored");
+            Check(!map.player.InputBlocked && !map.TransitionBusy && YuukiCutawayHouse.ActiveHouse==null,"exit restores movement and outdoor interactions");
+        }
+    }
+
     private IEnumerator Start()
     {
-        deadline = Time.realtimeSinceStartup + 120;
+        deadline = Time.realtimeSinceStartup + 240;
         Application.runInBackground = true;
         var args = Environment.GetCommandLineArgs();
         int index = Array.IndexOf(args, "--smoke-output");
@@ -88,36 +154,84 @@ public sealed class YuukiPrototypeSmoke : MonoBehaviour
         yield return Capture("04-pause");
         map.SetPaused(false);
         Check(!map.Paused && !map.player.InputBlocked && Time.timeScale == 1, "resume restores movement");
-        // Exercise the real physics trigger, not just the confirmation UI method.
+        // Exercise the real physics trigger: the edge shows where it leads and only a
+        // deliberate walk into it travels (no confirmation pop-up any more).
         var exit = FindObjectsByType<YuukiMapExit>(FindObjectsSortMode.None).First(e => e.targetMap == "Bairro_Moradias");
         map.player.Teleport(exit.transform.position);
         Physics2D.SyncTransforms();
         yield return new WaitForSecondsRealtime(.3f);
-        Check(map.AwaitingTravel && map.player.InputBlocked, "edge trigger asks before travel");
-        Check(SceneManager.GetActiveScene().name == "Bairro_RuaDeCasa", "no travel before consent");
-        Check(!map.RequestMapChange("duplicate", "Bairro_Moradias", exit.target), "no overlapping travel requests");
-        yield return Capture("05-travel-confirmation");
-        map.CancelMapChange();
-        Check(!map.AwaitingTravel && !map.player.InputBlocked && Time.timeScale == 1, "cancel restores current map");
-        Check(SceneManager.GetActiveScene().name == "Bairro_RuaDeCasa", "cancel keeps scene");
-        map.player.Teleport(new Vector2(2, 22.65f));
-        yield return new WaitForSecondsRealtime(.2f);
-        map.player.Teleport(exit.transform.position);
+        Check(map.Edge == exit && !map.player.InputBlocked, "edge trigger shows its destination without blocking");
+        Check(SceneManager.GetActiveScene().name == "Bairro_RuaDeCasa", "standing on the edge does not travel");
+        Check(exit.Outward.x < -0.5f, "west exit points west");
+        yield return Capture("05-edge-hint");
+        map.player.Teleport(new Vector2(4, 13.4f));
+        Physics2D.SyncTransforms();
         yield return new WaitForSecondsRealtime(.3f);
-        Check(map.AwaitingTravel, "exit re-arms after leaving trigger");
+        Check(map.Edge == null, "walking away clears the edge hint");
+        // Signs and inspections open a text box that owns the input until closed.
+        var sign = FindObjectsByType<YuukiSign>(FindObjectsSortMode.None).First(x => x.title == "Moradias");
+        sign.Interact();
+        yield return null;
+        Check(map.OverlayOpen && map.player.InputBlocked && Time.timeScale == 0, "sign text opens and pauses");
+        yield return Capture("05b-sign");
+        map.CloseMessage();
+        yield return null;
+        Check(!map.OverlayOpen && !map.player.InputBlocked && Time.timeScale == 1, "sign text closes");
+        // Night: street lamps switch sprite and light up.
+        var lamp = FindObjectsByType<YuukiLight>(FindObjectsSortMode.None).First(l => l.lampRenderer != null);
+        YuukiClock.Reset();
+        yield return null;
+        Check(lamp.lampRenderer.sprite == lamp.offSprite && lamp.CurrentIntensity == 0, "lamp is off by day");
+        YuukiClock.Skip(14f);
+        yield return null;
+        Check(YuukiClock.LampsOn && lamp.lampRenderer.sprite == lamp.onSprite && lamp.CurrentIntensity > 0, "lamp lights at night");
+        var lighting = FindFirstObjectByType<YuukiLighting>();
+        yield return null;
+        Check(lighting != null && lighting.CurrentAmbient.a > 0.5f, "night darkens the street");
+        yield return Capture("05c-night");
+        YuukiClock.Reset();
+        yield return null;
+        map.player.Teleport(exit.transform.position);
+        Physics2D.SyncTransforms();
+        yield return new WaitForSecondsRealtime(.3f);
         Vector2 arrival = exit.target;
-        map.ConfirmMapChange();
+        Check(map.TravelThroughEdge(), "walking into the edge travels");
         yield return new WaitForSecondsRealtime(1.5f);
         map = YuukiBairro.Instance;
-        Check(SceneManager.GetActiveScene().name == "Bairro_Moradias", "confirmed travel loads Moradias");
-        Check(Vector2.Distance(map.player.transform.position, arrival) < .05f && !map.AwaitingTravel && !map.player.InputBlocked,
-            "destination spawn is safe, unblocked, without a repeat prompt");
+        Check(SceneManager.GetActiveScene().name == "Bairro_Moradias", "travel loads Moradias");
+        Check(Vector2.Distance(map.player.transform.position, arrival) < .05f && map.Edge == null && !map.player.InputBlocked,
+            "destination spawn is safe, unblocked, outside the return edge");
         yield return Capture("06-moradias");
+        map.player.Teleport(new Vector2(29,16));
+        yield return new WaitForSecondsRealtime(.4f);
+        yield return Capture("06a-coop-and-hens");
+        Check(FindObjectsByType<YuukiChickens>(FindObjectsSortMode.None).All(c=>c.frames.Length==4 && c.frames.All(f=>f!=null && f.texture.width==128)),
+            "three feathered hen variants load their four consistent frames");
+        yield return CheckHouses();
+        // The hidden stairs of the abandoned corner lead to the dungeon and back.
+        var down = FindObjectsByType<YuukiStairs>(FindObjectsSortMode.None).First(x => x.targetMap == "Bairro_Dungeon");
+        map.player.Teleport(down.Point);
+        yield return null;
+        down.Interact();
+        yield return new WaitForSecondsRealtime(1.5f);
+        map = YuukiBairro.Instance;
+        Check(SceneManager.GetActiveScene().name == "Bairro_Dungeon", "hidden stairs lead to the dungeon");
+        lighting = FindFirstObjectByType<YuukiLighting>();
+        yield return null;
+        Check(lighting != null && !lighting.followClock && lighting.CurrentAmbient.a > 0.7f, "the dungeon is always dark");
+        Check(FindObjectsByType<YuukiLight>(FindObjectsSortMode.None).Count(l => l.CurrentIntensity > 0) >= 6, "torches are lit");
+        yield return Capture("06b-dungeon");
+        var up = FindObjectsByType<YuukiStairs>(FindObjectsSortMode.None).First(x => x.targetMap == "Bairro_Moradias");
+        up.Interact();
+        yield return new WaitForSecondsRealtime(1.5f);
+        map = YuukiBairro.Instance;
+        Check(SceneManager.GetActiveScene().name == "Bairro_Moradias" &&
+              Vector2.Distance(map.player.transform.position, up.target) < .05f, "stairs back up return to the yard");
         exit = FindObjectsByType<YuukiMapExit>(FindObjectsSortMode.None).First(e => e.targetMap == "Bairro_RuaDeCasa");
         map.player.Teleport(exit.transform.position);
+        Physics2D.SyncTransforms();
         yield return new WaitForSecondsRealtime(.3f);
-        Check(map.AwaitingTravel, "return exit asks too");
-        map.ConfirmMapChange();
+        Check(map.TravelThroughEdge(), "return edge travels too");
         yield return new WaitForSecondsRealtime(1.5f);
         map = YuukiBairro.Instance;
         Check(SceneManager.GetActiveScene().name == "Bairro_RuaDeCasa", "round trip returns home");
@@ -128,35 +242,7 @@ public sealed class YuukiPrototypeSmoke : MonoBehaviour
             var hits=Physics2D.OverlapCapsuleAll(spot+Vector2.up*.13f,new Vector2(.5f,.26f),CapsuleDirection2D.Horizontal,0);
             Check(!hits.Any(c=>!c.isTrigger),"grass is walkable at "+spot);
         }
-        var houses=FindObjectsByType<YuukiCutawayHouse>(FindObjectsSortMode.None);
-        Check(houses.Length==2,"two cutaway houses");
-        foreach(var house in houses)
-        {
-            string scene=SceneManager.GetActiveScene().name;
-            map.player.Teleport(house.threshold-Vector2.up*.4f);
-            Physics2D.SyncTransforms();
-            var from=(Vector2)map.player.transform.position;
-            Check(house.TryEnter(),"enter "+house.houseName);
-            Check(!house.TryEnter(),"no duplicate door transition");
-            yield return new WaitForSecondsRealtime(.14f);
-            Check(house.door.enabled && house.doorHinge.localScale.x<1,"door visibly opens before interior");
-            Check(map.player.InputBlocked,"door transition owns input");
-            yield return new WaitForSecondsRealtime(1.2f);
-            Check(house.Inside && house.interior.activeSelf && !house.exterior.enabled,"room replaces its roof");
-            Check(!map.Current.outdoor && !map.player.InputBlocked && !map.TransitionBusy,"interior remains playable");
-            Check(SceneManager.GetActiveScene().name==scene && Vector2.Distance(from,map.player.transform.position)<1.6f,
-                "same scene and footprint during entry");
-            Physics2D.SyncTransforms();
-            var overlap=Physics2D.OverlapCapsuleAll((Vector2)map.player.transform.position+Vector2.up*.13f,
-                new Vector2(.5f,.26f),CapsuleDirection2D.Horizontal,0);
-            Check(!overlap.Any(c=>!c.isTrigger && c.gameObject!=map.player.gameObject),"door arrives on free floor");
-            yield return Capture("07-"+house.name.Replace(' ','-'));
-            Check(house.TryExit(),"exit "+house.houseName);
-            yield return new WaitForSecondsRealtime(1.2f);
-            Check(map.Current.outdoor && !house.Inside && !house.interior.activeSelf && house.exterior.enabled && house.exteriorCollider.enabled,
-                "outside art and collisions restored");
-            Check(!map.player.InputBlocked && !map.TransitionBusy,"exit restores movement");
-        }
+        yield return CheckHouses();
         var animation=map.player.GetComponent<YuukiRpgAnimation>();
         Check(animation!=null && !map.player.GetComponentInChildren<Animator>().enabled,"RPG animation owns sprites");
         var spriteCatalog=JsonUtility.FromJson<YuukiRpgAnimation.Catalog>(Resources.Load<TextAsset>("RpgRevision/yuuki").text);
@@ -193,7 +279,7 @@ public sealed class YuukiPrototypeSmoke : MonoBehaviour
         yield return new WaitForSecondsRealtime(1);
         Check(SceneManager.GetActiveScene().name == "Bairro_RuaDeCasa" && !YuukiBairro.Instance.player.InputBlocked,
             "second entry starts cleanly");
-        File.WriteAllText(Path.Combine(output, "result.txt"), "PASS: menu, 61 environment assets, pause, real exit triggers, cancel, round trip, two same-footprint interiors, door animation, free doorstep, grass regressions, 44 RPG frames, four directions, stow/draw, 3-frame idle, approved right run, re-entry.\n");
+        File.WriteAllText(Path.Combine(output, "result.txt"), "PASS: menu, 61 environment assets, pause, edge hint and travel, signs, day/night lamps, dungeon and back, round trip, all Rua and Moradias homes, room partitions, furniture bounds, upper floors, same-footprint interiors with bookshelves, door animation, free doorstep, grass regressions, 44 RPG frames, four directions, stow/draw, 3-frame idle, approved right run, re-entry.\n");
         Debug.Log("YUUKI_SMOKE_OK");
         Application.Quit(0);
     }

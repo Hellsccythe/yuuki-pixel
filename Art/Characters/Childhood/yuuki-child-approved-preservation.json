@@ -1,0 +1,709 @@
+{
+  "character": "Yuuki",
+  "approvedOn": "2026-09-30",
+  "revision": "run-left-v5",
+  "clips": 12,
+  "drawings": 46,
+  "files": [
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Atlases/down.png",
+      "sha256": "1c90bfd00ae976bca98da838a081a234cb1721a3a7f6d9023c84f8bfa84d60ee"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Atlases/left.png",
+      "sha256": "0ee5675286e2d0c278cebd18a79afaf5660bdb7b445af5e8cbd356ddb20c3393"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Atlases/right.png",
+      "sha256": "ea075aab2e29708de26999f70bf96d2265aa7ef232350ad2afbe17f1f7f862ee"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Atlases/up.png",
+      "sha256": "f032967e6098ee86cdb232890115025d7a31017eeb79d772f854aeecf67bed5e"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/contact-sheet.png",
+      "sha256": "28eec2820870cf9df639aeab2d7be8e7293813177f6e404d3cf7cfe3f12ae8a1"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/lateral-revision.json",
+      "sha256": "6c58b968275793794b0ea6f117d1ece3f4c6077c3915d74c3f82f8b39292a0ba"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/lateral-v2-prompt.json",
+      "sha256": "da59862330ec48ded67e2750abbf656b7523db5fb3ee8f5351a3e93230dd71e9"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/left-from-right-v4-prompt.json",
+      "sha256": "19e8ad5164613829b0bf9fd059d01eff845c59a997b2f0f377bf1bfcb3e5fbfc"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/left-from-right-v4.json",
+      "sha256": "54ca83a94912a654d5bd6e51130916c2ba0328263aa6facc956c5ef182980f15"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/leg-copy-v5.json",
+      "sha256": "ee03d019e026902320d25ebb2c796fc8b68003017edab0c0270523aa01e677c0"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/motion-four-frame-v3-prompts.json",
+      "sha256": "5f69d04eb67fda3ed5b27f2b86f6780d50ced28fb6f046c1143bab997efdc0df"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/motion-four-frame-v3.json",
+      "sha256": "14ff6e53bd80230aa2bec2dfacd1ac0a2c67a4b9ce34a298b2d4a835a7b4a7d5"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/motion-v3-outputs.json",
+      "sha256": "8e151c8181497758b0a075c788fc581837546d1c9ebc758e9d9b75a2a5a8ba3c"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/packing-report.json",
+      "sha256": "3983e6fd6305d55a3d06c0ffb5b691a41f78a2d6af74677675161e61d5d06763"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/preview-checks.json",
+      "sha256": "462a2f12f7746d026e4cc59609b5df798ee3fd96f4b115b0fc21877def3b6092"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/prompts.json",
+      "sha256": "142aae8432221389e5263e476e0e3cbb2fa2668307ca5de5f35099ebc2e985e4"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/README.md",
+      "sha256": "3c5d91b2bf5da6e4a8508fac4bd2e3b50355da470a3173de10e5f8f48f2c7c04"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Revisions/lateral-v2/asset-checks.json",
+      "sha256": "f9c447d85bd3c14e0d5f6c8ec52b57453036ceca7e52d93a1317bcc4c9b61b01"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Revisions/lateral-v2/catalog-before.json",
+      "sha256": "60b0c0c33e53661e0498c599243402632560faa1da3b34d265a67dddf7efd94d"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Revisions/lateral-v2/preview-checks.json",
+      "sha256": "f723e68f461d66b7236189a9fb959d1371ebd33a4ddca9f3da07afe767589135"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Revisions/left-v4/asset-checks.json",
+      "sha256": "065a69abe3ed705a01335448dcfb5949fe9c5e1d7540f8a9fc2e3ec5a9612552"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Revisions/left-v4/catalog-before.json",
+      "sha256": "d8b57231b596848d56b56521f5afbf22dc35c6f24ad8470e68bad0caa688cb86"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Revisions/motion-v3/asset-checks.json",
+      "sha256": "7738af9ab64da3a2251304f817e091e1b57a01cbfdc25d4af8c33b540fdf819f"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Revisions/motion-v3/catalog-before.json",
+      "sha256": "dc58e586a571ff1b2552a8d4463b3b19f4c3aed069be2d9fdeac5228b7707e40"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Revisions/motion-v3/preview-checks.json",
+      "sha256": "d6539a4ffd49e06f4ff15733baf60c91afd4cc55b51fa320b9654194a7ed44b3"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Revisions/run-left-v5/asset-checks.json",
+      "sha256": "462a2f12f7746d026e4cc59609b5df798ee3fd96f4b115b0fc21877def3b6092"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Revisions/run-left-v5/catalog-before.json",
+      "sha256": "c1f063a6348eb1823914e652227bddf0277552d717b6d835642932a45e79183d"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Revisions/run-left-v5/comparison.png",
+      "sha256": "4bec50860f3673558f51b37458832625a7d02515bc4f943c0c0e712e7c64fcf9"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Revisions/run-left-v5/erase-00.png",
+      "sha256": "4061e743e9a9e3f3e2990ae573d2cefc1294dd5bed02d967e508bfb8efc64113"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Revisions/run-left-v5/erase-01.png",
+      "sha256": "03e65de9144e7db5c6e20405a41207a0f8473fc2d2d157583b4676764b13c9e3"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Revisions/run-left-v5/erase-02.png",
+      "sha256": "d62234fe02c2afa958aed5cb859e2ccf7f0e96add484ed8ce2f54a202b0c827c"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Revisions/run-left-v5/erase-03.png",
+      "sha256": "0792db40891c89cbd65ad738369c3ace11557e1a80e2583e822f202b98289f1f"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Revisions/run-left-v5/mirrored-legs-00.png",
+      "sha256": "ffe31df418bfe6ef962192fc6b47ceaa9161f90fe017ea08ebf7ad157c444a9e"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Revisions/run-left-v5/mirrored-legs-01.png",
+      "sha256": "691d2daa9f89fc7ff91880d460a25ad439a9830ab996f5be9889e0f7953b3a38"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Revisions/run-left-v5/mirrored-legs-02.png",
+      "sha256": "597a30c205a0f55fd54d7d9fab1618dc33bc589407a5f146e0d0f3b0a4871b2e"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Revisions/run-left-v5/mirrored-legs-03.png",
+      "sha256": "3c9b5ee9a276b55d2392c989ecb430382627b022019a3ec8ca2af0421c699e51"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Revisions/run-left-v5/visible-legs-00.png",
+      "sha256": "2e87aff12d021800d7e3a4c6fc6eb6beae117445afd4faeac9d20b3206a0b2c3"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Revisions/run-left-v5/visible-legs-01.png",
+      "sha256": "26e2aab8674e00502454a2a14c8be2d3c284333bf53a79e647e4170492bee6f2"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Revisions/run-left-v5/visible-legs-02.png",
+      "sha256": "54dd391d62e08db76dd4a0a26decd38d775df47f904c096007b3992732d9e965"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Revisions/run-left-v5/visible-legs-03.png",
+      "sha256": "edbd7e7b8d89acc72f76f026c43999bab3b4695cd883a202005d8eef56bef4f4"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Sources/down.png",
+      "sha256": "3c55041b2d666d04981023380c65fcb975af00fedf191bb48c5fe8445761516e"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Sources/left-compact-v3.png",
+      "sha256": "e5040a756df8a481f6e0542f22b0b8695a073977b2c1d821002525a8c06ec0e3"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Sources/left-four-frame-v2.png",
+      "sha256": "98f1ccde301c9c163e2c98ab28001799bbd88c872651336606c5fa078a325cb9"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Sources/left-from-approved-right-v4.png",
+      "sha256": "3dacd883405309d966ead1f54d538dad0e63c60bd2d522f48fb701e25e093946"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Sources/left.png",
+      "sha256": "bc864ae1d4213f20f94c0638ef9694cd9293f8019858dfcbbbb9ad2d9672382e"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Sources/right-approved-v3-reference.png",
+      "sha256": "9452eb4c4fda794d1fbc9b524f5cf221b26e5e1e84a114714071c66eb137ac1b"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Sources/right-compact-v3-refined.png",
+      "sha256": "1ac74e131dcc99306a91854dc44e7a23ffd6a7e48e62ec6c1c1864f16a6ba68a"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Sources/right-compact-v3.png",
+      "sha256": "f4eac694df3814209ba3fe44a568642edaf997848361f94a417dc7253778021f"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Sources/right.png",
+      "sha256": "25ea470dd2d7387f48b8aa8763edd44a0d97b0616213b806586c99cf07de7def"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Sources/run-down-compact-v3-refined.png",
+      "sha256": "54d39912545a5ee3a0e8e7e2f31802996b8cc500e69631fb37de42ee60184fab"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Sources/run-down-compact-v3.png",
+      "sha256": "5ba0c6dc1e95c0785642fdde32c1c0bb12263e6daa20fec91b0e972acc566a87"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Sources/run-up-compact-v3.png",
+      "sha256": "6d368eb60083ef5a2d0e8169bb568209c53b8b2774f9948f7461cd512045b8f6"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Sources/up.png",
+      "sha256": "cd139dcbc57972523e619520b301995a194650958234ea1f05d13dd6458aa8fc"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Sources/walk-down-refined.png",
+      "sha256": "fc13d9442cbd6129aae38f98bb7584eb457a82c93802c9c8cf3fc19d86bbd853"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Sources/walk-left-refined.png",
+      "sha256": "b6353fe45274454bd1fd646c48c00234bff71add133b2ed25fb027965969c4e5"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Sources/walk-right-refined.png",
+      "sha256": "4423d0b288505f4bdeb7dce284c2af6976eeb836cadb9de04c8bd75787e91714"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Sources/walk-up-refined.png",
+      "sha256": "4990e66bcf87599ac1d09920a3e3bf82bc18ed3c7108812a4c140d062609efcc"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Unused/walk_down_04.png",
+      "sha256": "e177bb1461542581e0257449616306b88edf212321a1119198e3804b69dea6bb"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Unused/walk_down_04.png.meta",
+      "sha256": "3901a367016a23e6d1a7808d5dfcb38aee1dbd6169538ceae418ea32411adc93"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Unused/walk_down_05.png",
+      "sha256": "3b002f3f0fe59b91cb1ddab755e3afe10a62db23c3a99c758c4109c198fa41fb"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/Unused/walk_down_05.png.meta",
+      "sha256": "4d6f60068e73076faa681f6cda73dde56f43240a3442abdb63a9e41e4af624d9"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Animations-v1/walk-refinement-spec.json",
+      "sha256": "5954ada245a27dabe3ce42055d0aef2de0d9a8f16aa8d65b5f7eacf99583e3eb"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Design-v1/body-source.png",
+      "sha256": "287588f95c53d64f251b3320d800114bdd3a57b40dbc29a116a30755e72acc58"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Design-v1/body.png",
+      "sha256": "ee1ccb57c0019c41664f70fa1741f2044b60fc6ddc898c51d467818766360928"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Design-v1/design.json",
+      "sha256": "9dd1e25694afba13df0b61912e17cefbc97ba9b7763d5ae674999ca22dee069f"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Design-v1/preview-halo-v2.png",
+      "sha256": "8492f4e3dc30546e362799816541f8212d33e46a0412b7259c7dba8f39f29975"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Design-v1/preview.png",
+      "sha256": "dcd4049bec7b178173a5fea49951072cf50b5a163438d7a88c08e733161c0d4b"
+    },
+    {
+      "path": "Art/Characters/Childhood/Yuuki/Design-v1/prompts.json",
+      "sha256": "96b9ab160e20158d2d56e9f1b62d6bbf40e05a12f8efc7fc05d18bfc340c516e"
+    },
+    {
+      "path": "Art/Characters/Halos/Yuuki-v2/halo-neutral.png",
+      "sha256": "255dd93e98e2fc085864a897c1d2819abe9e92e905023c3abdc75f0ed29bbb7a"
+    },
+    {
+      "path": "Art/Characters/Halos/Yuuki-v2/halo-source.png",
+      "sha256": "cc317cc4d83e93267bcbec8e3381f46fdb52d9b8ffa82bd816f0cc03e742b426"
+    },
+    {
+      "path": "Art/Characters/Halos/Yuuki-v2/prompt.json",
+      "sha256": "c1a7847254757d6c66a38ff3a8b01a6176496efdb37319a6a74f5d5a8a351b81"
+    },
+    {
+      "path": "Art/Characters/Halos/Yuuki-v2/refinement-prompt.json",
+      "sha256": "1d0b68baf4921caffc9ed78e5457c985515cbee449267ee8a3ef4a9b37ac9c58"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/animations.json",
+      "sha256": "85805a8c937e22ec9aae01259d625b5c726323b3b67dad9025e5aa446f771c5f"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_down_00.png",
+      "sha256": "f367e88f5ef20d12d63616fbfadcc993604df2a72cf1f45299b6b1dbaa1d2b4f"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_down_00.png.meta",
+      "sha256": "25d37ba7428ac433b875d5bd70e0a26cf06c1cb9b40b3132040f9124c96698cd"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_down_01.png",
+      "sha256": "468af8b5e54343792cb5d1ecbc7540bb40be16352bc4887f9e04cde5c5b6aca7"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_down_01.png.meta",
+      "sha256": "70a30535ad12017b53220e72c4c24bf708fbcb613479cf1dd4f138618fd6ac12"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_down_02.png",
+      "sha256": "174f18a77fa50fb61e72cd65a81b7e631c6912cf6786ee08d67495d527511263"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_down_02.png.meta",
+      "sha256": "4314aa2331620cc42589a611e62395ee6bc0bd773ac87da44c8f915a3396aacb"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_left_00.png",
+      "sha256": "b7c3e19175e24023b5a642ed76c7665e013888d7b70ac192283f17a134fdaf9a"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_left_00.png.meta",
+      "sha256": "1852e7614a5cb5d331ac5997f4ad12d14ce3db5803d42229b71250621d8d5110"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_left_01.png",
+      "sha256": "178588486b33a87190edde92f8676083b8f785d7160b3de787be9e4929caa429"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_left_01.png.meta",
+      "sha256": "82513e276b5fb6ee57571af69398f575aebdd6cbbdba852ef3c0ce8bea789958"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_left_02.png",
+      "sha256": "d97b05e1ee345451f7b6c8ce9ce8ebef03d3eb0e8c463dc2c07b27652e94a093"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_left_02.png.meta",
+      "sha256": "6352271fe22b24d8719b0a185ae92b2f338884be685c9c96a7d1d2bd4a2f5cbe"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_right_00.png",
+      "sha256": "b78f0cc7df4105c7629b266d17c2c8278f3047329d7537d65f59540287c782cc"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_right_00.png.meta",
+      "sha256": "5cd32acb09c4466cd41b3c4d1fa93a496e6756bb4aaf891b0e0369f5c926605f"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_right_01.png",
+      "sha256": "dbfa1fab703c20b5d5edc915b021ed22e4ceec43ec57883c92cc5e7d4af198c3"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_right_01.png.meta",
+      "sha256": "e12036d6ca6213e650c70bd2591774b688664b91d146143cf879ec0f2f31b8e6"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_right_02.png",
+      "sha256": "317a354c500be4cb320d1aee2391bdb301fe7ba279852e34edda00bb16fb6240"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_right_02.png.meta",
+      "sha256": "3c9999fe669bb889dc9d0d465894f0c76244647de0e86d49716cdd7faa977fed"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_up_00.png",
+      "sha256": "0e7e603195fd16a3974ca51e90e1f0e6ba2b4abec861dd57938a68e2de6ec178"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_up_00.png.meta",
+      "sha256": "8acf8578b85fe1cf9a52c340a46cb1c1db2027426e9add27b360aa5f922ff618"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_up_01.png",
+      "sha256": "7a678cb06958b8fa4dfefc665424cae821f0f0f46100bd3b8e72649f035de7e3"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_up_01.png.meta",
+      "sha256": "1896a6122888081b8c246be1ca8390461cb90c0a19c4f97ba4e6fc75d8054034"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_up_02.png",
+      "sha256": "2ae22716c93688f506d260ae2d57f0e71497bad0c092f8d5941a7f80c569efb3"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_up_02.png.meta",
+      "sha256": "cb8bb3f181763c927df2d4917fb9d3eaebdce7193a1f70a96f913a51c58b17db"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_down_v3_00.png",
+      "sha256": "33dfd2e67bfbacbbe3b9e6da242d3b331dc27d26a40dd45936e77051777d80cf"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_down_v3_00.png.meta",
+      "sha256": "942d1fb816ab0f15455940ae34831c69f833fe81c8594de5a7bae9e76cb455bf"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_down_v3_01.png",
+      "sha256": "e73b7aec28b42264491a530a348432c8114db7c95b43316747d1ac9ea127d864"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_down_v3_01.png.meta",
+      "sha256": "857c4d360e21d480760a14ee04df8cba372d530ee76413a5b06f0f88737f18d7"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_down_v3_02.png",
+      "sha256": "4273cf655435ebc4a82698892267e4742d4b5798d49839045231c3b037a33a87"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_down_v3_02.png.meta",
+      "sha256": "94413d8dd719cc9784128d01cb6cebbbfddb7c5d6a54d2f07e5f983cc239e4d7"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_down_v3_03.png",
+      "sha256": "7cbe424d2a2522d14d80da2b9bb08ef9f81fdfaed55fabf64c9d9100f5d60f43"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_down_v3_03.png.meta",
+      "sha256": "bed92323c62fdce0a6d74cfcb57f7793e6558dca748a403e6409c215a149670d"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_left_v5_00.png",
+      "sha256": "abf5595dd7a563dea3fb78c7e7695edc3c7983f48644a6e76a6b8fd06f78a320"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_left_v5_00.png.meta",
+      "sha256": "bebe49f741875b4386de4e81840fe61eef2b279f0874d36b76f4ccad586606a7"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_left_v5_01.png",
+      "sha256": "6a22afc99384ce1b10ae5e9ea95fca9f414520e28dcd27e370f052f5dbc7135c"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_left_v5_01.png.meta",
+      "sha256": "015b83cff4b5268f17c193298b5b182099e7e1e12920d52a223992428633e43f"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_left_v5_02.png",
+      "sha256": "b25577241f7b0658a2f085ed6ad2adf0386e9dcff38c7bef4dbcdbb380526337"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_left_v5_02.png.meta",
+      "sha256": "fca509962c22035625903f69a95e66dd03baccc4e37d5f4a5707049814a8ecff"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_left_v5_03.png",
+      "sha256": "00de83a6b0cc87f6509b7bba6a51ab4ce7f753dcd0359c42271203fe926b3bfc"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_left_v5_03.png.meta",
+      "sha256": "5aaa6e23fb9b33cc3b7a55967cbfab842d784b41c3561dfd6450bae124755999"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_right_v3_00.png",
+      "sha256": "d8153252e9a236aaea135f066edadf9b91c4390aa798c3b36ab7c90c45541bd4"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_right_v3_00.png.meta",
+      "sha256": "c1a360e761e3f539f8f0ae7c7115dab575c727efc251b707232578fcb38c3c31"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_right_v3_01.png",
+      "sha256": "4f698c8bea6a3a29ba68c8f300c19a776c5acb3a0bb068b2f94445369eabdc36"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_right_v3_01.png.meta",
+      "sha256": "56aa80299ecb8980e284d3523474c6be84dc89e63dd9c5757e2e48d4cd49a024"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_right_v3_02.png",
+      "sha256": "3ca3c9e671da8bdf065b86028948420631dd7a0273020afa95e53dfeb6077dda"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_right_v3_02.png.meta",
+      "sha256": "77b35b5aa9efaa196e4db2405b7e9408c73521cecf6a43d4f3f21f5afc044303"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_right_v3_03.png",
+      "sha256": "290d3af60e962c962aceba6aa92a2cba6cba1ef1f86341d03bed12b5a2a22db4"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_right_v3_03.png.meta",
+      "sha256": "5beae257bbe18b25e144d53e562735be6d3f30189b8a5afddda061ffa871bfce"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_up_v3_00.png",
+      "sha256": "c76c896cec9b57f7733d32e8adc2dd913dcfc0c2971622ad47b150a26ee43df2"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_up_v3_00.png.meta",
+      "sha256": "ac9a005fe6c2c67d5a3bcac73674392e4a4ef89c933ef365c5e113b74b99276f"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_up_v3_01.png",
+      "sha256": "92fc67805597ebebe0033b989d8ed5700578525a49704b9f56908b9fa795f183"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_up_v3_01.png.meta",
+      "sha256": "38e7df4a63738c0983b7a7535af9c2d3ab9ac036ef3b5ab3fa798664f6985be8"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_up_v3_02.png",
+      "sha256": "9ddda52813520b10efd7597e2154ddc7336cdb56b76faa31233d6c809eca2986"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_up_v3_02.png.meta",
+      "sha256": "5f006af0172d188461b6ad96d4d83172a7b779ced297b817ebc6e2e78a86b68f"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_up_v3_03.png",
+      "sha256": "f0926d09308f35def2efde7dcb84c6dd7ab6488418f2b69e57d879266cff4ce4"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_up_v3_03.png.meta",
+      "sha256": "aa31b573d457b658b5d0aa43024a98df577ba3094bde473fd9923170d8681d69"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_down_00.png",
+      "sha256": "4c4ba88d80f5d337bce3bff0fd12268c57249a0e07eb32e7830fae86cc2a1f1a"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_down_00.png.meta",
+      "sha256": "1b93ab13328d9145b156e0b19f14f6923ed913e2415e242ad801c08bad6ad6b3"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_down_01.png",
+      "sha256": "8d60e19244c6c61fb48813e2c14f921dcb68246297915b1d089ec0af220dd3b6"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_down_01.png.meta",
+      "sha256": "1c871cb7c31330aff6471e00ea8ace8d84e9f4ae0f26d07f2056c7f074f992d8"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_down_02.png",
+      "sha256": "80b582d7abeae10be2e9ec08021c0a455b5ecaf8328a11830d5be2aef1d7ec2e"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_down_02.png.meta",
+      "sha256": "2638bc244bb0121b00d45eaeac72930e6c0030a47fd9612b07b2b83bfcf637d4"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_down_03.png",
+      "sha256": "f4fb1040face6e9268ab5e40bffc7b785d644986dc9268e3c63747fb367ec427"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_down_03.png.meta",
+      "sha256": "961414172650f16a376bd8e3079419c51efc45c3de76dd36c37115e8f972b08d"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_left_v4_00.png",
+      "sha256": "e77a22e4d7d968a39df822017ae93144b24632013249d4c96204d4c80a8bf2c6"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_left_v4_00.png.meta",
+      "sha256": "da198ffe3bbbc345d8b437a24fc40d9d833a924d0889518aeac5c55931678c01"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_left_v4_01.png",
+      "sha256": "2c7ed13fcd5ec08da13188ec78041ec50994ea614fc46b52b126edcd488269ae"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_left_v4_01.png.meta",
+      "sha256": "846b6e7207857e9e5bf7285dc2ac7a74c9c9c337e9aefe3404d4c8f8eb5185d4"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_left_v4_02.png",
+      "sha256": "794b8d86a12087b04fb9404c1a9f86770428720dcb96aecd67a4048b54a76a14"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_left_v4_02.png.meta",
+      "sha256": "98df0cd1ab20d2a4fe26f24e6afcf72eaa0e707234eb737f47256774fa9f87a6"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_left_v4_03.png",
+      "sha256": "fc875d27e816bbea2d9fe337093e821281ef23d12dac20864a7f15de2c2cce12"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_left_v4_03.png.meta",
+      "sha256": "deeb415941d00c3d12ff0ad5c84b1e37fb7c03f6ce63fdb35177865990f1d8e3"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_right_v3_00.png",
+      "sha256": "3911e82ad3ec748f798e9eda5cf30c6d64d3578ac745f7094253ff1eb45aac4f"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_right_v3_00.png.meta",
+      "sha256": "4d96006ffa1ead8dc4fc346437c51b94a21d4e99ee6694177c1b0092cb5aaf2a"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_right_v3_01.png",
+      "sha256": "a4b968981fee05893ccc40bea7fc20343998130618739168bb1a4b51aa6c5b74"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_right_v3_01.png.meta",
+      "sha256": "9907122cd93221d3986ece644441ad1edd163d74d057a5fe423790b02e2a5648"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_right_v3_02.png",
+      "sha256": "68d9d815ea05fd059904efa703a34f7b5f322e762a188f9e8cd54813e44d1eb3"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_right_v3_02.png.meta",
+      "sha256": "5a084818ddf5319894ca37a49a2e96d0cf58f30e7c969d2764dee35c1b63ed66"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_right_v3_03.png",
+      "sha256": "30dad7e4735b35d7089c3d191a673181c19552d8b623a14c0d63c8e1ef5d0b8f"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_right_v3_03.png.meta",
+      "sha256": "cdd917575ee83d019d60ff462d22f97b42298760f7c271164fedca846e9b04d6"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_up_00.png",
+      "sha256": "0cd59eff8210f106705c94205576a8452ba83d8c2f60d2faaeb6758ce60cb520"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_up_00.png.meta",
+      "sha256": "0ce6dfca394b0fea11262f67a23ebf3164f0991ac1104b5bac91ba9e762e24e6"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_up_01.png",
+      "sha256": "d604587517d77b8b0216a3775c5441c487c8139ec11197ca5587bbd5bc72396e"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_up_01.png.meta",
+      "sha256": "5f69df1396f58a3da62ad5153623c32723c37d8f1d429db551cd899468f18dc3"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_up_02.png",
+      "sha256": "21c5989a260cabacb2cdfaa0b26f37232b83ed46f3f7e07038ff55b026f2b4c1"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_up_02.png.meta",
+      "sha256": "19a7c10a9699b84e3ba0b7d563b8ad1d8fb3ca21b5b811cb30ecee8013e20590"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_up_03.png",
+      "sha256": "af7871ae785789ad1225a18ac47b44e17bc08a3a1e2e06a5822e57198d9ec1ec"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_up_03.png.meta",
+      "sha256": "00e97cdb052126864eb8f3d7aabcbab0b85552700b1f2b2837b74551cc45d55d"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_up_04.png",
+      "sha256": "dc77784cc7859394753a0a3c208fa1c9d5d9566d31f0aee1f77cebbe430563f2"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_up_04.png.meta",
+      "sha256": "f3bfb59dc7fd366d84126402ab6697313e544569541ebf613b15df02774f58d6"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_up_05.png",
+      "sha256": "3dc9df3010f21880221fa044d182b789f5156d6f6eb5b1627b2aeaad5e2ae9d5"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_up_05.png.meta",
+      "sha256": "c8c9be7e3578219e294d4860d08a9a8f73059eabdbc92a720eac9f82c2c63985"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/halo-neutral.png",
+      "sha256": "255dd93e98e2fc085864a897c1d2819abe9e92e905023c3abdc75f0ed29bbb7a"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Yuuki/halo-neutral.png.meta",
+      "sha256": "e04243b7ba166a6d99ae01b32b185d300dad895094979954048c0889edb9e3b1"
+    },
+    {
+      "path": "preview/childhood-animation.css",
+      "sha256": "c4f65f2a559b368171f660a0bd2c85848cd59d7aa1421ba97e27adcdaaa4b64d"
+    },
+    {
+      "path": "preview/childhood-animation.html",
+      "sha256": "a6227110ad7f52eae35ea6517e772c0a300de44b297b1d0818d76bcdd79ccd80"
+    },
+    {
+      "path": "preview/childhood-animation.js",
+      "sha256": "566ea89903883b6976a74a8a56a76d9eea99f4b18af90016a39250d4048fc63e"
+    },
+    {
+      "path": "preview/childhood-design.html",
+      "sha256": "4bb9762f1926d5ca3112244ab64056395aa3d0ce2f368968d40ab5689ad7158d"
+    },
+    {
+      "path": "scripts/copy_child_yuuki_run_legs.py",
+      "sha256": "438108e8df8ac610180c321cb9fef3a5656835c55dd8c3d2dab2204bade1c783"
+    },
+    {
+      "path": "scripts/pack_child_yuuki.py",
+      "sha256": "f53b8421f79f264b15d2ae36a40f81ea5de800d5f58887e4b6afd4c27e88ed39"
+    },
+    {
+      "path": "scripts/revise_child_yuuki_lateral.py",
+      "sha256": "1c499dbe59e770a44fc82116728a3d49783b4c04b37182fd48513e56c77794ba"
+    },
+    {
+      "path": "scripts/revise_child_yuuki_motion.py",
+      "sha256": "54c641b7f5659b4e412d73d9abb5eab88796a35bca9254c646ee94d1e7314532"
+    }
+  ]
+}

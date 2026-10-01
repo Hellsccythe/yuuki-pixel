@@ -1,0 +1,41 @@
+{
+  "tool": "built-in ImageGen",
+  "status": "recorded refinement specification",
+  "layout": {
+    "columns": 3,
+    "rows": 2,
+    "sourceSize": [
+      1536,
+      1024
+    ]
+  },
+  "invariants": [
+    "Approved child identity and outfit",
+    "No weapons or halo in body sheet",
+    "Anatomical left black wing, right white",
+    "True alpha, complete uncut sprites",
+    "Crisp shaded pixel sprite, no smudging",
+    "No painting, mirroring or warping during packing"
+  ],
+  "phases": [
+    "contact A: left leg forward, right back",
+    "passing A: feet close beneath hips",
+    "contact B: right forward, left back",
+    "down B: right planted, left heel rises",
+    "passing B: feet close beneath hips, opposite knee",
+    "down A: left advances, right pushes off"
+  ],
+  "frontSelectedFrames": [
+    0,
+    1,
+    3,
+    4
+  ],
+  "sources": {
+    "down": "exec-7d3dd9aa-1a18-4e4a-abfe-831c2a4504b5.png",
+    "up": "exec-e55ed079-645b-4754-b76b-5bf82558862b.png",
+    "left": "exec-a16afe6d-c608-4f3d-9754-e1bc3910e4b2.png",
+    "right": "exec-58641473-be2e-452e-9cf0-42657c30092b.png"
+  },
+  "lateralRefinement": "Use the corresponding first packed side-view sprite as sole identity/camera reference. Near wing black for left facing, white for right facing. Do not rotate toward camera. Near and far legs alternate; passing feet close beneath hips."
+}

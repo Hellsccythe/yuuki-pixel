@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-29",
+  "bodyApproved": true,
+  "framesVerified": 54,
+  "clipsVerified": 12,
+  "frameSize": [
+    512,
+    512
+  ],
+  "bordersClear": true,
+  "pointFilter": true,
+  "uncompressed": true,
+  "haloSeparate": true,
+  "haloMaximumAlpha": 156,
+  "bodyDesignHashVerified": true,
+  "browserChecks": [
+    "pause and single-frame navigation",
+    "walk front uses four selected poses",
+    "run left playback",
+    "arrow-right movement returns to idle",
+    "idle back uses three drawings",
+    "halo color and visibility independent of body",
+    "right walk single-frame order: 3,1,2,4,5,6,3",
+    "right run starts at frame 3",
+    "left walk four-step loop: 1,2,3,4,1",
+    "left run four-step loop: 1,2,3,4,1",
+    "left playback speed remains 1x"
+  ],
+  "unitySceneIntegration": false,
+  "playbackRevision": "lateral-v2",
+  "rightSequence": [
+    3,
+    1,
+    2,
+    4,
+    5,
+    6
+  ],
+  "leftFrameCounts": {
+    "walk": 4,
+    "run": 4
+  },
+  "leftFps": {
+    "walk": 5,
+    "run": 7
+  }
+}

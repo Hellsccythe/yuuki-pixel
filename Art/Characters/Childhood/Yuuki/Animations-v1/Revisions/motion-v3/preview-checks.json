@@ -1,0 +1,43 @@
+{
+  "date": "2026-09-29",
+  "playbackRevision": "motion-v3",
+  "bodyApproved": true,
+  "framesVerified": 46,
+  "clipsVerified": 12,
+  "frameSize": [
+    512,
+    512
+  ],
+  "bordersClear": true,
+  "pointFilter": true,
+  "uncompressed": true,
+  "haloSeparate": true,
+  "haloMaximumAlpha": 156,
+  "bodyDesignHashVerified": true,
+  "adultFilesVerified": 155,
+  "protectedFilesVerified": 24,
+  "acceptedWalkingClips": [
+    "walk_down",
+    "walk_up"
+  ],
+  "headTopRangePixelsMaximum": 1,
+  "newLocomotionFrameCounts": {
+    "walk_left": 4,
+    "run_left": 4,
+    "walk_right": 4,
+    "run_right": 4,
+    "run_down": 4,
+    "run_up": 4
+  },
+  "fps": {
+    "walk": 6,
+    "run": 8
+  },
+  "browserChecks": [
+    "all six revised clips step 1,2,3,4 and return to 1",
+    "revised preview reports 46 drawings",
+    "default playback remains 1x",
+    "left walk plays after inspection"
+  ],
+  "unitySceneIntegration": false
+}

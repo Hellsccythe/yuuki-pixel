@@ -20,7 +20,11 @@ public sealed class YuukiPlayerTopDown : MonoBehaviour
             if (!value) return;
             direction = Vector2.zero;
             Velocity = Vector2.zero;
+#if UNITY_6000_0_OR_NEWER
             if (body != null) body.linearVelocity = Vector2.zero;
+#else
+            if (body != null) body.velocity = Vector2.zero;
+#endif
             if (animator != null) { animator.SetBool("Moving", false); animator.SetBool("Running", false); }
         }
     }

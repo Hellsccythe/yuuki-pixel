@@ -1,0 +1,8 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Precise-object-edit of the attached standalone halo sprite. User asks for three changes ONLY: (1) completely REMOVE both lateral feather/wing-shaped extensions so neither side has fins, feathers, upward points or ornaments; (2) CLOSE the interrupted arcs into a COMPLETE continuous circular halo, seen in the same shallow perspective as a closed horizontal ellipse, no gaps anywhere in either thin concentric loop; (3) make the halo ETHEREAL, translucent and made of softly glowing light rather than solid metal. Keep the small elegant diamond/lozenge at the front midpoint, now hovering just beneath the continuous front arc, without interrupting it. Keep the overall low horizontal proportions and recognizable minimal double-line design. Pearl white NEUTRAL GRAYSCALE only, no colors, so the same PNG can be freely tinted in the game. No metallic bevel, no dark solid outline, no solid silver band, no thick physical torus. Fine luminous strokes, gentle localized radiance, visibly semi-transparent light with approximately 55-65% opacity and softer alpha at its edges; the entire outside and empty center must remain genuinely transparent, not painted black/white/gray or checkerboard. Enough defined contour to read at a 96-pixel-wide game sprite; avoid large blurry bloom or scattered particles. ONE isolated halo, no character, no text, no background, generous transparent margin. Preserve the subtle central lozenge but remove every lateral wing and fully close the oval.",
+  "technicalPacking": {
+    "alphaGain": 0.65,
+    "width": 96
+  }
+}

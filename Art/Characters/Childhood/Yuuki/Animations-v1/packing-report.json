@@ -1,0 +1,783 @@
+{
+  "frames": 46,
+  "clips": 12,
+  "adultFilesVerified": 155,
+  "approvedBodyUnchanged": true,
+  "clipsDetail": [
+    {
+      "clip": "walk_down",
+      "frames": 4,
+      "sourceRow": [
+        0,
+        523,
+        1024
+      ],
+      "scale": 0.4896174863387978,
+      "bounds": [
+        [
+          166,
+          173,
+          355,
+          400
+        ],
+        [
+          167,
+          176,
+          354,
+          401
+        ],
+        [
+          165,
+          176,
+          354,
+          400
+        ],
+        [
+          166,
+          180,
+          354,
+          400
+        ]
+      ]
+    },
+    {
+      "clip": "run_down",
+      "frames": 4,
+      "source": "run-down-compact-v3-refined.png",
+      "sourceCuts": {
+        "rows": [
+          0,
+          639,
+          1254
+        ],
+        "columns": [
+          [
+            0,
+            629,
+            1254
+          ],
+          [
+            0,
+            629,
+            1254
+          ]
+        ]
+      },
+      "scale": 0.40816326530612246,
+      "bounds": [
+        [
+          165,
+          175,
+          354,
+          396
+        ],
+        [
+          169,
+          175,
+          358,
+          396
+        ],
+        [
+          170,
+          176,
+          359,
+          396
+        ],
+        [
+          168,
+          176,
+          357,
+          392
+        ]
+      ],
+      "registration": "eye",
+      "landmarks": [
+        [
+          259.0,
+          236.0
+        ],
+        [
+          257.0,
+          236.0
+        ],
+        [
+          262.0,
+          237.0
+        ],
+        [
+          259.5,
+          237.0
+        ]
+      ],
+      "headTopRangePixels": 1,
+      "footBaselineRangePixels": 4
+    },
+    {
+      "clip": "idle_down",
+      "frames": 3,
+      "sourceRow": [
+        691,
+        1024
+      ],
+      "scale": 0.738255033557047,
+      "bounds": [
+        [
+          171,
+          180,
+          350,
+          401
+        ],
+        [
+          173,
+          179,
+          352,
+          401
+        ],
+        [
+          172,
+          180,
+          351,
+          401
+        ]
+      ]
+    },
+    {
+      "clip": "walk_up",
+      "frames": 6,
+      "sourceRow": [
+        0,
+        517,
+        1024
+      ],
+      "scale": 0.5067873303167421,
+      "bounds": [
+        [
+          170,
+          174,
+          338,
+          401
+        ],
+        [
+          174,
+          179,
+          337,
+          400
+        ],
+        [
+          171,
+          174,
+          338,
+          401
+        ],
+        [
+          169,
+          175,
+          339,
+          400
+        ],
+        [
+          169,
+          177,
+          335,
+          400
+        ],
+        [
+          170,
+          178,
+          339,
+          401
+        ]
+      ]
+    },
+    {
+      "clip": "run_up",
+      "frames": 4,
+      "source": "run-up-compact-v3.png",
+      "sourceCuts": {
+        "rows": [
+          0,
+          639,
+          1292
+        ],
+        "columns": [
+          [
+            0,
+            624,
+            1217
+          ],
+          [
+            0,
+            625,
+            1217
+          ]
+        ]
+      },
+      "scale": 0.41006523765144454,
+      "bounds": [
+        [
+          167,
+          175,
+          337,
+          392
+        ],
+        [
+          168,
+          175,
+          339,
+          394
+        ],
+        [
+          168,
+          175,
+          337,
+          397
+        ],
+        [
+          169,
+          175,
+          337,
+          397
+        ]
+      ],
+      "registration": "hairline",
+      "landmarks": [
+        [
+          256.0,
+          175
+        ],
+        [
+          256.0,
+          175
+        ],
+        [
+          255.0,
+          175
+        ],
+        [
+          255.0,
+          175
+        ]
+      ],
+      "headTopRangePixels": 0,
+      "footBaselineRangePixels": 5
+    },
+    {
+      "clip": "idle_up",
+      "frames": 3,
+      "sourceRow": [
+        691,
+        1024
+      ],
+      "scale": 0.7508532423208191,
+      "bounds": [
+        [
+          169,
+          180,
+          339,
+          401
+        ],
+        [
+          168,
+          179,
+          338,
+          401
+        ],
+        [
+          169,
+          178,
+          339,
+          401
+        ]
+      ]
+    },
+    {
+      "clip": "walk_left",
+      "frames": 4,
+      "source": "left-from-approved-right-v4.png",
+      "sourceCuts": {
+        "rows": [
+          0,
+          484,
+          941
+        ],
+        "columns": [
+          [
+            0,
+            431,
+            849,
+            1267,
+            1672
+          ],
+          [
+            0,
+            431,
+            849,
+            1267,
+            1672
+          ]
+        ]
+      },
+      "scale": 0.5994550408719346,
+      "bounds": [
+        [
+          202,
+          176,
+          349,
+          397
+        ],
+        [
+          203,
+          177,
+          350,
+          397
+        ],
+        [
+          202,
+          176,
+          349,
+          397
+        ],
+        [
+          202,
+          177,
+          349,
+          398
+        ]
+      ],
+      "registration": "eye",
+      "landmarks": [
+        [
+          246.0,
+          248.0
+        ],
+        [
+          247.0,
+          249.0
+        ],
+        [
+          246.0,
+          248.0
+        ],
+        [
+          245.0,
+          249.0
+        ]
+      ],
+      "headTopRangePixels": 1,
+      "footBaselineRangePixels": 1
+    },
+    {
+      "clip": "run_left",
+      "frames": 4,
+      "method": "exact mirrored leg pixels, integer offsets, binary masks",
+      "configuration": "leg-copy-v5.json",
+      "bounds": [
+        [
+          199,
+          178,
+          353,
+          394
+        ],
+        [
+          203,
+          178,
+          354,
+          397
+        ],
+        [
+          192,
+          177,
+          352,
+          395
+        ],
+        [
+          203,
+          178,
+          352,
+          397
+        ]
+      ],
+      "details": [
+        {
+          "frame": 0,
+          "source": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_right_v3_00.png",
+          "body": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_left_v4_00.png",
+          "integerOffset": [
+            0,
+            0
+          ],
+          "visibleLegPixels": 2439,
+          "exactLegBytes": true,
+          "unchangedOutsideMasks": true,
+          "unchangedAboveY": 337,
+          "bounds": [
+            199,
+            178,
+            353,
+            394
+          ],
+          "sourceSha256": "d8153252e9a236aaea135f066edadf9b91c4390aa798c3b36ab7c90c45541bd4",
+          "bodySha256": "e339301a66c493655fabda5fac75659974987d30504147287e03cc2931ea7152",
+          "outputSha256": "abf5595dd7a563dea3fb78c7e7695edc3c7983f48644a6e76a6b8fd06f78a320"
+        },
+        {
+          "frame": 1,
+          "source": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_right_v3_01.png",
+          "body": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_left_v4_01.png",
+          "integerOffset": [
+            4,
+            0
+          ],
+          "visibleLegPixels": 2164,
+          "exactLegBytes": true,
+          "unchangedOutsideMasks": true,
+          "unchangedAboveY": 337,
+          "bounds": [
+            203,
+            178,
+            354,
+            397
+          ],
+          "sourceSha256": "4f698c8bea6a3a29ba68c8f300c19a776c5acb3a0bb068b2f94445369eabdc36",
+          "bodySha256": "76585749f9b0e53479f20c8b4413f0746bcc37f50750ca7df6d28154ff0415b7",
+          "outputSha256": "6a22afc99384ce1b10ae5e9ea95fca9f414520e28dcd27e370f052f5dbc7135c"
+        },
+        {
+          "frame": 2,
+          "source": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_right_v3_02.png",
+          "body": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_left_v4_02.png",
+          "integerOffset": [
+            -1,
+            0
+          ],
+          "visibleLegPixels": 2480,
+          "exactLegBytes": true,
+          "unchangedOutsideMasks": true,
+          "unchangedAboveY": 337,
+          "bounds": [
+            192,
+            177,
+            352,
+            395
+          ],
+          "sourceSha256": "3ca3c9e671da8bdf065b86028948420631dd7a0273020afa95e53dfeb6077dda",
+          "bodySha256": "1f3818ea62862195a65d58d71c1c309c178d159b3208948b56ed63a51ae842e7",
+          "outputSha256": "b25577241f7b0658a2f085ed6ad2adf0386e9dcff38c7bef4dbcdbb380526337"
+        },
+        {
+          "frame": 3,
+          "source": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_right_v3_03.png",
+          "body": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_left_v4_03.png",
+          "integerOffset": [
+            5,
+            3
+          ],
+          "visibleLegPixels": 1896,
+          "exactLegBytes": true,
+          "unchangedOutsideMasks": true,
+          "unchangedAboveY": 337,
+          "bounds": [
+            203,
+            178,
+            352,
+            397
+          ],
+          "sourceSha256": "290d3af60e962c962aceba6aa92a2cba6cba1ef1f86341d03bed12b5a2a22db4",
+          "bodySha256": "9927e9e4dc5a6ca34026ff3ae7184935d84440e8ca78e45b045073348549b5e7",
+          "outputSha256": "00de83a6b0cc87f6509b7bba6a51ab4ce7f753dcd0359c42271203fe926b3bfc"
+        }
+      ]
+    },
+    {
+      "clip": "idle_left",
+      "frames": 3,
+      "sourceRow": [
+        688,
+        1024
+      ],
+      "scale": 0.7692307692307693,
+      "bounds": [
+        [
+          204,
+          179,
+          359,
+          401
+        ],
+        [
+          204,
+          179,
+          359,
+          401
+        ],
+        [
+          206,
+          179,
+          361,
+          401
+        ]
+      ]
+    },
+    {
+      "clip": "walk_right",
+      "frames": 4,
+      "source": "right-compact-v3-refined.png",
+      "sourceCuts": {
+        "rows": [
+          0,
+          521,
+          1024
+        ],
+        "columns": [
+          [
+            0,
+            381,
+            763,
+            1149,
+            1536
+          ],
+          [
+            0,
+            380,
+            762,
+            1147,
+            1536
+          ]
+        ]
+      },
+      "scale": 0.5080831408775982,
+      "bounds": [
+        [
+          163,
+          177,
+          311,
+          398
+        ],
+        [
+          165,
+          177,
+          312,
+          398
+        ],
+        [
+          163,
+          177,
+          312,
+          398
+        ],
+        [
+          164,
+          177,
+          311,
+          398
+        ]
+      ],
+      "registration": "eye",
+      "landmarks": [
+        [
+          265.0,
+          249.0
+        ],
+        [
+          265.0,
+          250.0
+        ],
+        [
+          265.0,
+          250.0
+        ],
+        [
+          264.0,
+          250.0
+        ]
+      ],
+      "headTopRangePixels": 0,
+      "footBaselineRangePixels": 0
+    },
+    {
+      "clip": "run_right",
+      "frames": 4,
+      "source": "right-compact-v3-refined.png",
+      "sourceCuts": {
+        "rows": [
+          0,
+          521,
+          1024
+        ],
+        "columns": [
+          [
+            0,
+            381,
+            763,
+            1149,
+            1536
+          ],
+          [
+            0,
+            380,
+            762,
+            1147,
+            1536
+          ]
+        ]
+      },
+      "scale": 0.5080831408775982,
+      "bounds": [
+        [
+          163,
+          177,
+          313,
+          394
+        ],
+        [
+          163,
+          177,
+          312,
+          397
+        ],
+        [
+          162,
+          176,
+          319,
+          395
+        ],
+        [
+          162,
+          176,
+          311,
+          394
+        ]
+      ],
+      "registration": "eye",
+      "landmarks": [
+        [
+          264.0,
+          250.0
+        ],
+        [
+          265.0,
+          250.0
+        ],
+        [
+          264.0,
+          249.0
+        ],
+        [
+          264.0,
+          249.0
+        ]
+      ],
+      "headTopRangePixels": 1,
+      "footBaselineRangePixels": 3
+    },
+    {
+      "clip": "idle_right",
+      "frames": 3,
+      "sourceRow": [
+        698,
+        1024
+      ],
+      "scale": 0.7560137457044673,
+      "bounds": [
+        [
+          167,
+          180,
+          311,
+          400
+        ],
+        [
+          168,
+          180,
+          312,
+          400
+        ],
+        [
+          168,
+          180,
+          313,
+          400
+        ]
+      ]
+    }
+  ],
+  "playbackRevision": "run-left-v5",
+  "atlasLayout": {
+    "down": {
+      "walk": [
+        "Childhood/Yuuki/Frames/walk_down_00",
+        "Childhood/Yuuki/Frames/walk_down_01",
+        "Childhood/Yuuki/Frames/walk_down_02",
+        "Childhood/Yuuki/Frames/walk_down_03"
+      ],
+      "run": [
+        "Childhood/Yuuki/Frames/run_down_v3_00",
+        "Childhood/Yuuki/Frames/run_down_v3_01",
+        "Childhood/Yuuki/Frames/run_down_v3_02",
+        "Childhood/Yuuki/Frames/run_down_v3_03"
+      ],
+      "idle": [
+        "Childhood/Yuuki/Frames/idle_down_00",
+        "Childhood/Yuuki/Frames/idle_down_01",
+        "Childhood/Yuuki/Frames/idle_down_02"
+      ]
+    },
+    "up": {
+      "walk": [
+        "Childhood/Yuuki/Frames/walk_up_00",
+        "Childhood/Yuuki/Frames/walk_up_01",
+        "Childhood/Yuuki/Frames/walk_up_02",
+        "Childhood/Yuuki/Frames/walk_up_03",
+        "Childhood/Yuuki/Frames/walk_up_04",
+        "Childhood/Yuuki/Frames/walk_up_05"
+      ],
+      "run": [
+        "Childhood/Yuuki/Frames/run_up_v3_00",
+        "Childhood/Yuuki/Frames/run_up_v3_01",
+        "Childhood/Yuuki/Frames/run_up_v3_02",
+        "Childhood/Yuuki/Frames/run_up_v3_03"
+      ],
+      "idle": [
+        "Childhood/Yuuki/Frames/idle_up_00",
+        "Childhood/Yuuki/Frames/idle_up_01",
+        "Childhood/Yuuki/Frames/idle_up_02"
+      ]
+    },
+    "left": {
+      "walk": [
+        "Childhood/Yuuki/Frames/walk_left_v4_00",
+        "Childhood/Yuuki/Frames/walk_left_v4_01",
+        "Childhood/Yuuki/Frames/walk_left_v4_02",
+        "Childhood/Yuuki/Frames/walk_left_v4_03"
+      ],
+      "run": [
+        "Childhood/Yuuki/Frames/run_left_v5_00",
+        "Childhood/Yuuki/Frames/run_left_v5_01",
+        "Childhood/Yuuki/Frames/run_left_v5_02",
+        "Childhood/Yuuki/Frames/run_left_v5_03"
+      ],
+      "idle": [
+        "Childhood/Yuuki/Frames/idle_left_00",
+        "Childhood/Yuuki/Frames/idle_left_01",
+        "Childhood/Yuuki/Frames/idle_left_02"
+      ]
+    },
+    "right": {
+      "walk": [
+        "Childhood/Yuuki/Frames/walk_right_v3_00",
+        "Childhood/Yuuki/Frames/walk_right_v3_01",
+        "Childhood/Yuuki/Frames/walk_right_v3_02",
+        "Childhood/Yuuki/Frames/walk_right_v3_03"
+      ],
+      "run": [
+        "Childhood/Yuuki/Frames/run_right_v3_00",
+        "Childhood/Yuuki/Frames/run_right_v3_01",
+        "Childhood/Yuuki/Frames/run_right_v3_02",
+        "Childhood/Yuuki/Frames/run_right_v3_03"
+      ],
+      "idle": [
+        "Childhood/Yuuki/Frames/idle_right_00",
+        "Childhood/Yuuki/Frames/idle_right_01",
+        "Childhood/Yuuki/Frames/idle_right_02"
+      ]
+    }
+  }
+}

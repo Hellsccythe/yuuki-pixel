@@ -1,0 +1,43 @@
+{
+  "revision": "motion-v3",
+  "date": "2026-09-29",
+  "userRequest": "Preserve front/back walking; other locomotion clips use four frames with no abrupt pose changes.",
+  "fps": {
+    "walk": 6,
+    "run": 8
+  },
+  "registration": "Fixed eye/hairline. One constant scale per sheet; no per-frame warping or pose interpolation.",
+  "sources": {
+    "left": {
+      "file": "left-compact-v3.png",
+      "columns": 4,
+      "rows": 2,
+      "reference": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_left_00.png"
+    },
+    "right": {
+      "file": "right-compact-v3-refined.png",
+      "columns": 4,
+      "rows": 2,
+      "reference": "Assets/Game/Resources/Childhood/Yuuki/Frames/idle_right_00.png"
+    },
+    "down": {
+      "file": "run-down-compact-v3-refined.png",
+      "columns": 2,
+      "rows": 2,
+      "reference": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_down_00.png"
+    },
+    "up": {
+      "file": "run-up-compact-v3.png",
+      "columns": 2,
+      "rows": 2,
+      "reference": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_up_00.png"
+    }
+  },
+  "acceptedClips": [
+    "walk_down",
+    "walk_up"
+  ],
+  "idle": "Preserved three-drawing breathing animations.",
+  "prompts": "motion-four-frame-v3-prompts.json",
+  "tool": "built-in ImageGen"
+}
