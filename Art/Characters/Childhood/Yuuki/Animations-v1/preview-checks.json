@@ -1,0 +1,110 @@
+{
+  "revision": "run-left-v5",
+  "changedClips": [
+    "run_left"
+  ],
+  "acceptedClipsUnchanged": 11,
+  "protectedFilesVerified": 51,
+  "adultFilesVerified": 155,
+  "frames": 46,
+  "clips": 12,
+  "fps": 8,
+  "sequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "frameChecks": [
+    {
+      "frame": 0,
+      "source": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_right_v3_00.png",
+      "body": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_left_v4_00.png",
+      "integerOffset": [
+        0,
+        0
+      ],
+      "visibleLegPixels": 2439,
+      "exactLegBytes": true,
+      "unchangedOutsideMasks": true,
+      "unchangedAboveY": 337,
+      "bounds": [
+        199,
+        178,
+        353,
+        394
+      ],
+      "sourceSha256": "d8153252e9a236aaea135f066edadf9b91c4390aa798c3b36ab7c90c45541bd4",
+      "bodySha256": "e339301a66c493655fabda5fac75659974987d30504147287e03cc2931ea7152",
+      "outputSha256": "abf5595dd7a563dea3fb78c7e7695edc3c7983f48644a6e76a6b8fd06f78a320"
+    },
+    {
+      "frame": 1,
+      "source": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_right_v3_01.png",
+      "body": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_left_v4_01.png",
+      "integerOffset": [
+        4,
+        0
+      ],
+      "visibleLegPixels": 2164,
+      "exactLegBytes": true,
+      "unchangedOutsideMasks": true,
+      "unchangedAboveY": 337,
+      "bounds": [
+        203,
+        178,
+        354,
+        397
+      ],
+      "sourceSha256": "4f698c8bea6a3a29ba68c8f300c19a776c5acb3a0bb068b2f94445369eabdc36",
+      "bodySha256": "76585749f9b0e53479f20c8b4413f0746bcc37f50750ca7df6d28154ff0415b7",
+      "outputSha256": "6a22afc99384ce1b10ae5e9ea95fca9f414520e28dcd27e370f052f5dbc7135c"
+    },
+    {
+      "frame": 2,
+      "source": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_right_v3_02.png",
+      "body": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_left_v4_02.png",
+      "integerOffset": [
+        -1,
+        0
+      ],
+      "visibleLegPixels": 2480,
+      "exactLegBytes": true,
+      "unchangedOutsideMasks": true,
+      "unchangedAboveY": 337,
+      "bounds": [
+        192,
+        177,
+        352,
+        395
+      ],
+      "sourceSha256": "3ca3c9e671da8bdf065b86028948420631dd7a0273020afa95e53dfeb6077dda",
+      "bodySha256": "1f3818ea62862195a65d58d71c1c309c178d159b3208948b56ed63a51ae842e7",
+      "outputSha256": "b25577241f7b0658a2f085ed6ad2adf0386e9dcff38c7bef4dbcdbb380526337"
+    },
+    {
+      "frame": 3,
+      "source": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_right_v3_03.png",
+      "body": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_left_v4_03.png",
+      "integerOffset": [
+        5,
+        3
+      ],
+      "visibleLegPixels": 1896,
+      "exactLegBytes": true,
+      "unchangedOutsideMasks": true,
+      "unchangedAboveY": 337,
+      "bounds": [
+        203,
+        178,
+        352,
+        397
+      ],
+      "sourceSha256": "290d3af60e962c962aceba6aa92a2cba6cba1ef1f86341d03bed12b5a2a22db4",
+      "bodySha256": "9927e9e4dc5a6ca34026ff3ae7184935d84440e8ca78e45b045073348549b5e7",
+      "outputSha256": "00de83a6b0cc87f6509b7bba6a51ab4ce7f753dcd0359c42271203fe926b3bfc"
+    }
+  ],
+  "leftAtlasWalkAndIdleUnchanged": true,
+  "method": "pixel copy; no generation, scaling, warping, recoloring or alpha blending"
+}

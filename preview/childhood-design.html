@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Yuuki criança · Validação do design</title>
+<style>
+:root{color-scheme:dark;font:16px/1.55 system-ui;background:#171b20;color:#efede6}*{box-sizing:border-box}body{margin:0}main{max-width:1100px;margin:auto;padding:36px 24px 60px}h1,h2{font-family:Georgia,serif;font-weight:400;line-height:1.15}h1{font-size:42px;margin:12px 0}h2{font-size:26px}p{color:#b9c3c4}.eyebrow{font-size:12px;letter-spacing:.18em;color:#d0b47e}.layout{display:grid;grid-template-columns:1.15fr 1fr;gap:32px;margin-top:28px}.stage{background:repeating-conic-gradient(#353e43 0% 25%,#30383d 0% 50%) 0/24px 24px;border:1px solid #596064;border-radius:12px;overflow:hidden}.stage.light{background:repeating-conic-gradient(#b9c0ba 0% 25%,#c9cec5 0% 50%) 0/24px 24px}canvas{width:100%;display:block;image-rendering:pixelated}.colors{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}.swatch{width:38px;height:38px;border-radius:50%;padding:0;background:var(--c);border:2px solid #909691}.swatch[aria-pressed=true]{outline:2px solid #f1d6a8;outline-offset:3px}button,input{font:inherit;cursor:pointer}button{padding:8px 12px;color:#e8e6df;background:#2b373d;border:1px solid #5b7179;border-radius:5px}button:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid #edcb8d;outline-offset:4px}input[type=color]{vertical-align:middle;width:48px;height:32px;padding:0;border:0;background:transparent}label{display:block;margin:16px 0}.inline{display:flex;gap:18px;flex-wrap:wrap}.tag{font-size:12px;color:#e4c791;border:1px solid #7b6e51;border-radius:5px;padding:5px 9px;display:inline-block}.layers{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}.layers figure{margin:0;background:#242d32;border-radius:7px;padding:12px}.layers img{width:100%;height:140px;object-fit:contain;image-rendering:pixelated}.layers figcaption{font-size:13px;color:#c3cbd0}a{color:#dfc48f}.notice{border-left:2px solid #9d916d;padding-left:16px}footer{border-top:1px solid #48535a;padding-top:20px;margin-top:36px;color:#a4b3b7;font-size:14px}@media(max-width:750px){.layout{grid-template-columns:1fr}h1{font-size:34px}}
+</style>
+<main>
+<div class="eyebrow">INFÂNCIA · PERSONAGEM 1 DE 3</div><h1>Yuuki, aos nove anos.</h1>
+<p>Aparência e auréola aprovadas. As animações já estão disponíveis na prévia.</p>
+<div class="layout"><div><div class="stage" id="stage"><canvas id="preview" width="384" height="400" aria-label="Yuuki criança com auréola separada e cor ajustável"></canvas></div><p id="status" role="status">Carregando a proposta…</p><button id="background">Usar fundo claro</button></div>
+<section><span class="tag">DESIGN APROVADO</span><h2>A mesma forma. Qualquer cor.</h2><p>A proposta da Yuuki tem um aro completo de luz translúcida, sem asas laterais, e um pequeno losango frontal. Essa forma acompanhará a personagem quando crescer; a cor pode mudar quando ela quiser.</p>
+<div class="colors" aria-label="Cores da auréola">
+<button class="swatch" style="--c:#ffffff" data-color="#ffffff" aria-label="Branca" aria-pressed="true"></button>
+<button class="swatch" style="--c:#67b9ff" data-color="#67b9ff" aria-label="Azul" aria-pressed="false"></button>
+<button class="swatch" style="--c:#364ca3" data-color="#364ca3" aria-label="Azul escura" aria-pressed="false"></button>
+<button class="swatch" style="--c:#ed465c" data-color="#ed465c" aria-label="Vermelha" aria-pressed="false"></button>
+<button class="swatch" style="--c:#a086ef" data-color="#a086ef" aria-label="Violeta" aria-pressed="false"></button>
+<button class="swatch" style="--c:#f2cb68" data-color="#f2cb68" aria-label="Dourada" aria-pressed="false"></button>
+<button class="swatch" style="--c:#16161a" data-color="#16161a" aria-label="Preta" aria-pressed="false"></button>
+</div>
+<label>Escolher outra cor <input type="color" id="tint" value="#ffffff" aria-label="Cor livre da auréola"></label>
+<div class="inline"><label><input type="checkbox" id="show-halo" checked> Mostrar auréola</label><label><input type="checkbox" id="show-body" checked> Mostrar personagem</label></div>
+<p class="notice">Sem armas. Asa esquerda anatômica preta e direita branca. Os sprites da Yuuki atual continuam preservados para as fases seguintes da história.</p>
+<div class="layers"><figure><img src="../Art/Characters/Childhood/Yuuki/Design-v1/body.png" alt="Corpo sem auréola"><figcaption>Corpo independente</figcaption></figure><figure><img src="../Art/Characters/Halos/Yuuki-v2/halo-neutral.png" alt="Auréola neutra separada"><figcaption>Auréola independente</figcaption></figure></div>
+</section></div>
+<footer><a href="childhood-animation.html">Testar andar, correr e respirar</a>. Próxima etapa: andar, correr e idle com respiração em quatro direções, começando pela Yuuki. Depois, Alice; por último, Tenebris, com o cabelo preto conforme solicitado. <a href="../Art/Characters/Childhood/Yuuki/Design-v1/preview-halo-v2.png">Abrir imagem da proposta</a>.</footer>
+</main>
+<script>
+const $=id=>document.getElementById(id),canvas=$('preview'),ctx=canvas.getContext('2d');ctx.imageSmoothingEnabled=false;
+const body=new Image(),halo=new Image();let ready=false;
+const tinted=document.createElement('canvas'),tc=tinted.getContext('2d');
+function draw(){if(!ready)return;ctx.clearRect(0,0,384,400);if($('show-body').checked)ctx.drawImage(body,-64,-65);
+if($('show-halo').checked){tc.clearRect(0,0,tinted.width,tinted.height);tc.globalCompositeOperation='source-over';tc.drawImage(halo,0,0);tc.globalCompositeOperation='multiply';tc.fillStyle=$('tint').value;tc.fillRect(0,0,tinted.width,tinted.height);tc.globalCompositeOperation='destination-in';tc.drawImage(halo,0,0);tc.globalCompositeOperation='source-over';ctx.drawImage(tinted,192-Math.floor(halo.width/2),91-Math.floor(halo.height/2));}
+$('status').textContent='Uma pose de validação · auréola '+$('tint').value.toUpperCase();}
+function select(color){$('tint').value=color;document.querySelectorAll('.swatch').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.color===color)));draw()}
+document.querySelectorAll('.swatch').forEach(b=>b.onclick=()=>select(b.dataset.color));$('tint').oninput=()=>select($('tint').value);$('show-halo').onchange=$('show-body').onchange=draw;
+$('background').onclick=()=>{const light=$('stage').classList.toggle('light');$('background').textContent=light?'Usar fundo escuro':'Usar fundo claro'};
+Promise.all([[body,'../Art/Characters/Childhood/Yuuki/Design-v1/body.png'],[halo,'../Art/Characters/Halos/Yuuki-v2/halo-neutral.png']].map(([im,src])=>new Promise((resolve,reject)=>{im.onload=resolve;im.onerror=reject;im.src=src}))).then(()=>{tinted.width=halo.width;tinted.height=halo.height;ready=true;draw()}).catch(()=>{$('status').textContent='Não foi possível carregar as imagens desta proposta.'});
+</script>
+</html>

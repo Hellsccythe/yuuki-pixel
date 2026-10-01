@@ -1,0 +1,462 @@
+{
+  "frames": 46,
+  "clips": 12,
+  "protectedFilesVerified": 24,
+  "acceptedWalkingDirectionsUnchanged": true,
+  "idleUnchanged": true,
+  "adultFilesVerified": 155,
+  "newClips": [
+    {
+      "clip": "walk_left",
+      "frames": 4,
+      "source": "left-compact-v3.png",
+      "sourceCuts": {
+        "rows": [
+          0,
+          439,
+          887
+        ],
+        "columns": [
+          [
+            0,
+            467,
+            900,
+            1334,
+            1774
+          ],
+          [
+            0,
+            467,
+            900,
+            1335,
+            1774
+          ]
+        ]
+      },
+      "scale": 0.5527638190954773,
+      "bounds": [
+        [
+          203,
+          180,
+          365,
+          401
+        ],
+        [
+          203,
+          181,
+          364,
+          402
+        ],
+        [
+          203,
+          180,
+          362,
+          401
+        ],
+        [
+          203,
+          180,
+          362,
+          401
+        ]
+      ],
+      "registration": "eye",
+      "landmarks": [
+        [
+          242.0,
+          251.0
+        ],
+        [
+          241.0,
+          252.0
+        ],
+        [
+          242.0,
+          251.0
+        ],
+        [
+          242.0,
+          251.0
+        ]
+      ],
+      "headTopRangePixels": 1,
+      "footBaselineRangePixels": 1
+    },
+    {
+      "clip": "run_left",
+      "frames": 4,
+      "source": "left-compact-v3.png",
+      "sourceCuts": {
+        "rows": [
+          0,
+          439,
+          887
+        ],
+        "columns": [
+          [
+            0,
+            467,
+            900,
+            1334,
+            1774
+          ],
+          [
+            0,
+            467,
+            900,
+            1335,
+            1774
+          ]
+        ]
+      },
+      "scale": 0.5527638190954773,
+      "bounds": [
+        [
+          202,
+          179,
+          368,
+          397
+        ],
+        [
+          202,
+          180,
+          366,
+          399
+        ],
+        [
+          202,
+          180,
+          367,
+          399
+        ],
+        [
+          202,
+          179,
+          366,
+          399
+        ]
+      ],
+      "registration": "eye",
+      "landmarks": [
+        [
+          242.0,
+          250.0
+        ],
+        [
+          242.0,
+          251.0
+        ],
+        [
+          242.0,
+          251.0
+        ],
+        [
+          242.0,
+          250.0
+        ]
+      ],
+      "headTopRangePixels": 1,
+      "footBaselineRangePixels": 2
+    },
+    {
+      "clip": "walk_right",
+      "frames": 4,
+      "source": "right-compact-v3-refined.png",
+      "sourceCuts": {
+        "rows": [
+          0,
+          521,
+          1024
+        ],
+        "columns": [
+          [
+            0,
+            381,
+            763,
+            1149,
+            1536
+          ],
+          [
+            0,
+            380,
+            762,
+            1147,
+            1536
+          ]
+        ]
+      },
+      "scale": 0.5080831408775982,
+      "bounds": [
+        [
+          163,
+          177,
+          311,
+          398
+        ],
+        [
+          165,
+          177,
+          312,
+          398
+        ],
+        [
+          163,
+          177,
+          312,
+          398
+        ],
+        [
+          164,
+          177,
+          311,
+          398
+        ]
+      ],
+      "registration": "eye",
+      "landmarks": [
+        [
+          265.0,
+          249.0
+        ],
+        [
+          265.0,
+          250.0
+        ],
+        [
+          265.0,
+          250.0
+        ],
+        [
+          264.0,
+          250.0
+        ]
+      ],
+      "headTopRangePixels": 0,
+      "footBaselineRangePixels": 0
+    },
+    {
+      "clip": "run_right",
+      "frames": 4,
+      "source": "right-compact-v3-refined.png",
+      "sourceCuts": {
+        "rows": [
+          0,
+          521,
+          1024
+        ],
+        "columns": [
+          [
+            0,
+            381,
+            763,
+            1149,
+            1536
+          ],
+          [
+            0,
+            380,
+            762,
+            1147,
+            1536
+          ]
+        ]
+      },
+      "scale": 0.5080831408775982,
+      "bounds": [
+        [
+          163,
+          177,
+          313,
+          394
+        ],
+        [
+          163,
+          177,
+          312,
+          397
+        ],
+        [
+          162,
+          176,
+          319,
+          395
+        ],
+        [
+          162,
+          176,
+          311,
+          394
+        ]
+      ],
+      "registration": "eye",
+      "landmarks": [
+        [
+          264.0,
+          250.0
+        ],
+        [
+          265.0,
+          250.0
+        ],
+        [
+          264.0,
+          249.0
+        ],
+        [
+          264.0,
+          249.0
+        ]
+      ],
+      "headTopRangePixels": 1,
+      "footBaselineRangePixels": 3
+    },
+    {
+      "clip": "run_down",
+      "frames": 4,
+      "source": "run-down-compact-v3-refined.png",
+      "sourceCuts": {
+        "rows": [
+          0,
+          639,
+          1254
+        ],
+        "columns": [
+          [
+            0,
+            629,
+            1254
+          ],
+          [
+            0,
+            629,
+            1254
+          ]
+        ]
+      },
+      "scale": 0.40816326530612246,
+      "bounds": [
+        [
+          165,
+          175,
+          354,
+          396
+        ],
+        [
+          169,
+          175,
+          358,
+          396
+        ],
+        [
+          170,
+          176,
+          359,
+          396
+        ],
+        [
+          168,
+          176,
+          357,
+          392
+        ]
+      ],
+      "registration": "eye",
+      "landmarks": [
+        [
+          259.0,
+          236.0
+        ],
+        [
+          257.0,
+          236.0
+        ],
+        [
+          262.0,
+          237.0
+        ],
+        [
+          259.5,
+          237.0
+        ]
+      ],
+      "headTopRangePixels": 1,
+      "footBaselineRangePixels": 4
+    },
+    {
+      "clip": "run_up",
+      "frames": 4,
+      "source": "run-up-compact-v3.png",
+      "sourceCuts": {
+        "rows": [
+          0,
+          639,
+          1292
+        ],
+        "columns": [
+          [
+            0,
+            624,
+            1217
+          ],
+          [
+            0,
+            625,
+            1217
+          ]
+        ]
+      },
+      "scale": 0.41006523765144454,
+      "bounds": [
+        [
+          167,
+          175,
+          337,
+          392
+        ],
+        [
+          168,
+          175,
+          339,
+          394
+        ],
+        [
+          168,
+          175,
+          337,
+          397
+        ],
+        [
+          169,
+          175,
+          337,
+          397
+        ]
+      ],
+      "registration": "hairline",
+      "landmarks": [
+        [
+          256.0,
+          175
+        ],
+        [
+          256.0,
+          175
+        ],
+        [
+          255.0,
+          175
+        ],
+        [
+          255.0,
+          175
+        ]
+      ],
+      "headTopRangePixels": 0,
+      "footBaselineRangePixels": 5
+    }
+  ],
+  "fps": {
+    "walk": 6,
+    "run": 8
+  }
+}

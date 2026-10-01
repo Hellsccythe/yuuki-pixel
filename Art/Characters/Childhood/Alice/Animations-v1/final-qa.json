@@ -1,0 +1,26 @@
+{
+  "aliceClips": 12,
+  "aliceFrames": 44,
+  "allFramesContained": true,
+  "allMetasPresent": true,
+  "exactLateralMirror": true,
+  "protectedFilesUnchanged": {
+    "yuuki-child-approved-preservation": 175,
+    "adult-preservation": 155
+  },
+  "yuukiBackupValid": true,
+  "browserReview": {
+    "pageLoaded": true,
+    "leftRunSequence": [
+      2,
+      3,
+      4,
+      1
+    ],
+    "idleDrawings": 3,
+    "speed": "1x",
+    "haloTintControlVerified": true,
+    "consoleErrors": 0
+  },
+  "reviewStatus": "awaiting user visual approval"
+}

@@ -1,0 +1,442 @@
+{
+  "character": "Alice",
+  "age": 9,
+  "status": "approved",
+  "designApproved": true,
+  "symmetricHairBows": true,
+  "weapons": false,
+  "bodyFrame": {
+    "width": 512,
+    "height": 512,
+    "pivot": [
+      0.5,
+      0.21875
+    ],
+    "pixelsPerUnit": 220,
+    "feet": [
+      256,
+      400
+    ]
+  },
+  "halo": {
+    "resource": "Childhood/Alice/halo-neutral",
+    "width": 96,
+    "height": 32,
+    "alphaBaked": true,
+    "geometry": "Alice-v1",
+    "tintable": true,
+    "status": "approved"
+  },
+  "wingAnatomy": {
+    "left": "white",
+    "right": "white"
+  },
+  "playbackRevision": "alice-v1",
+  "clips": [
+    {
+      "name": "walk_down",
+      "frames": [
+        "Childhood/Alice/Frames/walk_down_v1_00",
+        "Childhood/Alice/Frames/walk_down_v1_01",
+        "Childhood/Alice/Frames/walk_down_v1_02",
+        "Childhood/Alice/Frames/walk_down_v1_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 155
+        },
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 155
+        }
+      ],
+      "fps": 6,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "run_down",
+      "frames": [
+        "Childhood/Alice/Frames/run_down_v1_00",
+        "Childhood/Alice/Frames/run_down_v1_01",
+        "Childhood/Alice/Frames/run_down_v1_02",
+        "Childhood/Alice/Frames/run_down_v1_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 155
+        },
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 155
+        }
+      ],
+      "fps": 8,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "idle_down",
+      "frames": [
+        "Childhood/Alice/Frames/idle_down_v1_00",
+        "Childhood/Alice/Frames/idle_down_v1_01",
+        "Childhood/Alice/Frames/idle_down_v1_02"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 157
+        }
+      ],
+      "fps": 2,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "name": "walk_up",
+      "frames": [
+        "Childhood/Alice/Frames/walk_up_v1_00",
+        "Childhood/Alice/Frames/walk_up_v1_01",
+        "Childhood/Alice/Frames/walk_up_v1_02",
+        "Childhood/Alice/Frames/walk_up_v1_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 155
+        },
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 155
+        }
+      ],
+      "fps": 6,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "run_up",
+      "frames": [
+        "Childhood/Alice/Frames/run_up_v1_00",
+        "Childhood/Alice/Frames/run_up_v1_01",
+        "Childhood/Alice/Frames/run_up_v1_02",
+        "Childhood/Alice/Frames/run_up_v1_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 155
+        },
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 155
+        }
+      ],
+      "fps": 8,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "idle_up",
+      "frames": [
+        "Childhood/Alice/Frames/idle_up_v1_00",
+        "Childhood/Alice/Frames/idle_up_v1_01",
+        "Childhood/Alice/Frames/idle_up_v1_02"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 156
+        }
+      ],
+      "fps": 2,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "name": "walk_left",
+      "frames": [
+        "Childhood/Alice/Frames/walk_left_v1_00",
+        "Childhood/Alice/Frames/walk_left_v1_01",
+        "Childhood/Alice/Frames/walk_left_v1_02",
+        "Childhood/Alice/Frames/walk_left_v1_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 155
+        },
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 155
+        }
+      ],
+      "fps": 6,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "loop": true,
+      "mirroredFrom": "walk_right"
+    },
+    {
+      "name": "run_left",
+      "frames": [
+        "Childhood/Alice/Frames/run_left_v1_00",
+        "Childhood/Alice/Frames/run_left_v1_01",
+        "Childhood/Alice/Frames/run_left_v1_02",
+        "Childhood/Alice/Frames/run_left_v1_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 155
+        },
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 155
+        }
+      ],
+      "fps": 8,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "loop": true,
+      "mirroredFrom": "run_right"
+    },
+    {
+      "name": "idle_left",
+      "frames": [
+        "Childhood/Alice/Frames/idle_left_v1_00",
+        "Childhood/Alice/Frames/idle_left_v1_01",
+        "Childhood/Alice/Frames/idle_left_v1_02"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 157
+        },
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 156
+        }
+      ],
+      "fps": 2,
+      "sequence": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "loop": true,
+      "mirroredFrom": "idle_right"
+    },
+    {
+      "name": "walk_right",
+      "frames": [
+        "Childhood/Alice/Frames/walk_right_v1_00",
+        "Childhood/Alice/Frames/walk_right_v1_01",
+        "Childhood/Alice/Frames/walk_right_v1_02",
+        "Childhood/Alice/Frames/walk_right_v1_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 155
+        },
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 155
+        }
+      ],
+      "fps": 6,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "run_right",
+      "frames": [
+        "Childhood/Alice/Frames/run_right_v1_00",
+        "Childhood/Alice/Frames/run_right_v1_01",
+        "Childhood/Alice/Frames/run_right_v1_02",
+        "Childhood/Alice/Frames/run_right_v1_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 155
+        },
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 155
+        }
+      ],
+      "fps": 8,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "idle_right",
+      "frames": [
+        "Childhood/Alice/Frames/idle_right_v1_00",
+        "Childhood/Alice/Frames/idle_right_v1_01",
+        "Childhood/Alice/Frames/idle_right_v1_02"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 157
+        },
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 156
+        }
+      ],
+      "fps": 2,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        1
+      ]
+    }
+  ],
+  "approvedOn": "2026-09-30",
+  "approvedBy": "user"
+}

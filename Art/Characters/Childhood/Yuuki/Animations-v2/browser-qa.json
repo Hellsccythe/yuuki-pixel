@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-30",
+  "url": "http://127.0.0.1:8765/preview/yuuki-animation-v2.html",
+  "loadedDrawings": 44,
+  "testedClips": 12,
+  "testedStates": [
+    "walk",
+    "run",
+    "idle"
+  ],
+  "testedDirections": [
+    "up",
+    "down",
+    "left",
+    "right"
+  ],
+  "thumbnails": {
+    "height": 512,
+    "allLoaded": true,
+    "width": 512
+  },
+  "frameSelection": true,
+  "frameAdvance": true,
+  "speed": 1,
+  "consoleErrors": [],
+  "leftOpen": true,
+  "screenshot": "browser-preview.png"
+}

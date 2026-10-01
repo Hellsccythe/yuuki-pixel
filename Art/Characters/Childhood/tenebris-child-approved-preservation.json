@@ -1,0 +1,610 @@
+{
+  "character": "Tenebris",
+  "approvedOn": "2026-09-30",
+  "revision": "tenebris-v1",
+  "clips": 12,
+  "drawings": 44,
+  "archive": "Logs/Archives/tenebris-child-approved-20260930.zip",
+  "files": [
+    {
+      "path": "Art/Characters/Childhood/Tenebris/Animations-v1/Atlases/down.png",
+      "bytes": 672492,
+      "sha256": "0058c0f21d4ceda9d7b41af96e2ef27da3dba333aa6ef32bad8842d7a88ff80f"
+    },
+    {
+      "path": "Art/Characters/Childhood/Tenebris/Animations-v1/Atlases/left.png",
+      "bytes": 672356,
+      "sha256": "3a327e053af007ae7090513439677641c7f278bf862a9303ff9a0124f105532d"
+    },
+    {
+      "path": "Art/Characters/Childhood/Tenebris/Animations-v1/Atlases/right.png",
+      "bytes": 669053,
+      "sha256": "805aa03a7b7c2cd329aedadf2465eba82b8fc604f7a8ca6692f9cc6d0f98d368"
+    },
+    {
+      "path": "Art/Characters/Childhood/Tenebris/Animations-v1/Atlases/up.png",
+      "bytes": 685836,
+      "sha256": "a75251a71c4327f20329b722db5934d6d1ebb009fd1d28fc380b272dcc0af14b"
+    },
+    {
+      "path": "Art/Characters/Childhood/Tenebris/Animations-v1/browser-preview.png",
+      "bytes": 44228,
+      "sha256": "bd67988d703fecad9999d1da8f0961bb7f4f7f2264b1078ec3746c066a00297a"
+    },
+    {
+      "path": "Art/Characters/Childhood/Tenebris/Animations-v1/contact-sheet.png",
+      "bytes": 861264,
+      "sha256": "6580171a52cd9060368a872237824126320f83b267dad4cf77d5d3bbfbf8476e"
+    },
+    {
+      "path": "Art/Characters/Childhood/Tenebris/Animations-v1/final-qa.json",
+      "bytes": 637,
+      "sha256": "58dec1ead75bb805310fed998aa7de06228a8ac14abdb07c430e63937c5d3781"
+    },
+    {
+      "path": "Art/Characters/Childhood/Tenebris/Animations-v1/packing-report.json",
+      "bytes": 11943,
+      "sha256": "f11951fb85d6c55a100aacdc216a87fcf920f490aed93b6d7462069105f353c1"
+    },
+    {
+      "path": "Art/Characters/Childhood/Tenebris/Animations-v1/production-prompts.json",
+      "bytes": 17741,
+      "sha256": "336b8f23132cfeab1256ccd4734ce0e7faeb1e17bb3f8a1e734fe3c5af1d5246"
+    },
+    {
+      "path": "Art/Characters/Childhood/Tenebris/Animations-v1/README.md",
+      "bytes": 2977,
+      "sha256": "c7569558aee1f2e2783f9a9841c44c6288ee2e9843c531ebe4cc1782aa5bf39b"
+    },
+    {
+      "path": "Art/Characters/Childhood/Tenebris/Animations-v1/Sources/down-run.png",
+      "bytes": 1382299,
+      "sha256": "b79767721d33e421d5197bf407737841ef89c922fc12731429c9135acb1a6861"
+    },
+    {
+      "path": "Art/Characters/Childhood/Tenebris/Animations-v1/Sources/down.png",
+      "bytes": 1632626,
+      "sha256": "3af829aff04bca7216df3018472d7acdd483281d357f6e310fb14b58a2443648"
+    },
+    {
+      "path": "Art/Characters/Childhood/Tenebris/Animations-v1/Sources/History/down-initial.png",
+      "bytes": 1601276,
+      "sha256": "836138927dd20b34d64af960ee11dacd251202ec1fe6e6d8b1bc8345e331dcb3"
+    },
+    {
+      "path": "Art/Characters/Childhood/Tenebris/Animations-v1/Sources/History/halo-initial.png",
+      "bytes": 293097,
+      "sha256": "73cd20c02394205c2db130d44d0594d8780b5994f423a28c91321836b4343e69"
+    },
+    {
+      "path": "Art/Characters/Childhood/Tenebris/Animations-v1/Sources/History/up-initial.png",
+      "bytes": 1081346,
+      "sha256": "e5e979f7db71b0f578040ad5f1557fc81d002afdb7fa23b20d5bbd48793e502c"
+    },
+    {
+      "path": "Art/Characters/Childhood/Tenebris/Animations-v1/Sources/right.png",
+      "bytes": 1370557,
+      "sha256": "633faf500994917f5d64d3d15af6e332cc79ed3c4adbb30f243d0988a1ddd671"
+    },
+    {
+      "path": "Art/Characters/Childhood/Tenebris/Animations-v1/Sources/up.png",
+      "bytes": 1206478,
+      "sha256": "5bbfd4c9fb3f67d14776268cd4f054b062e03ae7471078467634b6f5f092e4a7"
+    },
+    {
+      "path": "Art/Characters/Childhood/Tenebris/Approved-reference/kiryu-inspired-approved-shape.png",
+      "bytes": 1005881,
+      "sha256": "d0cc08fd3e285895d558a9d727dfa6d9a7e1c87fb22fcef530141daaafc6d93b"
+    },
+    {
+      "path": "Art/Characters/Childhood/Tenebris/Design-v1/body-source.png",
+      "bytes": 1045152,
+      "sha256": "706d88de05ed89d1267b980023c6a56ba6ee060b733b67249bf53046ba330ed8"
+    },
+    {
+      "path": "Art/Characters/Childhood/Tenebris/Design-v1/body.png",
+      "bytes": 58491,
+      "sha256": "005001dafaa2b26f75156a9b398fd5dc624a3ae75b5fd7f40e82b283d6afabc3"
+    },
+    {
+      "path": "Art/Characters/Childhood/Tenebris/Design-v1/design.json",
+      "bytes": 562,
+      "sha256": "5ed6db1fc1613f41ed1b5a6281fd97eb6d82941f48e9bbda54570ba55039c14b"
+    },
+    {
+      "path": "Art/Characters/Childhood/Tenebris/Design-v1/preview.png",
+      "bytes": 62900,
+      "sha256": "77e4ce5c30de26480948c57c1ccab73f9d20c5e3bec92ddf07902603ff43d047"
+    },
+    {
+      "path": "Art/Characters/Halos/Tenebris-v1/halo-neutral.png",
+      "bytes": 4137,
+      "sha256": "2337252741ddd1e56cd14e6e6cf77906138787eae1da45806ddd2b6d79800c3e"
+    },
+    {
+      "path": "Art/Characters/Halos/Tenebris-v1/halo-source.png",
+      "bytes": 297919,
+      "sha256": "7f19d5d70ac370421e2db584ab0cf7c4d6bfc76552b08192971973a0811a4bb8"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/animations.json",
+      "bytes": 8623,
+      "sha256": "823a0179321d937873b1b0314bead5b79fa7dc08a65acb62afeecc1246300bf5"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_down_v1_00.png",
+      "bytes": 69828,
+      "sha256": "7bbc45db83a7920d2511bb49200401d6c65e401537e6e7ba734440f7d075bd45"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_down_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "232387bb4b8cd8a69313489be3a330168959bd62945be5af93845e1675d6a238"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_down_v1_01.png",
+      "bytes": 69854,
+      "sha256": "f6301ab63256a62f476dd7c7c8b60ad1685bc0b1c6c70dccb1c252573e3ec6f3"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_down_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "b2b775c10a3ccbb76cf3d24e5d59a07baa8b1db9be2ef15905ecf9900bc7da0e"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_down_v1_02.png",
+      "bytes": 69750,
+      "sha256": "7b76636a499e63f75150588794ec98ffc0aaafdb9d6245b7be557bcd2df3ce62"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_down_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "e0fc3e01da86cbf6c6e9b80e69cf9dc5495e43502b101b42d0dafd4168417b2b"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_left_v1_00.png",
+      "bytes": 61994,
+      "sha256": "141d8f1b5daaa9c7c5d7cfa6a74b9b320ba01fb8c477b1afa5be2c72774af8d7"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_left_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "8b18671aa9dbbfb9ad654da97151d0bf8760ad67989f98ea46dce34bdee9fcee"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_left_v1_01.png",
+      "bytes": 62242,
+      "sha256": "28503a732ce6a637feef1d1da1458384d05cf38486b44bc6f66e71fe3e9af66b"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_left_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "074f71cae19c354ceb21ea3ec028941704888b9025607cf5d90d80f1f76548b1"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_left_v1_02.png",
+      "bytes": 61445,
+      "sha256": "ba44a9f1d12a4de8aef555d27913e3529beeedd61db1f17a5a09d0490eb3fe6e"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_left_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "23bc876ee7deeaf156c72c8f2e3a5e14f189f36263b643fb8a5da7112393fa03"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_right_v1_00.png",
+      "bytes": 61919,
+      "sha256": "cc118e41d4903b5217a6ba9f9f80ea8efcac59910e36a6a29d80f8a46b58b9ee"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_right_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "79ff191e8a9f86760138935db2cee7a65fab0a1920628e4ff73db43c11d76b74"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_right_v1_01.png",
+      "bytes": 62080,
+      "sha256": "d8d7a8a39f2baf661aa7c064e75146f98be7bafc8e27ac8a48c77a8ceb44c148"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_right_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "07eae6a2cd3e7e456a61edf44cfdaae988279ff484f289fb883367ca582ad89c"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_right_v1_02.png",
+      "bytes": 61327,
+      "sha256": "b67eb6789ae0e45751be0d1683b8fd2b295dab349382b0d820f36657451b29ec"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_right_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "924718cf6e104a3261e4c1b74d22f56e22fea2855a269c47435e074222d04778"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_up_v1_00.png",
+      "bytes": 63979,
+      "sha256": "f25034e2fa5e81dafab0e285574c152aaca76533c504a70c98e05cbbffc0260b"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_up_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "8f2b0a2dd03e99daf3f75b39264dfed08944d83b8c645e7a9172dedce175f338"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_up_v1_01.png",
+      "bytes": 64074,
+      "sha256": "50ec8cbcd5653e79897730d2b12b3be17224b955b9954bb4221be714186083d8"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_up_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "ac38227132e9c291fd216eb8e2de9b75214a154477aa06d715a11b4f14251df0"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_up_v1_02.png",
+      "bytes": 63722,
+      "sha256": "dbcc3ccb425ed5057c1f42525ceae511f43a15c7c77de04d8faa8f246556761a"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/idle_up_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "d31109c8b07ed9b0ad2628e76a59cf8465ba4811b561bbfdafd85c9c82c8b5dd"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_down_v1_00.png",
+      "bytes": 59755,
+      "sha256": "5953af1853ad60724ff92e28dd96c8d9e1c712485339a35ea10c2734bf705e68"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_down_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "17a6fb9995fae1533b21b248c027a35dd96d91cf7845c2cb7a3b76ccafeaee7e"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_down_v1_01.png",
+      "bytes": 59672,
+      "sha256": "926a211838b1b57c0f5436bebeb3f36f53c9c99d460ba33a09c43124967c9e5b"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_down_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "77ed1e03c6078f9cdbdae7197e7cc431669ab6794147335748cf89cff49e0dd1"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_down_v1_02.png",
+      "bytes": 59454,
+      "sha256": "fb0abb58ca02c21de1058d2bab969adf5bf5520e099886922c33296b39e1a052"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_down_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "c2addcb4eca9d2b2a066d17610eb05f83a12495421d11cb249de789188fb83d2"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_down_v1_03.png",
+      "bytes": 59291,
+      "sha256": "acbaf30a2562b5c53ed4b47dd23f99ea23b4564f3ef84c6d0118a1c2e350b601"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_down_v1_03.png.meta",
+      "bytes": 2805,
+      "sha256": "774c41277bc5ff305a7daf8fec8974976bea7ffbd4f9af8ad0357ece8bdecf31"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_left_v1_00.png",
+      "bytes": 65614,
+      "sha256": "5e8d6af10c0eac9cdd23a2e2c65e6f84e0869ccd2348aa10207a77e52d844e2e"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_left_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "097f9f377a6293805a41387e80db7c33b14ea5c961d096765e861f35a277d787"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_left_v1_01.png",
+      "bytes": 58738,
+      "sha256": "9d4be8fb3c5ce1bc064b8302b85d88e6e9c23e2dc5f836367f157b4605147562"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_left_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "9361c7b9bb4a6f443789aa95f6fb9e05756ecf6cbadea858aa4f034870c13ea2"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_left_v1_02.png",
+      "bytes": 63429,
+      "sha256": "af74d52522ed96ae869f191b853b2967bd203196d11090508fc3abe14c3231c0"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_left_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "2403ef10c524c80409710095dd9da2936b7709828e0aee9b9b5377dc1697d410"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_left_v1_03.png",
+      "bytes": 58253,
+      "sha256": "2c6dbd0f882c0133a70c36e6d941fb78498025b161578024ef836a60c39c8135"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_left_v1_03.png.meta",
+      "bytes": 2805,
+      "sha256": "5035859212260416bd6fc0672ffb1a09557a0908916c78d1abfde6004f6863dd"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_right_v1_00.png",
+      "bytes": 65314,
+      "sha256": "b8da03528716ac8ca46aceb2469aea32a6b768ddb692fa9d758b738170b8693e"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_right_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "dd2859086260f62a1c95ee34829881d03372a1ca87784c7a501207ca2b96a801"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_right_v1_01.png",
+      "bytes": 58299,
+      "sha256": "7dd5be9af012a4fecf7dc32524e8976693079fc2b6dac5ca9f36a17b70b0b208"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_right_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "9b7310da120322f3e922f49112b39c0a06ea9f4a5327a72f0b5e6a51d09ff98a"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_right_v1_02.png",
+      "bytes": 63022,
+      "sha256": "74858d14d34334090572645a3367aa18b654aec0adbd0388d8612fa6b0cb49c3"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_right_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "7b84f83deda48e6a467a93e35d05ca70b36689b29e9279a7fb401f3fcbc21208"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_right_v1_03.png",
+      "bytes": 57889,
+      "sha256": "5da95c721de3c52cea1bf47b2a237b19cefffc8951058e8383f8ee1ab92583f0"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_right_v1_03.png.meta",
+      "bytes": 2805,
+      "sha256": "0702ae7ac28cdcc3a375efaab52c8ce94580eef0d9be3f795a69c227671ea886"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_up_v1_00.png",
+      "bytes": 63379,
+      "sha256": "fe99a67698940655910a4e56b3d1239f15f3367e923941305095fdc8a6fb430e"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_up_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "3176f2a1d76cef0ee91806729ee5da5afe07e6ca4cc19aa9e20e488cc35ed79a"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_up_v1_01.png",
+      "bytes": 62463,
+      "sha256": "d5a22239867643e52c715cbaee97377cd510db0efa9706f599646ae5f5189833"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_up_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "ac048a1497299a530b4fa0f20a2acccf6ffd50894d65fee89eaa1367385c4c4c"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_up_v1_02.png",
+      "bytes": 62742,
+      "sha256": "0e7663a73eddbe6bb88c2741686c67a52bc4ac799862b0b9841e781d3cddb63b"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_up_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "cdb351c8fc1fd7f7bde4c48939b202fdedfed0561c8ec83a796e2d04d7b30ee0"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_up_v1_03.png",
+      "bytes": 61714,
+      "sha256": "fee4278e8a223ccb3f4a1370a0269c2eb8ddc7f4f842ff597b1388b354f07144"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/run_up_v1_03.png.meta",
+      "bytes": 2805,
+      "sha256": "5aa442419bbc08f5dcb7d390cc00f1dda1146fe8006dacf1c74823053e2b0e14"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_down_v1_00.png",
+      "bytes": 60300,
+      "sha256": "61add7a999726faa90a72b604b8e94c6a547083598cc01b96f02cab993c08976"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_down_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "b01b98a67e7a08a0497d195dbc4d19bb72e95c0a8fde0ac134619eaeb12e8c27"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_down_v1_01.png",
+      "bytes": 60090,
+      "sha256": "707e38d094ad3191af6c595caf9bf05fc8ebb4f2912839be38e0c2712683cebd"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_down_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "7da0162c51b83b47894da18a15f7f4e6c2171dfbd7a0647d568b20e27eb55e7e"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_down_v1_02.png",
+      "bytes": 60090,
+      "sha256": "cf225e76a9f33c6b1de7fe2a6d709eb47658f471feadc1d96c24ce38d69fa76d"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_down_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "01843c5e3c7d27372510f06d9f509b22050aa1f5649141c6ddaef3fb9a9491de"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_down_v1_03.png",
+      "bytes": 59777,
+      "sha256": "852b84ac2df508cc26a9e1b968289f9089be54a552cc55d496d588f4cc044d00"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_down_v1_03.png.meta",
+      "bytes": 2805,
+      "sha256": "371ef132850f561a46dc0808fc07b876beea8e7d12238bb8a1fade96fadc8457"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_left_v1_00.png",
+      "bytes": 66399,
+      "sha256": "f317a819be3301c460492697852f24220499007a9f1e514b5e0c031c36cd4808"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_left_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "475fee67fd38d6733f38a708d0c42b8867a3ce6803bce9f2aaaf0dfdb71f4fa0"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_left_v1_01.png",
+      "bytes": 59984,
+      "sha256": "229fc1f1224432209870ded43fdef2307d2673ae3b705cefaf6f14ce07b2c9de"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_left_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "1994c5791a377cd3709a13049b5a5776b35b585be5f7b0fc6ab9872360402f10"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_left_v1_02.png",
+      "bytes": 63244,
+      "sha256": "64c98d6b7e36710a83e6e17a5c18272b7d3c448ec7159482916753bd675efc48"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_left_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "b581eb6a6504a461c0665338e32e83b2718fe89d253cc0faf9d57b996e2c2351"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_left_v1_03.png",
+      "bytes": 61761,
+      "sha256": "b67dac0522f9ea635c197f3fd9592c8226136a842ab9033abd35b0af0556a41c"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_left_v1_03.png.meta",
+      "bytes": 2805,
+      "sha256": "6fdbecc1befda1b1fed8afea22fb1ff01ca6275760c6985e2bf488b3df1faba8"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_right_v1_00.png",
+      "bytes": 66159,
+      "sha256": "f072090b66a6c55bea04782f8ef0e3d0e49459aef3e1e505f27c4ee572f689c4"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_right_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "f0c52004685f6848c997c3ab71044a34409fdc36dfaf36069d45a3655167ce44"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_right_v1_01.png",
+      "bytes": 59789,
+      "sha256": "4f04e7588ca7459de86aea473dfd13e45b35719a5c9f442591571a83115dffb6"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_right_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "93e70ed9a576198afefab0bdd0de285e25b927ddaadd87be33641d289bdb520d"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_right_v1_02.png",
+      "bytes": 63008,
+      "sha256": "5d1790876d97776daa9865f9bb507aa0f053569a5a6f0e4c2c7f3636e8563e42"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_right_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "cb3a8e03dd1c5ffeedb466d22c2b9ad707f32a3f1d6b3e68fe98843e836f6a14"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_right_v1_03.png",
+      "bytes": 61535,
+      "sha256": "b381f5889da5f451517334e6d63ce8aca22e1f1091191d6df256b0e33c9de884"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_right_v1_03.png.meta",
+      "bytes": 2805,
+      "sha256": "d03ee5017470d1a14b8042448e99d377d942f15fd0e87f3cba6c8c5137aa48d9"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_up_v1_00.png",
+      "bytes": 64053,
+      "sha256": "87c51966fb3ee8561764b4a432e6a97c90337b1a57d366e830e52a8517ba6702"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_up_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "539b6fa0ee65e23eb7b018f7107f46d9b5e96b41727b2f008b88fd5479ea550e"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_up_v1_01.png",
+      "bytes": 64474,
+      "sha256": "0ab6c4982629f133e43eac53a0e4b51ceabaa5da1936d73c07ecc7e5f11a62f9"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_up_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "e3bc85b663a148e9ee9c05d198d3d552ff3af6c56daea241c7a5f1078f51364e"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_up_v1_02.png",
+      "bytes": 64069,
+      "sha256": "4874748e05ab33783928d91d1f1bc16db99992281858df14fea53feac7718be5"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_up_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "d859a0d37ea2ce3c0a4883935bc93b00a918e824d4a96f83bb852b0291d97966"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_up_v1_03.png",
+      "bytes": 64738,
+      "sha256": "847b59767593aab63533f9acb3f83c95cd99ab7689bd7b57f26e2a25dae3dc4e"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/Frames/walk_up_v1_03.png.meta",
+      "bytes": 2805,
+      "sha256": "61c6fb25c7c26f79a0872548bcdaf0e3c62932a7f3f47f9a8ee56eec26c57de4"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/halo-neutral.png",
+      "bytes": 4137,
+      "sha256": "2337252741ddd1e56cd14e6e6cf77906138787eae1da45806ddd2b6d79800c3e"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Tenebris/halo-neutral.png.meta",
+      "bytes": 2801,
+      "sha256": "b8ac7b4cf356bc0bd53b474b72281251b4d61589a88c826d53fb663197918698"
+    },
+    {
+      "path": "preview/childhood-animation.css",
+      "bytes": 3556,
+      "sha256": "c4f65f2a559b368171f660a0bd2c85848cd59d7aa1421ba97e27adcdaaa4b64d"
+    },
+    {
+      "path": "preview/tenebris-animation.html",
+      "bytes": 4151,
+      "sha256": "51d5539a4e7709469343aac44143be4a3b07f7f4dbbb2ea6d3db524de6d1262a"
+    },
+    {
+      "path": "preview/tenebris-animation.js",
+      "bytes": 6845,
+      "sha256": "2763523a5ff0e42994335563ee8dae82ce44d39cdec862ee87fdb618a67f65f1"
+    },
+    {
+      "path": "preview/tenebris-design.html",
+      "bytes": 7084,
+      "sha256": "e2cb6d47aac35b62801068501abc9da14e7d09f0225016261a35332bf9e3723f"
+    },
+    {
+      "path": "scripts/pack_child_tenebris.py",
+      "bytes": 13919,
+      "sha256": "812b41506f740f01eef1306e8274978b4789f88e4b298ab884e091c1bec0e9ea"
+    }
+  ]
+}

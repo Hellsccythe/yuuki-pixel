@@ -1,0 +1,166 @@
+{
+  "frames": 46,
+  "clips": 12,
+  "protectedFilesVerified": 40,
+  "acceptedWalkingDirectionsUnchanged": true,
+  "idleUnchanged": true,
+  "adultFilesVerified": 155,
+  "newClips": [
+    {
+      "clip": "walk_left",
+      "frames": 4,
+      "source": "left-from-approved-right-v4.png",
+      "sourceCuts": {
+        "rows": [
+          0,
+          484,
+          941
+        ],
+        "columns": [
+          [
+            0,
+            431,
+            849,
+            1267,
+            1672
+          ],
+          [
+            0,
+            431,
+            849,
+            1267,
+            1672
+          ]
+        ]
+      },
+      "scale": 0.5994550408719346,
+      "bounds": [
+        [
+          202,
+          176,
+          349,
+          397
+        ],
+        [
+          203,
+          177,
+          350,
+          397
+        ],
+        [
+          202,
+          176,
+          349,
+          397
+        ],
+        [
+          202,
+          177,
+          349,
+          398
+        ]
+      ],
+      "registration": "eye",
+      "landmarks": [
+        [
+          246.0,
+          248.0
+        ],
+        [
+          247.0,
+          249.0
+        ],
+        [
+          246.0,
+          248.0
+        ],
+        [
+          245.0,
+          249.0
+        ]
+      ],
+      "headTopRangePixels": 1,
+      "footBaselineRangePixels": 1
+    },
+    {
+      "clip": "run_left",
+      "frames": 4,
+      "source": "left-from-approved-right-v4.png",
+      "sourceCuts": {
+        "rows": [
+          0,
+          484,
+          941
+        ],
+        "columns": [
+          [
+            0,
+            431,
+            849,
+            1267,
+            1672
+          ],
+          [
+            0,
+            431,
+            849,
+            1267,
+            1672
+          ]
+        ]
+      },
+      "scale": 0.5994550408719346,
+      "bounds": [
+        [
+          200,
+          178,
+          353,
+          396
+        ],
+        [
+          203,
+          178,
+          354,
+          396
+        ],
+        [
+          191,
+          177,
+          352,
+          395
+        ],
+        [
+          203,
+          178,
+          352,
+          395
+        ]
+      ],
+      "registration": "eye",
+      "landmarks": [
+        [
+          247.0,
+          250.0
+        ],
+        [
+          247.0,
+          250.0
+        ],
+        [
+          246.5,
+          249.0
+        ],
+        [
+          247.0,
+          250.0
+        ]
+      ],
+      "headTopRangePixels": 1,
+      "footBaselineRangePixels": 1
+    }
+  ],
+  "fps": {
+    "walk": 6,
+    "run": 8
+  }
+}

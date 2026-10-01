@@ -62,7 +62,7 @@ using UnityEngine;
     public string sprite, name, theme, door;
     public float x, y, doorX, doorY, doorWidth, roomW, roomH;
     public bool flip;
-    public int seed;
+    public int seed, floors = 1;
 }
 
 [Serializable] public sealed class YuukiSpriteInfo { public string id, path; public float ppu, pivotX, pivotY; }

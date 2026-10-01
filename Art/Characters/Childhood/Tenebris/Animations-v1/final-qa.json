@@ -1,0 +1,27 @@
+{
+  "character": "Tenebris",
+  "clips": 12,
+  "frames": 44,
+  "fullSpritesWithMargins": true,
+  "unityPointImportWithUniqueGuids": true,
+  "exactMirroredFrames": 11,
+  "haloNeutralAndTranslucent": true,
+  "preservedFilesVerified": {
+    "yuuki-child-approved-preservation": 175,
+    "alice-child-approved-preservation": 115,
+    "adult-preservation": 155
+  },
+  "reviewStatus": "awaiting user visual approval",
+  "browserChecks": {
+    "allFramesLoaded": true,
+    "leftRunSequence": [
+      2,
+      3,
+      4,
+      1
+    ],
+    "idleDrawings": 3,
+    "speed": "1x",
+    "haloTintChangedToBlue": true
+  }
+}

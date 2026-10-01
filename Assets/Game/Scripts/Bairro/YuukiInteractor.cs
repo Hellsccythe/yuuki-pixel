@@ -52,6 +52,8 @@ public sealed class YuukiInteractor : MonoBehaviour
         foreach (var item in YuukiInteractable.Active)
         {
             if (item == null || !item.Available) continue;
+            var house=YuukiCutawayHouse.ActiveHouse;
+            if(house!=null && !item.transform.IsChildOf(house.interior.transform)) continue;
             Vector2 to = item.Point - feet;
             float distance = to.magnitude;
             if (distance > item.radius) continue;

@@ -1,0 +1,782 @@
+{
+  "archive": "D:\\yuuki-pixel\\Logs\\Archives\\yuuki-adult-before-child-20260929.zip",
+  "created": "2026-09-29",
+  "status": "Original adult art and animation files retained in place; independent archive verified by SHA-256.",
+  "files": [
+    {
+      "path": "Art/Yuuki/Left/clips.json",
+      "bytes": 1007,
+      "sha256": "0344f74fb47e73b8d3ff06434e4f5a3563de3f52383194ee3ef15bc7093e8fd0"
+    },
+    {
+      "path": "Art/Yuuki/Left/idle-left-v1.png",
+      "bytes": 1051002,
+      "sha256": "304287777765379e334e8e8aff377c174967abfc2586392168527c2bfb6dae38"
+    },
+    {
+      "path": "Art/Yuuki/Left/jump-left-clean-v3.png",
+      "bytes": 1795953,
+      "sha256": "82415609fecb10b8b782bcd1e0d32f515d78319329ce0b2860c6441c8aa358ea"
+    },
+    {
+      "path": "Art/Yuuki/Left/README.md",
+      "bytes": 1968,
+      "sha256": "210075f1004dfd463e5de65d581d380c24d962c98efe4775982749fdfeaedaa5"
+    },
+    {
+      "path": "Art/Yuuki/Left/run-jump-left-v2.png",
+      "bytes": 1662899,
+      "sha256": "8e1f5f8dc1a61f48a6bcc38971f69f70df2edfd469d51b8f34a0913f030b289f"
+    },
+    {
+      "path": "Art/Yuuki/Left/run-left-clean-v3.png",
+      "bytes": 1850837,
+      "sha256": "55e5474de6a1b01d6796a27a0000f14bb946512fb3170626a1cb6be3883fafcc"
+    },
+    {
+      "path": "Art/Yuuki/Left/walk-left-clean-v3.png",
+      "bytes": 1787117,
+      "sha256": "c3458e153e83e4308c9930fd128189fed501459943b024adc4782b1f91e4d539"
+    },
+    {
+      "path": "Art/Yuuki/Left/walk-left-legs-v2.png",
+      "bytes": 1121831,
+      "sha256": "00e5ede46f384925dad6e18868a5f97fb3a8d7a0791622f85e51543d1a74489d"
+    },
+    {
+      "path": "Art/Yuuki/Left/walk-left-source-v1.png",
+      "bytes": 2108014,
+      "sha256": "dbb6dd589951f91f727d4e46ecc66e85b4b7a66b9454ba9706ac9e2c3cfb650c"
+    },
+    {
+      "path": "Art/Yuuki/movement-atlas-v1.json",
+      "bytes": 2987,
+      "sha256": "a58643de6d27e506d4e33bbe8ccdea6b7b64d84c984d0432efbe251775da83bb"
+    },
+    {
+      "path": "Art/Yuuki/movement-atlas-v1.png",
+      "bytes": 4459615,
+      "sha256": "80364bbea565b6e34b74f9847a741dbb1aad511d49e88f2a3baf11fe5246df95"
+    },
+    {
+      "path": "Art/Yuuki/movement-atlas-v2.png",
+      "bytes": 4358201,
+      "sha256": "a947e9e86931d9b8b7880fdf3e9a658aa503ef7b22a3009124899160281cc617"
+    },
+    {
+      "path": "Art/Yuuki/Portraits/yuuki-realista-prompt-v1.txt",
+      "bytes": 3602,
+      "sha256": "85d2f6b41c3a936649781c6f86a2d859982c0ccfb343d05d6c051b1990258c94"
+    },
+    {
+      "path": "Art/Yuuki/Portraits/yuuki-realista-v1.png",
+      "bytes": 2637225,
+      "sha256": "6ffb9880890d62fe447d95f92a808d46d6d2f3b7a4a4c1b9efaf9133a1e657e5"
+    },
+    {
+      "path": "Art/Yuuki/Right/clips.json",
+      "bytes": 1019,
+      "sha256": "d5ff70f73fb07d49f35891fc8de3a80928759b35189c03ae1c61cbefe8980575"
+    },
+    {
+      "path": "Art/Yuuki/Right/double-jump-study-v1.png",
+      "bytes": 2074014,
+      "sha256": "dadd030c32eb363d153b825f3576d686e6c2e8d89f5db2ff2c220c927e3b2205"
+    },
+    {
+      "path": "Art/Yuuki/Right/idle-right-v1.png",
+      "bytes": 1097142,
+      "sha256": "6259f901e2ad84409dfc2fa595e5c12c718fc4b434ee3afdb99f8b7a6f4b38d5"
+    },
+    {
+      "path": "Art/Yuuki/Right/README.md",
+      "bytes": 1230,
+      "sha256": "786d807721e3579c91ef4f3dba3c28e5928a104f6025d44f276279327d39b019"
+    },
+    {
+      "path": "Art/Yuuki/Right/run-jump-study-v2.png",
+      "bytes": 2091490,
+      "sha256": "d28255705182dd84036acd5c73625ad472114d50b7d28cdd6d5ec7e38cd8367f"
+    },
+    {
+      "path": "Art/Yuuki/Right/walk-approved-source.png",
+      "bytes": 2037614,
+      "sha256": "3844b8b44438831519ef275cd39764e6994f38bcb6e042668feee91bb63c03e8"
+    },
+    {
+      "path": "Art/Yuuki/Right/walk-right-legs-v2.png",
+      "bytes": 1090160,
+      "sha256": "5fa7bc594dd7d13817d23dbbd7b59ebdd4171a2ba6c9d36f32c0d2e0218d9e40"
+    },
+    {
+      "path": "Art/Yuuki/Rpg-v4/prompts.json",
+      "bytes": 11201,
+      "sha256": "520a654f109c1225c08346fbd0f7a2982ae55d18b0bf54d45b4eec3e77468956"
+    },
+    {
+      "path": "Art/Yuuki/Rpg-v4/rest_down.png",
+      "bytes": 2162924,
+      "sha256": "ae5ce3f05eebb70cee228fcd4e1def578315204e475631487fa24be0b6e463e5"
+    },
+    {
+      "path": "Art/Yuuki/Rpg-v4/rest_left.png",
+      "bytes": 1981762,
+      "sha256": "9445238a46404f8106619a1f93d64e81ac235179f338c0fe314e3c5c6e797f27"
+    },
+    {
+      "path": "Art/Yuuki/Rpg-v4/rest_right.png",
+      "bytes": 2049481,
+      "sha256": "bf0f061d29815348ec3fc280bc8b056fc110cc6251276daf93381dcd1d253b8b"
+    },
+    {
+      "path": "Art/Yuuki/Rpg-v4/rest_up.png",
+      "bytes": 1909462,
+      "sha256": "51c9d528bc1c5549964daf07400a39f8b26a0e46ce419af6bba1255b58a38412"
+    },
+    {
+      "path": "Art/Yuuki/Rpg-v4/rest_up_v2.png",
+      "bytes": 1984687,
+      "sha256": "cfca56fc4557635172d679e6a5493e27ad35cf97928dc433ef196104a278d466"
+    },
+    {
+      "path": "Art/Yuuki/Rpg-v4/walk_down.png",
+      "bytes": 2155866,
+      "sha256": "821b90af3fa65ff73018c37418a87cc594ba9dd05e8bdbb4289ba010acad65d5"
+    },
+    {
+      "path": "Art/Yuuki/Rpg-v4/walk_left.png",
+      "bytes": 2017998,
+      "sha256": "04228bb7a33d6432b272bed1f136008c897cb553d1715bcf02658c395a8788f6"
+    },
+    {
+      "path": "Art/Yuuki/Rpg-v4/walk_right.png",
+      "bytes": 1978469,
+      "sha256": "7309595f387b302f6d2040c417e3dd64c25acca8a9e95291f19f485ce4f265a4"
+    },
+    {
+      "path": "Art/Yuuki/Rpg-v4/walk_up.png",
+      "bytes": 1861508,
+      "sha256": "b1cb43819a26a72b574e5cd1d83ecbc1636763b531c681baf03ed686a1af54a1"
+    },
+    {
+      "path": "Assets/Game/Animation/Clips/idle_left.anim",
+      "bytes": 1516,
+      "sha256": "026ef78c84d063defbca6c0162ee455b80c216a5f15bf257c62ba20400814d06"
+    },
+    {
+      "path": "Assets/Game/Animation/Clips/idle_left.anim.meta",
+      "bytes": 188,
+      "sha256": "f876f24ddaf23e8a2c33f7cf3ec100c57a90d6c7e326c37428b8282adc554c0f"
+    },
+    {
+      "path": "Assets/Game/Animation/Clips/idle_right.anim",
+      "bytes": 1516,
+      "sha256": "e51ec5a434a100664db8b9a2f2b7a6a23736e31d808bf53f78318ad534a724a4"
+    },
+    {
+      "path": "Assets/Game/Animation/Clips/idle_right.anim.meta",
+      "bytes": 188,
+      "sha256": "d61a6df08d3294e682d57fdc9bf3a45e5d508b67be16de4457df08eab3870e16"
+    },
+    {
+      "path": "Assets/Game/Animation/Clips/jump_left.anim",
+      "bytes": 2123,
+      "sha256": "8cff7139697de3b515a31ad430d3d0b2241759bf432e757ed0e6acfe5b733b8e"
+    },
+    {
+      "path": "Assets/Game/Animation/Clips/jump_left.anim.meta",
+      "bytes": 188,
+      "sha256": "16fcb0709fb23a58cd9bd42b569c3f1e019cf17f73242673aa65be715c0d8cba"
+    },
+    {
+      "path": "Assets/Game/Animation/Clips/jump_right.anim",
+      "bytes": 2119,
+      "sha256": "557fa717ebaba496a27c250150b903e8b26d1dee5a8e49f9b83effa30fd0aae5"
+    },
+    {
+      "path": "Assets/Game/Animation/Clips/jump_right.anim.meta",
+      "bytes": 188,
+      "sha256": "ad006b2348a7dd4ef4d4d7bb445b4c96521a6dd86f939ea49fb34fff6f7410d1"
+    },
+    {
+      "path": "Assets/Game/Animation/Clips/run_left.anim",
+      "bytes": 2146,
+      "sha256": "1d2d7def0e3758af863bb2e43d73eaecfe25d3d6f5e750a2cf676d61a2fc61c9"
+    },
+    {
+      "path": "Assets/Game/Animation/Clips/run_left.anim.meta",
+      "bytes": 188,
+      "sha256": "a3c9c664e41759bcccbbab5b3b4309a97f6a695d9c6e3394e332af22bf32cada"
+    },
+    {
+      "path": "Assets/Game/Animation/Clips/run_right.anim",
+      "bytes": 2148,
+      "sha256": "10094d780d7d6d7efc91f935d9fe559849bcf2f5ce3b52cdc2f72bbd74fa8a8a"
+    },
+    {
+      "path": "Assets/Game/Animation/Clips/run_right.anim.meta",
+      "bytes": 188,
+      "sha256": "dcdad0f58ba2c363483031420690a40f99e606dc201695e890f1a3359801c691"
+    },
+    {
+      "path": "Assets/Game/Animation/Clips/walk_left.anim",
+      "bytes": 2117,
+      "sha256": "de0cf7aeb8e4b8f026d6a430e5a9a4ee3e891fcde6e9a7eb68d6c55af789503c"
+    },
+    {
+      "path": "Assets/Game/Animation/Clips/walk_left.anim.meta",
+      "bytes": 188,
+      "sha256": "c1f08a4edbb28faae16f503789753e3a533e2e79c3fdc8fe45f9213aa2251857"
+    },
+    {
+      "path": "Assets/Game/Animation/Clips/walk_right.anim",
+      "bytes": 2120,
+      "sha256": "19a778336027f48376e24f9d3c3a2d307d0ff82906eca68055cd8ed90494e080"
+    },
+    {
+      "path": "Assets/Game/Animation/Clips/walk_right.anim.meta",
+      "bytes": 188,
+      "sha256": "febfff25c2c9ff56ad779a18882d03ad4a747e413a05e9aff1bf5d270d7dc39f"
+    },
+    {
+      "path": "Assets/Game/Animation/Clips.meta",
+      "bytes": 172,
+      "sha256": "774d3966928592e48257c5f106d82123bb70dddd8225dda1b0c6b70857722432"
+    },
+    {
+      "path": "Assets/Game/Animation/Yuuki.controller",
+      "bytes": 31127,
+      "sha256": "f46be019b64d09d7c4313e2d611422fdbbc5e7f2feddd7a26650f7c09e70cfce"
+    },
+    {
+      "path": "Assets/Game/Animation/Yuuki.controller.meta",
+      "bytes": 188,
+      "sha256": "b57fa71b64442df27cf7f4c5af260482253136a0e7b6848cda0e29f417ae7616"
+    },
+    {
+      "path": "Assets/Game/Animation.meta",
+      "bytes": 172,
+      "sha256": "6a730751e12c9d3d9a2df8437db1335073f1ebf1f5967340102a306cb8b436e3"
+    },
+    {
+      "path": "Assets/Game/Art/Yuuki/README.md",
+      "bytes": 995,
+      "sha256": "e58975f43de7d6cc1e4bf51fed25c4284d747fef18c66ef0769e8ec09a6799b0"
+    },
+    {
+      "path": "Assets/Game/Art/Yuuki/README.md.meta",
+      "bytes": 158,
+      "sha256": "b893493c20b317407b47ca993cf85a399a03b48e68b2b1535dfee9561e33266b"
+    },
+    {
+      "path": "Assets/Game/Art/Yuuki/Yuuki_Idle_2x1.json",
+      "bytes": 785,
+      "sha256": "6e3ce5000d8f7089616b603f49c7f351462e7de081f6647c1043998eb53752f9"
+    },
+    {
+      "path": "Assets/Game/Art/Yuuki/Yuuki_Idle_2x1.json.meta",
+      "bytes": 158,
+      "sha256": "0ec960694216e64c687e91f44e7d49acd2d25c63e4d4e85ed6cb9b6fb6e3d945"
+    },
+    {
+      "path": "Assets/Game/Art/Yuuki/Yuuki_Idle_2x1.png",
+      "bytes": 205367,
+      "sha256": "e9556b331d96f1adc246b3baa4708650541a462efbe60df0e267528022d80313"
+    },
+    {
+      "path": "Assets/Game/Art/Yuuki/Yuuki_Idle_2x1.png.meta",
+      "bytes": 3748,
+      "sha256": "147ba85a042b573d8473bcf7bdfc63fd04c541917feda3b79c77de0029211f24"
+    },
+    {
+      "path": "Assets/Game/Art/Yuuki/Yuuki_Movement_6x6.json",
+      "bytes": 3744,
+      "sha256": "94e191f9f37e312514da2b9f76efebd0d2a36db1edadc2eaef28bc14558fa981"
+    },
+    {
+      "path": "Assets/Game/Art/Yuuki/Yuuki_Movement_6x6.json.meta",
+      "bytes": 158,
+      "sha256": "2e4d0b5d5f84f3494bbf77f4828ac933a4aa152b7d9f27f036455cdb355559fe"
+    },
+    {
+      "path": "Assets/Game/Art/Yuuki/Yuuki_Movement_6x6.png",
+      "bytes": 4187341,
+      "sha256": "1de8aa952e3ab06dca1c395ac07cc56457fd72700973ddc4bfcb1e1baf1cbbad"
+    },
+    {
+      "path": "Assets/Game/Art/Yuuki/Yuuki_Movement_6x6.png.meta",
+      "bytes": 22040,
+      "sha256": "bb8e049de498ef354fceab092a393fac0669501d6900809c8d31ed19d52a4366"
+    },
+    {
+      "path": "Assets/Game/Art/Yuuki.meta",
+      "bytes": 172,
+      "sha256": "88c7594bb713fffb678e4e89eb2e70a3c8ac381f9876250cb895551aa3d11a92"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_down_00.png",
+      "bytes": 98657,
+      "sha256": "c8195b68ed7d4d46a88a44bd56f8554ae5225ccbb7ce5b0c05a7dc238eb2e3e2"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_down_00.png.meta",
+      "bytes": 2688,
+      "sha256": "9d1c8dd518bb90636f1ff05594620c2fd38dbf769028ddecf840889dc02896f1"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_down_01.png",
+      "bytes": 98610,
+      "sha256": "d0cd0e393ff54cf4ccc691fcdf2c165a276fddb031ea1f407e459b6dd8d951ca"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_down_01.png.meta",
+      "bytes": 2688,
+      "sha256": "a38bc4626267eed3fd2ebf71d3db13979667418041346ebf2a84ca2b8ade3728"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_down_02.png",
+      "bytes": 98645,
+      "sha256": "efb7c047cf63f339d2aa3c1f59b446127b6f0525b66a663ff4088f688a0bbd0b"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_down_02.png.meta",
+      "bytes": 2688,
+      "sha256": "896c6c181c8b2819f77379b69547276c0a3408681541aeb802f97ed9cfa2a6e8"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_left_00.png",
+      "bytes": 83570,
+      "sha256": "595ea69d4fd2da88c0757993685877704726a33a037fb46a95b1bc98c44fbfac"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_left_00.png.meta",
+      "bytes": 2688,
+      "sha256": "ceb5ff3f93489ea6f4c9dba6f68029fecaca075c67bf7c5eb9fc65f70e2a55c1"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_left_01.png",
+      "bytes": 83725,
+      "sha256": "3ab023aed9ec9e00b26f3176ab50708b291afa31f976bc43d7dc7364dbe697ec"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_left_01.png.meta",
+      "bytes": 2688,
+      "sha256": "7b7c33d479b5ef8faf71ad08bcd7bc9694bc89a1a7806d0180aa077618545b67"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_left_02.png",
+      "bytes": 82740,
+      "sha256": "7bdc74aa60750282ca9f131770cbf86b030e236170f1af9db8b8bab3b0de2d11"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_left_02.png.meta",
+      "bytes": 2688,
+      "sha256": "864deb9235cc8ea4d752d33f389be1e49f903fcbfbb322c7700c8d20a984ccaf"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_right_00.png",
+      "bytes": 88734,
+      "sha256": "d76ec1681b4b3ebb56e59dd5206071473fc3547d1371785d2658bc09f24f2643"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_right_00.png.meta",
+      "bytes": 2688,
+      "sha256": "8167aea27396309d6a17a34b53dd64876933cf33d6f43b674e1e2f15632b671b"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_right_01.png",
+      "bytes": 89552,
+      "sha256": "36818594a8602bcf9ea83997b958688da08c1f2a92f9e66f237ad2d7fe209d43"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_right_01.png.meta",
+      "bytes": 2688,
+      "sha256": "05298a2b2a11b0b8b10790e41355bd6c35f5c3de797c47f216235035082afa8f"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_right_02.png",
+      "bytes": 89219,
+      "sha256": "53eecc0586a767c9279bf3f83cce90af414bec99665dda34e445ebd91fc74c60"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_right_02.png.meta",
+      "bytes": 2688,
+      "sha256": "62ef5a3b28e63ea0f0ed74dbe8ff55fbc5192de5834b21bc8a9b206a77d0695a"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_up_00.png",
+      "bytes": 83870,
+      "sha256": "c26d99bb0c87e0faeae2fdf1435573a991e85281290b6a70f1255347004d60f0"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_up_00.png.meta",
+      "bytes": 2688,
+      "sha256": "b926409ff31fd2b4b14e654426a5256c331df265c466543125ef225402b1d2b3"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_up_01.png",
+      "bytes": 84794,
+      "sha256": "b95be12a7dc54db374beec5d8d67bc221e0b2ef095b287b22a0b805e3dad1d12"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_up_01.png.meta",
+      "bytes": 2688,
+      "sha256": "569e07c7072c3b859833a260c28be057785050affdcf5b45884b857f4ab72562"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_up_02.png",
+      "bytes": 83771,
+      "sha256": "e47679b68aca424898ab66ee7a1601596aa972bf220ea462fa0c19ef50ab912f"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/idle_up_02.png.meta",
+      "bytes": 2688,
+      "sha256": "629863b135d386ffdada7d675c0575af9ea962e8d623648e54c295741340860a"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_down_00.png",
+      "bytes": 105571,
+      "sha256": "32ce0327369522029fe9171aeae125bea1f692bb0755440d24234ee5d255bc36"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_down_00.png.meta",
+      "bytes": 2688,
+      "sha256": "00af221451247634afa4f507931fcc29428d7557d1b258412b5bdfbd1274bad9"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_down_01.png",
+      "bytes": 102139,
+      "sha256": "bbb0a58e062c78d14c3dead9d8b484c0ebf590576b40e94f6b02f3137b146c93"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_down_01.png.meta",
+      "bytes": 2688,
+      "sha256": "de4634e2b5b841158c4369477cb04951b1c448967be7d634f0c39c048316441b"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_down_02.png",
+      "bytes": 98506,
+      "sha256": "bdcd1b084448a84b4ea28ada630e658716d37174718b358e6fc24815f5f2849f"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_down_02.png.meta",
+      "bytes": 2688,
+      "sha256": "f97f4a829f1b46dabc6b8e53afc759938d58283191e05b0628d148d9d357c579"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_left_00.png",
+      "bytes": 91271,
+      "sha256": "84a3080ed8388729c30720e4a8f20dbc5f0990082890525408c5eb0fbb7c6cd3"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_left_00.png.meta",
+      "bytes": 2688,
+      "sha256": "67364c19c553167b6a6700e4a0e0e47cca921409544d16238331c13b5e3918b3"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_left_01.png",
+      "bytes": 89833,
+      "sha256": "8a8951834efbba4f6da0ddf5deaeccda4965188c9c08328828fd76ebf07a4c92"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_left_01.png.meta",
+      "bytes": 2688,
+      "sha256": "a2d82f8e0c1e6bd34e2fe0f91e681bab987da49b5fb4014a839baa836ce10d7e"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_left_02.png",
+      "bytes": 82928,
+      "sha256": "b32396f27ec2110b403ae02d22c27850951d1a30ead8ab98d841fe7fee9eff19"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_left_02.png.meta",
+      "bytes": 2688,
+      "sha256": "9d4e261dd61dd0d34c4bd1f6cd51f27c9887b5ddd7b3160518c0dc0dd9937cd5"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_right_00.png",
+      "bytes": 81258,
+      "sha256": "619f56ea5af28caddbc1bf160fd8a665d32722caf40ac0f8dd808f866c395aad"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_right_00.png.meta",
+      "bytes": 2688,
+      "sha256": "a5cd5a7b49cc23fb5574963b39c0f9795988b481772463cf7e8d3a1eee3d4ee9"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_right_01.png",
+      "bytes": 91017,
+      "sha256": "a39a38b2407950fd82f76e37d9b1706f87c16a89786006c3414ad4a74c8cd23f"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_right_01.png.meta",
+      "bytes": 2688,
+      "sha256": "ea0acd224abceb79466221ce19007a52585f9ab8628d337ca9c776029f3e3f56"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_right_02.png",
+      "bytes": 89892,
+      "sha256": "db8158a47ac956357b7c80166943f824d684badcc542e1c28d8ab1f911489551"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_right_02.png.meta",
+      "bytes": 2688,
+      "sha256": "95c9182b8ab35bf7ef4e6151ae5ae27761c704fd3714d46740efc7f2ad250c51"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_up_00.png",
+      "bytes": 86711,
+      "sha256": "c365c0c88fde4df0161ff2034628e73555af7e377700805f782f5d527e5022c3"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_up_00.png.meta",
+      "bytes": 2688,
+      "sha256": "c47a00bf78a4b177a07f43f7611613c4b16c8613c65820e90af853fee6d03b22"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_up_01.png",
+      "bytes": 89736,
+      "sha256": "24eae95819a7019f90d41310e87eff89aefd4b919140dd5a18ec0dda57847f7f"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_up_01.png.meta",
+      "bytes": 2688,
+      "sha256": "f070250c4fc9ad9a3db3532b20261aa8b0623769e71b52019dd2a6a06d09912f"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_up_02.png",
+      "bytes": 84449,
+      "sha256": "0cc191877f1803636edfe86ec22c16b6fc59d1b795cb46e880f22dc4b497e98b"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/stow_up_02.png.meta",
+      "bytes": 2688,
+      "sha256": "b308c86e67223015013d901e568d93c431ee33c6bf3aba16ff9b3a0f1c936337"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_down_00.png",
+      "bytes": 103736,
+      "sha256": "3f7929c32d6996ce0ca7f3e87699d7661d93b3eeb71a8180c6cd20e1cc5183e9"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_down_00.png.meta",
+      "bytes": 2688,
+      "sha256": "1aca9fd635c0591b5b256a7838ede62d9810f1ebdae6415d522cfaa1686dbab8"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_down_01.png",
+      "bytes": 104265,
+      "sha256": "d6d7b8bd54cd7a564a4e0be01703961ff9e2d3220bf3e3968be0614d10a29b38"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_down_01.png.meta",
+      "bytes": 2688,
+      "sha256": "b69057b248b197892825ef0474e75d9079f340f21ea1d6f289c4fdf22b5e2f42"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_down_02.png",
+      "bytes": 103977,
+      "sha256": "d8b44de8b8d44dc754cc015b55706d1c3ac55fb8fea02f1ccaf83903b53b4be7"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_down_02.png.meta",
+      "bytes": 2688,
+      "sha256": "541bf64c2729b889a8375c8cbbfdb1c3aea06e11e7a30852c8348af10aaa98de"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_down_03.png",
+      "bytes": 103774,
+      "sha256": "c12875485c91ad2a11fbeb3b7a7b4ffb8ebdf45ce6c5c2e0fc2ed650c8dc11a4"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_down_03.png.meta",
+      "bytes": 2688,
+      "sha256": "fb690b36043ddb941a59c1e45e801f1a76c7a0bb41cd64c3d6bf9eae42d4ba4e"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_left_00.png",
+      "bytes": 99228,
+      "sha256": "0e075f53aa6591261f62a1d40ba11ff0a0b65d596343cb835f2e497a06895dab"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_left_00.png.meta",
+      "bytes": 2688,
+      "sha256": "ebbede7ad0e940dbc27913a91f902e7309a6937a5698b9edb8fcefe103f1481c"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_left_01.png",
+      "bytes": 97814,
+      "sha256": "ff185d89882566024c8ab53608728b3e7281a44f36a56db5932f7919bc6c1f83"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_left_01.png.meta",
+      "bytes": 2688,
+      "sha256": "854bab90d7ba4bb4a3f299c5c034564e03f8d3f16c1214a38d7477c8fa8d42a6"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_left_02.png",
+      "bytes": 99416,
+      "sha256": "8b42a190e03a4274b284176ca66e208b09e0890931d0b90618bd0c21d6069e0a"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_left_02.png.meta",
+      "bytes": 2688,
+      "sha256": "99b4ce2db6d0d741b7bb16b2e7b1eca54ce86f54aea9565a36687d0ca66ec4f5"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_left_03.png",
+      "bytes": 98177,
+      "sha256": "7ded9556bdec6d4e21bfb58caaa8417c35a4512fc14670e8e0007b6909f9bfbb"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_left_03.png.meta",
+      "bytes": 2688,
+      "sha256": "4e807149a5c2641838c8aebc2edea09d6a354b0bc082ea5542c46f4f86c1e3ce"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_left_04.png",
+      "bytes": 99400,
+      "sha256": "900498f52d8ed3ee6a8ca93d2c9df72cdb5bf520a4de8532fa3e474c8b923d50"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_left_04.png.meta",
+      "bytes": 2688,
+      "sha256": "f3863b2d0c32aaa1dfbf971a857d2c0234f31e934166f9626839ff50df6458a5"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_left_05.png",
+      "bytes": 98958,
+      "sha256": "9f456d7c52c583518ffe58771e8899c5170e6ce491655f95a183c3daf971b06e"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_left_05.png.meta",
+      "bytes": 2688,
+      "sha256": "5600c5e4ffe12ea0bce2ecfd33d6d576e28a5cbc686499f37d67a5813abfde61"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_right_00.png",
+      "bytes": 104425,
+      "sha256": "295b5a7d74bf7b8aed71bd8c7a578e308f86ccc75ccb94f655b4d706ef1f6b1d"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_right_00.png.meta",
+      "bytes": 2688,
+      "sha256": "b1ea420c2d834b78953e9d18ba33fdbce0f680894861e3797ade27d70ab2da75"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_right_01.png",
+      "bytes": 100682,
+      "sha256": "78176a70f6eddac8bacb30103d4688eadde61a1f49b8d25b1f23adace9409352"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_right_01.png.meta",
+      "bytes": 2688,
+      "sha256": "29c84ed67856866242399a4e96800756e1db20c347895c49424eb4d2277c5667"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_right_02.png",
+      "bytes": 102815,
+      "sha256": "480bddd7bd9bbd16b8863e91e728ecdfa68a47f01ed7989f7842a870e17df344"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_right_02.png.meta",
+      "bytes": 2688,
+      "sha256": "7971fc40708fe29dd41f10da9d3b69943ea2b2be78ceab73f702f1ba6e32144c"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_right_03.png",
+      "bytes": 104107,
+      "sha256": "4666de5efedd07176bd98ef3c957eaaa3cb15e182410c809c1817ae040d23871"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_right_03.png.meta",
+      "bytes": 2688,
+      "sha256": "d6d95844390b8cc268b26c0a9bca983824309d877675483bd009417b26c6f136"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_right_04.png",
+      "bytes": 100963,
+      "sha256": "9707cf763b13b473b2dac2c862e8c1440852af98a33fb9e461807e91055ee9a5"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_right_04.png.meta",
+      "bytes": 2688,
+      "sha256": "84ed2dffe699ca2d2a8b529d3fd2a11eaa923639cd2a428bfdbf63fb7dcd1738"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_right_05.png",
+      "bytes": 103272,
+      "sha256": "3bdf1c1f473d0f75955199db0f585b74c6081fdfeffd7f11f97805c53135743f"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_right_05.png.meta",
+      "bytes": 2688,
+      "sha256": "53964dbc5f3b5f27171a61dc1ebd34d01699ecfd65c3342aa18229d0c6231b96"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_up_00.png",
+      "bytes": 91315,
+      "sha256": "9ce23810f2f0fded13e4e801237bc1b70bc94dbc38c8527cdb0d05d6c6d422c8"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_up_00.png.meta",
+      "bytes": 2688,
+      "sha256": "433fe9340ba782453cf3624fb545231af724052de2ee6351e0e5449857db6efb"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_up_01.png",
+      "bytes": 91163,
+      "sha256": "144d31fd29978ff2d4ef8433d17628c0a1ad6e55ca6b275ae8085169e70451af"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_up_01.png.meta",
+      "bytes": 2688,
+      "sha256": "6f2453b736ee72664e7b1cccbba679d8336ba2005a8e2a5aea2cf5444f5527ae"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_up_02.png",
+      "bytes": 90122,
+      "sha256": "75d6a75acfecead554b9c372d3d1654a75a7c417cef84b7eee1305c74f91cd70"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_up_02.png.meta",
+      "bytes": 2688,
+      "sha256": "191090668a9d68665ba8d1506e06ba45e122f588d3f536e2ceb914097e30830d"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_up_03.png",
+      "bytes": 90239,
+      "sha256": "3c422e4a96dce048f83a52ed0f02cef3b0b80a68359cef6904299469dc53bf56"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki/walk_up_03.png.meta",
+      "bytes": 2688,
+      "sha256": "75d88c67a4a4bd387ba20bfa1c6f2b0d97d9c95bddbf21eec38242fdfede77e2"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/yuuki.json",
+      "bytes": 3203,
+      "sha256": "cbea1c17200a1f9f0b987b9ead5741dc1a7db8e4700fdf834aeb164bc3643b34"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/yuuki.json.meta",
+      "bytes": 158,
+      "sha256": "ea2f2e3a809c2fecbf61f5d6a97eb0ba4bf1b88198864862dce314e638cf53fa"
+    },
+    {
+      "path": "Assets/Game/Resources/RpgRevision/Yuuki.meta",
+      "bytes": 172,
+      "sha256": "579b45ffb5fe11b9fb28213aeb54a6061c965682d981a118513b2f2ab90a790e"
+    },
+    {
+      "path": "Assets/Game/Scripts/Bairro/YuukiRpgAnimation.cs",
+      "bytes": 3835,
+      "sha256": "3709a74f790ac7fea3217ac61c09220958a5579cdc2fdf208e2dc1bcb796c52e"
+    },
+    {
+      "path": "Assets/Game/Scripts/Bairro/YuukiRpgAnimation.cs.meta",
+      "bytes": 59,
+      "sha256": "040f397bc8692c7a0724baadf4c9dab4746448bc82ceb8f2ea6e8e4d97570873"
+    }
+  ]
+}

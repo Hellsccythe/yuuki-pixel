@@ -119,10 +119,12 @@ public static class YuukiBairroReleaseBuilder
         PlayerSettings.defaultScreenHeight = 720;
         PlayerSettings.fullScreenMode = FullScreenMode.Windowed;
         PlayerSettings.resizableWindow = true;
-        Directory.CreateDirectory("Builds/Bairro");
+        string buildDirectory = Environment.GetEnvironmentVariable("YUUKI_BUILD_OUTPUT");
+        if (string.IsNullOrWhiteSpace(buildDirectory)) buildDirectory = "Builds/Bairro";
+        Directory.CreateDirectory(buildDirectory);
         var report = BuildPipeline.BuildPlayer(new BuildPlayerOptions {
             scenes = EditorBuildSettings.scenes.Where(s => s.enabled).Select(s => s.path).ToArray(),
-            locationPathName = "Builds/Bairro/Yuuki.exe",
+            locationPathName = Path.Combine(buildDirectory, "Yuuki.exe"),
             target = BuildTarget.StandaloneWindows64,
             options = BuildOptions.Development
         });

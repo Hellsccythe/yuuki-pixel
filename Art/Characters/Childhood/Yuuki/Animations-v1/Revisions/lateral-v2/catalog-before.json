@@ -1,0 +1,518 @@
+{
+  "character": "Yuuki",
+  "age": 9,
+  "status": "first-animation-pass-for-motion-review",
+  "designApproved": true,
+  "bodyFrame": {
+    "width": 512,
+    "height": 512,
+    "pivot": [
+      0.5,
+      0.21875
+    ],
+    "pixelsPerUnit": 220,
+    "feet": [
+      256,
+      400
+    ]
+  },
+  "halo": {
+    "resource": "Childhood/Yuuki/halo-neutral",
+    "width": 96,
+    "height": 28,
+    "alphaBaked": true,
+    "geometry": "Yuuki-v2",
+    "tintable": true
+  },
+  "weapons": false,
+  "wingAnatomy": {
+    "left": "black",
+    "right": "white"
+  },
+  "clips": [
+    {
+      "name": "walk_down",
+      "frames": [
+        "Childhood/Yuuki/Frames/walk_down_00",
+        "Childhood/Yuuki/Frames/walk_down_01",
+        "Childhood/Yuuki/Frames/walk_down_02",
+        "Childhood/Yuuki/Frames/walk_down_03"
+      ],
+      "fps": 5,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 149
+        },
+        {
+          "x": 256,
+          "y": 152
+        },
+        {
+          "x": 256,
+          "y": 152
+        },
+        {
+          "x": 256,
+          "y": 156
+        }
+      ]
+    },
+    {
+      "name": "run_down",
+      "frames": [
+        "Childhood/Yuuki/Frames/run_down_00",
+        "Childhood/Yuuki/Frames/run_down_01",
+        "Childhood/Yuuki/Frames/run_down_02",
+        "Childhood/Yuuki/Frames/run_down_03",
+        "Childhood/Yuuki/Frames/run_down_04",
+        "Childhood/Yuuki/Frames/run_down_05"
+      ],
+      "fps": 10,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 155
+        },
+        {
+          "x": 256,
+          "y": 166
+        },
+        {
+          "x": 256,
+          "y": 153
+        },
+        {
+          "x": 256,
+          "y": 153
+        },
+        {
+          "x": 256,
+          "y": 165
+        },
+        {
+          "x": 256,
+          "y": 151
+        }
+      ]
+    },
+    {
+      "name": "idle_down",
+      "frames": [
+        "Childhood/Yuuki/Frames/idle_down_00",
+        "Childhood/Yuuki/Frames/idle_down_01",
+        "Childhood/Yuuki/Frames/idle_down_02"
+      ],
+      "fps": 2,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 155
+        },
+        {
+          "x": 256,
+          "y": 156
+        }
+      ]
+    },
+    {
+      "name": "walk_up",
+      "frames": [
+        "Childhood/Yuuki/Frames/walk_up_00",
+        "Childhood/Yuuki/Frames/walk_up_01",
+        "Childhood/Yuuki/Frames/walk_up_02",
+        "Childhood/Yuuki/Frames/walk_up_03",
+        "Childhood/Yuuki/Frames/walk_up_04",
+        "Childhood/Yuuki/Frames/walk_up_05"
+      ],
+      "fps": 7,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 151
+        },
+        {
+          "x": 256,
+          "y": 155
+        },
+        {
+          "x": 256,
+          "y": 151
+        },
+        {
+          "x": 256,
+          "y": 151
+        },
+        {
+          "x": 256,
+          "y": 153
+        },
+        {
+          "x": 256,
+          "y": 154
+        }
+      ]
+    },
+    {
+      "name": "run_up",
+      "frames": [
+        "Childhood/Yuuki/Frames/run_up_00",
+        "Childhood/Yuuki/Frames/run_up_01",
+        "Childhood/Yuuki/Frames/run_up_02",
+        "Childhood/Yuuki/Frames/run_up_03",
+        "Childhood/Yuuki/Frames/run_up_04",
+        "Childhood/Yuuki/Frames/run_up_05"
+      ],
+      "fps": 10,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 157
+        },
+        {
+          "x": 256,
+          "y": 158
+        },
+        {
+          "x": 256,
+          "y": 153
+        },
+        {
+          "x": 256,
+          "y": 159
+        },
+        {
+          "x": 256,
+          "y": 158
+        },
+        {
+          "x": 256,
+          "y": 152
+        }
+      ]
+    },
+    {
+      "name": "idle_up",
+      "frames": [
+        "Childhood/Yuuki/Frames/idle_up_00",
+        "Childhood/Yuuki/Frames/idle_up_01",
+        "Childhood/Yuuki/Frames/idle_up_02"
+      ],
+      "fps": 2,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 157
+        },
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 155
+        }
+      ]
+    },
+    {
+      "name": "walk_left",
+      "frames": [
+        "Childhood/Yuuki/Frames/walk_left_00",
+        "Childhood/Yuuki/Frames/walk_left_01",
+        "Childhood/Yuuki/Frames/walk_left_02",
+        "Childhood/Yuuki/Frames/walk_left_03",
+        "Childhood/Yuuki/Frames/walk_left_04",
+        "Childhood/Yuuki/Frames/walk_left_05"
+      ],
+      "fps": 7,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 153
+        },
+        {
+          "x": 256,
+          "y": 153
+        },
+        {
+          "x": 256,
+          "y": 153
+        },
+        {
+          "x": 256,
+          "y": 152
+        },
+        {
+          "x": 256,
+          "y": 152
+        },
+        {
+          "x": 256,
+          "y": 152
+        }
+      ]
+    },
+    {
+      "name": "run_left",
+      "frames": [
+        "Childhood/Yuuki/Frames/run_left_00",
+        "Childhood/Yuuki/Frames/run_left_01",
+        "Childhood/Yuuki/Frames/run_left_02",
+        "Childhood/Yuuki/Frames/run_left_03",
+        "Childhood/Yuuki/Frames/run_left_04",
+        "Childhood/Yuuki/Frames/run_left_05"
+      ],
+      "fps": 10,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 158
+        },
+        {
+          "x": 256,
+          "y": 164
+        },
+        {
+          "x": 256,
+          "y": 165
+        },
+        {
+          "x": 256,
+          "y": 161
+        },
+        {
+          "x": 256,
+          "y": 164
+        },
+        {
+          "x": 256,
+          "y": 166
+        }
+      ]
+    },
+    {
+      "name": "idle_left",
+      "frames": [
+        "Childhood/Yuuki/Frames/idle_left_00",
+        "Childhood/Yuuki/Frames/idle_left_01",
+        "Childhood/Yuuki/Frames/idle_left_02"
+      ],
+      "fps": 2,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 156
+        }
+      ]
+    },
+    {
+      "name": "walk_right",
+      "frames": [
+        "Childhood/Yuuki/Frames/walk_right_00",
+        "Childhood/Yuuki/Frames/walk_right_01",
+        "Childhood/Yuuki/Frames/walk_right_02",
+        "Childhood/Yuuki/Frames/walk_right_03",
+        "Childhood/Yuuki/Frames/walk_right_04",
+        "Childhood/Yuuki/Frames/walk_right_05"
+      ],
+      "fps": 7,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 154
+        },
+        {
+          "x": 256,
+          "y": 152
+        },
+        {
+          "x": 256,
+          "y": 154
+        },
+        {
+          "x": 256,
+          "y": 152
+        },
+        {
+          "x": 256,
+          "y": 152
+        },
+        {
+          "x": 256,
+          "y": 152
+        }
+      ]
+    },
+    {
+      "name": "run_right",
+      "frames": [
+        "Childhood/Yuuki/Frames/run_right_00",
+        "Childhood/Yuuki/Frames/run_right_01",
+        "Childhood/Yuuki/Frames/run_right_02",
+        "Childhood/Yuuki/Frames/run_right_03",
+        "Childhood/Yuuki/Frames/run_right_04",
+        "Childhood/Yuuki/Frames/run_right_05"
+      ],
+      "fps": 10,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 159
+        },
+        {
+          "x": 256,
+          "y": 165
+        },
+        {
+          "x": 256,
+          "y": 168
+        },
+        {
+          "x": 256,
+          "y": 160
+        },
+        {
+          "x": 256,
+          "y": 160
+        },
+        {
+          "x": 256,
+          "y": 166
+        }
+      ]
+    },
+    {
+      "name": "idle_right",
+      "frames": [
+        "Childhood/Yuuki/Frames/idle_right_00",
+        "Childhood/Yuuki/Frames/idle_right_01",
+        "Childhood/Yuuki/Frames/idle_right_02"
+      ],
+      "fps": 2,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 156
+        }
+      ]
+    }
+  ]
+}

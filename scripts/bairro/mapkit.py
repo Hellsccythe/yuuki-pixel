@@ -142,7 +142,8 @@ class MapLayout:
                                     door=door_sprite(sid), doorX=round(cx + dx, 4), doorY=dy,
                                     doorWidth=round((x1 - x0) / s["ppu"], 4),
                                     roomW=round(w * 0.9, 3), roomH=round(min(h * 0.9, 6.4), 3),
-                                    seed=len(self.houses) + 1))
+                                    seed=len(self.houses) + 1,
+                                    floors=2 if sid in ('casa-tenebris', 'casa-madeira-gasta', 'casa-pedra', 'casa-pedra-gasta') else 1))
         self.obj(sid, cx, feet_y, (w * width_frac, h * depth - 0.35, 0.35), shadow=w * 0.95, flip=flip)
         # Lanterns and lit windows of the original art glow at night.
         for (px, py, radius, strength) in (BUILDING_LIGHTS.get(sid, ()) if lit else ()):
@@ -226,6 +227,11 @@ class MapLayout:
             i += 1
 
     def laundry_line(self, x, y, group, first=0, count=5):
+        if 'varal-v6' in sprites:
+            self.obj('varal-v6', x, y, None, group=group)
+            self.block(x - 1.7, y - .25, .22, .3)
+            self.block(x + 1.48, y - .25, .22, .3)
+            return
         from props import rope_y
         self.obj("varal", x, y, None, group=group)
         s = sprites["varal"]
@@ -355,8 +361,15 @@ class MapLayout:
             ground += glint[..., None] * 50
         # Plank bridges over the ditch.
         img = Image.fromarray(np.clip(ground, 0, 255).astype(np.uint8)).convert("RGBA")
+        def decal(sid, x, y, width, height):
+            art = Image.open(ROOT / sprites[sid]['path']).convert('RGBA')
+            art = art.crop(art.getbbox()).resize((max(1, round(width*self.G)), max(1, round(height*self.G))), Image.Resampling.NEAREST)
+            img.alpha_composite(art, (round(x*self.G), round(y*self.G)))
         d = ImageDraw.Draw(img)
         for (bx, by, bw, bh) in self.bridges:
+            if 'ponte-v6' in sprites:
+                decal('ponte-v6', bx, by, bw, bh)
+                continue
             x0, y0, x1, y1 = bx * self.G, by * self.G, (bx + bw) * self.G, (by + bh) * self.G
             d.rectangle([x0 - 2, y0 - 2, x1 + 2, y1 + 6], fill=(30, 22, 16, 150))
             vertical_boards = bw > bh  # boards span the ditch: across a N-S ditch they lie E-W
@@ -374,6 +387,8 @@ class MapLayout:
         ground = np.asarray(img.convert("RGB")).astype(float)
 
         for (cx, cy, rx, ry) in self.puddles:
+            if 'poca-v6' in sprites:
+                continue
             f = self._ellipse(cx, cy, rx, ry, rng, 0.12)
             wet, water = smoothstep(1.9, 1.0, f), smoothstep(1.05, 0.9, f)
             ground *= (1 - wet[..., None] * 0.28)
@@ -381,6 +396,8 @@ class MapLayout:
             ground = ground * (1 - water[..., None] * 0.85) + refl * water[..., None] * 0.85
             ground += (water * (np.abs(((xx - yy * 0.6) % 23) - 3) < 1) * 0.5)[..., None] * 60
         for (cx, cy, rx, ry) in self.holes:
+            if 'buraco-v6' in sprites:
+                continue
             f = self._ellipse(cx, cy, rx, ry, rng, 0.14)
             inside = smoothstep(1.02, 0.9, f)
             rim = smoothstep(1.7, 1.05, f) * (1 - inside)
@@ -393,6 +410,12 @@ class MapLayout:
             ground *= (1 - top[..., None] * 0.35)
             ground = ground * (1 - bottom[..., None] * 0.35) + np.array([176, 150, 116]) * bottom[..., None] * 0.35
 
+        img = Image.fromarray(np.clip(ground, 0, 255).astype(np.uint8)).convert('RGBA')
+        for sid, items in (('poca-v6', self.puddles), ('buraco-v6', self.holes)):
+            if sid in sprites:
+                for cx, cy, rx, ry in items:
+                    decal(sid, cx-rx, cy-ry, rx*2, ry*2)
+        ground = np.asarray(img.convert('RGB')).astype(float)
         ground = desaturate(ground, 0.12) * np.array([1.03, 0.99, 0.92])
         return np.clip(ground, 0, 255)
 

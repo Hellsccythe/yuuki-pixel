@@ -32,6 +32,7 @@ def main():
     else:
         assets.build_sprites()
         variants = assets.build_npcs()
+    assets.neighborhood_v6()
     for module in MAPS:
         m = module.build()
         data = m.export(variants)

@@ -1,0 +1,27 @@
+{
+  "character": "Tenebris",
+  "age": 9,
+  "appearance": "approved Kiryu-inspired child shape; black hair requested by user",
+  "body": "body.png",
+  "halo": "../../../Halos/Tenebris-v1/halo-neutral.png",
+  "haloStatus": "approved by user 2026-09-30",
+  "haloAnchor": {
+    "x": 256,
+    "y": 156
+  },
+  "weapons": false,
+  "wingAnatomy": {
+    "left": "white",
+    "right": "white"
+  },
+  "hairColor": "black",
+  "frame": {
+    "width": 512,
+    "height": 512,
+    "feet": [
+      256,
+      400
+    ],
+    "pixelsPerUnit": 220
+  }
+}

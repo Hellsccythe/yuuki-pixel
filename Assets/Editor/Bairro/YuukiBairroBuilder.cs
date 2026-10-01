@@ -121,6 +121,7 @@ public static class YuukiBairroBuilder
         }
 
         var smokeRoot = new GameObject("Fumaca das chamines").transform;
+        outdoorOnly.Add(smokeRoot.gameObject);
         foreach (var s in data.smoke.Where(s => !s.interior))
         {
             var go = new GameObject("Fumaca");

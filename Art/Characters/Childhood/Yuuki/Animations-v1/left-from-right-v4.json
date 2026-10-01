@@ -1,0 +1,46 @@
+{
+  "revision": "left-v4",
+  "assetSuffix": "v4",
+  "date": "2026-09-30",
+  "changedClips": [
+    "walk_left",
+    "run_left"
+  ],
+  "acceptedClips": [
+    "walk_down",
+    "run_down",
+    "idle_down",
+    "walk_up",
+    "run_up",
+    "idle_up",
+    "idle_left",
+    "walk_right",
+    "run_right",
+    "idle_right"
+  ],
+  "protectedAtlases": [
+    "down",
+    "up",
+    "right"
+  ],
+  "fps": {
+    "walk": 6,
+    "run": 8
+  },
+  "sources": {
+    "left": {
+      "file": "left-from-approved-right-v4.png",
+      "columns": 4,
+      "rows": 2,
+      "reference": "Assets/Game/Resources/Childhood/Yuuki/Frames/walk_right_v3_00.png",
+      "referenceByState": {
+        "run": "Assets/Game/Resources/Childhood/Yuuki/Frames/run_right_v3_00.png"
+      },
+      "mirrorReference": true,
+      "matchReferenceHeight": true
+    }
+  },
+  "validationText": "left-v4: only left walk/run redone from the approved right poses; all other clips approved 2026-09-30 and unchanged; left motion awaiting review",
+  "tool": "built-in ImageGen",
+  "prompt": "left-from-right-v4-prompt.json"
+}

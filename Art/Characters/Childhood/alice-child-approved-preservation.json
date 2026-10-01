@@ -1,0 +1,585 @@
+{
+  "character": "Alice",
+  "approvedOn": "2026-09-30",
+  "revision": "alice-v1",
+  "clips": 12,
+  "drawings": 44,
+  "archive": "Logs/Archives/alice-child-approved-20260930.zip",
+  "files": [
+    {
+      "path": "Art/Characters/Childhood/Alice/Animations-v1/Atlases/down.png",
+      "bytes": 745952,
+      "sha256": "74c1ae5c9ea5cfc5b0e7cd248dfd3df4ec3d80ae01417df5581ea569d95eca36"
+    },
+    {
+      "path": "Art/Characters/Childhood/Alice/Animations-v1/Atlases/left.png",
+      "bytes": 710357,
+      "sha256": "05a7009dd3724488f5438d046ca677eb312474a709404087a2479ce164f4233a"
+    },
+    {
+      "path": "Art/Characters/Childhood/Alice/Animations-v1/Atlases/right.png",
+      "bytes": 707191,
+      "sha256": "46a70eeac83b75cb894fc5b4a3f1b37d87de93fac25fbe430b2585b47db30986"
+    },
+    {
+      "path": "Art/Characters/Childhood/Alice/Animations-v1/Atlases/up.png",
+      "bytes": 742953,
+      "sha256": "75729e97533056b5afb3489ea230667a72e6cbcf9bc698b34ec0ea940ffcf59d"
+    },
+    {
+      "path": "Art/Characters/Childhood/Alice/Animations-v1/contact-sheet.png",
+      "bytes": 928843,
+      "sha256": "ca0a295239316a67a4533136d651445b3ba6e880d75a4ee84571aa83a9395caf"
+    },
+    {
+      "path": "Art/Characters/Childhood/Alice/Animations-v1/final-qa.json",
+      "bytes": 567,
+      "sha256": "7671f9be22226d7c97a58405900e383f6e83b39123f71988dea4677b0a9a78e4"
+    },
+    {
+      "path": "Art/Characters/Childhood/Alice/Animations-v1/packing-report.json",
+      "bytes": 11794,
+      "sha256": "77139b6fb937be9b4a1b5e91321f4ae37bb715139777491eff4a1e39fd61dd59"
+    },
+    {
+      "path": "Art/Characters/Childhood/Alice/Animations-v1/production-prompts.json",
+      "bytes": 14866,
+      "sha256": "c8bee7ad0eb4183722dfea182e2b053e2a6f9f4dfe5f62e9713913dc5c94bddc"
+    },
+    {
+      "path": "Art/Characters/Childhood/Alice/Animations-v1/README.md",
+      "bytes": 2467,
+      "sha256": "d24f04aa83e587e7c94451546f1d2d335b194e28d616b44f984ab18b86552ded"
+    },
+    {
+      "path": "Art/Characters/Childhood/Alice/Animations-v1/Sources/down-walk.png",
+      "bytes": 1286289,
+      "sha256": "a1a53224b6333dca80f2ab8550efb029560dc9a912d4a9344b064b8e285beaeb"
+    },
+    {
+      "path": "Art/Characters/Childhood/Alice/Animations-v1/Sources/down.png",
+      "bytes": 1724252,
+      "sha256": "03886e2fdae3bd98932f1abd26dab95ae464c93d04f4ecbeb0675262fda5b70e"
+    },
+    {
+      "path": "Art/Characters/Childhood/Alice/Animations-v1/Sources/right.png",
+      "bytes": 1437536,
+      "sha256": "2e37c4831388ce2db523277197bd6f6200783f3e37f4e89b44742838bb7e3d4a"
+    },
+    {
+      "path": "Art/Characters/Childhood/Alice/Animations-v1/Sources/up.png",
+      "bytes": 1449168,
+      "sha256": "1a2e24e2cb6b5169f70956cbd70f29d625cf0360a20cee27afdc8877ba3d2049"
+    },
+    {
+      "path": "Art/Characters/Childhood/Alice/Design-v2/body-source.png",
+      "bytes": 505601,
+      "sha256": "b087ef9b919c547a14e8760ae67bb371683782e3fe9f4b923acea0d8129af9ee"
+    },
+    {
+      "path": "Art/Characters/Childhood/Alice/Design-v2/body.png",
+      "bytes": 61671,
+      "sha256": "9b5575d363ce929ed5dd22e58c23526a3199644c710e2ad70ec913ea14e3095c"
+    },
+    {
+      "path": "Art/Characters/Childhood/Alice/Design-v2/design.json",
+      "bytes": 560,
+      "sha256": "a506894ae2d4d5abdac2f431f13588f0090a8afcdb670e760cd72f4ac5052f7b"
+    },
+    {
+      "path": "Art/Characters/Childhood/Alice/Design-v2/preview.png",
+      "bytes": 66046,
+      "sha256": "aebb7b255c09d0c2875ae971e67711f471c6555aa91539cc505f27f6e01fa5af"
+    },
+    {
+      "path": "Art/Characters/Halos/Alice-v1/halo-neutral.png",
+      "bytes": 4157,
+      "sha256": "4aa7ef5a4a349ee0211d310d21f2ed30ed88f88d102f1a95489326f07d52dd69"
+    },
+    {
+      "path": "Art/Characters/Halos/Alice-v1/halo-source.png",
+      "bytes": 380228,
+      "sha256": "4cb472445e7cf874eef1e578151b6b456037c7816d3884649fd9304d22c472aa"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/animations.json",
+      "bytes": 8484,
+      "sha256": "5c077150cc0631af73ef200021ea41d40f931b2e6a50c9e193cef84a2b311401"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_down_v1_00.png",
+      "bytes": 73506,
+      "sha256": "68a0274fa80e0774d2ce67f90b8c59b53d05bc370a10586535b2b32524f1fce0"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_down_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "404a2985872b65f75498b7755e2819e4d722ff2636ccfceefdae39b5f52cf692"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_down_v1_01.png",
+      "bytes": 72974,
+      "sha256": "03df9bdc69851092f5c7bddefc49f0475bf4b63372d38bb9bd86d09c5bae0734"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_down_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "cc6e994f0a31a6936108a7acad35e2de21d82fe297da2e6183019dd7cc38b804"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_down_v1_02.png",
+      "bytes": 73116,
+      "sha256": "82ce0814f39ca228aa23f90bc2ba21f9ec5367932420040481e3e222725b2556"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_down_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "80d0b8440b451ebed7c6a0f27f247f37c01b64a3e5d985fa15aed3fcc60ef833"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_left_v1_00.png",
+      "bytes": 63398,
+      "sha256": "2068ad62dfe576507dad64bda90cbfd97ac5864ff64a13e1353f3f64fd142638"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_left_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "75c7e6d176668d4682a4019d0e4554fbdab978c0bff9b47f2214f4a6225c78fd"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_left_v1_01.png",
+      "bytes": 65113,
+      "sha256": "dc35be53b1f8c628f4d82dd295bda4dc97968ebee73cd09aa24d9947442fa7e0"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_left_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "2056b4b10c6da87eae8f6e96c4bad16164a7f8da57ee9999491a84d01cb074e5"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_left_v1_02.png",
+      "bytes": 64137,
+      "sha256": "dbbbc29c38b5ad8bfa76cbd04992c03fe51fa80dfd1e7642c8d780162aac75fd"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_left_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "534de4fe8b2bbfe5559536bfb4bb39d13b2904106c5b3af5e82c107d1c613b88"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_right_v1_00.png",
+      "bytes": 63177,
+      "sha256": "1da9efa7341fecb9eed7ba01ed0f272cb6672df10296370401ab9b3e30853e7f"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_right_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "0c673ed314d7bd60c4aefa80ce736e63043cf7256a1cbc18b5aeb9636ea27fde"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_right_v1_01.png",
+      "bytes": 64861,
+      "sha256": "738c4b50c7c5457067b369cd8773f6015878639ecf2df412f9f86cb624102e48"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_right_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "a2bfa7fb617baa7954a1d82c046df528f18b7a264e5f17ce09a1863e2400f030"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_right_v1_02.png",
+      "bytes": 63944,
+      "sha256": "01a1d014ff1d565bbfd4eea2d9d196c7c02c8064b0c0777f0b5e8f42f3c42491"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_right_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "2c0b3a022d38f8ac74aa3b78a3ac9d33eb7667ce11afaa38336aebe35acc2f3c"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_up_v1_00.png",
+      "bytes": 68365,
+      "sha256": "dacb401f20291ba09281dd821d7f00815180ff55d6ec57c579348de5a5d40309"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_up_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "76911360b1e4069856b54f96eca1807b357a1f334aee2a9e12623acded5f474f"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_up_v1_01.png",
+      "bytes": 68016,
+      "sha256": "3e7cbf6a842c9c4e42a6c1e1219379fc9c52a2fabca03c44134257ad6baac4fb"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_up_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "da1f0932c353f26fcfbfc19de92753f491622c48ca5181901641ad3da73445f1"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_up_v1_02.png",
+      "bytes": 68448,
+      "sha256": "4e5e8266c8c2848cad8088cbc5d3a66107d614c19094a900395ace3f9d8069b7"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/idle_up_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "97f180c5e2211a1f30dee0e6020d2d1bd266eb5bfe92266b1fe166af6c91a3c6"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_down_v1_00.png",
+      "bytes": 73272,
+      "sha256": "40e2bd29f7d4e9d7f96af4d76e05ba14f8606ced29370d081559ee55a768e417"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_down_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "b71a9c83837c86ce754d76cc3b08ea35485b87de43aa89b3c0107809b9d87981"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_down_v1_01.png",
+      "bytes": 71550,
+      "sha256": "f0bbd3b6d1054fc6ca48a199cda39c9c44d829c005c068eb70e07cab85324eb8"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_down_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "831b7ee5eeedc88feec7e5ae9256795a56a83dfa3fa1b2f20fa8b2c6dfb259db"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_down_v1_02.png",
+      "bytes": 72493,
+      "sha256": "7505fc7078a02bc969bbc13669d169c4ad678d8987e9e3e47f7888b05b13ba31"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_down_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "063871329755f01b34a73ad45d10946792f4503276bdf127a47afae965c3a851"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_down_v1_03.png",
+      "bytes": 71958,
+      "sha256": "a0122bc54344b50c79c11fd2e0207722cccaeada8e9db19ac913075af3c26e29"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_down_v1_03.png.meta",
+      "bytes": 2805,
+      "sha256": "6b3843e97423d8a19c51a81a1934ab05b08f04e400046a653cf716588673e75f"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_left_v1_00.png",
+      "bytes": 68355,
+      "sha256": "cf9f21a0d998cbcbb901906d720dfae1409117f294c7ec0da2e305b60114a0bf"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_left_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "581a7a9a61f2446bf235cc689be172e6f78fab45b1bca3f165cd34674a8ef205"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_left_v1_01.png",
+      "bytes": 66323,
+      "sha256": "639eca2b2f39004e6869b9de3fd63885d1352185784ed223777883a6d358ab63"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_left_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "1887fa9fb6d102d0547bb54cfbde65c7b4fef982ea55d3eac697b7032378ec52"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_left_v1_02.png",
+      "bytes": 68451,
+      "sha256": "2f0f81fc46d6b3a1709420d31c4e725abda387019c884d115c42b016fc197323"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_left_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "4d9cc705870570998f7ebec5778b693e9bca3642dd00f3f81725ce3591a1d7fc"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_left_v1_03.png",
+      "bytes": 65829,
+      "sha256": "4fe15872677829e6485657c8e1ce016e9bd45cb0f82d003bff56f73bc38ec1f8"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_left_v1_03.png.meta",
+      "bytes": 2805,
+      "sha256": "c249e91a14d65d0a6bc35f9f02eb90539c706d20ebb4ce53825183b4bfa0f622"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_right_v1_00.png",
+      "bytes": 67762,
+      "sha256": "86b29ca29014797c2732d1f60afbaf992c05e65016fd9f2c785b144483d470a4"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_right_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "e2c421df6ce67999445da6d78e18ef5a31c730a3d631a97a062b59adeef153e0"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_right_v1_01.png",
+      "bytes": 65971,
+      "sha256": "570fe124efb9352fdcfcd0d3f7df8721359452d0f8a10e220e22325f7c3672a7"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_right_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "8eede41e9fdcdfa47ac95948c3ca42ae8ad91c5c855647c0c49f150ebfb175ca"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_right_v1_02.png",
+      "bytes": 67938,
+      "sha256": "2c1a1aafb20a7941c4c6b56e2fe6765a8e0c15f59bc304162527e54237640de2"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_right_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "0b2e1d4af6d2ded5ee452fb52735f45edf2030d4194ee0d865b157df68e22c81"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_right_v1_03.png",
+      "bytes": 65439,
+      "sha256": "7b9c46632bae37d924f7184c0ba7ef98013ad8c26c35ec243708e46cf2ed2537"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_right_v1_03.png.meta",
+      "bytes": 2805,
+      "sha256": "eb39a2dab827d4c6ffd4ea95055c8cc12b527abe9f49264db1fe7f7077fda8bf"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_up_v1_00.png",
+      "bytes": 71576,
+      "sha256": "a3d2be5477dc4f54a5856638b01a56fd3eb2c34d161becc1d5782272f12d191d"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_up_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "e3d8e568faec909c8b4854f503b495c8ed54c83e800d3004a41d1438b6315823"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_up_v1_01.png",
+      "bytes": 70331,
+      "sha256": "d23e74b8b34bc743e0187886b0b9efd42a31cec3ccc2feadba7e0b7d83dd5652"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_up_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "5d0e8cf389f88a9b7366d9a71a77e9aa480a6d7432c9923bceb7b76e1412e5c4"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_up_v1_02.png",
+      "bytes": 71443,
+      "sha256": "23b88689af006f986a703d4cdcadc9ee27ed2d350f9f9a234e51a0d4e7389f1e"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_up_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "b0dba71f49872f8d1b0093753bc5353de33d711de0b7b5209a4838272c1d85d0"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_up_v1_03.png",
+      "bytes": 72543,
+      "sha256": "b8e943655c91176d835feb1f08d36cf083a500f5143af62da6ccbdcdd7e4f594"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/run_up_v1_03.png.meta",
+      "bytes": 2805,
+      "sha256": "93207d3aa805b0074fa7257990689bacd1c05508c64ac2d9147526cd80926311"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_down_v1_00.png",
+      "bytes": 65713,
+      "sha256": "0dfd9cf5a5678d98c1d5e8da572520090454101e5838b08ae6c0cd6f4ea98d83"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_down_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "340e0b2c75fd6ca68fddf7e08ad5a14ff6ffd6134c0f30ecd4309953536856f7"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_down_v1_01.png",
+      "bytes": 66536,
+      "sha256": "3e57235e0dd6c28444d3342c85f989aca44742244ef2fabeec40a91fd6b1d026"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_down_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "650682c8385de7e647a3b52fcf2e2e816f90295427f54ca15aa33024fd311d99"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_down_v1_02.png",
+      "bytes": 65817,
+      "sha256": "292e11ad75b6cd5c6665ca2c70df1305db9cf41560db94fbc6a18cba772be715"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_down_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "a619f405eddc05f93d54711f2a42f6b376b2d227be044345389c1e6527f50730"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_down_v1_03.png",
+      "bytes": 66485,
+      "sha256": "0fa729ca91c01c17b610cb6257dd4b4b9d82ca09aaaabfb69a0b3b0f4aedd523"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_down_v1_03.png.meta",
+      "bytes": 2805,
+      "sha256": "2de56931a4cd7a6a6bffc0b7fbc56a475c4b6c1dc6c99fce62b5dba2c7575714"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_left_v1_00.png",
+      "bytes": 67438,
+      "sha256": "9ec340694ce5e57e963a46b296dd6b373a3403fcf83cb8bb1abffe75f7332e20"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_left_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "a34ac26caea252e24295a5c529ad9bef9d84cced35d41dbb84925424876f4e28"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_left_v1_01.png",
+      "bytes": 63531,
+      "sha256": "e6d91747c00f0198d114e538f6f48cd8a500f0ac0224087e11fe1f3f843a9d05"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_left_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "88db3ec8d759ddb972081461657b253820e1c099c48b477a5a5318370323335a"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_left_v1_02.png",
+      "bytes": 66383,
+      "sha256": "4f126da6851cf1f7fca36012cec7e4e9185b83b5834d18794523ea74c2b81b7d"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_left_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "399a4d4d60eab1cb9d45648a70a0d90e1d7af245b6e90a2141c623fc6efb2585"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_left_v1_03.png",
+      "bytes": 63165,
+      "sha256": "bb4054de946ae29ae1738c55d0b0acf357e7ba75b34f4d780bb3ab6623c161bd"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_left_v1_03.png.meta",
+      "bytes": 2805,
+      "sha256": "1d1048675aee291dde4e581a2cdf246d824522ef78d2f6a519f8d4cae4cbda94"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_right_v1_00.png",
+      "bytes": 67090,
+      "sha256": "ac9c520dcf10f6c6b4e979da72535b91f3434203a183e3ed279ec75c55e2c975"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_right_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "91b6541fba33a2790af0c0de2770a24208498f029edca5878189f6aca6a55d69"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_right_v1_01.png",
+      "bytes": 63259,
+      "sha256": "e5897ab6783ee8a671edcf4dc9437f1e6d28c8023bde4ff63d424c2686cf30d0"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_right_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "9ad8706bf33c1d200016fdd9cbc2cb839c3bcc87f354920a03b5900d332f707b"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_right_v1_02.png",
+      "bytes": 66087,
+      "sha256": "5f5aae3779e4fc6794da182ee99a5849ec7d91bc57077e4e8026e61528dd111f"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_right_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "5865cfa0631326ed30e3fda8fd2d5f9bdd758cce9c3517573aeb5664e696edae"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_right_v1_03.png",
+      "bytes": 62673,
+      "sha256": "8d5fbad79e544053bb76543e411fd6586a538c05f2604be5703137a66b095b50"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_right_v1_03.png.meta",
+      "bytes": 2805,
+      "sha256": "f0b203eab969193703aa1d5c4677f610e2d245faa2dc90c2957e91adfcb597d2"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_up_v1_00.png",
+      "bytes": 67087,
+      "sha256": "ebb5ecff5e875734d4b191e2012f0a36969e81fd3f2c5274674c0a0e3425b8ab"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_up_v1_00.png.meta",
+      "bytes": 2805,
+      "sha256": "fa6aa7168579abd5f4b57c9ea5281bd648f7d27560ca32cb523a6b9e0ce2b591"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_up_v1_01.png",
+      "bytes": 65806,
+      "sha256": "392cbb17c42244d4b818fc465fcd69f7f22c3bb697a44f2c8b40021f4de7be65"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_up_v1_01.png.meta",
+      "bytes": 2805,
+      "sha256": "2d0b7b1dc040e840208a1390372bfeff2ce29a760d2b6f46ae91b4ec526f995b"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_up_v1_02.png",
+      "bytes": 66216,
+      "sha256": "d50640d6e7e22affcadfd10b68bd4d397ee3e449ddadc6161b8a31ae432bfc5b"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_up_v1_02.png.meta",
+      "bytes": 2805,
+      "sha256": "40c7cb3d38ca950c588e01b7ce37a7db43f05fe22b2de3669672703a395112e8"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_up_v1_03.png",
+      "bytes": 66746,
+      "sha256": "5ff51d6357f5f72aa5cf3e60e7f229fa01bd2098ebfc3dc1fd61c3fb8fe6d0b2"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/Frames/walk_up_v1_03.png.meta",
+      "bytes": 2805,
+      "sha256": "5b197c5011b341c06adaea8eda710f056e6b348779afcaae180cf83f99616e31"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/halo-neutral.png",
+      "bytes": 4157,
+      "sha256": "4aa7ef5a4a349ee0211d310d21f2ed30ed88f88d102f1a95489326f07d52dd69"
+    },
+    {
+      "path": "Assets/Game/Resources/Childhood/Alice/halo-neutral.png.meta",
+      "bytes": 2801,
+      "sha256": "ce17db85a5f0bac9b1aa29bdacc353f194c5802a50e4f5fb2f8f8545a82e7647"
+    },
+    {
+      "path": "preview/alice-animation.html",
+      "bytes": 3989,
+      "sha256": "664857e28e23ae18e480216a683be7e516e21c228f4f868be3b352ca55e29586"
+    },
+    {
+      "path": "preview/alice-animation.js",
+      "bytes": 6813,
+      "sha256": "069c05ff896ea8b24404c97b4860199c1b044d0401e1b4369281e3e24ba300ef"
+    },
+    {
+      "path": "preview/alice-design.html",
+      "bytes": 7000,
+      "sha256": "306a312ac82f4643e500f7d9c812679d9ba2c842a19f81c7f9c9469977cc36cd"
+    },
+    {
+      "path": "preview/childhood-animation.css",
+      "bytes": 3556,
+      "sha256": "c4f65f2a559b368171f660a0bd2c85848cd59d7aa1421ba97e27adcdaaa4b64d"
+    },
+    {
+      "path": "scripts/pack_child_alice.py",
+      "bytes": 12372,
+      "sha256": "d0f5c3d140629393c810deb2aba7fdaa6d1c0ac8abba23e5bdca4abc50be11bb"
+    }
+  ]
+}

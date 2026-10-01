@@ -1,0 +1,382 @@
+{
+  "sprites": [
+    {
+      "id": "barraco-0",
+      "path": "Assets/Game/Resources/NeighborhoodV6/barraco-0.png",
+      "ppu": 97.95454545454545,
+      "pivotX": 0.5,
+      "pivotY": 0.0175054704595186,
+      "w": 447,
+      "h": 457,
+      "door": [
+        97,
+        257,
+        175,
+        405
+      ]
+    },
+    {
+      "id": "barraco-1",
+      "path": "Assets/Game/Resources/NeighborhoodV6/barraco-1.png",
+      "ppu": 107.22222222222221,
+      "pivotX": 0.5,
+      "pivotY": 0.01932367149758454,
+      "w": 402,
+      "h": 414,
+      "door": [
+        72,
+        205,
+        156,
+        356
+      ]
+    },
+    {
+      "id": "barraco-2",
+      "path": "Assets/Game/Resources/NeighborhoodV6/barraco-2.png",
+      "ppu": 110.0,
+      "pivotX": 0.5,
+      "pivotY": 0.01839080459770115,
+      "w": 566,
+      "h": 435,
+      "door": [
+        216,
+        265,
+        309,
+        392
+      ]
+    },
+    {
+      "id": "barraco-3",
+      "path": "Assets/Game/Resources/NeighborhoodV6/barraco-3.png",
+      "ppu": 109.25,
+      "pivotX": 0.5,
+      "pivotY": 0.018223234624145785,
+      "w": 453,
+      "h": 439,
+      "door": [
+        87,
+        241,
+        174,
+        393
+      ]
+    },
+    {
+      "id": "barraco-4",
+      "path": "Assets/Game/Resources/NeighborhoodV6/barraco-4.png",
+      "ppu": 117.36842105263159,
+      "pivotX": 0.5,
+      "pivotY": 0.018223234624145785,
+      "w": 462,
+      "h": 439,
+      "door": [
+        102,
+        262,
+        175,
+        387
+      ]
+    },
+    {
+      "id": "barraco-5",
+      "path": "Assets/Game/Resources/NeighborhoodV6/barraco-5.png",
+      "ppu": 117.17391304347827,
+      "pivotX": 0.5,
+      "pivotY": 0.018561484918793503,
+      "w": 555,
+      "h": 431,
+      "door": [
+        200,
+        240,
+        285,
+        387
+      ]
+    },
+    {
+      "id": "casa-simples-0",
+      "path": "Assets/Game/Resources/NeighborhoodV6/casa-simples-0.png",
+      "ppu": 110.44444444444444,
+      "pivotX": 0.5,
+      "pivotY": 0.012213740458015267,
+      "w": 513,
+      "h": 655,
+      "door": [
+        151,
+        397,
+        232,
+        576
+      ]
+    },
+    {
+      "id": "casa-simples-1",
+      "path": "Assets/Game/Resources/NeighborhoodV6/casa-simples-1.png",
+      "ppu": 113.55555555555556,
+      "pivotX": 0.5,
+      "pivotY": 0.01335559265442404,
+      "w": 527,
+      "h": 599,
+      "door": [
+        208,
+        351,
+        293,
+        524
+      ]
+    },
+    {
+      "id": "casa-simples-2",
+      "path": "Assets/Game/Resources/NeighborhoodV6/casa-simples-2.png",
+      "ppu": 117.90697674418605,
+      "pivotX": 0.5,
+      "pivotY": 0.012618296529968454,
+      "w": 523,
+      "h": 634,
+      "door": [
+        274,
+        392,
+        348,
+        562
+      ]
+    },
+    {
+      "id": "ponte-v6",
+      "path": "Assets/Game/Resources/NeighborhoodV6/ponte-v6.png",
+      "ppu": 115.5,
+      "pivotX": 0.5,
+      "pivotY": 0.01951219512195122,
+      "w": 247,
+      "h": 410
+    },
+    {
+      "id": "galinheiro",
+      "path": "Assets/Game/Resources/NeighborhoodV6/galinheiro.png",
+      "ppu": 102.77777777777777,
+      "pivotX": 0.5,
+      "pivotY": 0.0226628895184136,
+      "w": 386,
+      "h": 353
+    },
+    {
+      "id": "barris-agua",
+      "path": "Assets/Game/Resources/NeighborhoodV6/barris-agua.png",
+      "ppu": 248.0,
+      "pivotX": 0.5,
+      "pivotY": 0.025,
+      "w": 326,
+      "h": 320
+    },
+    {
+      "id": "carroca-quebrada",
+      "path": "Assets/Game/Resources/NeighborhoodV6/carroca-quebrada.png",
+      "ppu": 138.84615384615384,
+      "pivotX": 0.5,
+      "pivotY": 0.026490066225165563,
+      "w": 377,
+      "h": 302
+    },
+    {
+      "id": "lenha",
+      "path": "Assets/Game/Resources/NeighborhoodV6/lenha.png",
+      "ppu": 181.57894736842107,
+      "pivotX": 0.5,
+      "pivotY": 0.02622950819672131,
+      "w": 361,
+      "h": 305
+    },
+    {
+      "id": "varal-v6",
+      "path": "Assets/Game/Resources/NeighborhoodV6/varal-v6.png",
+      "ppu": 100.83333333333333,
+      "pivotX": 0.5,
+      "pivotY": 0.026936026936026935,
+      "w": 379,
+      "h": 297
+    },
+    {
+      "id": "lixo",
+      "path": "Assets/Game/Resources/NeighborhoodV6/lixo.png",
+      "ppu": 219.41176470588235,
+      "pivotX": 0.5,
+      "pivotY": 0.03162055335968379,
+      "w": 389,
+      "h": 253
+    },
+    {
+      "id": "poca-v6",
+      "path": "Assets/Game/Resources/NeighborhoodV6/poca-v6.png",
+      "ppu": 250.71428571428572,
+      "pivotX": 0.5,
+      "pivotY": 0.02666666666666667,
+      "w": 367,
+      "h": 300
+    },
+    {
+      "id": "buraco-v6",
+      "path": "Assets/Game/Resources/NeighborhoodV6/buraco-v6.png",
+      "ppu": 255.71428571428572,
+      "pivotX": 0.5,
+      "pivotY": 0.0321285140562249,
+      "w": 374,
+      "h": 249
+    },
+    {
+      "id": "room-familia",
+      "path": "Assets/Game/Resources/NeighborhoodV6/room-familia.png",
+      "ppu": 77.83333333333333,
+      "pivotX": 0.5,
+      "pivotY": 0,
+      "w": 483,
+      "h": 465
+    },
+    {
+      "id": "room-barraco",
+      "path": "Assets/Game/Resources/NeighborhoodV6/room-barraco.png",
+      "ppu": 76.33333333333333,
+      "pivotX": 0.5,
+      "pivotY": 0,
+      "w": 474,
+      "h": 465
+    },
+    {
+      "id": "room-oficina",
+      "path": "Assets/Game/Resources/NeighborhoodV6/room-oficina.png",
+      "ppu": 77.33333333333333,
+      "pivotX": 0.5,
+      "pivotY": 0,
+      "w": 480,
+      "h": 466
+    },
+    {
+      "id": "escada-subir",
+      "path": "Assets/Game/Resources/NeighborhoodV6/escada-subir.png",
+      "ppu": 186.4,
+      "pivotX": 0.5,
+      "pivotY": 0.018648018648018648,
+      "w": 249,
+      "h": 429
+    },
+    {
+      "id": "escada-descer",
+      "path": "Assets/Game/Resources/NeighborhoodV6/escada-descer.png",
+      "ppu": 260.8,
+      "pivotX": 0.5,
+      "pivotY": 0.027303754266211604,
+      "w": 342,
+      "h": 293
+    },
+    {
+      "id": "divisoria",
+      "path": "Assets/Game/Resources/NeighborhoodV6/divisoria.png",
+      "ppu": 319.2307692307692,
+      "pivotX": 0.5,
+      "pivotY": 0.017582417582417582,
+      "w": 99,
+      "h": 455
+    },
+    {
+      "id": "galinha-branca-0",
+      "path": "Assets/Game/Resources/NeighborhoodV6/galinha-branca-0.png",
+      "ppu": 155,
+      "pivotX": 0.5,
+      "pivotY": 0.125,
+      "w": 128,
+      "h": 128
+    },
+    {
+      "id": "galinha-branca-1",
+      "path": "Assets/Game/Resources/NeighborhoodV6/galinha-branca-1.png",
+      "ppu": 155,
+      "pivotX": 0.5,
+      "pivotY": 0.125,
+      "w": 128,
+      "h": 128
+    },
+    {
+      "id": "galinha-branca-2",
+      "path": "Assets/Game/Resources/NeighborhoodV6/galinha-branca-2.png",
+      "ppu": 155,
+      "pivotX": 0.5,
+      "pivotY": 0.125,
+      "w": 128,
+      "h": 128
+    },
+    {
+      "id": "galinha-branca-3",
+      "path": "Assets/Game/Resources/NeighborhoodV6/galinha-branca-3.png",
+      "ppu": 155,
+      "pivotX": 0.5,
+      "pivotY": 0.125,
+      "w": 128,
+      "h": 128
+    },
+    {
+      "id": "galinha-ruiva-0",
+      "path": "Assets/Game/Resources/NeighborhoodV6/galinha-ruiva-0.png",
+      "ppu": 155,
+      "pivotX": 0.5,
+      "pivotY": 0.125,
+      "w": 128,
+      "h": 128
+    },
+    {
+      "id": "galinha-ruiva-1",
+      "path": "Assets/Game/Resources/NeighborhoodV6/galinha-ruiva-1.png",
+      "ppu": 155,
+      "pivotX": 0.5,
+      "pivotY": 0.125,
+      "w": 128,
+      "h": 128
+    },
+    {
+      "id": "galinha-ruiva-2",
+      "path": "Assets/Game/Resources/NeighborhoodV6/galinha-ruiva-2.png",
+      "ppu": 155,
+      "pivotX": 0.5,
+      "pivotY": 0.125,
+      "w": 128,
+      "h": 128
+    },
+    {
+      "id": "galinha-ruiva-3",
+      "path": "Assets/Game/Resources/NeighborhoodV6/galinha-ruiva-3.png",
+      "ppu": 155,
+      "pivotX": 0.5,
+      "pivotY": 0.125,
+      "w": 128,
+      "h": 128
+    },
+    {
+      "id": "galinha-carijo-0",
+      "path": "Assets/Game/Resources/NeighborhoodV6/galinha-carijo-0.png",
+      "ppu": 155,
+      "pivotX": 0.5,
+      "pivotY": 0.125,
+      "w": 128,
+      "h": 128
+    },
+    {
+      "id": "galinha-carijo-1",
+      "path": "Assets/Game/Resources/NeighborhoodV6/galinha-carijo-1.png",
+      "ppu": 155,
+      "pivotX": 0.5,
+      "pivotY": 0.125,
+      "w": 128,
+      "h": 128
+    },
+    {
+      "id": "galinha-carijo-2",
+      "path": "Assets/Game/Resources/NeighborhoodV6/galinha-carijo-2.png",
+      "ppu": 155,
+      "pivotX": 0.5,
+      "pivotY": 0.125,
+      "w": 128,
+      "h": 128
+    },
+    {
+      "id": "galinha-carijo-3",
+      "path": "Assets/Game/Resources/NeighborhoodV6/galinha-carijo-3.png",
+      "ppu": 155,
+      "pivotX": 0.5,
+      "pivotY": 0.125,
+      "w": 128,
+      "h": 128
+    }
+  ]
+}

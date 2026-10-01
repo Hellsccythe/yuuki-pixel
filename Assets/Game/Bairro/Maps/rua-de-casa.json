@@ -27,10 +27,10 @@
   },
   {
    "id": "barris-agua",
-   "path": "Assets/Game/Bairro/Sprites/Props/barris-agua.png",
-   "ppu": 64,
+   "path": "Assets/Game/Resources/NeighborhoodV6/barris-agua.png",
+   "ppu": 248.0,
    "pivotX": 0.5,
-   "pivotY": 0.0469
+   "pivotY": 0.025
   },
   {
    "id": "caixotes",
@@ -174,10 +174,10 @@
   },
   {
    "id": "lenha",
-   "path": "Assets/Game/Bairro/Sprites/Props/lenha.png",
-   "ppu": 64,
+   "path": "Assets/Game/Resources/NeighborhoodV6/lenha.png",
+   "ppu": 181.57894736842107,
    "pivotX": 0.5,
-   "pivotY": 0.0429
+   "pivotY": 0.02622950819672131
   },
   {
    "id": "mato-0",
@@ -1041,41 +1041,6 @@
    "pivotY": 0.0151
   },
   {
-   "id": "roupa-0",
-   "path": "Assets/Game/Bairro/Sprites/Props/roupa-0.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 1.0
-  },
-  {
-   "id": "roupa-1",
-   "path": "Assets/Game/Bairro/Sprites/Props/roupa-1.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 1.0
-  },
-  {
-   "id": "roupa-2",
-   "path": "Assets/Game/Bairro/Sprites/Props/roupa-2.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 1.0
-  },
-  {
-   "id": "roupa-3",
-   "path": "Assets/Game/Bairro/Sprites/Props/roupa-3.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 1.0
-  },
-  {
-   "id": "roupa-4",
-   "path": "Assets/Game/Bairro/Sprites/Props/roupa-4.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 1.0
-  },
-  {
    "id": "rua-de-casa_chao",
    "path": "Assets/Game/Bairro/Maps/rua-de-casa_chao.png",
    "ppu": 64,
@@ -1083,11 +1048,11 @@
    "pivotY": 1
   },
   {
-   "id": "varal",
-   "path": "Assets/Game/Bairro/Sprites/Props/varal.png",
-   "ppu": 64,
+   "id": "varal-v6",
+   "path": "Assets/Game/Resources/NeighborhoodV6/varal-v6.png",
+   "ppu": 100.83333333333333,
    "pivotX": 0.5,
-   "pivotY": 0.0179
+   "pivotY": 0.026936026936026935
   }
  ],
  "areas": [
@@ -3534,146 +3499,11 @@
    "order": 0
   },
   {
-   "sprite": "varal",
+   "sprite": "varal-v6",
    "x": 30.7,
    "y": 3.4,
    "sway": 0.0,
    "swing": false,
-   "flipX": false,
-   "sortBias": 0.0,
-   "group": "varal",
-   "colW": 0.0,
-   "colH": 0.0,
-   "colX": 0.0,
-   "colY": 0.0,
-   "light": {
-    "radius": 0.0,
-    "intensity": 0.0,
-    "r": 1.0,
-    "g": 0.72,
-    "b": 0.38,
-    "flicker": 0.0,
-    "night": false,
-    "ox": 0.0,
-    "oy": 0.0,
-    "offSprite": ""
-   },
-   "order": 0
-  },
-  {
-   "sprite": "roupa-0",
-   "x": 29.3875,
-   "y": 4.8983,
-   "sway": 10,
-   "swing": true,
-   "flipX": false,
-   "sortBias": 0.0,
-   "group": "varal",
-   "colW": 0.0,
-   "colH": 0.0,
-   "colX": 0.0,
-   "colY": 0.0,
-   "light": {
-    "radius": 0.0,
-    "intensity": 0.0,
-    "r": 1.0,
-    "g": 0.72,
-    "b": 0.38,
-    "flicker": 0.0,
-    "night": false,
-    "ox": 0.0,
-    "oy": 0.0,
-    "offSprite": ""
-   },
-   "order": 0
-  },
-  {
-   "sprite": "roupa-1",
-   "x": 30.04375,
-   "y": 4.831,
-   "sway": 11,
-   "swing": true,
-   "flipX": false,
-   "sortBias": 0.0,
-   "group": "varal",
-   "colW": 0.0,
-   "colH": 0.0,
-   "colX": 0.0,
-   "colY": 0.0,
-   "light": {
-    "radius": 0.0,
-    "intensity": 0.0,
-    "r": 1.0,
-    "g": 0.72,
-    "b": 0.38,
-    "flicker": 0.0,
-    "night": false,
-    "ox": 0.0,
-    "oy": 0.0,
-    "offSprite": ""
-   },
-   "order": 0
-  },
-  {
-   "sprite": "roupa-2",
-   "x": 30.7,
-   "y": 4.8063,
-   "sway": 12,
-   "swing": true,
-   "flipX": false,
-   "sortBias": 0.0,
-   "group": "varal",
-   "colW": 0.0,
-   "colH": 0.0,
-   "colX": 0.0,
-   "colY": 0.0,
-   "light": {
-    "radius": 0.0,
-    "intensity": 0.0,
-    "r": 1.0,
-    "g": 0.72,
-    "b": 0.38,
-    "flicker": 0.0,
-    "night": false,
-    "ox": 0.0,
-    "oy": 0.0,
-    "offSprite": ""
-   },
-   "order": 0
-  },
-  {
-   "sprite": "roupa-3",
-   "x": 31.35625,
-   "y": 4.8334,
-   "sway": 13,
-   "swing": true,
-   "flipX": false,
-   "sortBias": 0.0,
-   "group": "varal",
-   "colW": 0.0,
-   "colH": 0.0,
-   "colX": 0.0,
-   "colY": 0.0,
-   "light": {
-    "radius": 0.0,
-    "intensity": 0.0,
-    "r": 1.0,
-    "g": 0.72,
-    "b": 0.38,
-    "flicker": 0.0,
-    "night": false,
-    "ox": 0.0,
-    "oy": 0.0,
-    "offSprite": ""
-   },
-   "order": 0
-  },
-  {
-   "sprite": "roupa-4",
-   "x": 31.98125,
-   "y": 4.8983,
-   "sway": 14,
-   "swing": true,
    "flipX": false,
    "sortBias": 0.0,
    "group": "varal",
@@ -4172,16 +4002,16 @@
    "kind": "wall"
   },
   {
-   "x": 28.925,
+   "x": 29.11,
    "y": 3.5,
-   "w": 0.25,
+   "w": 0.22,
    "h": 0.3,
    "kind": "wall"
   },
   {
-   "x": 32.475,
+   "x": 32.29,
    "y": 3.5,
-   "w": 0.25,
+   "w": 0.22,
    "h": 0.3,
    "kind": "wall"
   },
@@ -4400,7 +4230,8 @@
    "doorWidth": 0.8833,
    "roomW": 5.43,
    "roomH": 6.4,
-   "seed": 1
+   "seed": 1,
+   "floors": 2
   },
   {
    "sprite": "oficina",
@@ -4415,7 +4246,8 @@
    "doorWidth": 2.35,
    "roomW": 7.29,
    "roomH": 6.4,
-   "seed": 2
+   "seed": 2,
+   "floors": 1
   },
   {
    "sprite": "casa-velha",
@@ -4430,7 +4262,8 @@
    "doorWidth": 1.05,
    "roomW": 5.91,
    "roomH": 5.865,
-   "seed": 3
+   "seed": 3,
+   "floors": 1
   },
   {
    "sprite": "casa-pedra-gasta",
@@ -4445,7 +4278,8 @@
    "doorWidth": 0.8833,
    "roomW": 5.43,
    "roomH": 6.4,
-   "seed": 4
+   "seed": 4,
+   "floors": 2
   },
   {
    "sprite": "casa-madeira-gasta",
@@ -4460,7 +4294,8 @@
    "doorWidth": 0.8833,
    "roomW": 6.525,
    "roomH": 6.4,
-   "seed": 5
+   "seed": 5,
+   "floors": 2
   }
  ],
  "interactables": [

@@ -1,0 +1,95 @@
+{
+  "updated": "2026-09-30",
+  "phase": "Three original childhood sets approved; Yuuki motion revision v2 awaiting user review",
+  "Yuuki": {
+    "age": 9,
+    "body": "approved by user 2026-09-29",
+    "halo": "Yuuki-v2 approved by user 2026-09-29: closed translucent ring, no lateral fins",
+    "animations": "All 12 clips approved by user 2026-09-30; run-left-v5 final. Preserve this approved package.",
+    "animationPreview": "preview/childhood-animation.html",
+    "acceptedClips": [
+      "walk_down",
+      "run_down",
+      "idle_down",
+      "walk_up",
+      "run_up",
+      "idle_up",
+      "walk_left",
+      "run_left",
+      "idle_left",
+      "walk_right",
+      "run_right",
+      "idle_right"
+    ],
+    "archive": "Logs/Archives/yuuki-child-approved-20260930.zip",
+    "preservationManifest": "Art/Characters/Childhood/yuuki-child-approved-preservation.json",
+    "motionRevision": {
+      "revision": "v2",
+      "status": "awaiting user review",
+      "catalog": "Assets/Game/Resources/Childhood/YuukiV2/animations.json",
+      "preview": "preview/yuuki-animation-v2.html",
+      "previousApprovedSetPreserved": true
+    }
+  },
+  "Alice": {
+    "age": 9,
+    "appearance": "Design-v1 retained; two matching hair bows requested by user 2026-09-30",
+    "halo": "Alice-v1 approved by user 2026-09-30; separate translucent recolorable geometry",
+    "animations": "All 12 clips approved by user 2026-09-30; preserve alice-v1",
+    "animationPreview": "preview/alice-animation.html",
+    "acceptedClips": [
+      "walk_down",
+      "run_down",
+      "idle_down",
+      "walk_up",
+      "run_up",
+      "idle_up",
+      "walk_left",
+      "run_left",
+      "idle_left",
+      "walk_right",
+      "run_right",
+      "idle_right"
+    ],
+    "archive": "Logs/Archives/alice-child-approved-20260930.zip",
+    "preservationManifest": "Art/Characters/Childhood/alice-child-approved-preservation.json"
+  },
+  "Tenebris": {
+    "age": 9,
+    "appearance": "Kiryu-inspired approved shape retained; black swept-back hair, golden eyes, cream jacket, burgundy shirt, white wings",
+    "requiredHairColor": "black",
+    "eyes": "golden",
+    "wings": "white",
+    "halo": "Tenebris-v1 approved by user 2026-09-30; separate translucent recolorable geometry",
+    "animations": "All 12 clips approved by user 2026-09-30; preserve tenebris-v1",
+    "referenceNote": "Saved approved shape still has white hair; change to black in Tenebris phase.",
+    "animationPreview": "preview/tenebris-animation.html",
+    "acceptedClips": [
+      "walk_down",
+      "run_down",
+      "idle_down",
+      "walk_up",
+      "run_up",
+      "idle_up",
+      "walk_left",
+      "run_left",
+      "idle_left",
+      "walk_right",
+      "run_right",
+      "idle_right"
+    ],
+    "archive": "Logs/Archives/tenebris-child-approved-20260930.zip",
+    "preservationManifest": "Art/Characters/Childhood/tenebris-child-approved-preservation.json"
+  },
+  "weapons": "None for all three children; toy weapons only in later explicitly requested scenes",
+  "order": [
+    "Validate Yuuki body and halo",
+    "Animate Yuuki",
+    "Validate Alice halo and retained design",
+    "Animate Alice",
+    "Update Tenebris hair to black and validate his halo",
+    "Animate Tenebris"
+  ],
+  "adultPreservation": "adult-preservation.json",
+  "previousEnvironmentWork": "Preserved in working tree. Latest build completed; full smoke check after the shallow-room table fix remains pending."
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tenebris criança · movimentos</title>
+<link rel="stylesheet" href="childhood-animation.css">
+<script src="tenebris-animation.js?v=tenebris-v1" defer></script>
+<style>.frames{grid-template-columns:repeat(4,minmax(0,1fr))}</style>
+</head>
+<body><main>
+<header><a class="back" href="tenebris-design.html">← Visual do Tenebris</a><span class="eyebrow">INFÂNCIA / YUUKI</span>
+<h1>Os passos do Tenebris.</h1><p>Cabelo preto, olhos dourados e duas asas brancas. Teste andar, correr e respirar em quatro direções, com velocidade 1×.</p></header>
+<div class="layout">
+<section class="viewer" aria-label="Prévia dos movimentos">
+<div class="stage" id="stage"><canvas id="preview" width="640" height="440" tabindex="0" aria-label="Prévia interativa do Tenebris criança. Use WASD ou setas para mover e Shift para correr."></canvas><span class="badge" id="badge">Carregando…</span></div>
+<div class="toolbar"><button id="play" disabled>Pausar</button><button id="previous" disabled aria-label="Quadro anterior">← Quadro</button><button id="next" disabled aria-label="Próximo quadro">Quadro →</button><button id="reset" disabled>Centralizar</button></div>
+<p id="status" role="status" aria-live="polite">Carregando sprites…</p>
+<div class="frames" id="frames" aria-label="Quadros desta animação"></div>
+<p class="hint" id="sequence"></p>
+<p class="hint">Clique na prévia para usar <kbd>WASD</kbd> ou as setas. Segure <kbd>Shift</kbd> para correr. Ao soltar, ela respira parada.</p>
+</section>
+<aside>
+<span class="tag">TENEBRIS · PRIMEIRA SEQUÊNCIA</span>
+<h2>Veja cada movimento.</h2>
+<label for="motion">Animação</label><select id="motion" disabled><option value="walk">Andar</option><option value="run">Correr</option><option value="idle">Parada · respiração</option></select>
+<label>Direção</label><div class="directions" role="group" aria-label="Direção">
+<button data-direction="up" disabled aria-pressed="false">↑ Costas</button><button data-direction="down" disabled aria-pressed="true">↓ Frente</button>
+<button data-direction="left" disabled aria-pressed="false">← Esquerda</button><button data-direction="right" disabled aria-pressed="false">Direita →</button></div>
+<label for="speed">Velocidade da prévia <output id="speed-label">1×</output></label><input id="speed" type="range" min=".25" max="1.5" step=".25" value="1">
+<div class="line"></div>
+<h2>Luz própria.</h2><p>A auréola continua translúcida e independente da personagem.</p>
+<div class="colors" aria-label="Cores da auréola"><button data-color="#edc566" style="--c:#edc566" aria-label="Dourada"></button><button data-color="#ffffff" style="--c:#ffffff" aria-label="Branca"></button><button data-color="#69b6ff" style="--c:#69b6ff" aria-label="Azul"></button><button data-color="#ed465c" style="--c:#ed465c" aria-label="Vermelha"></button><button data-color="#9e88ed" style="--c:#9e88ed" aria-label="Violeta"></button><button data-color="#151922" style="--c:#151922" aria-label="Preta"></button></div>
+<label class="inline">Cor livre <input type="color" id="tint" value="#edc566" aria-label="Cor livre da auréola"></label>
+<label class="inline"><input type="checkbox" id="halo" checked> Mostrar auréola</label>
+<label class="inline"><input type="checkbox" id="guide"> Mostrar apoio dos pés</label>
+<button id="background">Usar fundo claro</button>
+<p class="note">Sem armas. Cabelo preto e duas asas brancas. Esquerda e direita compartilham as mesmas poses espelhadas.</p>
+</aside></div>
+<footer><span id="frame-count">Carregando quadros…</span><a href="../Art/Characters/Childhood/Tenebris/Animations-v1/contact-sheet.png">Ver folha de conferência</a>
+<p>Andar e correr têm quatro quadros por direção; a respiração tem três desenhos. A auréola é uma proposta separada e recolorível para você conferir. <a href="alice-animation.html">Alice aprovada</a> · <a href="childhood-animation.html">Yuuki aprovada</a>.</p></footer>
+</main></body></html>

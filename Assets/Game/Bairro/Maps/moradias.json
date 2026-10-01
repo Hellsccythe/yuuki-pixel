@@ -26,53 +26,32 @@
    "pivotY": 0.0169
   },
   {
-   "id": "barraco-0",
-   "path": "Assets/Game/Bairro/Sprites/Buildings/barraco-0.png",
-   "ppu": 60,
-   "pivotX": 0.5,
-   "pivotY": 0.0562
-  },
-  {
-   "id": "barraco-1",
-   "path": "Assets/Game/Bairro/Sprites/Buildings/barraco-1.png",
-   "ppu": 60,
-   "pivotX": 0.5,
-   "pivotY": 0.056
-  },
-  {
    "id": "barraco-2",
-   "path": "Assets/Game/Bairro/Sprites/Buildings/barraco-2.png",
-   "ppu": 60,
-   "pivotX": 0.5845,
-   "pivotY": 0.0519
+   "path": "Assets/Game/Resources/NeighborhoodV6/barraco-2.png",
+   "ppu": 110.0,
+   "pivotX": 0.5,
+   "pivotY": 0.01839080459770115
   },
   {
    "id": "barraco-3",
-   "path": "Assets/Game/Bairro/Sprites/Buildings/barraco-3.png",
-   "ppu": 60,
+   "path": "Assets/Game/Resources/NeighborhoodV6/barraco-3.png",
+   "ppu": 109.25,
    "pivotX": 0.5,
-   "pivotY": 0.0547
-  },
-  {
-   "id": "barraco-4",
-   "path": "Assets/Game/Bairro/Sprites/Buildings/barraco-4.png",
-   "ppu": 60,
-   "pivotX": 0.5,
-   "pivotY": 0.0547
+   "pivotY": 0.018223234624145785
   },
   {
    "id": "barraco-5",
-   "path": "Assets/Game/Bairro/Sprites/Buildings/barraco-5.png",
-   "ppu": 60,
-   "pivotX": 0.5897,
-   "pivotY": 0.0532
+   "path": "Assets/Game/Resources/NeighborhoodV6/barraco-5.png",
+   "ppu": 117.17391304347827,
+   "pivotX": 0.5,
+   "pivotY": 0.018561484918793503
   },
   {
    "id": "barris-agua",
-   "path": "Assets/Game/Bairro/Sprites/Props/barris-agua.png",
-   "ppu": 64,
+   "path": "Assets/Game/Resources/NeighborhoodV6/barris-agua.png",
+   "ppu": 248.0,
    "pivotX": 0.5,
-   "pivotY": 0.0469
+   "pivotY": 0.025
   },
   {
    "id": "caixotes",
@@ -83,10 +62,10 @@
   },
   {
    "id": "carroca-quebrada",
-   "path": "Assets/Game/Bairro/Sprites/Props/carroca-quebrada.png",
-   "ppu": 64,
+   "path": "Assets/Game/Resources/NeighborhoodV6/carroca-quebrada.png",
+   "ppu": 138.84615384615384,
    "pivotX": 0.5,
-   "pivotY": 0.03
+   "pivotY": 0.026490066225165563
   },
   {
    "id": "casa-pedra-gasta",
@@ -94,6 +73,27 @@
    "ppu": 60,
    "pivotX": 0.5,
    "pivotY": 0.006
+  },
+  {
+   "id": "casa-simples-0",
+   "path": "Assets/Game/Resources/NeighborhoodV6/casa-simples-0.png",
+   "ppu": 110.44444444444444,
+   "pivotX": 0.5,
+   "pivotY": 0.012213740458015267
+  },
+  {
+   "id": "casa-simples-1",
+   "path": "Assets/Game/Resources/NeighborhoodV6/casa-simples-1.png",
+   "ppu": 113.55555555555556,
+   "pivotX": 0.5,
+   "pivotY": 0.01335559265442404
+  },
+  {
+   "id": "casa-simples-2",
+   "path": "Assets/Game/Resources/NeighborhoodV6/casa-simples-2.png",
+   "ppu": 117.90697674418605,
+   "pivotX": 0.5,
+   "pivotY": 0.012618296529968454
   },
   {
    "id": "casa-velha",
@@ -230,94 +230,94 @@
   },
   {
    "id": "galinha-branca-0",
-   "path": "Assets/Game/Bairro/Sprites/FX/galinha-branca-0.png",
-   "ppu": 54,
+   "path": "Assets/Game/Resources/NeighborhoodV6/galinha-branca-0.png",
+   "ppu": 155,
    "pivotX": 0.5,
-   "pivotY": 0.0833
+   "pivotY": 0.125
   },
   {
    "id": "galinha-branca-1",
-   "path": "Assets/Game/Bairro/Sprites/FX/galinha-branca-1.png",
-   "ppu": 54,
+   "path": "Assets/Game/Resources/NeighborhoodV6/galinha-branca-1.png",
+   "ppu": 155,
    "pivotX": 0.5,
-   "pivotY": 0.0833
+   "pivotY": 0.125
   },
   {
    "id": "galinha-branca-2",
-   "path": "Assets/Game/Bairro/Sprites/FX/galinha-branca-2.png",
-   "ppu": 54,
+   "path": "Assets/Game/Resources/NeighborhoodV6/galinha-branca-2.png",
+   "ppu": 155,
    "pivotX": 0.5,
-   "pivotY": 0.0833
+   "pivotY": 0.125
   },
   {
    "id": "galinha-branca-3",
-   "path": "Assets/Game/Bairro/Sprites/FX/galinha-branca-3.png",
-   "ppu": 54,
+   "path": "Assets/Game/Resources/NeighborhoodV6/galinha-branca-3.png",
+   "ppu": 155,
    "pivotX": 0.5,
-   "pivotY": 0.0833
+   "pivotY": 0.125
   },
   {
    "id": "galinha-carijo-0",
-   "path": "Assets/Game/Bairro/Sprites/FX/galinha-carijo-0.png",
-   "ppu": 54,
+   "path": "Assets/Game/Resources/NeighborhoodV6/galinha-carijo-0.png",
+   "ppu": 155,
    "pivotX": 0.5,
-   "pivotY": 0.0833
+   "pivotY": 0.125
   },
   {
    "id": "galinha-carijo-1",
-   "path": "Assets/Game/Bairro/Sprites/FX/galinha-carijo-1.png",
-   "ppu": 54,
+   "path": "Assets/Game/Resources/NeighborhoodV6/galinha-carijo-1.png",
+   "ppu": 155,
    "pivotX": 0.5,
-   "pivotY": 0.0833
+   "pivotY": 0.125
   },
   {
    "id": "galinha-carijo-2",
-   "path": "Assets/Game/Bairro/Sprites/FX/galinha-carijo-2.png",
-   "ppu": 54,
+   "path": "Assets/Game/Resources/NeighborhoodV6/galinha-carijo-2.png",
+   "ppu": 155,
    "pivotX": 0.5,
-   "pivotY": 0.0833
+   "pivotY": 0.125
   },
   {
    "id": "galinha-carijo-3",
-   "path": "Assets/Game/Bairro/Sprites/FX/galinha-carijo-3.png",
-   "ppu": 54,
+   "path": "Assets/Game/Resources/NeighborhoodV6/galinha-carijo-3.png",
+   "ppu": 155,
    "pivotX": 0.5,
-   "pivotY": 0.0833
+   "pivotY": 0.125
   },
   {
    "id": "galinha-ruiva-0",
-   "path": "Assets/Game/Bairro/Sprites/FX/galinha-ruiva-0.png",
-   "ppu": 54,
+   "path": "Assets/Game/Resources/NeighborhoodV6/galinha-ruiva-0.png",
+   "ppu": 155,
    "pivotX": 0.5,
-   "pivotY": 0.0833
+   "pivotY": 0.125
   },
   {
    "id": "galinha-ruiva-1",
-   "path": "Assets/Game/Bairro/Sprites/FX/galinha-ruiva-1.png",
-   "ppu": 54,
+   "path": "Assets/Game/Resources/NeighborhoodV6/galinha-ruiva-1.png",
+   "ppu": 155,
    "pivotX": 0.5,
-   "pivotY": 0.0833
+   "pivotY": 0.125
   },
   {
    "id": "galinha-ruiva-2",
-   "path": "Assets/Game/Bairro/Sprites/FX/galinha-ruiva-2.png",
-   "ppu": 54,
+   "path": "Assets/Game/Resources/NeighborhoodV6/galinha-ruiva-2.png",
+   "ppu": 155,
    "pivotX": 0.5,
-   "pivotY": 0.0833
+   "pivotY": 0.125
   },
   {
    "id": "galinha-ruiva-3",
-   "path": "Assets/Game/Bairro/Sprites/FX/galinha-ruiva-3.png",
-   "ppu": 54,
+   "path": "Assets/Game/Resources/NeighborhoodV6/galinha-ruiva-3.png",
+   "ppu": 155,
    "pivotX": 0.5,
-   "pivotY": 0.0833
+   "pivotY": 0.125
   },
   {
    "id": "galinheiro",
-   "path": "Assets/Game/Bairro/Sprites/Props/galinheiro.png",
-   "ppu": 46,
+   "path": "Assets/Game/Resources/NeighborhoodV6/galinheiro.png",
+   "ppu": 102.77777777777777,
    "pivotX": 0.5,
-   "pivotY": 0.025
+   "pivotY": 0.0226628895184136
   },
   {
    "id": "horta",
@@ -328,24 +328,24 @@
   },
   {
    "id": "lenha",
-   "path": "Assets/Game/Bairro/Sprites/Props/lenha.png",
-   "ppu": 64,
+   "path": "Assets/Game/Resources/NeighborhoodV6/lenha.png",
+   "ppu": 181.57894736842107,
    "pivotX": 0.5,
-   "pivotY": 0.0429
+   "pivotY": 0.02622950819672131
   },
   {
    "id": "lixo",
-   "path": "Assets/Game/Bairro/Sprites/Props/lixo.png",
-   "ppu": 64,
+   "path": "Assets/Game/Resources/NeighborhoodV6/lixo.png",
+   "ppu": 219.41176470588235,
    "pivotX": 0.5,
-   "pivotY": 0.0357
+   "pivotY": 0.03162055335968379
   },
   {
    "id": "lixo-2",
-   "path": "Assets/Game/Bairro/Sprites/Props/lixo-2.png",
-   "ppu": 64,
+   "path": "Assets/Game/Resources/NeighborhoodV6/lixo.png",
+   "ppu": 219.41176470588235,
    "pivotX": 0.5,
-   "pivotY": 0.0357
+   "pivotY": 0.03162055335968379
   },
   {
    "id": "mato-0",
@@ -1258,44 +1258,23 @@
    "pivotY": 0.05
   },
   {
-   "id": "porta-barraco-0",
-   "path": "Assets/Game/Bairro/Sprites/Doors/porta-barraco-0.png",
-   "ppu": 60,
-   "pivotX": 0.5,
-   "pivotY": 0.0
-  },
-  {
-   "id": "porta-barraco-1",
-   "path": "Assets/Game/Bairro/Sprites/Doors/porta-barraco-1.png",
-   "ppu": 60,
-   "pivotX": 0.5,
-   "pivotY": 0.0
-  },
-  {
    "id": "porta-barraco-2",
    "path": "Assets/Game/Bairro/Sprites/Doors/porta-barraco-2.png",
-   "ppu": 60,
+   "ppu": 110.0,
    "pivotX": 0.5,
    "pivotY": 0.0
   },
   {
    "id": "porta-barraco-3",
    "path": "Assets/Game/Bairro/Sprites/Doors/porta-barraco-3.png",
-   "ppu": 60,
-   "pivotX": 0.5,
-   "pivotY": 0.0
-  },
-  {
-   "id": "porta-barraco-4",
-   "path": "Assets/Game/Bairro/Sprites/Doors/porta-barraco-4.png",
-   "ppu": 60,
+   "ppu": 109.25,
    "pivotX": 0.5,
    "pivotY": 0.0
   },
   {
    "id": "porta-barraco-5",
    "path": "Assets/Game/Bairro/Sprites/Doors/porta-barraco-5.png",
-   "ppu": 60,
+   "ppu": 117.17391304347827,
    "pivotX": 0.5,
    "pivotY": 0.0
   },
@@ -1303,6 +1282,27 @@
    "id": "porta-casa-pedra-gasta",
    "path": "Assets/Game/Bairro/Sprites/Doors/porta-casa-pedra-gasta.png",
    "ppu": 60,
+   "pivotX": 0.5,
+   "pivotY": 0.0
+  },
+  {
+   "id": "porta-casa-simples-0",
+   "path": "Assets/Game/Bairro/Sprites/Doors/porta-casa-simples-0.png",
+   "ppu": 110.44444444444444,
+   "pivotX": 0.5,
+   "pivotY": 0.0
+  },
+  {
+   "id": "porta-casa-simples-1",
+   "path": "Assets/Game/Bairro/Sprites/Doors/porta-casa-simples-1.png",
+   "ppu": 113.55555555555556,
+   "pivotX": 0.5,
+   "pivotY": 0.0
+  },
+  {
+   "id": "porta-casa-simples-2",
+   "path": "Assets/Game/Bairro/Sprites/Doors/porta-casa-simples-2.png",
+   "ppu": 117.90697674418605,
    "pivotX": 0.5,
    "pivotY": 0.0
   },
@@ -1328,67 +1328,11 @@
    "pivotY": 0.0151
   },
   {
-   "id": "roupa-0",
-   "path": "Assets/Game/Bairro/Sprites/Props/roupa-0.png",
-   "ppu": 64,
+   "id": "varal-v6",
+   "path": "Assets/Game/Resources/NeighborhoodV6/varal-v6.png",
+   "ppu": 100.83333333333333,
    "pivotX": 0.5,
-   "pivotY": 1.0
-  },
-  {
-   "id": "roupa-1",
-   "path": "Assets/Game/Bairro/Sprites/Props/roupa-1.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 1.0
-  },
-  {
-   "id": "roupa-2",
-   "path": "Assets/Game/Bairro/Sprites/Props/roupa-2.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 1.0
-  },
-  {
-   "id": "roupa-3",
-   "path": "Assets/Game/Bairro/Sprites/Props/roupa-3.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 1.0
-  },
-  {
-   "id": "roupa-4",
-   "path": "Assets/Game/Bairro/Sprites/Props/roupa-4.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 1.0
-  },
-  {
-   "id": "roupa-5",
-   "path": "Assets/Game/Bairro/Sprites/Props/roupa-5.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 1.0
-  },
-  {
-   "id": "roupa-6",
-   "path": "Assets/Game/Bairro/Sprites/Props/roupa-6.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 1.0
-  },
-  {
-   "id": "roupa-7",
-   "path": "Assets/Game/Bairro/Sprites/Props/roupa-7.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 1.0
-  },
-  {
-   "id": "varal",
-   "path": "Assets/Game/Bairro/Sprites/Props/varal.png",
-   "ppu": 64,
-   "pivotX": 0.5,
-   "pivotY": 0.0179
+   "pivotY": 0.026936026936026935
   }
  ],
  "areas": [
@@ -2269,7 +2213,7 @@
    "order": 0
   },
   {
-   "sprite": "barraco-0",
+   "sprite": "casa-simples-0",
    "x": 8.3,
    "y": 24.0,
    "sway": 0.0,
@@ -2277,10 +2221,10 @@
    "flipX": false,
    "sortBias": 0.0,
    "group": "",
-   "colW": 4.62,
-   "colH": 2.2230000000000003,
+   "colW": 4.180382293762576,
+   "colH": 2.615291750503018,
    "colX": 0.0,
-   "colY": 1.4615,
+   "colY": 1.657645875251509,
    "light": {
     "radius": 0.0,
     "intensity": 0.0,
@@ -2304,10 +2248,10 @@
    "flipX": false,
    "sortBias": 0.0,
    "group": "",
-   "colW": 4.26,
-   "colH": 2.2953333333333332,
+   "colW": 3.7318077803203664,
+   "colH": 2.141350114416476,
    "colX": 0.0,
-   "colY": 1.4976666666666665,
+   "colY": 1.4206750572082378,
    "light": {
     "radius": 0.0,
     "intensity": 0.0,
@@ -2323,7 +2267,7 @@
    "order": 0
   },
   {
-   "sprite": "barraco-4",
+   "sprite": "casa-simples-2",
    "x": 19.4,
    "y": 24.0,
    "sway": 0.0,
@@ -2331,10 +2275,10 @@
    "flipX": false,
    "sortBias": 0.0,
    "group": "",
-   "colW": 4.08,
-   "colH": 2.2953333333333332,
+   "colW": 3.992130177514793,
+   "colH": 2.3385601577909267,
    "colX": 0.0,
-   "colY": 1.4976666666666665,
+   "colY": 1.5192800788954632,
    "light": {
     "radius": 0.0,
     "intensity": 0.0,
@@ -2358,10 +2302,10 @@
    "flipX": false,
    "sortBias": 0.0,
    "group": "",
-   "colW": 6.210000000000001,
-   "colH": 2.44,
+   "colW": 4.630909090909091,
+   "colH": 2.1018181818181816,
    "colX": 0.0,
-   "colY": 1.5699999999999998,
+   "colY": 1.4009090909090909,
    "light": {
     "radius": 0.0,
     "intensity": 0.0,
@@ -2377,7 +2321,7 @@
    "order": 0
   },
   {
-   "sprite": "barraco-1",
+   "sprite": "casa-simples-1",
    "x": 35.0,
    "y": 24.6,
    "sway": 0.0,
@@ -2385,10 +2329,10 @@
    "flipX": false,
    "sortBias": 0.0,
    "group": "",
-   "colW": 3.9,
-   "colH": 2.2333333333333334,
+   "colW": 4.176810176125245,
+   "colH": 2.2874755381604697,
    "colX": 0.0,
-   "colY": 1.4666666666666668,
+   "colY": 1.493737769080235,
    "light": {
     "radius": 0.0,
     "intensity": 0.0,
@@ -2439,10 +2383,10 @@
    "flipX": true,
    "sortBias": 0.0,
    "group": "",
-   "colW": 4.26,
-   "colH": 2.2953333333333332,
+   "colW": 3.7318077803203664,
+   "colH": 2.141350114416476,
    "colX": 0.0,
-   "colY": 1.4976666666666665,
+   "colY": 1.4206750572082378,
    "light": {
     "radius": 0.0,
     "intensity": 0.0,
@@ -2809,7 +2753,7 @@
    "order": 0
   },
   {
-   "sprite": "varal",
+   "sprite": "varal-v6",
    "x": 10.0,
    "y": 14.6,
    "sway": 0.0,
@@ -2836,281 +2780,11 @@
    "order": 0
   },
   {
-   "sprite": "roupa-0",
-   "x": 8.6875,
-   "y": 16.0983,
-   "sway": 10,
-   "swing": true,
-   "flipX": false,
-   "sortBias": 0.0,
-   "group": "varal-a",
-   "colW": 0.0,
-   "colH": 0.0,
-   "colX": 0.0,
-   "colY": 0.0,
-   "light": {
-    "radius": 0.0,
-    "intensity": 0.0,
-    "r": 1.0,
-    "g": 0.72,
-    "b": 0.38,
-    "flicker": 0.0,
-    "night": false,
-    "ox": 0.0,
-    "oy": 0.0,
-    "offSprite": ""
-   },
-   "order": 0
-  },
-  {
-   "sprite": "roupa-1",
-   "x": 9.34375,
-   "y": 16.031,
-   "sway": 11,
-   "swing": true,
-   "flipX": false,
-   "sortBias": 0.0,
-   "group": "varal-a",
-   "colW": 0.0,
-   "colH": 0.0,
-   "colX": 0.0,
-   "colY": 0.0,
-   "light": {
-    "radius": 0.0,
-    "intensity": 0.0,
-    "r": 1.0,
-    "g": 0.72,
-    "b": 0.38,
-    "flicker": 0.0,
-    "night": false,
-    "ox": 0.0,
-    "oy": 0.0,
-    "offSprite": ""
-   },
-   "order": 0
-  },
-  {
-   "sprite": "roupa-2",
-   "x": 10.0,
-   "y": 16.0063,
-   "sway": 12,
-   "swing": true,
-   "flipX": false,
-   "sortBias": 0.0,
-   "group": "varal-a",
-   "colW": 0.0,
-   "colH": 0.0,
-   "colX": 0.0,
-   "colY": 0.0,
-   "light": {
-    "radius": 0.0,
-    "intensity": 0.0,
-    "r": 1.0,
-    "g": 0.72,
-    "b": 0.38,
-    "flicker": 0.0,
-    "night": false,
-    "ox": 0.0,
-    "oy": 0.0,
-    "offSprite": ""
-   },
-   "order": 0
-  },
-  {
-   "sprite": "roupa-3",
-   "x": 10.65625,
-   "y": 16.0334,
-   "sway": 13,
-   "swing": true,
-   "flipX": false,
-   "sortBias": 0.0,
-   "group": "varal-a",
-   "colW": 0.0,
-   "colH": 0.0,
-   "colX": 0.0,
-   "colY": 0.0,
-   "light": {
-    "radius": 0.0,
-    "intensity": 0.0,
-    "r": 1.0,
-    "g": 0.72,
-    "b": 0.38,
-    "flicker": 0.0,
-    "night": false,
-    "ox": 0.0,
-    "oy": 0.0,
-    "offSprite": ""
-   },
-   "order": 0
-  },
-  {
-   "sprite": "roupa-4",
-   "x": 11.28125,
-   "y": 16.0983,
-   "sway": 14,
-   "swing": true,
-   "flipX": false,
-   "sortBias": 0.0,
-   "group": "varal-a",
-   "colW": 0.0,
-   "colH": 0.0,
-   "colX": 0.0,
-   "colY": 0.0,
-   "light": {
-    "radius": 0.0,
-    "intensity": 0.0,
-    "r": 1.0,
-    "g": 0.72,
-    "b": 0.38,
-    "flicker": 0.0,
-    "night": false,
-    "ox": 0.0,
-    "oy": 0.0,
-    "offSprite": ""
-   },
-   "order": 0
-  },
-  {
-   "sprite": "varal",
+   "sprite": "varal-v6",
    "x": 17.6,
    "y": 14.8,
    "sway": 0.0,
    "swing": false,
-   "flipX": false,
-   "sortBias": 0.0,
-   "group": "varal-b",
-   "colW": 0.0,
-   "colH": 0.0,
-   "colX": 0.0,
-   "colY": 0.0,
-   "light": {
-    "radius": 0.0,
-    "intensity": 0.0,
-    "r": 1.0,
-    "g": 0.72,
-    "b": 0.38,
-    "flicker": 0.0,
-    "night": false,
-    "ox": 0.0,
-    "oy": 0.0,
-    "offSprite": ""
-   },
-   "order": 0
-  },
-  {
-   "sprite": "roupa-3",
-   "x": 16.2875,
-   "y": 16.2983,
-   "sway": 10,
-   "swing": true,
-   "flipX": false,
-   "sortBias": 0.0,
-   "group": "varal-b",
-   "colW": 0.0,
-   "colH": 0.0,
-   "colX": 0.0,
-   "colY": 0.0,
-   "light": {
-    "radius": 0.0,
-    "intensity": 0.0,
-    "r": 1.0,
-    "g": 0.72,
-    "b": 0.38,
-    "flicker": 0.0,
-    "night": false,
-    "ox": 0.0,
-    "oy": 0.0,
-    "offSprite": ""
-   },
-   "order": 0
-  },
-  {
-   "sprite": "roupa-4",
-   "x": 16.94375,
-   "y": 16.231,
-   "sway": 11,
-   "swing": true,
-   "flipX": false,
-   "sortBias": 0.0,
-   "group": "varal-b",
-   "colW": 0.0,
-   "colH": 0.0,
-   "colX": 0.0,
-   "colY": 0.0,
-   "light": {
-    "radius": 0.0,
-    "intensity": 0.0,
-    "r": 1.0,
-    "g": 0.72,
-    "b": 0.38,
-    "flicker": 0.0,
-    "night": false,
-    "ox": 0.0,
-    "oy": 0.0,
-    "offSprite": ""
-   },
-   "order": 0
-  },
-  {
-   "sprite": "roupa-5",
-   "x": 17.6,
-   "y": 16.2063,
-   "sway": 12,
-   "swing": true,
-   "flipX": false,
-   "sortBias": 0.0,
-   "group": "varal-b",
-   "colW": 0.0,
-   "colH": 0.0,
-   "colX": 0.0,
-   "colY": 0.0,
-   "light": {
-    "radius": 0.0,
-    "intensity": 0.0,
-    "r": 1.0,
-    "g": 0.72,
-    "b": 0.38,
-    "flicker": 0.0,
-    "night": false,
-    "ox": 0.0,
-    "oy": 0.0,
-    "offSprite": ""
-   },
-   "order": 0
-  },
-  {
-   "sprite": "roupa-6",
-   "x": 18.25625,
-   "y": 16.2334,
-   "sway": 13,
-   "swing": true,
-   "flipX": false,
-   "sortBias": 0.0,
-   "group": "varal-b",
-   "colW": 0.0,
-   "colH": 0.0,
-   "colX": 0.0,
-   "colY": 0.0,
-   "light": {
-    "radius": 0.0,
-    "intensity": 0.0,
-    "r": 1.0,
-    "g": 0.72,
-    "b": 0.38,
-    "flicker": 0.0,
-    "night": false,
-    "ox": 0.0,
-    "oy": 0.0,
-    "offSprite": ""
-   },
-   "order": 0
-  },
-  {
-   "sprite": "roupa-7",
-   "x": 18.88125,
-   "y": 16.2983,
-   "sway": 14,
-   "swing": true,
    "flipX": false,
    "sortBias": 0.0,
    "group": "varal-b",
@@ -3322,7 +2996,7 @@
    "order": 0
   },
   {
-   "sprite": "barraco-1",
+   "sprite": "casa-simples-1",
    "x": 9.8,
    "y": 8.6,
    "sway": 0.0,
@@ -3330,10 +3004,10 @@
    "flipX": true,
    "sortBias": 0.0,
    "group": "",
-   "colW": 3.9,
-   "colH": 2.2333333333333334,
+   "colW": 4.176810176125245,
+   "colH": 2.2874755381604697,
    "colX": 0.0,
-   "colY": 1.4666666666666668,
+   "colY": 1.493737769080235,
    "light": {
     "radius": 0.0,
     "intensity": 0.0,
@@ -3357,10 +3031,10 @@
    "flipX": false,
    "sortBias": 0.0,
    "group": "",
-   "colW": 5.8500000000000005,
-   "colH": 2.367666666666667,
+   "colW": 4.262894248608535,
+   "colH": 1.930541743970315,
    "colX": 0.0,
-   "colY": 1.5338333333333334,
+   "colY": 1.3152708719851574,
    "light": {
     "radius": 0.0,
     "intensity": 0.0,
@@ -3592,7 +3266,7 @@
    "order": 0
   },
   {
-   "sprite": "barraco-0",
+   "sprite": "casa-simples-0",
    "x": 26.4,
    "y": 8.6,
    "sway": 0.0,
@@ -3600,10 +3274,10 @@
    "flipX": true,
    "sortBias": 0.0,
    "group": "",
-   "colW": 4.62,
-   "colH": 2.2230000000000003,
+   "colW": 4.180382293762576,
+   "colH": 2.615291750503018,
    "colX": 0.0,
-   "colY": 1.4615,
+   "colY": 1.657645875251509,
    "light": {
     "radius": 0.0,
     "intensity": 0.0,
@@ -4240,146 +3914,11 @@
    "order": 0
   },
   {
-   "sprite": "varal",
+   "sprite": "varal-v6",
    "x": 16.0,
    "y": 3.2,
    "sway": 0.0,
    "swing": false,
-   "flipX": false,
-   "sortBias": 0.0,
-   "group": "varal-c",
-   "colW": 0.0,
-   "colH": 0.0,
-   "colX": 0.0,
-   "colY": 0.0,
-   "light": {
-    "radius": 0.0,
-    "intensity": 0.0,
-    "r": 1.0,
-    "g": 0.72,
-    "b": 0.38,
-    "flicker": 0.0,
-    "night": false,
-    "ox": 0.0,
-    "oy": 0.0,
-    "offSprite": ""
-   },
-   "order": 0
-  },
-  {
-   "sprite": "roupa-5",
-   "x": 14.6875,
-   "y": 4.6983,
-   "sway": 10,
-   "swing": true,
-   "flipX": false,
-   "sortBias": 0.0,
-   "group": "varal-c",
-   "colW": 0.0,
-   "colH": 0.0,
-   "colX": 0.0,
-   "colY": 0.0,
-   "light": {
-    "radius": 0.0,
-    "intensity": 0.0,
-    "r": 1.0,
-    "g": 0.72,
-    "b": 0.38,
-    "flicker": 0.0,
-    "night": false,
-    "ox": 0.0,
-    "oy": 0.0,
-    "offSprite": ""
-   },
-   "order": 0
-  },
-  {
-   "sprite": "roupa-6",
-   "x": 15.34375,
-   "y": 4.631,
-   "sway": 11,
-   "swing": true,
-   "flipX": false,
-   "sortBias": 0.0,
-   "group": "varal-c",
-   "colW": 0.0,
-   "colH": 0.0,
-   "colX": 0.0,
-   "colY": 0.0,
-   "light": {
-    "radius": 0.0,
-    "intensity": 0.0,
-    "r": 1.0,
-    "g": 0.72,
-    "b": 0.38,
-    "flicker": 0.0,
-    "night": false,
-    "ox": 0.0,
-    "oy": 0.0,
-    "offSprite": ""
-   },
-   "order": 0
-  },
-  {
-   "sprite": "roupa-7",
-   "x": 16.0,
-   "y": 4.6063,
-   "sway": 12,
-   "swing": true,
-   "flipX": false,
-   "sortBias": 0.0,
-   "group": "varal-c",
-   "colW": 0.0,
-   "colH": 0.0,
-   "colX": 0.0,
-   "colY": 0.0,
-   "light": {
-    "radius": 0.0,
-    "intensity": 0.0,
-    "r": 1.0,
-    "g": 0.72,
-    "b": 0.38,
-    "flicker": 0.0,
-    "night": false,
-    "ox": 0.0,
-    "oy": 0.0,
-    "offSprite": ""
-   },
-   "order": 0
-  },
-  {
-   "sprite": "roupa-0",
-   "x": 16.65625,
-   "y": 4.6334,
-   "sway": 13,
-   "swing": true,
-   "flipX": false,
-   "sortBias": 0.0,
-   "group": "varal-c",
-   "colW": 0.0,
-   "colH": 0.0,
-   "colX": 0.0,
-   "colY": 0.0,
-   "light": {
-    "radius": 0.0,
-    "intensity": 0.0,
-    "r": 1.0,
-    "g": 0.72,
-    "b": 0.38,
-    "flicker": 0.0,
-    "night": false,
-    "ox": 0.0,
-    "oy": 0.0,
-    "offSprite": ""
-   },
-   "order": 0
-  },
-  {
-   "sprite": "roupa-1",
-   "x": 17.28125,
-   "y": 4.6983,
-   "sway": 14,
-   "swing": true,
    "flipX": false,
    "sortBias": 0.0,
    "group": "varal-c",
@@ -4737,30 +4276,30 @@
    "kind": "hole"
   },
   {
-   "x": 8.225,
+   "x": 8.41,
    "y": 14.7,
-   "w": 0.25,
+   "w": 0.22,
    "h": 0.3,
    "kind": "wall"
   },
   {
-   "x": 11.775,
+   "x": 11.59,
    "y": 14.7,
-   "w": 0.25,
+   "w": 0.22,
    "h": 0.3,
    "kind": "wall"
   },
   {
-   "x": 15.825000000000001,
+   "x": 16.01,
    "y": 14.9,
-   "w": 0.25,
+   "w": 0.22,
    "h": 0.3,
    "kind": "wall"
   },
   {
-   "x": 19.375,
+   "x": 19.19,
    "y": 14.9,
-   "w": 0.25,
+   "w": 0.22,
    "h": 0.3,
    "kind": "wall"
   },
@@ -4772,16 +4311,16 @@
    "kind": "hole"
   },
   {
-   "x": 14.225,
+   "x": 14.41,
    "y": 3.3,
-   "w": 0.25,
+   "w": 0.22,
    "h": 0.3,
    "kind": "wall"
   },
   {
-   "x": 17.775,
+   "x": 17.59,
    "y": 3.3,
-   "w": 0.25,
+   "w": 0.22,
    "h": 0.3,
    "kind": "wall"
   },
@@ -4890,19 +4429,20 @@
  ],
  "houses": [
   {
-   "sprite": "barraco-0",
+   "sprite": "casa-simples-0",
    "x": 8.3,
    "y": 24.0,
    "flip": false,
-   "name": "Barraco da viela",
-   "theme": "barraco",
-   "door": "porta-barraco-0",
-   "doorX": 9.0333,
-   "doorY": 24.1334,
-   "doorWidth": 0.9,
-   "roomW": 4.62,
-   "roomH": 3.735,
-   "seed": 1
+   "name": "Casa da costureira",
+   "theme": "familia",
+   "door": "porta-casa-simples-0",
+   "doorX": 7.7115,
+   "doorY": 24.6429,
+   "doorWidth": 0.7334,
+   "roomW": 4.18,
+   "roomH": 5.338,
+   "seed": 1,
+   "floors": 1
   },
   {
    "sprite": "barraco-3",
@@ -4912,27 +4452,29 @@
    "name": "Barraco de cortina azul",
    "theme": "barraco",
    "door": "porta-barraco-3",
-   "doorX": 13.9833,
-   "doorY": 24.1333,
-   "doorWidth": 0.9,
-   "roomW": 4.26,
-   "roomH": 3.84,
-   "seed": 2
+   "doorX": 14.1213,
+   "doorY": 24.3478,
+   "doorWidth": 0.7963,
+   "roomW": 3.732,
+   "roomH": 3.616,
+   "seed": 2,
+   "floors": 1
   },
   {
-   "sprite": "barraco-4",
+   "sprite": "casa-simples-2",
    "x": 19.4,
    "y": 24.0,
    "flip": false,
-   "name": "Barraco da valeta",
-   "theme": "barraco",
-   "door": "porta-barraco-4",
-   "doorX": 18.4167,
-   "doorY": 24.1333,
-   "doorWidth": 0.9,
-   "roomW": 4.08,
-   "roomH": 3.84,
-   "seed": 3
+   "name": "Casa junto à valeta",
+   "theme": "familia",
+   "door": "porta-casa-simples-2",
+   "doorX": 19.8198,
+   "doorY": 24.5428,
+   "doorWidth": 0.6276,
+   "roomW": 3.992,
+   "roomH": 4.839,
+   "seed": 3,
+   "floors": 1
   },
   {
    "sprite": "barraco-2",
@@ -4942,27 +4484,29 @@
    "name": "Barraco do puxadinho",
    "theme": "barraco",
    "door": "porta-barraco-2",
-   "doorX": 25.767,
-   "doorY": 24.5331,
-   "doorWidth": 0.9,
-   "roomW": 6.21,
-   "roomH": 4.05,
-   "seed": 4
+   "doorX": 26.8136,
+   "doorY": 24.7182,
+   "doorWidth": 0.8455,
+   "roomW": 4.631,
+   "roomH": 3.559,
+   "seed": 4,
+   "floors": 1
   },
   {
-   "sprite": "barraco-1",
+   "sprite": "casa-simples-1",
    "x": 35.0,
    "y": 24.6,
    "flip": false,
-   "name": "Barraco estreito",
-   "theme": "barraco",
-   "door": "porta-barraco-1",
-   "doorX": 34.0667,
-   "doorY": 24.7333,
-   "doorWidth": 0.9,
-   "roomW": 3.9,
-   "roomH": 3.75,
-   "seed": 5
+   "name": "Casa do lenhador",
+   "theme": "familia",
+   "door": "porta-casa-simples-1",
+   "doorX": 34.8855,
+   "doorY": 25.19,
+   "doorWidth": 0.7485,
+   "roomW": 4.177,
+   "roomH": 4.747,
+   "seed": 5,
+   "floors": 1
   },
   {
    "sprite": "casa-pedra-gasta",
@@ -4977,7 +4521,8 @@
    "doorWidth": 0.8833,
    "roomW": 5.43,
    "roomH": 6.4,
-   "seed": 6
+   "seed": 6,
+   "floors": 2
   },
   {
    "sprite": "barraco-3",
@@ -4987,27 +4532,29 @@
    "name": "Barraco da entrada",
    "theme": "barraco",
    "door": "porta-barraco-3",
-   "doorX": 47.1167,
-   "doorY": 24.7333,
-   "doorWidth": 0.9,
-   "roomW": 4.26,
-   "roomH": 3.84,
-   "seed": 7
+   "doorX": 46.9787,
+   "doorY": 24.9478,
+   "doorWidth": 0.7963,
+   "roomW": 3.732,
+   "roomH": 3.616,
+   "seed": 7,
+   "floors": 1
   },
   {
-   "sprite": "barraco-1",
+   "sprite": "casa-simples-1",
    "x": 9.8,
    "y": 8.6,
    "flip": true,
-   "name": "Barraco da lavadeira",
-   "theme": "barraco",
-   "door": "porta-barraco-1",
-   "doorX": 10.7333,
-   "doorY": 8.7333,
-   "doorWidth": 0.9,
-   "roomW": 3.9,
-   "roomH": 3.75,
-   "seed": 8
+   "name": "Casa da lavadeira",
+   "theme": "familia",
+   "door": "porta-casa-simples-1",
+   "doorX": 9.9145,
+   "doorY": 9.19,
+   "doorWidth": 0.7485,
+   "roomW": 4.177,
+   "roomH": 4.747,
+   "seed": 8,
+   "floors": 1
   },
   {
    "sprite": "barraco-5",
@@ -5017,27 +4564,29 @@
    "name": "Barraco de porta vermelha",
    "theme": "barraco",
    "door": "porta-barraco-5",
-   "doorX": 15.2503,
-   "doorY": 8.7335,
-   "doorWidth": 0.9,
-   "roomW": 5.85,
-   "roomH": 3.945,
-   "seed": 9
+   "doorX": 16.1013,
+   "doorY": 8.9072,
+   "doorWidth": 0.7254,
+   "roomW": 4.263,
+   "roomH": 3.31,
+   "seed": 9,
+   "floors": 1
   },
   {
-   "sprite": "barraco-0",
+   "sprite": "casa-simples-0",
    "x": 26.4,
    "y": 8.6,
    "flip": true,
-   "name": "Barraco do galinheiro",
-   "theme": "barraco",
-   "door": "porta-barraco-0",
-   "doorX": 25.6667,
-   "doorY": 8.7334,
-   "doorWidth": 0.9,
-   "roomW": 4.62,
-   "roomH": 3.735,
-   "seed": 10
+   "name": "Casa do criador de galinhas",
+   "theme": "familia",
+   "door": "porta-casa-simples-0",
+   "doorX": 26.9885,
+   "doorY": 9.2429,
+   "doorWidth": 0.7334,
+   "roomW": 4.18,
+   "roomH": 5.338,
+   "seed": 10,
+   "floors": 1
   },
   {
    "sprite": "casa-velha",
@@ -5052,7 +4601,8 @@
    "doorWidth": 1.05,
    "roomW": 5.91,
    "roomH": 5.865,
-   "seed": 11
+   "seed": 11,
+   "floors": 1
   }
  ],
  "interactables": [

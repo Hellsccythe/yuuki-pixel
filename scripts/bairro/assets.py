@@ -124,6 +124,20 @@ def door_box(sid):
     return DOOR_BOXES[sid]
 
 
+def neighborhood_v6():
+    """Prefer authored replacement art without overwriting the procedural originals."""
+    path=ROOT/'Assets/Game/Resources/NeighborhoodV6/catalog.json'
+    if not path.exists(): return
+    for entry in json.loads(path.read_text(encoding='utf-8'))['sprites']:
+        info=dict(entry)
+        door=info.pop('door',None)
+        sprites[info['id']]=info
+        if door:
+            DOOR_BOXES[info['id']]=tuple(door)
+            sprites.pop('porta-'+info['id'],None) # recrop replacement facade, not an old cached door
+    sprites['lixo-2']=dict(sprites['lixo'],id='lixo-2')
+
+
 def door_sprite(sid):
     """Crop of the closed door leaf of a facade, animated when Yuuki walks in."""
     out_id = "porta-" + sid
