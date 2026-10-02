@@ -1,0 +1,99 @@
+{
+  "url": "http://127.0.0.1:8765/preview/kled-animation.html",
+  "clips": [
+    {
+      "direction": "down",
+      "motion": "walk",
+      "frames": 4,
+      "status": "Andar · Frente · quadro 1 de 4",
+      "expected": true
+    },
+    {
+      "direction": "down",
+      "motion": "run",
+      "frames": 4,
+      "status": "Correr · Frente · quadro 1 de 4",
+      "expected": true
+    },
+    {
+      "direction": "down",
+      "motion": "idle",
+      "frames": 3,
+      "status": "Respiração · Frente · quadro 1 de 3",
+      "expected": true
+    },
+    {
+      "direction": "up",
+      "motion": "walk",
+      "frames": 4,
+      "status": "Andar · Costas · quadro 1 de 4",
+      "expected": true
+    },
+    {
+      "direction": "up",
+      "motion": "run",
+      "frames": 4,
+      "status": "Correr · Costas · quadro 1 de 4",
+      "expected": true
+    },
+    {
+      "direction": "up",
+      "motion": "idle",
+      "frames": 3,
+      "status": "Respiração · Costas · quadro 1 de 3",
+      "expected": true
+    },
+    {
+      "direction": "left",
+      "motion": "walk",
+      "frames": 4,
+      "status": "Andar · Esquerda · quadro 1 de 4",
+      "expected": true
+    },
+    {
+      "direction": "left",
+      "motion": "run",
+      "frames": 4,
+      "status": "Correr · Esquerda · quadro 1 de 4",
+      "expected": true
+    },
+    {
+      "direction": "left",
+      "motion": "idle",
+      "frames": 3,
+      "status": "Respiração · Esquerda · quadro 1 de 3",
+      "expected": true
+    },
+    {
+      "direction": "right",
+      "motion": "walk",
+      "frames": 4,
+      "status": "Andar · Direita · quadro 1 de 4",
+      "expected": true
+    },
+    {
+      "direction": "right",
+      "motion": "run",
+      "frames": 4,
+      "status": "Correr · Direita · quadro 1 de 4",
+      "expected": true
+    },
+    {
+      "direction": "right",
+      "motion": "idle",
+      "frames": 3,
+      "status": "Respiração · Direita · quadro 1 de 3",
+      "expected": true
+    }
+  ],
+  "idleSequence": [
+    "Respiração · Frente · quadro 1 de 3",
+    "Respiração · Frente · quadro 2 de 3",
+    "Respiração · Frente · quadro 3 de 3",
+    "Respiração · Frente · quadro 2 de 3"
+  ],
+  "haloColorVerified": "blue #69b6ff and white #ffffff via accessibility state",
+  "lightAndDarkBackgroundTested": true,
+  "errors": [],
+  "status": "ready for user motion review"
+}

@@ -1,0 +1,381 @@
+{
+  "frames": 44,
+  "clips": 12,
+  "mode": "RGBA",
+  "frameSize": [
+    512,
+    512
+  ],
+  "uniqueUnityGuids": true,
+  "allFramesContained": true,
+  "exactLateralMirror": true,
+  "frontBackOppositePhasesVerified": true,
+  "rightShoeHorizontalSpans": {
+    "walk": [
+      169,
+      60,
+      175,
+      64
+    ],
+    "run": [
+      222,
+      58,
+      222,
+      50
+    ]
+  },
+  "contactWiderThanPassing": true,
+  "approvedFilesPreserved": {
+    "adult-preservation": 155,
+    "yuuki-child-approved-preservation": 175,
+    "alice-child-approved-preservation": 115,
+    "tenebris-child-approved-preservation": 120,
+    "sara-design-approved-preservation": 10,
+    "kled-design-approved-preservation": 12
+  },
+  "details": [
+    {
+      "clip": "walk_down",
+      "frames": 4,
+      "bounds": [
+        [
+          149,
+          107,
+          374,
+          402
+        ],
+        [
+          149,
+          107,
+          373,
+          397
+        ],
+        [
+          139,
+          107,
+          364,
+          402
+        ],
+        [
+          140,
+          107,
+          364,
+          397
+        ]
+      ]
+    },
+    {
+      "clip": "run_down",
+      "frames": 4,
+      "bounds": [
+        [
+          136,
+          107,
+          383,
+          401
+        ],
+        [
+          140,
+          106,
+          380,
+          397
+        ],
+        [
+          130,
+          107,
+          377,
+          401
+        ],
+        [
+          133,
+          106,
+          373,
+          397
+        ]
+      ]
+    },
+    {
+      "clip": "idle_down",
+      "frames": 3,
+      "bounds": [
+        [
+          132,
+          108,
+          381,
+          400
+        ],
+        [
+          137,
+          108,
+          378,
+          400
+        ],
+        [
+          133,
+          107,
+          380,
+          400
+        ]
+      ]
+    },
+    {
+      "clip": "walk_up",
+      "frames": 4,
+      "bounds": [
+        [
+          146,
+          107,
+          368,
+          402
+        ],
+        [
+          149,
+          107,
+          371,
+          397
+        ],
+        [
+          145,
+          107,
+          367,
+          402
+        ],
+        [
+          142,
+          107,
+          364,
+          397
+        ]
+      ]
+    },
+    {
+      "clip": "run_up",
+      "frames": 4,
+      "bounds": [
+        [
+          141,
+          108,
+          371,
+          405
+        ],
+        [
+          141,
+          106,
+          372,
+          394
+        ],
+        [
+          142,
+          108,
+          372,
+          405
+        ],
+        [
+          141,
+          106,
+          372,
+          394
+        ]
+      ]
+    },
+    {
+      "clip": "idle_up",
+      "frames": 3,
+      "bounds": [
+        [
+          142,
+          108,
+          371,
+          400
+        ],
+        [
+          145,
+          108,
+          370,
+          400
+        ],
+        [
+          144,
+          108,
+          371,
+          400
+        ]
+      ]
+    },
+    {
+      "clip": "walk_left",
+      "frames": 4,
+      "bounds": [
+        [
+          178,
+          108,
+          397,
+          401
+        ],
+        [
+          211,
+          107,
+          378,
+          400
+        ],
+        [
+          175,
+          108,
+          393,
+          400
+        ],
+        [
+          204,
+          106,
+          383,
+          398
+        ]
+      ]
+    },
+    {
+      "clip": "run_left",
+      "frames": 4,
+      "bounds": [
+        [
+          174,
+          107,
+          429,
+          398
+        ],
+        [
+          207,
+          107,
+          415,
+          402
+        ],
+        [
+          167,
+          107,
+          419,
+          398
+        ],
+        [
+          207,
+          107,
+          415,
+          401
+        ]
+      ]
+    },
+    {
+      "clip": "idle_left",
+      "frames": 3,
+      "bounds": [
+        [
+          205,
+          108,
+          367,
+          400
+        ],
+        [
+          204,
+          108,
+          367,
+          400
+        ],
+        [
+          205,
+          108,
+          367,
+          400
+        ]
+      ]
+    },
+    {
+      "clip": "walk_right",
+      "frames": 4,
+      "bounds": [
+        [
+          116,
+          108,
+          335,
+          401
+        ],
+        [
+          135,
+          107,
+          302,
+          400
+        ],
+        [
+          120,
+          108,
+          338,
+          400
+        ],
+        [
+          130,
+          106,
+          309,
+          398
+        ]
+      ]
+    },
+    {
+      "clip": "run_right",
+      "frames": 4,
+      "bounds": [
+        [
+          84,
+          107,
+          339,
+          398
+        ],
+        [
+          98,
+          107,
+          306,
+          402
+        ],
+        [
+          94,
+          107,
+          346,
+          398
+        ],
+        [
+          98,
+          107,
+          306,
+          401
+        ]
+      ]
+    },
+    {
+      "clip": "idle_right",
+      "frames": 3,
+      "bounds": [
+        [
+          146,
+          108,
+          308,
+          400
+        ],
+        [
+          146,
+          108,
+          309,
+          400
+        ],
+        [
+          146,
+          108,
+          308,
+          400
+        ]
+      ]
+    }
+  ],
+  "browserPreview": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8765/preview/sara-animation.html",
+    "clipsChecked": 12,
+    "haloColorChangeVerified": true,
+    "screenshot": "Art/Characters/Parents/Sara/Animations-v1/preview-proof.png"
+  }
+}

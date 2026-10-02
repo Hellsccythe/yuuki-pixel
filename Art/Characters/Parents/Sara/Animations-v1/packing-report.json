@@ -1,0 +1,445 @@
+{
+  "character": "Sara",
+  "drawings": 44,
+  "clips": 12,
+  "selectedGeneratedDrawings": 25,
+  "exactReflectedDrawings": 19,
+  "exactLateralMirror": true,
+  "frontBackOppositePhasesReflected": true,
+  "protectedFilesVerified": {
+    "adult-preservation": 155,
+    "yuuki-child-approved-preservation": 175,
+    "alice-child-approved-preservation": 115,
+    "tenebris-child-approved-preservation": 120,
+    "sara-design-approved-preservation": 10
+  },
+  "otherFilesUnchanged": 118,
+  "clipsDetail": [
+    {
+      "clip": "walk_down",
+      "scale": 0.5043177892918825,
+      "bounds": [
+        [
+          149,
+          107,
+          374,
+          402
+        ],
+        [
+          149,
+          107,
+          373,
+          397
+        ],
+        [
+          139,
+          107,
+          364,
+          402
+        ],
+        [
+          140,
+          107,
+          364,
+          397
+        ]
+      ],
+      "cuts": {
+        "rows": [
+          0,
+          612,
+          1203
+        ],
+        "columns": [
+          [
+            0,
+            673,
+            1308
+          ],
+          [
+            0,
+            671,
+            1308
+          ]
+        ]
+      },
+      "oppositePhaseReflected": true
+    },
+    {
+      "clip": "run_down",
+      "scale": 0.5362718089990818,
+      "bounds": [
+        [
+          136,
+          107,
+          383,
+          401
+        ],
+        [
+          140,
+          106,
+          380,
+          397
+        ],
+        [
+          130,
+          107,
+          377,
+          401
+        ],
+        [
+          133,
+          106,
+          373,
+          397
+        ]
+      ],
+      "cuts": {
+        "rows": [
+          0,
+          612,
+          1203
+        ],
+        "columns": [
+          [
+            0,
+            673,
+            1308
+          ],
+          [
+            0,
+            671,
+            1308
+          ]
+        ]
+      },
+      "oppositePhaseReflected": true
+    },
+    {
+      "clip": "idle_down",
+      "scale": 0.3989071038251366,
+      "bounds": [
+        [
+          132,
+          108,
+          381,
+          400
+        ],
+        [
+          137,
+          108,
+          378,
+          400
+        ],
+        [
+          133,
+          107,
+          380,
+          400
+        ]
+      ],
+      "cuts": {
+        "rows": [
+          0,
+          763
+        ],
+        "columns": [
+          [
+            0,
+            697,
+            1368,
+            2061
+          ]
+        ]
+      },
+      "oppositePhaseReflected": false
+    },
+    {
+      "clip": "walk_up",
+      "scale": 0.5816733067729084,
+      "bounds": [
+        [
+          146,
+          107,
+          368,
+          402
+        ],
+        [
+          149,
+          107,
+          371,
+          397
+        ],
+        [
+          145,
+          107,
+          367,
+          402
+        ],
+        [
+          142,
+          107,
+          364,
+          397
+        ]
+      ],
+      "cuts": {
+        "rows": [
+          0,
+          541,
+          1086
+        ],
+        "columns": [
+          [
+            0,
+            723,
+            1448
+          ],
+          [
+            0,
+            725,
+            1448
+          ]
+        ]
+      },
+      "oppositePhaseReflected": true
+    },
+    {
+      "clip": "run_up",
+      "scale": 0.5904954499494439,
+      "bounds": [
+        [
+          141,
+          108,
+          371,
+          405
+        ],
+        [
+          141,
+          106,
+          372,
+          394
+        ],
+        [
+          142,
+          108,
+          372,
+          405
+        ],
+        [
+          141,
+          106,
+          372,
+          394
+        ]
+      ],
+      "cuts": {
+        "rows": [
+          0,
+          541,
+          1086
+        ],
+        "columns": [
+          [
+            0,
+            723,
+            1448
+          ],
+          [
+            0,
+            725,
+            1448
+          ]
+        ]
+      },
+      "oppositePhaseReflected": true
+    },
+    {
+      "clip": "idle_up",
+      "scale": 0.4319526627218935,
+      "bounds": [
+        [
+          142,
+          108,
+          371,
+          400
+        ],
+        [
+          145,
+          108,
+          370,
+          400
+        ],
+        [
+          144,
+          108,
+          371,
+          400
+        ]
+      ],
+      "cuts": {
+        "rows": [
+          0,
+          724
+        ],
+        "columns": [
+          [
+            0,
+            803,
+            1377,
+            2172
+          ]
+        ]
+      },
+      "oppositePhaseReflected": false
+    },
+    {
+      "clip": "walk_right",
+      "scale": 0.647450110864745,
+      "bounds": [
+        [
+          116,
+          108,
+          335,
+          401
+        ],
+        [
+          135,
+          107,
+          302,
+          400
+        ],
+        [
+          120,
+          108,
+          338,
+          400
+        ],
+        [
+          130,
+          106,
+          309,
+          398
+        ]
+      ],
+      "cuts": {
+        "rows": [
+          0,
+          509,
+          1024
+        ],
+        "columns": [
+          [
+            0,
+            404,
+            740,
+            1162,
+            1536
+          ],
+          [
+            0,
+            416,
+            762,
+            1180,
+            1536
+          ]
+        ]
+      },
+      "oppositePhaseReflected": false
+    },
+    {
+      "clip": "run_right",
+      "scale": 0.6674285714285715,
+      "bounds": [
+        [
+          84,
+          107,
+          339,
+          398
+        ],
+        [
+          98,
+          107,
+          306,
+          402
+        ],
+        [
+          94,
+          107,
+          346,
+          398
+        ],
+        [
+          98,
+          107,
+          306,
+          401
+        ]
+      ],
+      "cuts": {
+        "rows": [
+          0,
+          509,
+          1024
+        ],
+        "columns": [
+          [
+            0,
+            404,
+            740,
+            1162,
+            1536
+          ],
+          [
+            0,
+            416,
+            762,
+            1180,
+            1536
+          ]
+        ]
+      },
+      "oppositePhaseReflected": false
+    },
+    {
+      "clip": "idle_right",
+      "scale": 0.43131462333825704,
+      "bounds": [
+        [
+          146,
+          108,
+          308,
+          400
+        ],
+        [
+          146,
+          108,
+          309,
+          400
+        ],
+        [
+          146,
+          108,
+          308,
+          400
+        ]
+      ],
+      "cuts": {
+        "rows": [
+          0,
+          724
+        ],
+        "columns": [
+          [
+            0,
+            755,
+            1357,
+            2172
+          ]
+        ]
+      },
+      "oppositePhaseReflected": false
+    }
+  ],
+  "processing": "reuse approved Alice detached-speck cleanup; crop; one constant nearest-neighbor scale per row; integer registration; exact reflection; no anatomy painting"
+}

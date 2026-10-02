@@ -2,11 +2,14 @@
 
 Prototipo 2D independente do RPG de mesa. Este diretorio ja e um projeto Unity 6000.0.82f1; nao e necessario criar outro projeto ou copiar a pasta Assets.
 
+## Prólogo jogável: a caminho da escola
+
+Abra **Builds/SchoolMorning/Yuuki.exe** ou **http://127.0.0.1:8765/preview/school-morning.html**. A introdução às 06:45 é controlada pelo jogador, com Tenebris guiando e esperando, balões sobre os personagens, F para ações e um tutorial de corrida. Os sprites infantis aprovados, as novas ações e os moradores animados usam no máximo quatro desenhos por ciclo. Nesta cena, a idade segue o texto novo: oito anos. [Como jogar, reconstruir e verificar](docs/intro/school-morning.md).
 ## Jogar e revisar os cenários
 
 Abra **Builds/Bairro/Yuuki.exe** para o protótipo Windows com menu inicial, galeria de 61 peças novas e os mapas Rua de Casa/Moradias. WASD/setas para andar, Shift para correr, F para interagir, Esc para pausar. Nas bordas, continue andando para mudar de área. No Unity, abra **Assets/Game/Scenes/Bairro_Menu.unity**; o menu **Yuuki > Protótipo > Exportar jogo para Windows** gera o executável.
 
-A abertura agora situa Yuuki e Tenebris aos **nove anos**, cada um morando com sua família em uma casa separada, vizinha da outra. As duas casas podem ser visitadas: caminhe para cima na porta para entrar, e para baixo pela soleira para sair. A porta abre e o interior aparece no mesmo espaço, sem carregar outra cena. Os sprites infantis e os eventos da história ainda serão feitos; o visual atual continua provisório.
+A abertura agora situa Yuuki e Tenebris aos **nove anos**, cada um morando com sua família em uma casa separada, vizinha da outra. As duas casas podem ser visitadas: caminhe para cima na porta para entrar, e para baixo pela soleira para sair. A porta abre e o interior aparece no mesmo espaço, sem carregar outra cena. Os sprites infantis de Yuuki, Alice e Tenebris já foram aprovados. O prólogo a caminho da escola usa esses conjuntos; este protótipo anterior permanece como área de exploração.
 
 A [revisão de movimento e interiores](docs/bairro/revisao-rpg-v4.md) adiciona caminhada em quatro direções, guardar/sacar o cajado, respiração com três quadros e materiais de interior. `preview/rpg-revision.html` permite inspecionar os quadros. Para reconstruir as cenas com os novos interiores e exportar, use **Yuuki > Protótipo > Reconstruir interiores e exportar**.
 

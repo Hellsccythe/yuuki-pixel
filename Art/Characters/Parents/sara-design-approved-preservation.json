@@ -1,0 +1,47 @@
+{
+  "character": "Sara",
+  "status": "design approved by user; no animation approval implied",
+  "archive": "Logs/Archives/sara-parent-design-approved-20261001.zip",
+  "files": [
+    {
+      "path": "Art/Characters/Parents/Sara/Design-v1/body-source.png",
+      "sha256": "47ca47944cae4cede9b3485673ff384e0e8d5a4115e60f3c747dfd51771bec2e"
+    },
+    {
+      "path": "Art/Characters/Parents/Sara/Design-v1/body.png",
+      "sha256": "3ef011d3f9a3e97fcb478af107596c5283ca8c8a19d083366f9414002424a6a3"
+    },
+    {
+      "path": "Art/Characters/Parents/Sara/Design-v1/design.json",
+      "sha256": "1b7c25a2c108d2f105a4ef55b7299071362ccb7d3b5120bff50475f4a8af39c9"
+    },
+    {
+      "path": "Art/Characters/Parents/Sara/Design-v1/halo-neutral.png",
+      "sha256": "a385434eb291c11fe770c4b17f4a848b639f372dd1f3614efe9040280fc52039"
+    },
+    {
+      "path": "Art/Characters/Parents/Sara/Design-v1/halo-source.png",
+      "sha256": "34fb6c439a7c22dfbee1df772d7affe9524eb41dbae3abb5f1d8d559dbf7061a"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/design.json",
+      "sha256": "1b7c25a2c108d2f105a4ef55b7299071362ccb7d3b5120bff50475f4a8af39c9"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/halo-neutral.png",
+      "sha256": "a385434eb291c11fe770c4b17f4a848b639f372dd1f3614efe9040280fc52039"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/halo-neutral.png.meta",
+      "sha256": "5c6a0489cf69936e469906632d78b072cea72c3d7005b0892f1ec2884007df99"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/stand_down_00.png",
+      "sha256": "3ef011d3f9a3e97fcb478af107596c5283ca8c8a19d083366f9414002424a6a3"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/stand_down_00.png.meta",
+      "sha256": "e311cebd66a118971aa0e603db80915c538feff85063684166f2c8dec4a090dd"
+    }
+  ]
+}

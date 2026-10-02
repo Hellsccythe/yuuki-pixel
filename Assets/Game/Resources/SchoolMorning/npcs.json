@@ -1,0 +1,223 @@
+{
+  "clips": [
+    {
+      "name": "lady",
+      "frames": [
+        "SchoolMorning/NpcAnimations/lady_00",
+        "SchoolMorning/NpcAnimations/lady_01",
+        "SchoolMorning/NpcAnimations/lady_02",
+        "SchoolMorning/NpcAnimations/lady_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 128
+        },
+        {
+          "x": 256,
+          "y": 123
+        },
+        {
+          "x": 256,
+          "y": 131
+        },
+        {
+          "x": 256,
+          "y": 121
+        }
+      ],
+      "fps": 4,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "loop": true
+    },
+    {
+      "name": "boy-blue",
+      "frames": [
+        "SchoolMorning/NpcAnimations/boy-blue_00",
+        "SchoolMorning/NpcAnimations/boy-blue_01",
+        "SchoolMorning/NpcAnimations/boy-blue_02",
+        "SchoolMorning/NpcAnimations/boy-blue_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 153
+        },
+        {
+          "x": 256,
+          "y": 155
+        }
+      ],
+      "fps": 4,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "loop": true
+    },
+    {
+      "name": "boy-red",
+      "frames": [
+        "SchoolMorning/NpcAnimations/boy-red_00",
+        "SchoolMorning/NpcAnimations/boy-red_01",
+        "SchoolMorning/NpcAnimations/boy-red_02",
+        "SchoolMorning/NpcAnimations/boy-red_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 155
+        },
+        {
+          "x": 256,
+          "y": 157
+        },
+        {
+          "x": 256,
+          "y": 155
+        }
+      ],
+      "fps": 4,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "loop": true
+    },
+    {
+      "name": "dog",
+      "frames": [
+        "SchoolMorning/NpcAnimations/dog_00",
+        "SchoolMorning/NpcAnimations/dog_01",
+        "SchoolMorning/NpcAnimations/dog_02",
+        "SchoolMorning/NpcAnimations/dog_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 246
+        },
+        {
+          "x": 256,
+          "y": 247
+        },
+        {
+          "x": 256,
+          "y": 241
+        },
+        {
+          "x": 256,
+          "y": 244
+        }
+      ],
+      "fps": 5,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "loop": true
+    },
+    {
+      "name": "teacher-man",
+      "frames": [
+        "SchoolMorning/NpcAnimations/teacher-man_00",
+        "SchoolMorning/NpcAnimations/teacher-man_01",
+        "SchoolMorning/NpcAnimations/teacher-man_02",
+        "SchoolMorning/NpcAnimations/teacher-man_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 128
+        },
+        {
+          "x": 256,
+          "y": 127
+        },
+        {
+          "x": 256,
+          "y": 128
+        },
+        {
+          "x": 256,
+          "y": 128
+        }
+      ],
+      "fps": 4,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "loop": true
+    },
+    {
+      "name": "teacher-woman",
+      "frames": [
+        "SchoolMorning/NpcAnimations/teacher-woman_00",
+        "SchoolMorning/NpcAnimations/teacher-woman_01",
+        "SchoolMorning/NpcAnimations/teacher-woman_02",
+        "SchoolMorning/NpcAnimations/teacher-woman_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 128
+        },
+        {
+          "x": 256,
+          "y": 128
+        },
+        {
+          "x": 256,
+          "y": 128
+        },
+        {
+          "x": 256,
+          "y": 128
+        }
+      ],
+      "fps": 4,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "loop": true
+    }
+  ],
+  "halo": {
+    "resource": "Childhood/Tenebris/halo-neutral",
+    "opacity": 0.7,
+    "alphaBaked": true
+  },
+  "frameSize": [
+    512,
+    512
+  ]
+}

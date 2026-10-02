@@ -1,0 +1,68 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-01",
+  "phase": "initial-parent-design-for-user-approval",
+  "story": {
+    "path": "D:/RPG/Rpg Pathfinder/historias do rpg/yuuki, revisado.pdf",
+    "pages": [
+      1,
+      13,
+      14
+    ],
+    "notes": "Parents both have white wings (p1); Sara/Kled names, appearance, heights and everyday clothes explicitly described on pp13–14. No invented occupations or exact ages."
+  },
+  "reference": "D:/yuuki-pixel/Art/Characters/Childhood/Yuuki/Design-v1/body-source.png",
+  "prompts": {
+    "Sara": "Use case: stylized-concept. Asset type: ONE initial adult NPC standing sprite for a classic top-down Unity pixel RPG, for design approval only. Reference image1 is Yuuki CHILD, used ONLY for the game's detailed shaded pixel-art rendering, clean readable outlines, feather/fabric texture and slightly elevated camera; DO NOT copy her child age, tiny child body, white hair, dress, bow, red eyes or asymmetric wings. Create a distinct ADULT PARENT, young adult face despite mild working-day fatigue, kind and grounded. Adult stylized game proportions about3.5heads tall, clearly taller and more mature than reference child, no photorealism, no flat vector icon. Modest clean inexpensive everyday clothes, cared for despite slight wear; a poor hardworking angel from a lived-in suburban neighborhood, not a beggar, noble, armored hero or ragged caricature. TWO normal WHITE feathered wings folded behind shoulders, one per side, both entirely visible and contained, no black feathers. ONE full body standing in a neutral relaxed pose, almost FRONT with very slight three-quarter turn, both eyes readable, arms relaxed at sides, empty hands and both feet planted. Consistent classic RPG pixel-art light from upper-left, subtle dimensional shading. Full scalp, long hair ends, both wing tips, hands and both shoes inside frame. Centered isolated character with ample true transparent margins, preferably square. No weapon, staff, tool, jewelry, halo, scenery, floor/shadow, text, label, watermark, panel or extra pose. Halo will be a separate asset. Crisp pixels, no blurring, no distorted hands or elongated legs.\nSubject: SARA, Yuuki's MOTHER. Canon: pale LIGHT-BLONDE hair down to her WAIST (warm pale honey/ivory gold, unmistakably blonde and not silver-white), softly parted with simple natural loose strands, gentle soft BLUE eyes, fair skin, young-looking ADULT woman, approximately171cm. Warm caring reserved small smile, a trace of tiredness, graceful practical posture, not glamorous. Her EXACT everyday outfit: plain WHITE LONG-SLEEVED collared blouse, simple BLACK skirt below the knees, DARK charcoal/black full tights covering legs, DARK-NAVY low-heeled closed everyday shoes. No apron, corset, large bows, elaborate lace, fancy gown or jewelry. Two WHITE wings. Adult feminine face and slender healthy adult proportions, not Yuuki enlarged. Distinguish white blouse and white feathers with subtle cool shadow; keep pale BLONDE hair distinct from them. One design, neutral standing only.",
+    "Kled": "Use case: stylized-concept. Asset type: ONE initial adult NPC standing sprite for a classic top-down Unity pixel RPG, for design approval only. Reference image1 is Yuuki CHILD, used ONLY for the game's detailed shaded pixel-art rendering, clean readable outlines, feather/fabric texture and slightly elevated camera; DO NOT copy her child age, tiny child body, white hair, dress, bow, red eyes or asymmetric wings. Create a distinct ADULT PARENT, young adult face despite mild working-day fatigue, kind and grounded. Adult stylized game proportions about3.5heads tall, clearly taller and more mature than reference child, no photorealism, no flat vector icon. Modest clean inexpensive everyday clothes, cared for despite slight wear; a poor hardworking angel from a lived-in suburban neighborhood, not a beggar, noble, armored hero or ragged caricature. TWO normal WHITE feathered wings folded behind shoulders, one per side, both entirely visible and contained, no black feathers. ONE full body standing in a neutral relaxed pose, almost FRONT with very slight three-quarter turn, both eyes readable, arms relaxed at sides, empty hands and both feet planted. Consistent classic RPG pixel-art light from upper-left, subtle dimensional shading. Full scalp, long hair ends, both wing tips, hands and both shoes inside frame. Centered isolated character with ample true transparent margins, preferably square. No weapon, staff, tool, jewelry, halo, scenery, floor/shadow, text, label, watermark, panel or extra pose. Halo will be a separate asset. Crisp pixels, no blurring, no distorted hands or elongated legs.\nSubject: KLED, Yuuki's FATHER. Canon: BLACK hair extending to his SHOULDERS, natural straight/slightly tousled loose medium-length hair, not short spiky Kiryu hairstyle; RED eyes, fair skin, young-looking adult MAN, approximately178cm (a little taller than Sara), lean sturdy everyday build, gentle protective calm expression with faint tiredness, clean-shaven as provisional design. His EXACT everyday outfit: plain casual BLACK collared button shirt, BLACK full-length trousers, BLACK belt with a small simple dark metal buckle. Add modest worn BLACK lace-up everyday shoes as a practical design proposal since footwear is unspecified in manuscript. Separate the black fabrics with restrained charcoal pixel shading so folds read clearly, never glossy leather or a formal suit. Two WHITE folded wings. Masculine adult face and shoulders, not Tenebris enlarged, no pointed elf ears, armor, muscular exaggeration, weapons or jewelry. One neutral standing design only.",
+    "SaraHalo": "Use case: stylized-concept. Asset: ONE original separate angel halo for SARA (Yuuki's mother) in a shaded pixel RPG. Only an isolated compact shallow horizontal complete CLOSED ellipse of ethereal pearl-WHITE light, with a fine secondary inner ellipse and one TINY hollow teardrop-like lozenge at its front center. Quiet gentle geometry fitting a kind working mother. No wings/feathers/side extensions, no crown. Not solid gold or metal, not jewelry: genuinely semi-transparent luminous lines, brightness opacity around55–60%, very small soft rim at most1pixel at final110pixelwidth, no big bloom or filled center. Neutral white/grayscale fully recolorable, open ellipse center and entire exterior actually transparent RGBA. Single halo centered with generous margin, no character, shadow, scenery, text, sparks or particles. Original motif, not a copy of any franchise. Target simple readable pixel contours; shallow ellipse width about110height30 when packed.",
+    "KledHalo": "Use case: stylized-concept. Asset: ONE original separate angel halo for KLED (Yuuki's father) in a shaded pixel RPG. Only an isolated compact shallow horizontal complete CLOSED ellipse of ethereal pearl-WHITE light, with a fine secondary inner ellipse and TWO TINY straight inset light marks integrated symmetrically at left/right inner rim. Quiet restrained grounded protective geometry. No wings/feathers/side extensions, no crown. Not solid gold or metal, not jewelry: genuinely semi-transparent luminous lines, brightness opacity around55–60%, very small soft rim at most1pixel at final110pixelwidth, no big bloom or filled center. Neutral white/grayscale fully recolorable, open ellipse center and entire exterior actually transparent RGBA. Single halo centered with generous margin, no character, shadow, scenery, text, sparks or particles. Original motif, not a copy of any franchise. Target simple readable pixel contours; shallow ellipse width about110height30 when packed."
+  },
+  "sources": {
+    "Sara": "exec-817f0f9b-1496-4de3-bd14-287f41d8200a.png",
+    "Kled": "exec-74eb9810-9c19-45a5-afd4-47cf6d73266e.png",
+    "SaraHalo": "exec-b9b07602-b72e-493e-9f7d-6ba2abd197cd.png",
+    "KledHalo": "exec-cd675c48-2315-4900-a01d-c5c6402d4a7e.png"
+  },
+  "designProposals": {
+    "Sara": "young adult stylized proportions; simple parting; restrained halo geometry",
+    "Kled": "young adult stylized proportions; clean-shaven; black practical shoes and restrained halo geometry"
+  },
+  "earlierHaloSources": {
+    "SaraHalo": "exec-926156aa-6bbc-49c8-84bc-78981d30436c.png",
+    "KledHalo": "exec-3de9bb9c-df77-438f-9ab9-a6c4265a9bed.png"
+  },
+  "haloRefinement": "Use case: precise-object-edit. Image1 is the target halo and image2 is a successful small halo STYLE REFERENCE, NOT a character. Remove ALL broad filled white bands, fog and bloom from image1. Rebuild its ellipse as TWO VERY THIN delicate luminous contour LINES separated by a clearly fully transparent gap. BOTH lines complete closed flattened ellipses. The entire open center is clean alpha transparency, never milky or filled; no fuzzy opaque islands. Match the line weight, quiet shallow ring proportion and compact readable finish of image2. Light is ethereal and semi-transparent, neutral grayscale pearl-white, no metal, gold, jewelry bevel, solid donut, thick band, feathers, wings, particles or exterior glowcloud. Exterior true transparent RGBA too, generous margin. One isolated halo only, not an extra character or sheet. Preserve the target's tiny ornamental identity: Sara's tiny hollow teardrop at the front; Kled's two discreet symmetrical inner ticks, whichever is in target image1. Keep ornaments very small, never bright huge stars. About110x30 silhouette when packed. Subtle1pixel soft edge, thin crisp pixel contours. Do NOT turn this into a luminous filled disk.",
+  "canon": {
+    "Sara": {
+      "name": "Sara",
+      "relation": "mother",
+      "heightCm": 171,
+      "hair": "light blonde, waist length",
+      "eyes": "soft blue",
+      "wings": "both white",
+      "clothes": [
+        "white long-sleeved blouse",
+        "black skirt",
+        "dark tights",
+        "dark-blue shoes"
+      ],
+      "demeanor": "young adult face; mild work fatigue; reserved kindness"
+    },
+    "Kled": {
+      "name": "Kled",
+      "relation": "father",
+      "heightCm": 178,
+      "hair": "black, shoulder length",
+      "eyes": "red",
+      "wings": "both white",
+      "clothes": [
+        "black shirt",
+        "black trousers",
+        "black belt"
+      ],
+      "demeanor": "young adult face; mild work fatigue; calm protective kindness"
+    }
+  },
+  "selectionNotes": "One neutral body pose per parent. Sara halo: double closed ellipse with small hollow teardrop and subtle side points. Kled halo: double closed ellipse with small angular central lozenge and two subtle symmetric light accents. Generated alpha preserved; preview opacity 0.6. Original broad-glow halo variants not selected."
+}

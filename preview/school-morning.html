@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Yuuki · A caminho da escola</title><link rel="stylesheet" href="school-morning.css"></head>
+<body><header><a href="kled-animation.html">← Galeria de sprites</a><span>YUUKI · PRÓLOGO</span><button id="fullscreen">Tela cheia</button></header>
+<main><div id="stage"><canvas id="world" tabindex="0" aria-label="Jogo Yuuki, caminhada até a escola"></canvas>
+<div id="hud" hidden><span id="clock">06:45 · Os Subúrbios</span><strong id="objective"></strong><small id="location"></small></div>
+<div id="speech" hidden role="status"><b></b><p></p><small>Espaço / Enter · próxima fala</small></div>
+<div id="waiting" hidden>Tenebris está esperando</div>
+<button id="action" hidden>F · Ação</button>
+<section id="menu" class="overlay"><div class="card"><span class="eyebrow">A INFÂNCIA DE YUUKI</span><h1>O caminho<br>até a escola</h1><p>06:45. A vizinhança começa a acordar.<br>Tenebris está vindo buscar você.</p><button id="start" disabled>Carregando cenário…</button><p class="controls">WASD / setas · andar<br>Shift + direção · correr &nbsp; F · ação<br>Espaço / Enter · fala &nbsp; Esc · pausa</p><small>Primeira parte do prólogo · Anjos do Testamento</small></div></section>
+<section id="tip" class="overlay" hidden><div class="card"><span class="eyebrow">APRENDA A CORRER</span><h2>Alcance Tenebris!</h2><p>Segure <kbd>Shift</kbd> + uma direção<br><kbd>W A S D</kbd> ou <kbd>↑ ← ↓ →</kbd></p><p>O mundo continua quando Yuuki começar a correr.</p><small>No celular: segure Correr e uma direção.</small></div></section>
+<section id="pause" class="overlay" hidden><div class="card"><h2>Pausa</h2><p>F é o botão de ação: portão, flor, bola e objetos próximos.</p><button id="resume">Continuar</button><button id="restart">Voltar ao menu</button></div></section>
+<div id="arrival" hidden><b>Anjos do Testamento</b><span>Vocês chegaram. Fim desta primeira parte do prólogo.</span></div>
+</div><footer><span>WASD / setas · andar · Shift · correr · F · ação</span><button id="next">Próxima fala</button><button id="pauseButton">Pausa</button></footer>
+<nav id="touch" aria-label="Controles por toque"><div class="dpad"><button data-key="ArrowUp">↑</button><button data-key="ArrowLeft">←</button><button data-key="ArrowDown">↓</button><button data-key="ArrowRight">→</button></div><button data-key="Shift">Correr</button><button id="touchAction">F · Ação</button></nav>
+<p id="status" role="status">Preparando o prólogo…</p></main><script type="module" src="school-morning.js"></script></body></html>

@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-01",
+  "phase": "Sara animations approved and archived; Kled animation pass ready for review",
+  "characters": [
+    {
+      "name": "Sara",
+      "relation": "mother",
+      "status": "initial design approved by user",
+      "story": {
+        "path": "D:/RPG/Rpg Pathfinder/historias do rpg/yuuki, revisado.pdf",
+        "pages": [
+          1,
+          13,
+          14
+        ],
+        "notes": "Parents both have white wings (p1); Sara/Kled names, appearance, heights and everyday clothes explicitly described on pp13–14. No invented occupations or exact ages."
+      },
+      "canon": {
+        "name": "Sara",
+        "relation": "mother",
+        "heightCm": 171,
+        "hair": "light blonde, waist length",
+        "eyes": "soft blue",
+        "wings": "both white",
+        "clothes": [
+          "white long-sleeved blouse",
+          "black skirt",
+          "dark tights",
+          "dark-blue shoes"
+        ],
+        "demeanor": "young adult face; mild work fatigue; reserved kindness"
+      },
+      "proposal": "young adult stylized proportions; simple parting; restrained halo geometry",
+      "body": "Parents/Sara/stand_down_00",
+      "bodyFrame": {
+        "width": 512,
+        "height": 512,
+        "feet": [
+          256,
+          400
+        ],
+        "pivot": [
+          0.5,
+          0.21875
+        ],
+        "pixelsPerUnit": 220
+      },
+      "halo": {
+        "resource": "Parents/Sara/halo-neutral",
+        "width": 110,
+        "height": 28,
+        "anchor": {
+          "x": 256,
+          "y": 83
+        },
+        "opacity": 0.6,
+        "tintable": true,
+        "separateLayer": true,
+        "status": "geometry proposal"
+      },
+      "weapons": false,
+      "wingAnatomy": {
+        "left": "white",
+        "right": "white"
+      },
+      "animationFrames": 0,
+      "approvedDate": "2026-10-01"
+    },
+    {
+      "name": "Kled",
+      "relation": "father",
+      "status": "initial design approved by user",
+      "story": {
+        "path": "D:/RPG/Rpg Pathfinder/historias do rpg/yuuki, revisado.pdf",
+        "pages": [
+          1,
+          13,
+          14
+        ],
+        "notes": "Parents both have white wings (p1); Sara/Kled names, appearance, heights and everyday clothes explicitly described on pp13–14. No invented occupations or exact ages."
+      },
+      "canon": {
+        "name": "Kled",
+        "relation": "father",
+        "heightCm": 178,
+        "hair": "black, shoulder length",
+        "eyes": "red",
+        "wings": "both white",
+        "clothes": [
+          "black shirt",
+          "black trousers",
+          "black belt"
+        ],
+        "demeanor": "young adult face; mild work fatigue; calm protective kindness"
+      },
+      "proposal": "User reference applied to mature angular face, narrower red eyes, layered jet-black side-swept shoulder-length hair, dangling earrings and higher open collar; simple black cloth clothing and both white wings retained.",
+      "body": "Parents/KledV2/stand_down_00",
+      "bodyFrame": {
+        "width": 512,
+        "height": 512,
+        "feet": [
+          256,
+          400
+        ],
+        "pivot": [
+          0.5,
+          0.21875
+        ],
+        "pixelsPerUnit": 220
+      },
+      "halo": {
+        "resource": "Parents/KledV2/halo-neutral",
+        "width": 110,
+        "height": 24,
+        "anchor": {
+          "x": 256,
+          "y": 73
+        },
+        "opacity": 0.6,
+        "tintable": true,
+        "separateLayer": true,
+        "status": "geometry proposal"
+      },
+      "weapons": false,
+      "wingAnatomy": {
+        "left": "white",
+        "right": "white"
+      },
+      "animationFrames": 0,
+      "revision": 2,
+      "approvedDate": "2026-10-01"
+    }
+  ],
+  "preview": "preview/yuuki-parents-design.html",
+  "storySource": {
+    "path": "D:/RPG/Rpg Pathfinder/historias do rpg/yuuki, revisado.pdf",
+    "pages": [
+      1,
+      13,
+      14
+    ],
+    "notes": "Parents both have white wings (p1); Sara/Kled names, appearance, heights and everyday clothes explicitly described on pp13–14. No invented occupations or exact ages."
+  },
+  "SaraAnimations": {
+    "preview": "preview/sara-animation.html",
+    "catalog": "Assets/Game/Resources/Parents/Sara/animations.json",
+    "clips": 12,
+    "drawings": 44,
+    "status": "approved",
+    "approvedOn": "2026-10-01"
+  },
+  "KledAnimations": {
+    "preview": "preview/kled-animation.html",
+    "catalog": "Assets/Game/Resources/Parents/KledV2/animations.json",
+    "clips": 12,
+    "drawings": 44,
+    "status": "awaiting user motion review"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "newFrames": 48,
+  "cycles": [
+    "exhaust",
+    "grasp",
+    "pickup",
+    "kick",
+    "tenebris_grasp",
+    "strap_grip",
+    "lady",
+    "boy-blue",
+    "boy-red",
+    "dog",
+    "teacher-man",
+    "teacher-woman"
+  ],
+  "maximumDrawingsPerAnimation": 4,
+  "allFramesInsideTransparentMargins": true,
+  "allDrawingsDistinct": true,
+  "protectedFiles": {
+    "adult-preservation": 155,
+    "yuuki-child-approved-preservation": 175,
+    "alice-child-approved-preservation": 115,
+    "tenebris-child-approved-preservation": 120,
+    "sara-design-approved-preservation": 10,
+    "kled-design-approved-preservation": 12,
+    "sara-animation-approved-preservation": 113
+  },
+  "protectedFileCount": 700,
+  "tool": "built-in image generation",
+  "mechanicalProcessingOnly": true
+}

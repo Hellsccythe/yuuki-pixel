@@ -1,0 +1,86 @@
+{
+  "clips": [
+    {
+      "direction": "down",
+      "motion": "walk",
+      "frames": 4,
+      "status": "Andar · Frente · quadro 2 de 4"
+    },
+    {
+      "direction": "down",
+      "motion": "run",
+      "frames": 4,
+      "status": "Correr · Frente · quadro 2 de 4"
+    },
+    {
+      "direction": "down",
+      "motion": "idle",
+      "frames": 3,
+      "status": "Respiração · Frente · quadro 1 de 3"
+    },
+    {
+      "direction": "up",
+      "motion": "walk",
+      "frames": 4,
+      "status": "Andar · Costas · quadro 2 de 4"
+    },
+    {
+      "direction": "up",
+      "motion": "run",
+      "frames": 4,
+      "status": "Correr · Costas · quadro 2 de 4"
+    },
+    {
+      "direction": "up",
+      "motion": "idle",
+      "frames": 3,
+      "status": "Respiração · Costas · quadro 1 de 3"
+    },
+    {
+      "direction": "left",
+      "motion": "walk",
+      "frames": 4,
+      "status": "Andar · Esquerda · quadro 2 de 4"
+    },
+    {
+      "direction": "left",
+      "motion": "run",
+      "frames": 4,
+      "status": "Correr · Esquerda · quadro 2 de 4"
+    },
+    {
+      "direction": "left",
+      "motion": "idle",
+      "frames": 3,
+      "status": "Respiração · Esquerda · quadro 1 de 3"
+    },
+    {
+      "direction": "right",
+      "motion": "walk",
+      "frames": 4,
+      "status": "Andar · Direita · quadro 2 de 4"
+    },
+    {
+      "direction": "right",
+      "motion": "run",
+      "frames": 4,
+      "status": "Correr · Direita · quadro 2 de 4"
+    },
+    {
+      "direction": "right",
+      "motion": "idle",
+      "frames": 3,
+      "status": "Respiração · Direita · quadro 1 de 3"
+    }
+  ],
+  "haloColorChangeVerified": true,
+  "url": "http://127.0.0.1:8765/preview/sara-animation.html",
+  "errors": [
+    {
+      "level": "error",
+      "message": "TypeError: Failed to fetch\n    at init (http://127.0.0.1:8765/preview/yuuki-animation-v2.js?v=yuuki-motion-v2:90:23)\n    at http://127.0.0.1:8765/preview/yuuki-animation-v2.js?v=yuuki-motion-v2:99:1",
+      "timestamp": "2026-10-01T23:33:23.375Z",
+      "url": "http://127.0.0.1:8765/preview/yuuki-animation-v2.js?v=yuuki-motion-v2"
+    }
+  ]
+}

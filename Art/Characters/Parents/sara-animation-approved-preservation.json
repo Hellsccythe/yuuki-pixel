@@ -1,0 +1,460 @@
+{
+  "character": "Sara",
+  "status": "animations approved by user",
+  "approvedOn": "2026-10-01",
+  "archive": "Logs/Archives/sara-parent-animations-v1-approved-20261001.zip",
+  "files": [
+    {
+      "path": "Art/Characters/Parents/Sara/Animations-v1/Atlases/down.png",
+      "sha256": "1631d15e1994b21ebfa9a9428440df036dbf7062c99349f91912ea093799de89"
+    },
+    {
+      "path": "Art/Characters/Parents/Sara/Animations-v1/Atlases/left.png",
+      "sha256": "d9746495287a560245d11b45848908d3cbb29003bd113c6a284751f600e72c61"
+    },
+    {
+      "path": "Art/Characters/Parents/Sara/Animations-v1/Atlases/right.png",
+      "sha256": "24d933c4f0bb5aadc15b22b5ad5bc4b9e80befb2688407af6e29a68fae7d4514"
+    },
+    {
+      "path": "Art/Characters/Parents/Sara/Animations-v1/Atlases/up.png",
+      "sha256": "e11d705c3145da5b609d393f6e81cea528aa931da553e6e63b4a78ddc5c5c73f"
+    },
+    {
+      "path": "Art/Characters/Parents/Sara/Animations-v1/browser-qa.json",
+      "sha256": "3ffec40eba5e54885584ceeefcbf783b64929ae72d3425e661fb5c6706ffe329"
+    },
+    {
+      "path": "Art/Characters/Parents/Sara/Animations-v1/contact-sheet.png",
+      "sha256": "b8526613a8ca5defe398f2aff5380194d9d372288b8f70939f6fd03d0059496f"
+    },
+    {
+      "path": "Art/Characters/Parents/Sara/Animations-v1/final-qa.json",
+      "sha256": "2dbc1c0efde02369bdeccac62305750703756aa885025fec68681c29c26c540a"
+    },
+    {
+      "path": "Art/Characters/Parents/Sara/Animations-v1/packing-report.json",
+      "sha256": "6b11e7d1033c019eab77cd1c64a19fa178ce88c0bb7088089557047167373a62"
+    },
+    {
+      "path": "Art/Characters/Parents/Sara/Animations-v1/preview-proof.png",
+      "sha256": "67b209d0fa704cf3abfb256311ea67c3ce891b2c178d5842eea661ab58257f55"
+    },
+    {
+      "path": "Art/Characters/Parents/Sara/Animations-v1/production-prompts.json",
+      "sha256": "dc1ee2a1a7301d998d1623e1f475d9634d7b22411cdc5432acd786640880c526"
+    },
+    {
+      "path": "Art/Characters/Parents/Sara/Animations-v1/README.md",
+      "sha256": "26e8028a7a8083fb760d83ca84ea8cb952bdac48e423755c2a75721a074990ce"
+    },
+    {
+      "path": "Art/Characters/Parents/Sara/Animations-v1/Sources/idle_down.png",
+      "sha256": "2d76ea692b5d9259b709b0dbcc1dc233e5c38fbc86b9efdae432f91178b23c97"
+    },
+    {
+      "path": "Art/Characters/Parents/Sara/Animations-v1/Sources/idle_right.png",
+      "sha256": "0ffff3f40d95ed42d4c7d277dbb5010f22c909a196c7ee4a6f8291212ed19252"
+    },
+    {
+      "path": "Art/Characters/Parents/Sara/Animations-v1/Sources/idle_up.png",
+      "sha256": "58437d9a2eda3ee7c3d342575959dad4f9d60a8d813e64bee70f51fb53b949ad"
+    },
+    {
+      "path": "Art/Characters/Parents/Sara/Animations-v1/Sources/motion_down.png",
+      "sha256": "0b1ec1ed349189ca301afc7403993ed5a47d111fe68a19e58507f880248a88ed"
+    },
+    {
+      "path": "Art/Characters/Parents/Sara/Animations-v1/Sources/motion_right.png",
+      "sha256": "27df30f52122d4daa441f3515691cdd95258d59094ff4213416811ac066d9d89"
+    },
+    {
+      "path": "Art/Characters/Parents/Sara/Animations-v1/Sources/motion_up.png",
+      "sha256": "cc7af7a4c0dbbc0ea4eeea4ede3946918aa94517350861203de1c826efcf9e8e"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/animations.json",
+      "sha256": "536621321f7e584a0c94808b22f2fbf7e1a0becd32c2c02afcc391426c258675"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/design.json",
+      "sha256": "1b7c25a2c108d2f105a4ef55b7299071362ccb7d3b5120bff50475f4a8af39c9"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_down_v1_00.png",
+      "sha256": "327a6faaa57fb4a3694ca833fe9724c11acc53604a834d4245196bba6d0690e4"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_down_v1_00.png.meta",
+      "sha256": "c44ccd5820d7cbb319ef4e7e8071361a81dfc4c0c0c97d00d533e7363cccf267"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_down_v1_01.png",
+      "sha256": "cec152b60e97f3b92b0badbf3910bfc1538779f92f30199f8950eabc64340378"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_down_v1_01.png.meta",
+      "sha256": "8d60b47550c4f75bb240140f49c4dcf355dc2564b1036475d8398c80a2feb87c"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_down_v1_02.png",
+      "sha256": "30ff27e684d4d9e109595b37ba233d8083f19d76521c43fdd22be8dd539ea2b6"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_down_v1_02.png.meta",
+      "sha256": "04c0988b76ede395e030a51df250c573297431db6a1b9d8a2ccba0063aa894d0"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_left_v1_00.png",
+      "sha256": "dee531982570737751ab04c23bb2874d0221eb2c95df87aa06c27a3b08c42476"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_left_v1_00.png.meta",
+      "sha256": "f55722b1ce9972f6a0dc42f88b944585c32e210c4f39ae8031e5d6498da0c68a"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_left_v1_01.png",
+      "sha256": "eb8f4c940abbc239cbcadc1bd44320cf0a9a9fea893be4ca6d8cf086add67508"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_left_v1_01.png.meta",
+      "sha256": "0481dab0779459a66d1ea7ebad2e3d17bbbf9e05af325ba49e78074ad9232b97"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_left_v1_02.png",
+      "sha256": "0a8e1f316b8f294f055ebec89de866ae1c36e6801d614b9309f74f0af1e3667b"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_left_v1_02.png.meta",
+      "sha256": "41fa6ba6ab143391d276fc20098342c0957976303c4b707eb58bbb8a92e84bcb"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_right_v1_00.png",
+      "sha256": "02bd6b95bbfe2bf1aeecdfe2e7297ae4c85aac62c8d2e11435886b5447ec15f8"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_right_v1_00.png.meta",
+      "sha256": "f0ab969a45a804377edbc8106dd3b383bc7e6a7acff9c015cabacecc5b6fd120"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_right_v1_01.png",
+      "sha256": "413e3338014941840b72cd13ee8af3a7b68f8a54183cbb1d41de19d1f0175d36"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_right_v1_01.png.meta",
+      "sha256": "796e353b89c5ba514de4968666d3be4ae50ca68da51c9b6db58d0be19be0559d"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_right_v1_02.png",
+      "sha256": "73ecbeb621c269b6e9731b1080f774203093a4d26ffb9fd1b6cd64a055d3021c"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_right_v1_02.png.meta",
+      "sha256": "c9628270796cab86d722c3db7fc19875ebe1c610df1a8572352c1f1e7ea2cf61"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_up_v1_00.png",
+      "sha256": "89ae8b678c5065b29e1e5c9113f523867b2179699bd17395b1c7e44e29ff2d2a"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_up_v1_00.png.meta",
+      "sha256": "5d033071ab8244584bb467fdb229f6860ab6699234641617597c8a69bb51a399"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_up_v1_01.png",
+      "sha256": "f0188d5c40d369a36a12839df3fc26cf7879ff3f8d6db8611c4d0a5637800e44"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_up_v1_01.png.meta",
+      "sha256": "771be13ad9d0885259c17a8071fe37e0c272ab56c6222c2196111fbf2c123a07"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_up_v1_02.png",
+      "sha256": "7990fe89128707a895fa8c985b2d9e97bdff8c843fcc506f53238804cdd79cc5"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/idle_up_v1_02.png.meta",
+      "sha256": "1b8a5609d30b6fdd1fe537644e598cacb0895f5adf37307d747f8153e874b0c0"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_down_v1_00.png",
+      "sha256": "dcecfb5af1fea12f8170791591a0a93029ff3a0f6cc46981db93e930316e38a7"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_down_v1_00.png.meta",
+      "sha256": "c5892359be44376bde5a262c4f0cacdde98996e13f739fc787ae30fb798a48cd"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_down_v1_01.png",
+      "sha256": "9a83f87c62c9d8e21ca12837ff69bcb65035048d346c3635a64b482e823a3a3a"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_down_v1_01.png.meta",
+      "sha256": "84e5648b5e5e456ec2be01abc2df52178f2bdd693f748ace8f127326a623f84f"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_down_v1_02.png",
+      "sha256": "ce4f6cd2b940f082418c12761fe0efa602c8d3c123af2df92dc41ceac5bf3a46"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_down_v1_02.png.meta",
+      "sha256": "4fb7a1f25e80a7f2e5272152bdf0195634cd7af1410b45836f3deddf72d49058"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_down_v1_03.png",
+      "sha256": "1b44bdcddc6cbd86723fedda7b6df37a0f6a32b6d687eb3de4b97204489c5088"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_down_v1_03.png.meta",
+      "sha256": "c6d84a1c6d58915cf6ace059e2cf11e3d1fb9ae7c6a5c705fe3ea0020a6f8c84"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_left_v1_00.png",
+      "sha256": "2ebac871888caabb37ced2b4dd78fbb99faf4999219ebe9b4042bc2af0081733"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_left_v1_00.png.meta",
+      "sha256": "e52044938e595f43069283c8094c73eb29d63fe19ee8d9a50c8eba6c4dc265a6"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_left_v1_01.png",
+      "sha256": "0b65272ea8904267dde92f4640370858469a2c7c3cc102ed6a8c401cdf07781d"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_left_v1_01.png.meta",
+      "sha256": "139c46342c0c4021368e9cc0863ac0022857837477cf8c2885328906a756a9be"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_left_v1_02.png",
+      "sha256": "62f9db081f8dd8f180cfc76b5274a61c09f5ab37370d60e12a87e39067eb771f"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_left_v1_02.png.meta",
+      "sha256": "dea175d7affb701f58235ea897cf9c657ce831732677e381dadd23700cc4a819"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_left_v1_03.png",
+      "sha256": "574c390745096962a8245635a80a04d63466c76fc5d85b10ead1e40fa5b758ff"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_left_v1_03.png.meta",
+      "sha256": "a79bcaf39038b626c3bceec823d1971fbbdf3d7b49353976e78c5ebdc7032c47"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_right_v1_00.png",
+      "sha256": "8d5a85607f8644e8812b2a7193697d349f560fe59599e425d555c7f628d87db6"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_right_v1_00.png.meta",
+      "sha256": "6d1c95950fdaccedaa1885955895229e1c78dc44680f243a84ca6e078668a57c"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_right_v1_01.png",
+      "sha256": "dcd78f5acbad311465e90bb2f65fc6c94f98a4e942ea0defbbbb16f3a39753f2"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_right_v1_01.png.meta",
+      "sha256": "3907f2b42af35e871522665a53f06591c6a8d2e6edb06dde13beade49b51dbf3"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_right_v1_02.png",
+      "sha256": "0eb99166f9aaf91b9a92570ece448d01827bd30f1eff59ab5081bf5e4532ff3b"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_right_v1_02.png.meta",
+      "sha256": "f1140811d1c4a8c160e11dd239385f7c8137b83edec5dcfa29c822a5af998748"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_right_v1_03.png",
+      "sha256": "c18ab8bb57e50d8bc30a90c8d4efbca5e285c6d707e172699c2f7780013b3f26"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_right_v1_03.png.meta",
+      "sha256": "3a1ae5fa1d33ed1ccca776a6dd8797eb0638a3ab71e9eeadb1234f17d2425263"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_up_v1_00.png",
+      "sha256": "5e593004c889356d5d63b360b4bd44e3dd20c85204e845ccbdce37a420138725"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_up_v1_00.png.meta",
+      "sha256": "9652ebbcd7305361ee76bfbe9aa6a014a40c9c85c786d758fa9c72249530f69f"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_up_v1_01.png",
+      "sha256": "0b2b4c37b9c10ca138e4bfd1594ef86ef9ff62baba8de5aede043699737f7d72"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_up_v1_01.png.meta",
+      "sha256": "9231f2fde4c19aa4eb1d1a77d088cb20b2226eee33db8cfa817c3e81d472c2a9"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_up_v1_02.png",
+      "sha256": "f5e6ac0d0d1a020e1efad605b6345fae3e5ef38407aa7e91e69a0bf5cbc557db"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_up_v1_02.png.meta",
+      "sha256": "01545680ae9211d4f797117068d6785220be54e83757ffb57490fce8d5bed8bb"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_up_v1_03.png",
+      "sha256": "ec14572914f522fb00a92fc398844c4595e8c5548aae5d79737a1f71102c5b89"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/run_up_v1_03.png.meta",
+      "sha256": "a783b2a5214afc6130c8b89321ecf7408634745fa0fdf2c1f1077b3f35be3ae3"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_down_v1_00.png",
+      "sha256": "6e331b512b9fe8afdead60de861c090ee0248ce5a4c36ef5f768e61427c93e1f"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_down_v1_00.png.meta",
+      "sha256": "83e3cc14296198171aa0582d8d4f7111fffe49351fd0ccf18fc8f465324baf14"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_down_v1_01.png",
+      "sha256": "5d5c4c80bf845c923df591a18592795d562ece282a62ff9b452ca52137c89254"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_down_v1_01.png.meta",
+      "sha256": "b30ffdf40caf8866a1f89ea3e416d71e748a566fb51f5f867aef573bbf56151b"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_down_v1_02.png",
+      "sha256": "ab15e0c472c1fed4f244443e6c4e9c3fd309dc96b164be400fa4bcef5a4fb929"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_down_v1_02.png.meta",
+      "sha256": "78305c28c9e55ad1f15a8f58889a87e10771f5d99d1123f8f776aef18076d2e7"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_down_v1_03.png",
+      "sha256": "a657eee183d59ddf3fefc1c396a8814a4ddbb5a81066be2b0d6290deea198d44"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_down_v1_03.png.meta",
+      "sha256": "796372c25ff12bf84285cce94274e14640b90a819c8fbcba1553b8fd7769c12b"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_left_v1_00.png",
+      "sha256": "3cdb6334c04067ee149d6705ef70d2b22c3c66e2174ae20404cf1a71aaf97169"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_left_v1_00.png.meta",
+      "sha256": "43c9cc6f304999008698b0890f03a680895c9db0d2eb698e344892b6b16b2150"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_left_v1_01.png",
+      "sha256": "03c15b1aeca5e092390255f72d379cd06f127d98393d4479855d05bd35bd75af"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_left_v1_01.png.meta",
+      "sha256": "d6aac939ef3418eb5771c365f8ed94e5748dcda3f99bd8ccc3099110dfcf79fe"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_left_v1_02.png",
+      "sha256": "1dcfd7763564b3201a35b932589c66fa82525d3951488b550a51db0194968638"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_left_v1_02.png.meta",
+      "sha256": "b21a85dce264c419385289d7235510d993629daff07e7e216cfcf5ee77412c64"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_left_v1_03.png",
+      "sha256": "bb3093bfb40beef9dd1ca06de964fbd9432ce86f546e514ac9b9542ee7e15290"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_left_v1_03.png.meta",
+      "sha256": "295632f3c87f2469ba00ab6c48b18f24ccf55a2de1542ffd74960ffb1fe8ea42"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_right_v1_00.png",
+      "sha256": "35155ca33fdf47804aa1f1dc0199c76b054620ad07a1547ae7b5d3590a3a552e"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_right_v1_00.png.meta",
+      "sha256": "a047fd420ece762b43b7c88775d5f18eff7652b8c83b8efc887bd4ea6c426a16"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_right_v1_01.png",
+      "sha256": "2da04110fea13872898b443ab6969308e038d1a4beb5a1f33d4e4a582ab98dd3"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_right_v1_01.png.meta",
+      "sha256": "20cf4e954d66b74b9fef49e6af18ee928e35067d447c1ab239d2a29620b14a93"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_right_v1_02.png",
+      "sha256": "7f17a9facab6ecbddd0088d1a21fa12f0e0ef0bb4634c17e90d15a7065d9c6ff"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_right_v1_02.png.meta",
+      "sha256": "ddfd5c26db5057ee705e2ea1cbca4f7b7279bcd7aad20e7cacb1f061c617d379"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_right_v1_03.png",
+      "sha256": "609122026c62f1b65a762cb86384e6b69c7ac7db921b16fdd38d212e93a80dd6"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_right_v1_03.png.meta",
+      "sha256": "49e15fc545ecab73edc5ec719940ca25bab49d12406c5be5452b6a48d4021b68"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_up_v1_00.png",
+      "sha256": "2a6ebc7738eb3e595ba74125a4ba61d6e7b20f25b23f92e073c66054892d4851"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_up_v1_00.png.meta",
+      "sha256": "0e85b4816cffab9f655c28940d88abd5b474a4cdd6c27d624724c4e7dbd2d230"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_up_v1_01.png",
+      "sha256": "5b5f51f9967a1bafc8c3f8bf65c89222ee1c33c854263c071ae1d1d4e6285b03"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_up_v1_01.png.meta",
+      "sha256": "03a513400897baf03ee57c26177aa217ddc4bdf67356ba459c902489a3562194"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_up_v1_02.png",
+      "sha256": "08bd1a8ca2dea1065a6f1d97e282f40b53703fbd00c470bd98250e78a3dc6036"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_up_v1_02.png.meta",
+      "sha256": "c1c47ec161873b565154920889c907f25a9569e6a0616a79f0924b276eecde8d"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_up_v1_03.png",
+      "sha256": "c8f9d45a29e26f2cb932f917376d3e0e9fade915824abe0e3b2facf8830c7760"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/Frames/walk_up_v1_03.png.meta",
+      "sha256": "578c2922ad608965a7e933aaea8e743e1c45323b248dd2799d2117e4de47b093"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/halo-neutral.png",
+      "sha256": "a385434eb291c11fe770c4b17f4a848b639f372dd1f3614efe9040280fc52039"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/halo-neutral.png.meta",
+      "sha256": "5c6a0489cf69936e469906632d78b072cea72c3d7005b0892f1ec2884007df99"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/stand_down_00.png",
+      "sha256": "3ef011d3f9a3e97fcb478af107596c5283ca8c8a19d083366f9414002424a6a3"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/Sara/stand_down_00.png.meta",
+      "sha256": "e311cebd66a118971aa0e603db80915c538feff85063684166f2c8dec4a090dd"
+    },
+    {
+      "path": "preview/sara-animation.html",
+      "sha256": "864768ce94c172cd0b781726da61542873f778d7e434d5e997e9e81aad5be2ee"
+    },
+    {
+      "path": "preview/sara-animation.js",
+      "sha256": "ca4053a749d136854082b4cadf7ae6ae0184af5702add5fe650369eb1aa29139"
+    }
+  ]
+}
