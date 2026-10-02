@@ -1,0 +1,64 @@
+{
+  "name": "Sara",
+  "relation": "mother",
+  "status": "initial design approved by user",
+  "story": {
+    "path": "D:/RPG/Rpg Pathfinder/historias do rpg/yuuki, revisado.pdf",
+    "pages": [
+      1,
+      13,
+      14
+    ],
+    "notes": "Parents both have white wings (p1); Sara/Kled names, appearance, heights and everyday clothes explicitly described on pp13–14. No invented occupations or exact ages."
+  },
+  "canon": {
+    "name": "Sara",
+    "relation": "mother",
+    "heightCm": 171,
+    "hair": "light blonde, waist length",
+    "eyes": "soft blue",
+    "wings": "both white",
+    "clothes": [
+      "white long-sleeved blouse",
+      "black skirt",
+      "dark tights",
+      "dark-blue shoes"
+    ],
+    "demeanor": "young adult face; mild work fatigue; reserved kindness"
+  },
+  "proposal": "young adult stylized proportions; simple parting; restrained halo geometry",
+  "body": "Parents/Sara/stand_down_00",
+  "bodyFrame": {
+    "width": 512,
+    "height": 512,
+    "feet": [
+      256,
+      400
+    ],
+    "pivot": [
+      0.5,
+      0.21875
+    ],
+    "pixelsPerUnit": 220
+  },
+  "halo": {
+    "resource": "Parents/Sara/halo-neutral",
+    "width": 110,
+    "height": 28,
+    "anchor": {
+      "x": 256,
+      "y": 83
+    },
+    "opacity": 0.6,
+    "tintable": true,
+    "separateLayer": true,
+    "status": "geometry proposal"
+  },
+  "weapons": false,
+  "wingAnatomy": {
+    "left": "white",
+    "right": "white"
+  },
+  "animationFrames": 0,
+  "approvedDate": "2026-10-01"
+}

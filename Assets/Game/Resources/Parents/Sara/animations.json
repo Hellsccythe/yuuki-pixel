@@ -1,0 +1,443 @@
+{
+  "character": "Sara",
+  "lifeStage": "adult",
+  "chapter": "childhood of Yuuki",
+  "status": "approved",
+  "designApproved": true,
+  "weapons": false,
+  "bodyFrame": {
+    "width": 512,
+    "height": 512,
+    "feet": [
+      256,
+      400
+    ],
+    "pivot": [
+      0.5,
+      0.21875
+    ],
+    "pixelsPerUnit": 220
+  },
+  "halo": {
+    "resource": "Parents/Sara/halo-neutral",
+    "width": 110,
+    "height": 28,
+    "opacity": 0.6,
+    "tintable": true,
+    "separateLayer": true,
+    "status": "approved design retained",
+    "alphaBaked": false
+  },
+  "wingAnatomy": {
+    "left": "white",
+    "right": "white"
+  },
+  "playbackRevision": "sara-v1",
+  "clips": [
+    {
+      "name": "walk_down",
+      "frames": [
+        "Parents/Sara/Frames/walk_down_v1_00",
+        "Parents/Sara/Frames/walk_down_v1_01",
+        "Parents/Sara/Frames/walk_down_v1_02",
+        "Parents/Sara/Frames/walk_down_v1_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 83
+        },
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 83
+        }
+      ],
+      "fps": 6,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "run_down",
+      "frames": [
+        "Parents/Sara/Frames/run_down_v1_00",
+        "Parents/Sara/Frames/run_down_v1_01",
+        "Parents/Sara/Frames/run_down_v1_02",
+        "Parents/Sara/Frames/run_down_v1_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 83
+        },
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 83
+        }
+      ],
+      "fps": 8,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "idle_down",
+      "frames": [
+        "Parents/Sara/Frames/idle_down_v1_00",
+        "Parents/Sara/Frames/idle_down_v1_01",
+        "Parents/Sara/Frames/idle_down_v1_02"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 83
+        }
+      ],
+      "fps": 2,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "name": "walk_up",
+      "frames": [
+        "Parents/Sara/Frames/walk_up_v1_00",
+        "Parents/Sara/Frames/walk_up_v1_01",
+        "Parents/Sara/Frames/walk_up_v1_02",
+        "Parents/Sara/Frames/walk_up_v1_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 83
+        },
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 83
+        }
+      ],
+      "fps": 6,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "run_up",
+      "frames": [
+        "Parents/Sara/Frames/run_up_v1_00",
+        "Parents/Sara/Frames/run_up_v1_01",
+        "Parents/Sara/Frames/run_up_v1_02",
+        "Parents/Sara/Frames/run_up_v1_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 83
+        },
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 83
+        }
+      ],
+      "fps": 8,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "idle_up",
+      "frames": [
+        "Parents/Sara/Frames/idle_up_v1_00",
+        "Parents/Sara/Frames/idle_up_v1_01",
+        "Parents/Sara/Frames/idle_up_v1_02"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 84
+        }
+      ],
+      "fps": 2,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "name": "walk_left",
+      "frames": [
+        "Parents/Sara/Frames/walk_left_v1_00",
+        "Parents/Sara/Frames/walk_left_v1_01",
+        "Parents/Sara/Frames/walk_left_v1_02",
+        "Parents/Sara/Frames/walk_left_v1_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 83
+        },
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 83
+        }
+      ],
+      "fps": 6,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mirroredFrom": "walk_right"
+    },
+    {
+      "name": "run_left",
+      "frames": [
+        "Parents/Sara/Frames/run_left_v1_00",
+        "Parents/Sara/Frames/run_left_v1_01",
+        "Parents/Sara/Frames/run_left_v1_02",
+        "Parents/Sara/Frames/run_left_v1_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 83
+        },
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 83
+        }
+      ],
+      "fps": 8,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mirroredFrom": "run_right"
+    },
+    {
+      "name": "idle_left",
+      "frames": [
+        "Parents/Sara/Frames/idle_left_v1_00",
+        "Parents/Sara/Frames/idle_left_v1_01",
+        "Parents/Sara/Frames/idle_left_v1_02"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 84
+        }
+      ],
+      "fps": 2,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "mirroredFrom": "idle_right"
+    },
+    {
+      "name": "walk_right",
+      "frames": [
+        "Parents/Sara/Frames/walk_right_v1_00",
+        "Parents/Sara/Frames/walk_right_v1_01",
+        "Parents/Sara/Frames/walk_right_v1_02",
+        "Parents/Sara/Frames/walk_right_v1_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 83
+        },
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 83
+        }
+      ],
+      "fps": 6,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "run_right",
+      "frames": [
+        "Parents/Sara/Frames/run_right_v1_00",
+        "Parents/Sara/Frames/run_right_v1_01",
+        "Parents/Sara/Frames/run_right_v1_02",
+        "Parents/Sara/Frames/run_right_v1_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 83
+        },
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 83
+        }
+      ],
+      "fps": 8,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "idle_right",
+      "frames": [
+        "Parents/Sara/Frames/idle_right_v1_00",
+        "Parents/Sara/Frames/idle_right_v1_01",
+        "Parents/Sara/Frames/idle_right_v1_02"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 84
+        },
+        {
+          "x": 256,
+          "y": 84
+        }
+      ],
+      "fps": 2,
+      "loop": true,
+      "sequence": [
+        0,
+        1,
+        2,
+        1
+      ]
+    }
+  ],
+  "approvedOn": "2026-10-01",
+  "approvedBy": "user"
+}

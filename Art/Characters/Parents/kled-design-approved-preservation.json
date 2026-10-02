@@ -1,0 +1,56 @@
+{
+  "character": "Kled",
+  "revision": 2,
+  "status": "design approved; no animation approval implied",
+  "archive": "Logs/Archives/kled-parent-design-v2-approved-20261001.zip",
+  "files": [
+    {
+      "path": "Art/Characters/Parents/Kled/Design-v2/appearance-reference.jpg",
+      "sha256": "ba2b5ad31587f0db3f2a6054c2530a906d887878cb6a6f417f759d516b60a673"
+    },
+    {
+      "path": "Art/Characters/Parents/Kled/Design-v2/body-source.png",
+      "sha256": "9d13c103493e9f05b59b16bb157e68f57e17d270482d9ea014f7cfc6419ac3d2"
+    },
+    {
+      "path": "Art/Characters/Parents/Kled/Design-v2/body.png",
+      "sha256": "399d9099ab1e1c48ac6f53e2fca7bbdfaf4f4bc6b6f4409f454a279cbd463566"
+    },
+    {
+      "path": "Art/Characters/Parents/Kled/Design-v2/design.json",
+      "sha256": "665764d87f0c63e53a01b395388b49a87b0577939ea06615cb54b34ee60d0f5b"
+    },
+    {
+      "path": "Art/Characters/Parents/Kled/Design-v2/halo-neutral.png",
+      "sha256": "1e78a69686ab580d65a11413296d10b7278dc86b98f007c4e76a3f59dbf62c7e"
+    },
+    {
+      "path": "Art/Characters/Parents/Kled/Design-v2/halo-source.png",
+      "sha256": "f25c40904e861ec691aa67c76b90cde2983de3a20c78c3424cd8335736f3c6fa"
+    },
+    {
+      "path": "Art/Characters/Parents/Kled/Design-v2/production-prompt.json",
+      "sha256": "3a02daabb8040dff701fa5a882dc3136bab6801dbb6536b27ef1c24e3d604947"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/KledV2/design.json",
+      "sha256": "665764d87f0c63e53a01b395388b49a87b0577939ea06615cb54b34ee60d0f5b"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/KledV2/halo-neutral.png",
+      "sha256": "1e78a69686ab580d65a11413296d10b7278dc86b98f007c4e76a3f59dbf62c7e"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/KledV2/halo-neutral.png.meta",
+      "sha256": "af61fb77e6607660f2449a996031a5f6c379b0d9e668f427e15b9eb0556a647f"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/KledV2/stand_down_00.png",
+      "sha256": "399d9099ab1e1c48ac6f53e2fca7bbdfaf4f4bc6b6f4409f454a279cbd463566"
+    },
+    {
+      "path": "Assets/Game/Resources/Parents/KledV2/stand_down_00.png.meta",
+      "sha256": "714bda7d91b8e946fbe020ecf737cc2d32fa3602113d2edede20418281644df5"
+    }
+  ]
+}

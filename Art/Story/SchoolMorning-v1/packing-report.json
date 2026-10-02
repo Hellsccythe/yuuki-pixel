@@ -1,0 +1,116 @@
+{
+  "actions": [
+    {
+      "action": "exhaust",
+      "constantScale": 0.40441176470588236,
+      "sourceCuts": {
+        "rows": [
+          0,
+          724
+        ],
+        "columns": [
+          [
+            0,
+            580,
+            1103,
+            1612,
+            2172
+          ]
+        ]
+      },
+      "registration": "feet fixed; first upright frame controls row scale"
+    },
+    {
+      "action": "grasp",
+      "constantScale": 0.44,
+      "sourceCuts": {
+        "rows": [
+          0,
+          724
+        ],
+        "columns": [
+          [
+            0,
+            547,
+            1092,
+            1630,
+            2172
+          ]
+        ]
+      },
+      "registration": "feet fixed; first upright frame controls row scale"
+    },
+    {
+      "action": "pickup",
+      "constantScale": 0.4059040590405904,
+      "sourceCuts": {
+        "rows": [
+          0,
+          724
+        ],
+        "columns": [
+          [
+            0,
+            538,
+            1101,
+            1640,
+            2172
+          ]
+        ]
+      },
+      "registration": "feet fixed; first upright frame controls row scale"
+    },
+    {
+      "action": "kick",
+      "constantScale": 0.45267489711934156,
+      "sourceCuts": {
+        "rows": [
+          0,
+          724
+        ],
+        "columns": [
+          [
+            0,
+            537,
+            1070,
+            1605,
+            2172
+          ]
+        ]
+      },
+      "registration": "feet fixed; first upright frame controls row scale"
+    },
+    {
+      "action": "tenebris_grasp",
+      "constantScale": 0.4263565891472868,
+      "sourceCuts": {
+        "rows": [
+          0,
+          724
+        ],
+        "columns": [
+          [
+            0,
+            570,
+            1101,
+            1664,
+            2172
+          ]
+        ]
+      },
+      "registration": "feet fixed; first upright frame controls row scale"
+    }
+  ],
+  "frames": 20,
+  "maximumDrawingsPerAnimation": 4,
+  "approvedFilesPreserved": {
+    "adult-preservation": 155,
+    "yuuki-child-approved-preservation": 175,
+    "alice-child-approved-preservation": 115,
+    "tenebris-child-approved-preservation": 120,
+    "sara-design-approved-preservation": 10,
+    "kled-design-approved-preservation": 12,
+    "sara-animation-approved-preservation": 113
+  },
+  "processing": "alpha cleanup, transparent gutters, crop, uniform nearest-neighbor scaling; no painting or limb deformation"
+}

@@ -1,0 +1,181 @@
+{
+  "rows": [
+    {
+      "name": "lady",
+      "sourceCuts": {
+        "rows": [
+          0,
+          631,
+          1254
+        ],
+        "columns": [
+          [
+            0,
+            617,
+            1254
+          ],
+          [
+            0,
+            651,
+            1254
+          ]
+        ]
+      },
+      "uniformRowScale": 0.501010101010101,
+      "standingHeight": 248
+    },
+    {
+      "name": "boy-blue",
+      "sourceCuts": {
+        "rows": [
+          0,
+          627,
+          1254
+        ],
+        "columns": [
+          [
+            0,
+            628,
+            1254
+          ],
+          [
+            0,
+            629,
+            1254
+          ]
+        ]
+      },
+      "uniformRowScale": 0.4772234273318872,
+      "standingHeight": 220
+    },
+    {
+      "name": "boy-red",
+      "sourceCuts": {
+        "rows": [
+          0,
+          639,
+          1254
+        ],
+        "columns": [
+          [
+            0,
+            631,
+            1254
+          ],
+          [
+            0,
+            635,
+            1254
+          ]
+        ]
+      },
+      "uniformRowScale": 0.42884990253411304,
+      "standingHeight": 220
+    },
+    {
+      "name": "dog",
+      "sourceCuts": {
+        "rows": [
+          0,
+          641,
+          1254
+        ],
+        "columns": [
+          [
+            0,
+            635,
+            1254
+          ],
+          [
+            0,
+            641,
+            1254
+          ]
+        ]
+      },
+      "uniformRowScale": 0.31100478468899523,
+      "standingHeight": 130
+    },
+    {
+      "name": "teacher-man",
+      "sourceCuts": {
+        "rows": [
+          0,
+          627,
+          1254
+        ],
+        "columns": [
+          [
+            0,
+            629,
+            1254
+          ],
+          [
+            0,
+            628,
+            1254
+          ]
+        ]
+      },
+      "uniformRowScale": 0.46441947565543074,
+      "standingHeight": 248
+    },
+    {
+      "name": "teacher-woman",
+      "sourceCuts": {
+        "rows": [
+          0,
+          640,
+          1254
+        ],
+        "columns": [
+          [
+            0,
+            627,
+            1254
+          ],
+          [
+            0,
+            628,
+            1254
+          ]
+        ]
+      },
+      "uniformRowScale": 0.48249027237354086,
+      "standingHeight": 248
+    },
+    {
+      "name": "strap_grip",
+      "sourceCuts": {
+        "rows": [
+          0,
+          724
+        ],
+        "columns": [
+          [
+            0,
+            557,
+            1082,
+            1606,
+            2172
+          ]
+        ]
+      },
+      "uniformRowScale": 0.40441176470588236,
+      "standingHeight": 220
+    }
+  ],
+  "npcFrames": 24,
+  "gestureFrames": 4,
+  "maximumDrawingsPerAnimation": 4,
+  "preserved": {
+    "adult-preservation": 155,
+    "yuuki-child-approved-preservation": 175,
+    "alice-child-approved-preservation": 115,
+    "tenebris-child-approved-preservation": 120,
+    "sara-design-approved-preservation": 10,
+    "kled-design-approved-preservation": 12,
+    "sara-animation-approved-preservation": 113
+  },
+  "processing": "Alpha cleanup, crop, common nearest-neighbor scale per row, feet registration. No limb deformation or repainting."
+}

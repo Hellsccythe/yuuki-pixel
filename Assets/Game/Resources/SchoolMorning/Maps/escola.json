@@ -1,0 +1,64 @@
+{
+  "id": "escola",
+  "name": "Anjos do Testamento",
+  "start": 3500,
+  "end": 4700,
+  "objects": [
+    {
+      "id": "Anjos do Testamento",
+      "resource": "SchoolMorning/school",
+      "x": 4230,
+      "y": 665,
+      "w": 660,
+      "group": "houses"
+    },
+    {
+      "id": "Árvore",
+      "resource": "World/Art/tree",
+      "x": 3940,
+      "y": 1040,
+      "w": 235,
+      "group": "props"
+    },
+    {
+      "id": "Árvore",
+      "resource": "World/Art/tree",
+      "x": 4520,
+      "y": 900,
+      "w": 235,
+      "group": "props"
+    },
+    {
+      "id": "Professor",
+      "resource": "SchoolMorning/Residents/teacher-man",
+      "x": 4050,
+      "y": 740,
+      "w": 102,
+      "group": "residents"
+    },
+    {
+      "id": "Professora",
+      "resource": "SchoolMorning/Residents/teacher-woman",
+      "x": 4370,
+      "y": 735,
+      "w": 103,
+      "group": "residents"
+    },
+    {
+      "id": "Banco",
+      "resource": "Environment/Art/banco-escola",
+      "x": 3910,
+      "y": 870,
+      "w": 140,
+      "group": "props"
+    },
+    {
+      "id": "Carroça",
+      "resource": "NeighborhoodV6/carroca-quebrada",
+      "x": 3760,
+      "y": 1050,
+      "w": 175,
+      "group": "props"
+    }
+  ]
+}

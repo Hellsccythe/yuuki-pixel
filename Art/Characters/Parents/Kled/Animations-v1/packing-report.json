@@ -1,0 +1,613 @@
+{
+  "character": "Kled",
+  "drawings": 44,
+  "clips": 12,
+  "selectedGeneratedDrawings": 33,
+  "exactReflectedDrawings": 11,
+  "exactLateralMirror": true,
+  "frontBackFaceAndFringeNotReflected": true,
+  "protectedFilesVerified": {
+    "adult-preservation": 155,
+    "yuuki-child-approved-preservation": 175,
+    "alice-child-approved-preservation": 115,
+    "tenebris-child-approved-preservation": 120,
+    "sara-design-approved-preservation": 10,
+    "kled-design-approved-preservation": 12,
+    "sara-animation-approved-preservation": 113
+  },
+  "otherFilesUnchanged": 118,
+  "clipsDetail": [
+    {
+      "clip": "walk_down",
+      "scale": 0.6141414141414141,
+      "bounds": [
+        [
+          156,
+          96,
+          358,
+          401
+        ],
+        [
+          158,
+          95,
+          357,
+          396
+        ],
+        [
+          157,
+          96,
+          357,
+          401
+        ],
+        [
+          155,
+          95,
+          356,
+          398
+        ]
+      ],
+      "sourceOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "cuts": {
+        "rows": [
+          0,
+          513,
+          1024
+        ],
+        "columns": [
+          [
+            0,
+            396,
+            764,
+            1139,
+            1536
+          ],
+          [
+            0,
+            391,
+            770,
+            1150,
+            1536
+          ]
+        ]
+      }
+    },
+    {
+      "clip": "run_down",
+      "scale": 0.6594360086767896,
+      "bounds": [
+        [
+          145,
+          96,
+          366,
+          401
+        ],
+        [
+          147,
+          94,
+          367,
+          394
+        ],
+        [
+          145,
+          95,
+          368,
+          408
+        ],
+        [
+          141,
+          95,
+          365,
+          398
+        ]
+      ],
+      "sourceOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "cuts": {
+        "rows": [
+          0,
+          513,
+          1024
+        ],
+        "columns": [
+          [
+            0,
+            396,
+            764,
+            1139,
+            1536
+          ],
+          [
+            0,
+            391,
+            770,
+            1150,
+            1536
+          ]
+        ]
+      }
+    },
+    {
+      "clip": "idle_down",
+      "scale": 0.42998585572843,
+      "bounds": [
+        [
+          153,
+          96,
+          359,
+          400
+        ],
+        [
+          155,
+          96,
+          358,
+          400
+        ],
+        [
+          153,
+          96,
+          358,
+          400
+        ]
+      ],
+      "sourceOrder": [
+        0,
+        1,
+        2
+      ],
+      "cuts": {
+        "rows": [
+          0,
+          724
+        ],
+        "columns": [
+          [
+            0,
+            829,
+            1345,
+            2172
+          ]
+        ]
+      }
+    },
+    {
+      "clip": "walk_up",
+      "scale": 0.6862302483069977,
+      "bounds": [
+        [
+          150,
+          95,
+          355,
+          404
+        ],
+        [
+          156,
+          94,
+          360,
+          394
+        ],
+        [
+          152,
+          95,
+          359,
+          403
+        ],
+        [
+          157,
+          95,
+          364,
+          396
+        ]
+      ],
+      "sourceOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "cuts": {
+        "rows": [
+          0,
+          499,
+          1024
+        ],
+        "columns": [
+          [
+            0,
+            404,
+            766,
+            1136,
+            1536
+          ],
+          [
+            0,
+            402,
+            768,
+            1140,
+            1536
+          ]
+        ]
+      }
+    },
+    {
+      "clip": "run_up",
+      "scale": 0.7086247086247086,
+      "bounds": [
+        [
+          135,
+          95,
+          369,
+          420
+        ],
+        [
+          144,
+          95,
+          376,
+          375
+        ],
+        [
+          139,
+          95,
+          371,
+          422
+        ],
+        [
+          143,
+          94,
+          377,
+          380
+        ]
+      ],
+      "sourceOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "cuts": {
+        "rows": [
+          0,
+          499,
+          1024
+        ],
+        "columns": [
+          [
+            0,
+            404,
+            766,
+            1136,
+            1536
+          ],
+          [
+            0,
+            402,
+            768,
+            1140,
+            1536
+          ]
+        ]
+      }
+    },
+    {
+      "clip": "idle_up",
+      "scale": 0.4393063583815029,
+      "bounds": [
+        [
+          145,
+          96,
+          364,
+          400
+        ],
+        [
+          146,
+          96,
+          366,
+          400
+        ],
+        [
+          147,
+          96,
+          366,
+          400
+        ]
+      ],
+      "sourceOrder": [
+        0,
+        1,
+        2
+      ],
+      "cuts": {
+        "rows": [
+          0,
+          724
+        ],
+        "columns": [
+          [
+            0,
+            747,
+            1423,
+            2172
+          ]
+        ]
+      }
+    },
+    {
+      "clip": "walk_right",
+      "scale": 0.5990147783251232,
+      "bounds": [
+        [
+          118,
+          96,
+          337,
+          400
+        ],
+        [
+          124,
+          94,
+          294,
+          399
+        ],
+        [
+          117,
+          95,
+          342,
+          398
+        ],
+        [
+          130,
+          95,
+          294,
+          399
+        ]
+      ],
+      "sourceOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "cuts": {
+        "method": "connected silhouettes, preserving alpha contour; no straight cut through neighboring feet or wings",
+        "poses": [
+          {
+            "solidPixels": 91806,
+            "sourceBox": [
+              37,
+              27,
+              402,
+              535
+            ]
+          },
+          {
+            "solidPixels": 81241,
+            "sourceBox": [
+              395,
+              25,
+              678,
+              535
+            ]
+          },
+          {
+            "solidPixels": 91148,
+            "sourceBox": [
+              759,
+              25,
+              1134,
+              531
+            ]
+          },
+          {
+            "solidPixels": 76591,
+            "sourceBox": [
+              1122,
+              26,
+              1396,
+              533
+            ]
+          },
+          {
+            "solidPixels": 88991,
+            "sourceBox": [
+              20,
+              564,
+              456,
+              1038
+            ]
+          },
+          {
+            "solidPixels": 69074,
+            "sourceBox": [
+              408,
+              563,
+              714,
+              1031
+            ]
+          },
+          {
+            "solidPixels": 82873,
+            "sourceBox": [
+              731,
+              567,
+              1146,
+              1036
+            ]
+          },
+          {
+            "solidPixels": 69730,
+            "sourceBox": [
+              1110,
+              567,
+              1414,
+              1029
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "clip": "run_right",
+      "scale": 0.6502673796791444,
+      "bounds": [
+        [
+          71,
+          96,
+          355,
+          404
+        ],
+        [
+          102,
+          95,
+          301,
+          399
+        ],
+        [
+          73,
+          96,
+          343,
+          401
+        ],
+        [
+          104,
+          94,
+          302,
+          394
+        ]
+      ],
+      "sourceOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "cuts": {
+        "method": "connected silhouettes, preserving alpha contour; no straight cut through neighboring feet or wings",
+        "poses": [
+          {
+            "solidPixels": 91806,
+            "sourceBox": [
+              37,
+              27,
+              402,
+              535
+            ]
+          },
+          {
+            "solidPixels": 81241,
+            "sourceBox": [
+              395,
+              25,
+              678,
+              535
+            ]
+          },
+          {
+            "solidPixels": 91148,
+            "sourceBox": [
+              759,
+              25,
+              1134,
+              531
+            ]
+          },
+          {
+            "solidPixels": 76591,
+            "sourceBox": [
+              1122,
+              26,
+              1396,
+              533
+            ]
+          },
+          {
+            "solidPixels": 88991,
+            "sourceBox": [
+              20,
+              564,
+              456,
+              1038
+            ]
+          },
+          {
+            "solidPixels": 69074,
+            "sourceBox": [
+              408,
+              563,
+              714,
+              1031
+            ]
+          },
+          {
+            "solidPixels": 82873,
+            "sourceBox": [
+              731,
+              567,
+              1146,
+              1036
+            ]
+          },
+          {
+            "solidPixels": 69730,
+            "sourceBox": [
+              1110,
+              567,
+              1414,
+              1029
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "clip": "idle_right",
+      "scale": 0.41025641025641024,
+      "bounds": [
+        [
+          142,
+          96,
+          308,
+          400
+        ],
+        [
+          144,
+          96,
+          309,
+          400
+        ],
+        [
+          145,
+          96,
+          308,
+          400
+        ]
+      ],
+      "sourceOrder": [
+        0,
+        1,
+        2
+      ],
+      "cuts": {
+        "rows": [
+          0,
+          768
+        ],
+        "columns": [
+          [
+            0,
+            750,
+            1254,
+            2048
+          ]
+        ]
+      }
+    }
+  ],
+  "processing": "same 8-neighbor detached-speck cleanup as Alice; connected silhouette separation for lateral motion; transparent gutter splitting elsewhere; crop; one constant nearest-neighbor scale per row; integer registration; exact reflection; no anatomy painting"
+}

@@ -1,0 +1,80 @@
+{
+  "id": "rua",
+  "name": "A rua acorda",
+  "start": 1150,
+  "end": 2250,
+  "objects": [
+    {
+      "id": "Padaria",
+      "resource": "Environment/Art/padaria",
+      "x": 1420,
+      "y": 745,
+      "w": 400,
+      "group": "houses"
+    },
+    {
+      "id": "Casa com varal",
+      "resource": "NeighborhoodV6/casa-simples-2",
+      "x": 1900,
+      "y": 690,
+      "w": 390,
+      "group": "houses"
+    },
+    {
+      "id": "Caixotes",
+      "resource": "NeighborhoodV6/barris-agua",
+      "x": 1650,
+      "y": 790,
+      "w": 72,
+      "group": "props"
+    },
+    {
+      "id": "Árvore",
+      "resource": "World/Art/tree",
+      "x": 1160,
+      "y": 1080,
+      "w": 235,
+      "group": "props"
+    },
+    {
+      "id": "Árvore",
+      "resource": "World/Art/tree",
+      "x": 1700,
+      "y": 1080,
+      "w": 235,
+      "group": "props"
+    },
+    {
+      "id": "Varal",
+      "resource": "NeighborhoodV6/varal-v6",
+      "x": 2050,
+      "y": 760,
+      "w": 160,
+      "group": "props"
+    },
+    {
+      "id": "Senhora",
+      "resource": "SchoolMorning/Residents/lady",
+      "x": 1780,
+      "y": 870,
+      "w": 100,
+      "group": "residents"
+    },
+    {
+      "id": "Menino",
+      "resource": "SchoolMorning/Residents/boy-blue",
+      "x": 2230,
+      "y": 970,
+      "w": 77,
+      "group": "residents"
+    },
+    {
+      "id": "Poça",
+      "resource": "NeighborhoodV6/poca-v6",
+      "x": 1610,
+      "y": 1000,
+      "w": 86,
+      "group": "ground"
+    }
+  ]
+}

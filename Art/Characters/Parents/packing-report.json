@@ -1,0 +1,72 @@
+{
+  "characters": [
+    {
+      "character": "Sara",
+      "frameSize": [
+        512,
+        512
+      ],
+      "bodyBounds": [
+        165,
+        105,
+        394,
+        402
+      ],
+      "bodyTargetHeight": 292,
+      "sourceAlphaPreserved": true,
+      "noAnatomyPainted": true,
+      "haloSize": [
+        110,
+        28
+      ],
+      "separateHalo": true,
+      "haloCrop": "bounding box of alpha > 8; remote faint noise trimmed; retained alpha unchanged"
+    },
+    {
+      "character": "Kled",
+      "frameSize": [
+        512,
+        512
+      ],
+      "bodyBounds": [
+        95,
+        95,
+        353,
+        401
+      ],
+      "bodyTargetHeight": 304,
+      "sourceAlphaPreserved": true,
+      "noAnatomyPainted": true,
+      "haloSize": [
+        110,
+        24
+      ],
+      "separateHalo": true,
+      "haloCrop": "bounding box of alpha > 8; remote faint noise trimmed; retained alpha unchanged"
+    }
+  ],
+  "approvedFilesVerified": {
+    "adult-preservation": 155,
+    "yuuki-child-approved-preservation": 175,
+    "alice-child-approved-preservation": 115,
+    "tenebris-child-approved-preservation": 120
+  },
+  "yuukiV2CandidateFilesVerified": 108,
+  "unchangedCharacters": true,
+  "kledRevision2": {
+    "frameSize": [
+      512,
+      512
+    ],
+    "bodyBounds": [
+      124,
+      95,
+      358,
+      401
+    ],
+    "sourceAlphaPreserved": true,
+    "noAnatomyPainted": true,
+    "previousRevisionPreserved": true,
+    "targetHeight": 304
+  }
+}

@@ -1,0 +1,1190 @@
+{
+  "version": 2,
+  "title": "A caminho da Escola Anjos do Testamento",
+  "chapter": "Prólogo · Os Subúrbios",
+  "startHour": "06:45",
+  "storyAge": 8,
+  "width": 4700,
+  "height": 1400,
+  "start": {
+    "x": 460,
+    "y": 777
+  },
+  "companionStart": {
+    "x": 747,
+    "y": 969
+  },
+  "gate": {
+    "x": 670,
+    "y": 914,
+    "collider": {
+      "x": 552,
+      "y": 889,
+      "w": 236,
+      "h": 18
+    }
+  },
+  "maps": [
+    "SchoolMorning/Maps/quintal",
+    "SchoolMorning/Maps/rua",
+    "SchoolMorning/Maps/ladeira",
+    "SchoolMorning/Maps/escola"
+  ],
+  "objects": [
+    {
+      "id": "Casa dos Arcadia",
+      "resource": "NeighborhoodV6/casa-simples-0",
+      "x": 450,
+      "y": 690,
+      "w": 440,
+      "group": "houses"
+    },
+    {
+      "id": "Casa de Tenebris",
+      "resource": "NeighborhoodV6/casa-simples-1",
+      "x": 1000,
+      "y": 670,
+      "w": 410,
+      "group": "houses"
+    },
+    {
+      "id": "Padaria",
+      "resource": "Environment/Art/padaria",
+      "x": 1420,
+      "y": 745,
+      "w": 400,
+      "group": "houses"
+    },
+    {
+      "id": "Casa com varal",
+      "resource": "NeighborhoodV6/casa-simples-2",
+      "x": 1900,
+      "y": 690,
+      "w": 390,
+      "group": "houses"
+    },
+    {
+      "id": "Casa de madeira",
+      "resource": "NeighborhoodV6/barraco-3",
+      "x": 2340,
+      "y": 680,
+      "w": 345,
+      "group": "houses"
+    },
+    {
+      "id": "Moradia de pedra",
+      "resource": "NeighborhoodV6/casa-simples-0",
+      "x": 2900,
+      "y": 610,
+      "w": 350,
+      "group": "houses"
+    },
+    {
+      "id": "Casa da ladeira",
+      "resource": "NeighborhoodV6/casa-simples-1",
+      "x": 3340,
+      "y": 600,
+      "w": 340,
+      "group": "houses"
+    },
+    {
+      "id": "Anjos do Testamento",
+      "resource": "SchoolMorning/school",
+      "x": 4230,
+      "y": 665,
+      "w": 660,
+      "group": "houses"
+    },
+    {
+      "id": "Jardim de Sara",
+      "resource": "SchoolMorning/Props/flower",
+      "x": 540,
+      "y": 755,
+      "w": 40,
+      "group": "props"
+    },
+    {
+      "id": "Jardim de Sara",
+      "resource": "SchoolMorning/Props/flower",
+      "x": 600,
+      "y": 762,
+      "w": 40,
+      "group": "props"
+    },
+    {
+      "id": "Jardim de Sara",
+      "resource": "SchoolMorning/Props/flower",
+      "x": 525,
+      "y": 735,
+      "w": 40,
+      "group": "props"
+    },
+    {
+      "id": "Caixotes",
+      "resource": "NeighborhoodV6/barris-agua",
+      "x": 1100,
+      "y": 790,
+      "w": 72,
+      "group": "props"
+    },
+    {
+      "id": "Caixotes",
+      "resource": "NeighborhoodV6/barris-agua",
+      "x": 1650,
+      "y": 790,
+      "w": 72,
+      "group": "props"
+    },
+    {
+      "id": "Caixotes",
+      "resource": "NeighborhoodV6/barris-agua",
+      "x": 2300,
+      "y": 1100,
+      "w": 72,
+      "group": "props"
+    },
+    {
+      "id": "Caixotes",
+      "resource": "NeighborhoodV6/barris-agua",
+      "x": 2600,
+      "y": 1100,
+      "w": 72,
+      "group": "props"
+    },
+    {
+      "id": "Caixotes",
+      "resource": "NeighborhoodV6/barris-agua",
+      "x": 3350,
+      "y": 1080,
+      "w": 72,
+      "group": "props"
+    },
+    {
+      "id": "Árvore",
+      "resource": "World/Art/tree",
+      "x": 200,
+      "y": 1030,
+      "w": 235,
+      "group": "props"
+    },
+    {
+      "id": "Árvore",
+      "resource": "World/Art/tree",
+      "x": 1160,
+      "y": 1080,
+      "w": 235,
+      "group": "props"
+    },
+    {
+      "id": "Árvore",
+      "resource": "World/Art/tree",
+      "x": 1700,
+      "y": 1080,
+      "w": 235,
+      "group": "props"
+    },
+    {
+      "id": "Árvore",
+      "resource": "World/Art/tree",
+      "x": 2580,
+      "y": 680,
+      "w": 235,
+      "group": "props"
+    },
+    {
+      "id": "Árvore",
+      "resource": "World/Art/tree",
+      "x": 3150,
+      "y": 1070,
+      "w": 235,
+      "group": "props"
+    },
+    {
+      "id": "Árvore",
+      "resource": "World/Art/tree",
+      "x": 3940,
+      "y": 1040,
+      "w": 235,
+      "group": "props"
+    },
+    {
+      "id": "Árvore",
+      "resource": "World/Art/tree",
+      "x": 4520,
+      "y": 900,
+      "w": 235,
+      "group": "props"
+    },
+    {
+      "id": "Varal",
+      "resource": "NeighborhoodV6/varal-v6",
+      "x": 2050,
+      "y": 760,
+      "w": 160,
+      "group": "props"
+    },
+    {
+      "id": "Senhora",
+      "resource": "SchoolMorning/Residents/lady",
+      "x": 1780,
+      "y": 870,
+      "w": 100,
+      "group": "residents"
+    },
+    {
+      "id": "Menino",
+      "resource": "SchoolMorning/Residents/boy-blue",
+      "x": 2230,
+      "y": 970,
+      "w": 77,
+      "group": "residents"
+    },
+    {
+      "id": "Menino menor",
+      "resource": "SchoolMorning/Residents/boy-red",
+      "x": 2360,
+      "y": 1040,
+      "w": 76,
+      "group": "residents"
+    },
+    {
+      "id": "Cachorro",
+      "resource": "SchoolMorning/Residents/dog",
+      "x": 2320,
+      "y": 1050,
+      "w": 54,
+      "group": "residents"
+    },
+    {
+      "id": "Professor",
+      "resource": "SchoolMorning/Residents/teacher-man",
+      "x": 4050,
+      "y": 740,
+      "w": 102,
+      "group": "residents"
+    },
+    {
+      "id": "Professora",
+      "resource": "SchoolMorning/Residents/teacher-woman",
+      "x": 4370,
+      "y": 735,
+      "w": 103,
+      "group": "residents"
+    },
+    {
+      "id": "Banco",
+      "resource": "Environment/Art/banco-escola",
+      "x": 3910,
+      "y": 870,
+      "w": 140,
+      "group": "props"
+    },
+    {
+      "id": "Poça",
+      "resource": "NeighborhoodV6/poca-v6",
+      "x": 1610,
+      "y": 1000,
+      "w": 86,
+      "group": "ground"
+    },
+    {
+      "id": "Poça",
+      "resource": "NeighborhoodV6/poca-v6",
+      "x": 2510,
+      "y": 953,
+      "w": 74,
+      "group": "ground"
+    },
+    {
+      "id": "Carroça",
+      "resource": "NeighborhoodV6/carroca-quebrada",
+      "x": 3760,
+      "y": 1050,
+      "w": 175,
+      "group": "props"
+    },
+    {
+      "id": "Cerca frontal",
+      "resource": "SchoolMorning/Props/fence-front",
+      "x": 288.0,
+      "y": 914,
+      "w": 176,
+      "group": "fence",
+      "h": 130
+    },
+    {
+      "id": "Cerca frontal",
+      "resource": "SchoolMorning/Props/fence-front",
+      "x": 464.0,
+      "y": 914,
+      "w": 176,
+      "group": "fence",
+      "h": 130
+    },
+    {
+      "id": "Cerca frontal",
+      "resource": "SchoolMorning/Props/fence-front",
+      "x": 814.0,
+      "y": 914,
+      "w": 52,
+      "group": "fence",
+      "h": 130
+    },
+    {
+      "id": "Cerca lateral",
+      "resource": "SchoolMorning/Props/side-fence",
+      "x": 200,
+      "y": 535,
+      "w": 30,
+      "group": "fence",
+      "h": 320
+    },
+    {
+      "id": "Cerca lateral",
+      "resource": "SchoolMorning/Props/side-fence",
+      "x": 200,
+      "y": 724,
+      "w": 30,
+      "group": "fence",
+      "h": 320
+    },
+    {
+      "id": "Cerca lateral",
+      "resource": "SchoolMorning/Props/side-fence",
+      "x": 200,
+      "y": 914,
+      "w": 30,
+      "group": "fence",
+      "h": 320
+    },
+    {
+      "id": "Cerca lateral",
+      "resource": "SchoolMorning/Props/side-fence",
+      "x": 840,
+      "y": 535,
+      "w": 30,
+      "group": "fence",
+      "h": 320
+    },
+    {
+      "id": "Cerca lateral",
+      "resource": "SchoolMorning/Props/side-fence",
+      "x": 840,
+      "y": 724,
+      "w": 30,
+      "group": "fence",
+      "h": 320
+    },
+    {
+      "id": "Cerca lateral",
+      "resource": "SchoolMorning/Props/side-fence",
+      "x": 840,
+      "y": 914,
+      "w": 30,
+      "group": "fence",
+      "h": 320
+    },
+    {
+      "id": "Cerca dos fundos",
+      "resource": "SchoolMorning/Props/fence-front",
+      "x": 288,
+      "y": 350,
+      "w": 176,
+      "group": "fence",
+      "h": 130
+    },
+    {
+      "id": "Cerca dos fundos",
+      "resource": "SchoolMorning/Props/fence-front",
+      "x": 464,
+      "y": 350,
+      "w": 176,
+      "group": "fence",
+      "h": 130
+    },
+    {
+      "id": "Cerca dos fundos",
+      "resource": "SchoolMorning/Props/fence-front",
+      "x": 640,
+      "y": 350,
+      "w": 176,
+      "group": "fence",
+      "h": 130
+    },
+    {
+      "id": "Cerca dos fundos",
+      "resource": "SchoolMorning/Props/fence-front",
+      "x": 808,
+      "y": 350,
+      "w": 176,
+      "group": "fence",
+      "h": 130
+    }
+  ],
+  "blockers": [
+    {
+      "x": 265.20000000000005,
+      "y": 615,
+      "w": 369.59999999999997,
+      "h": 70,
+      "id": "Casa dos Arcadia"
+    },
+    {
+      "x": 827.8,
+      "y": 595,
+      "w": 344.4,
+      "h": 70,
+      "id": "Casa de Tenebris"
+    },
+    {
+      "x": 1252.0,
+      "y": 670,
+      "w": 336.0,
+      "h": 70,
+      "id": "Padaria"
+    },
+    {
+      "x": 1736.2,
+      "y": 615,
+      "w": 327.59999999999997,
+      "h": 70,
+      "id": "Casa com varal"
+    },
+    {
+      "x": 2195.1,
+      "y": 605,
+      "w": 289.8,
+      "h": 70,
+      "id": "Casa de madeira"
+    },
+    {
+      "x": 2753.0,
+      "y": 535,
+      "w": 294.0,
+      "h": 70,
+      "id": "Moradia de pedra"
+    },
+    {
+      "x": 3197.2,
+      "y": 525,
+      "w": 285.59999999999997,
+      "h": 70,
+      "id": "Casa da ladeira"
+    },
+    {
+      "x": 3952.8,
+      "y": 590,
+      "w": 554.4,
+      "h": 70,
+      "id": "Anjos do Testamento"
+    },
+    {
+      "x": 200,
+      "y": 889,
+      "w": 352,
+      "h": 18,
+      "id": "garden-front"
+    },
+    {
+      "x": 788,
+      "y": 889,
+      "w": 52,
+      "h": 18,
+      "id": "garden-front"
+    },
+    {
+      "x": 192,
+      "y": 346,
+      "w": 16,
+      "h": 561,
+      "id": "garden-side"
+    },
+    {
+      "x": 832,
+      "y": 346,
+      "w": 16,
+      "h": 561,
+      "id": "garden-side"
+    },
+    {
+      "x": 192,
+      "y": 340,
+      "w": 656,
+      "h": 18,
+      "id": "garden-back"
+    }
+  ],
+  "steps": [
+    {
+      "id": "flower",
+      "kind": "action",
+      "title": "Ajeite a flor no jardim de Sara",
+      "x": 560,
+      "y": 755,
+      "range": 70,
+      "speed": 138,
+      "lines": [
+        {
+          "speaker": "Yuuki",
+          "text": "Você vai ter que colaborar também..."
+        }
+      ],
+      "action": "pickup",
+      "seconds": 1.15,
+      "prompt": "Ajeitar a flor",
+      "guide": false
+    },
+    {
+      "id": "gate-first",
+      "kind": "action",
+      "title": "Abra o portão do quintal",
+      "x": 660,
+      "y": 855,
+      "range": 70,
+      "speed": 138,
+      "lines": [
+        {
+          "speaker": "Yuuki",
+          "text": "Ngh..."
+        }
+      ],
+      "action": "grasp",
+      "seconds": 1.15,
+      "prompt": "Tentar abrir o portão",
+      "guide": false
+    },
+    {
+      "id": "gate-again",
+      "kind": "action",
+      "title": "O portão emperrou. Tente outra vez",
+      "x": 660,
+      "y": 855,
+      "range": 70,
+      "speed": 138,
+      "lines": [
+        {
+          "speaker": "Yuuki",
+          "text": "De novo..."
+        }
+      ],
+      "action": "grasp",
+      "seconds": 1.15,
+      "prompt": "Tentar outra vez",
+      "guide": false
+    },
+    {
+      "id": "gate-help",
+      "kind": "script",
+      "title": "Tenebris veio ajudar",
+      "x": 660,
+      "y": 855,
+      "range": 70,
+      "speed": 138,
+      "lines": [
+        {
+          "speaker": "Tenebris",
+          "text": "Yuuki, deixa que eu ajudo."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "A-ah!"
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Um, dois..."
+        }
+      ],
+      "action": "tenebris_grasp",
+      "seconds": 1.5,
+      "guide": false
+    },
+    {
+      "id": "gate-talk",
+      "kind": "talk",
+      "title": "Atravesse o portão com Tenebris",
+      "x": 660,
+      "y": 855,
+      "range": 70,
+      "speed": 138,
+      "lines": [
+        {
+          "speaker": "Tenebris",
+          "text": "Viu?"
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Eu conseguiria."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Eu sei."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Então por que ajudou?"
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Porque eu cheguei."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "O-obrigada, Tenebris."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Não precisa agradecer por tudo."
+        }
+      ],
+      "guide": false
+    },
+    {
+      "id": "leave-yard",
+      "kind": "move",
+      "title": "Saia do quintal",
+      "x": 760,
+      "y": 970,
+      "range": 70,
+      "speed": 138,
+      "lines": []
+    },
+    {
+      "id": "close-gate",
+      "kind": "action",
+      "title": "Confira se o portão ficou fechado",
+      "x": 680,
+      "y": 949,
+      "range": 80,
+      "speed": 138,
+      "lines": [],
+      "action": "grasp",
+      "seconds": 1.6,
+      "prompt": "Fechar e conferir o portão",
+      "guide": false,
+      "minY": 925
+    },
+    {
+      "id": "bread-walk",
+      "kind": "move",
+      "title": "Siga Tenebris pelo bairro",
+      "x": 1320,
+      "y": 950,
+      "range": 70,
+      "speed": 138,
+      "lines": []
+    },
+    {
+      "id": "bread-talk",
+      "kind": "talk",
+      "title": "O cheiro de pão",
+      "x": 1320,
+      "y": 950,
+      "range": 70,
+      "speed": 138,
+      "lines": [
+        {
+          "speaker": "Tenebris",
+          "text": "Tá com fome?"
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Não."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "...um pouco."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Você tomou café?"
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Tomei."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Então?"
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Uma pessoa pode ter tomado café e ainda achar pão cheiroso."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Faz sentido."
+        }
+      ]
+    },
+    {
+      "id": "greeting-walk",
+      "kind": "move",
+      "title": "Continue pela rua",
+      "x": 1780,
+      "y": 930,
+      "range": 70,
+      "speed": 138,
+      "lines": []
+    },
+    {
+      "id": "greeting",
+      "kind": "talk",
+      "title": "Um bairro despertando",
+      "x": 1780,
+      "y": 930,
+      "range": 70,
+      "speed": 138,
+      "lines": [
+        {
+          "speaker": "Senhora",
+          "text": "Bom dia, crianças!"
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Bom dia!"
+        }
+      ]
+    },
+    {
+      "id": "ball-walk",
+      "kind": "move",
+      "title": "A bola escapou para a rua",
+      "x": 2160,
+      "y": 930,
+      "range": 70,
+      "speed": 138,
+      "lines": []
+    },
+    {
+      "id": "ball-pick",
+      "kind": "action",
+      "title": "Devolva a bola às crianças",
+      "x": 2160,
+      "y": 930,
+      "range": 70,
+      "speed": 138,
+      "lines": [],
+      "action": "pickup",
+      "seconds": 1.15,
+      "prompt": "Pegar a bola",
+      "guide": false
+    },
+    {
+      "id": "ball-talk",
+      "kind": "talk",
+      "title": "Uma pequena gentileza",
+      "x": 2160,
+      "y": 930,
+      "range": 70,
+      "speed": 138,
+      "lines": [
+        {
+          "speaker": "Menino",
+          "text": "Ei!"
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Cuidado perto da estrada maior, tá?"
+        },
+        {
+          "speaker": "Menino",
+          "text": "Tá!"
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "O quê?"
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Nada."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Você está olhando."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Você também olha pra mim."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Porque você está olhando pra mim!"
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Então estamos empatados."
+        }
+      ]
+    },
+    {
+      "id": "worry-walk",
+      "kind": "move",
+      "title": "Suba a rua com Tenebris",
+      "x": 2690,
+      "y": 850,
+      "range": 70,
+      "speed": 138,
+      "lines": [
+        {
+          "speaker": "Tenebris",
+          "text": "Aconteceu alguma coisa ontem?"
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Não."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Tá."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "O que foi?"
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Nada."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Tenebris."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Você falou que não aconteceu nada."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Então por que perguntou?"
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Porque você faz isso quando tá preocupada."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Isso."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Eu só estava ajeitando."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Faz dez minutos?"
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Não fazem dez minutos."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Sete?"
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Nem sete."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Cinco?"
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Sabia."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Você é irritante."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Você fala isso bastante."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Porque você é."
+        }
+      ]
+    },
+    {
+      "id": "wings-talk",
+      "kind": "talk",
+      "title": "Uma branca. Outra negra.",
+      "x": 2690,
+      "y": 850,
+      "range": 70,
+      "speed": 138,
+      "lines": [
+        {
+          "speaker": "Tenebris",
+          "text": "Foi alguém da escola?"
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Não."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Eu nem falei nada."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Mas pensou."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Você não sabe o que eu pensei."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Sei sim."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Então fala."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Você está pensando em bater em alguém."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Acertei."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Talvez."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Tenebris..."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Se fizeram alguma coisa com você..."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Não fizeram nada."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Nada importante."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Isso não é a mesma coisa."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Eles só falaram das minhas asas de novo."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Idiotas."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Não chama eles assim."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Mas são."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Talvez eles só não entendam."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Dá na mesma."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Não dá."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Você sempre faz isso."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Isso o quê?"
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Arruma desculpa pra todo mundo."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Talvez."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Até pra quem é ruim com você."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Se eu ficar brava com todo mundo que faz alguma coisa ruim comigo... vou acabar ficando brava com muita gente."
+        }
+      ]
+    },
+    {
+      "id": "stone-walk",
+      "kind": "move",
+      "title": "Uma pedra no caminho",
+      "x": 3000,
+      "y": 820,
+      "range": 70,
+      "speed": 138,
+      "lines": []
+    },
+    {
+      "id": "stone-kick",
+      "kind": "action",
+      "title": "Tente tocar a pedrinha",
+      "x": 3000,
+      "y": 820,
+      "range": 70,
+      "speed": 138,
+      "lines": [],
+      "action": "kick",
+      "seconds": 0.95,
+      "prompt": "Tocar a pedra",
+      "guide": false
+    },
+    {
+      "id": "tease",
+      "kind": "talk",
+      "title": "A risada do Tenebris",
+      "x": 3000,
+      "y": 820,
+      "range": 70,
+      "speed": 138,
+      "lines": [
+        {
+          "speaker": "Tenebris",
+          "text": "Você errou!"
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Eu sei!"
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Ela nem se mexeu!"
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Cala a boca!"
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Ei!"
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Você que falou pra eu calar a boca!"
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Volta aqui!"
+        }
+      ]
+    },
+    {
+      "id": "run-tip",
+      "kind": "tutorial",
+      "title": "Corra atrás de Tenebris",
+      "x": 3000,
+      "y": 820,
+      "range": 70,
+      "speed": 138,
+      "lines": [],
+      "guide": false
+    },
+    {
+      "id": "race",
+      "kind": "race",
+      "title": "Alcance Tenebris",
+      "x": 3650,
+      "y": 800,
+      "range": 75,
+      "speed": 232,
+      "lines": [],
+      "seconds": 3
+    },
+    {
+      "id": "exhaust",
+      "kind": "script",
+      "title": "Recupere o fôlego",
+      "x": 3650,
+      "y": 800,
+      "range": 70,
+      "speed": 138,
+      "lines": [
+        {
+          "speaker": "Yuuki",
+          "text": "Espera... espera..."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Yuuki?"
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Eu tô bem..."
+        },
+        {
+          "speaker": "Tenebris",
+          "text": "Você correu nem um minuto."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Eu sei..."
+        },
+        {
+          "speaker": "Yuuki",
+          "text": "Vamos. A gente vai se atrasar."
+        }
+      ],
+      "action": "exhaust",
+      "seconds": 5.5,
+      "guide": false
+    },
+    {
+      "id": "school-walk",
+      "kind": "move",
+      "title": "Anjos do Testamento",
+      "x": 4170,
+      "y": 755,
+      "range": 65,
+      "speed": 106,
+      "lines": []
+    },
+    {
+      "id": "arrival",
+      "kind": "finish",
+      "title": "Vocês chegaram à escola",
+      "x": 4170,
+      "y": 755,
+      "range": 70,
+      "speed": 138,
+      "lines": [],
+      "guide": false
+    }
+  ],
+  "actors": {
+    "yuuki": "Childhood/YuukiV2/animations",
+    "tenebris": "Childhood/Tenebris/animations"
+  },
+  "controls": {
+    "action": "F",
+    "run": "Shift",
+    "move": "WASD / setas",
+    "dialogue": "Espaço / Enter"
+  },
+  "introActions": "SchoolMorning/actions",
+  "notes": "Age follows the new scene text. Existing child visuals reused; approved archives untouched. Residents use four-frame cycles; Yuuki has separate backpack straps and a subtle four-frame nervous gesture. Four modular map files connect continuously."
+}

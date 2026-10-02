@@ -1,0 +1,287 @@
+{
+  "clips": [
+    {
+      "name": "exhaust",
+      "frames": [
+        "SchoolMorning/Actions/exhaust_00",
+        "SchoolMorning/Actions/exhaust_01",
+        "SchoolMorning/Actions/exhaust_02",
+        "SchoolMorning/Actions/exhaust_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 181
+        },
+        {
+          "x": 256,
+          "y": 181
+        },
+        {
+          "x": 256,
+          "y": 181
+        }
+      ],
+      "fps": 4,
+      "loop": true,
+      "sequence": [
+        1,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "name": "grasp",
+      "frames": [
+        "SchoolMorning/Actions/grasp_00",
+        "SchoolMorning/Actions/grasp_01",
+        "SchoolMorning/Actions/grasp_02",
+        "SchoolMorning/Actions/grasp_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 155
+        },
+        {
+          "x": 256,
+          "y": 158
+        },
+        {
+          "x": 256,
+          "y": 154
+        }
+      ],
+      "fps": 4,
+      "loop": false,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "pickup",
+      "frames": [
+        "SchoolMorning/Actions/pickup_00",
+        "SchoolMorning/Actions/pickup_01",
+        "SchoolMorning/Actions/pickup_02",
+        "SchoolMorning/Actions/pickup_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 188
+        },
+        {
+          "x": 256,
+          "y": 208
+        },
+        {
+          "x": 256,
+          "y": 147
+        }
+      ],
+      "fps": 4,
+      "loop": false,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "kick",
+      "frames": [
+        "SchoolMorning/Actions/kick_00",
+        "SchoolMorning/Actions/kick_01",
+        "SchoolMorning/Actions/kick_02",
+        "SchoolMorning/Actions/kick_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 154
+        },
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 155
+        }
+      ],
+      "fps": 4,
+      "loop": false,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "tenebris_grasp",
+      "frames": [
+        "SchoolMorning/Actions/tenebris_grasp_00",
+        "SchoolMorning/Actions/tenebris_grasp_01",
+        "SchoolMorning/Actions/tenebris_grasp_02",
+        "SchoolMorning/Actions/tenebris_grasp_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 163
+        },
+        {
+          "x": 256,
+          "y": 156
+        }
+      ],
+      "fps": 4,
+      "loop": false,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "strap_grip",
+      "frames": [
+        "SchoolMorning/Actions/strap_grip_00",
+        "SchoolMorning/Actions/strap_grip_01",
+        "SchoolMorning/Actions/strap_grip_02",
+        "SchoolMorning/Actions/strap_grip_03"
+      ],
+      "haloAnchors": [
+        {
+          "x": 256,
+          "y": 156
+        },
+        {
+          "x": 256,
+          "y": 154
+        },
+        {
+          "x": 256,
+          "y": 154
+        },
+        {
+          "x": 256,
+          "y": 153
+        }
+      ],
+      "fps": 3,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "loop": true
+    }
+  ],
+  "frameSize": [
+    512,
+    512
+  ],
+  "feet": [
+    256,
+    400
+  ],
+  "pixelsPerUnit": 220,
+  "bodyScale": "220px standing height; one uniform scale per source row",
+  "halo": "reuse the protagonist separate recolorable halo",
+  "assets": [
+    {
+      "id": "gate",
+      "resource": "SchoolMorning/Props/gate",
+      "width": 722,
+      "height": 433
+    },
+    {
+      "id": "backpack",
+      "resource": "SchoolMorning/Props/backpack",
+      "width": 346,
+      "height": 341
+    },
+    {
+      "id": "ball",
+      "resource": "SchoolMorning/Props/ball",
+      "width": 282,
+      "height": 284
+    },
+    {
+      "id": "flower",
+      "resource": "SchoolMorning/Props/flower",
+      "width": 324,
+      "height": 409
+    },
+    {
+      "id": "lady",
+      "resource": "SchoolMorning/Residents/lady",
+      "width": 372,
+      "height": 473
+    },
+    {
+      "id": "boy-blue",
+      "resource": "SchoolMorning/Residents/boy-blue",
+      "width": 317,
+      "height": 398
+    },
+    {
+      "id": "boy-red",
+      "resource": "SchoolMorning/Residents/boy-red",
+      "width": 310,
+      "height": 410
+    },
+    {
+      "id": "dog",
+      "resource": "SchoolMorning/Residents/dog",
+      "width": 275,
+      "height": 279
+    },
+    {
+      "id": "teacher-man",
+      "resource": "SchoolMorning/Residents/teacher-man",
+      "width": 363,
+      "height": 490
+    },
+    {
+      "id": "teacher-woman",
+      "resource": "SchoolMorning/Residents/teacher-woman",
+      "width": 360,
+      "height": 485
+    }
+  ]
+}
